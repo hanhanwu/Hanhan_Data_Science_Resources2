@@ -1,2 +1,13 @@
 # Hanhan_Data_Science_Resources2
-more data science resources
+More data science resources
+It seems that my Data Science Resources cannot be updated, create a new one here for more resources
+
+
+Hanhan_Data_Science_Resource 1: https://github.com/hanhanwu/Hanhan_Data_Science_Resources
+
+
+************************************************************************
+
+TREE BASED MODELS
+
+* Tree based models in detail with R & Python example: https://www.analyticsvidhya.com/blog/2016/04/complete-tutorial-tree-based-modeling-scratch-in-python/?utm_content=bufferade26&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer
