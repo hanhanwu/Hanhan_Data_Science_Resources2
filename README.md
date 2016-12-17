@@ -24,6 +24,13 @@ Applied Data Science in Python/R
 
 ************************************************************************
 
+Statistics in Data Science
+
+* Statistics behind Boruta feature selection: https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/boruta_statistics.pdf
+
+
+************************************************************************
+
 Deep Learning
 
 * Deep Learning Videos: https://www.analyticsvidhya.com/blog/2016/12/21-deep-learning-videos-tutorials-courses-on-youtube-from-2016/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
