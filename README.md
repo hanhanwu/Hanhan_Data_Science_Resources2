@@ -29,6 +29,8 @@ Statistics in Data Science
 * Statistics behind Boruta feature selection: https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/boruta_statistics.pdf
 * Confusing Concepts
  * Errors and Residuals: https://en.wikipedia.org/wiki/Errors_and_residuals
+ * Heteroskedasticity: led by non-constant variance in error terms. Usually, non-constant variance is caused by outliers or extreme values
+ * Coefficient and p-value/t-statistics: coefficient measures the strength of the relationship of 2 variables, while p-value/t-statistics measures how strong the evidence that there is non-zero association
 
 
 ************************************************************************
