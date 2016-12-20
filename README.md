@@ -27,6 +27,8 @@ Applied Data Science in Python/R
 Statistics in Data Science
 
 * Statistics behind Boruta feature selection: https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/boruta_statistics.pdf
+* Confusing Concepts
+ * Errors and Residuals: https://en.wikipedia.org/wiki/Errors_and_residuals
 
 
 ************************************************************************
