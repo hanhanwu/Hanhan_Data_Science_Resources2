@@ -35,6 +35,13 @@ Statistics in Data Science
 
 ************************************************************************
 
+Big Data
+
+* Pig vs Hive: https://upxacademy.com/pig-vs-hive/
+
+
+************************************************************************
+
 AI
 
 * Something about AI (those brief explaination about real life applications are useful and intresting): https://www.analyticsvidhya.com/blog/2016/12/artificial-intelligence-demystified/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
