@@ -38,10 +38,12 @@ Statistics in Data Science
 
 Machine Learning Algorithms
 
-* KNN: https://www.analyticsvidhya.com/blog/2015/08/learning-concept-knn-algorithms-programming/
+* KNN with R example: https://www.analyticsvidhya.com/blog/2015/08/learning-concept-knn-algorithms-programming/
  * KNN unbiased and no prior assumption, fast
  * It needs good data preprocessing such as missing data imputing, categorical to numerical
  * k normally choose the square root of total data observations
+
+* SVM with Python example: https://www.analyticsvidhya.com/blog/2015/10/understaing-support-vector-machine-example-code/?utm_content=buffer02b8d&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer
  
  
 ************************************************************************
