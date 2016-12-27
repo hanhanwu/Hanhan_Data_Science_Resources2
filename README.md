@@ -51,8 +51,14 @@ Machine Learning Algorithms
 Big Data
 
 * Pig vs Hive: https://upxacademy.com/pig-vs-hive/
-* Spark 2.0, SparkSession (can be used for both SQL Context and Hive Context): http://cdn2.hubspot.net/hubfs/438089/notebooks/spark2.0/SparkSession.html
-
+* Spark 2.0, SparkSession (can be used for both Spark SQL Context and Hive Context, Spark SQL is based on Haive but has its own strength): http://cdn2.hubspot.net/hubfs/438089/notebooks/spark2.0/SparkSession.html
+* Mastering Spark 2.0: https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/Mastering-Apache-Spark-2.0.pdf
+ * Spark Session - supports both SQL Context and Hive Context
+ * Structured Streaming - just write batch computation and let Spark deal with streaming with you. I’m waiting to see its better integration with MLLib and other machine learning libraries
+ * HyperLogLog - the story is interesting
+ * `val ds = spark.read.json("/databricks-public-datasets/data/iot/iot_devices.json").as[DeviceIoTData]`
+ * Choice of Spark DataFrame, DataSets and RDD, P35
+ * Structured Streaming, P57-59
 
 ************************************************************************
 
