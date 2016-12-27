@@ -51,6 +51,7 @@ Machine Learning Algorithms
 Big Data
 
 * Pig vs Hive: https://upxacademy.com/pig-vs-hive/
+* Spark 2.0, SparkSession (can be used for both SQL Context and Hive Context): http://cdn2.hubspot.net/hubfs/438089/notebooks/spark2.0/SparkSession.html
 
 
 ************************************************************************
