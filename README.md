@@ -27,7 +27,7 @@ Statistics in Data Science
 
 * Termology glossary for statistics in machine learning: https://www.analyticsvidhya.com/glossary-of-common-statistics-and-machine-learning-terms/
 * Statistics behind Boruta feature selection: https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/boruta_statistics.pdf
-* How the laws of group theory provide a useful codification of the practical lessons of building efficient distributed and real-time aggregation systems: https://www.infoq.com/presentations/abstract-algebra-analytics
+* How the laws of group theory provide a useful codification of the practical lessons of building efficient distributed and real-time aggregation systems (from 22:00, he started to talk about HyperLogLog and other approximation data structures): https://www.infoq.com/presentations/abstract-algebra-analytics
 * Confusing Concepts
  * Errors and Residuals: https://en.wikipedia.org/wiki/Errors_and_residuals
  * Heteroskedasticity: led by non-constant variance in error terms. Usually, non-constant variance is caused by outliers or extreme values
