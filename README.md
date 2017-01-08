@@ -2,8 +2,16 @@
 More data science resources
 It seems that my Data Science Resources cannot be updated, create a new one here for more resources
 
+************************************************************************
 
-Hanhan_Data_Science_Resource 1: https://github.com/hanhanwu/Hanhan_Data_Science_Resources
+SUMMARIZED RESOURCES
+
+* Hanhan_Data_Science_Resource 1: https://github.com/hanhanwu/Hanhan_Data_Science_Resources
+* <b>Check Awesome Big Data when looking for new ways to solve data science problems</b>: https://github.com/onurakpolat/awesome-bigdata
+* Categorized Resources for Machine Learning: https://www.analyticsvidhya.com/resources-machine-learning-deep-learning-neural-networks/
+* Summarized Tableau Learning Resources: https://www.analyticsvidhya.com/learning-paths-data-science-business-analytics-business-intelligence-big-data/tableau-learning-path/
+* Summarized Big Data Learning Resources: https://www.analyticsvidhya.com/resources-big-data/
+* Data Science Media Resources: https://www.analyticsvidhya.com/data-science-blogs-communities-books-podcasts-newsletters-follow/
 
 
 ************************************************************************
@@ -12,6 +20,21 @@ TREE BASED MODELS
 
 * Tree based models in detail with R & Python example: https://www.analyticsvidhya.com/blog/2016/04/complete-tutorial-tree-based-modeling-scratch-in-python/?utm_content=bufferade26&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer
 
+
+************************************************************************
+
+MODEL EVALUATION
+
+* 7 important model evaluation metrics and cross validation: https://www.analyticsvidhya.com/blog/2016/02/7-important-model-evaluation-error-metrics/
+ * Confusion Matrix
+ * <b>Lift / Gain charts</b> are widely used in campaign targeting problems. This tells us till which decile can we target customers for an specific campaign. Also, it tells you how much response do you expect from the new target base.
+ * Kolmogorov-Smirnov (K-S) chart is a measure of the degree of separation between the positive and negative distributions. The K-S is 100, the higher the value the better the model is at separating the positive from negative cases.
+ * The ROC curve is the plot between sensitivity and (1- specificity). (1- specificity) is also known as false positive rate and sensitivity is also known as True Positive rate. To bring ROC curve down to a single number, AUC, which is  the ratio under the curve and the total area. .90-1 = excellent (A) ; .80-.90 = good (B) ; .70-.80 = fair (C) ; .60-.70 = poor (D) ; .50-.60 = fail (F). But this might simply be over-fitting. In such cases it becomes very important to to in-time and out-of-time validations. For a model which gives class as output, will be represented as a single point in ROC plot. In case of probabilistic model, we were fortunate enough to get a single number which was AUC-ROC. But still, we need to look at the entire curve to make conclusive decisions.
+ * Lift is dependent on total response rate of the population. ROC curve on the other hand is almost independent of the response rate, because the numerator and denominator of both x and y axis will change on similar scale in case of response rate shift.
+ * Gini = 2*AUC – 1. Gini Coefficient is nothing but ratio between area between the ROC curve and the diagnol line & the area of the above triangle
+ * <b>The concordant pair</b> is where the probability of responder was higher than non-responder. Whereas <b>discordant pair</b> is where the vice-versa holds true. Concordant ratio of more than 60% is considered to be a good model. It is <b>primarily used to access the model’s predictive power</b>. For decisions like how many to target are again taken by KS / Lift charts.
+ * RMSE: The power of ‘square root’  empowers this metric to show large number deviations. The ‘squared’ nature of this metric helps to deliver more robust results which prevents cancelling the positive and negative error values. When we have more samples, reconstructing the error distribution using RMSE is considered to be more reliable. RMSE is highly affected by outlier values. Hence, make sure you’ve removed outliers from your data set prior to using this metric. As compared to mean absolute error, RMSE gives higher weightage and punishes large errors.
+ * k-fold cross validation is widely used to check whether a model is an overfit or not. <b>If the performance metrics at each of the k times modelling are close to each other and the mean of metric is highest.</b> For a small k, we have a higher selection bias but low variance in the performances. For a large k, we have a small selection bias but high variance in the performances. <b>Generally a value of k = 10 is recommended for most purpose.</b>
 
 ************************************************************************
 
