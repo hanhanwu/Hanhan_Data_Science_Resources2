@@ -101,6 +101,14 @@ Big Data
 
 ************************************************************************
 
+TEXT ANALYSIS
+
+* Text data preprocessing basic steps: https://www.analyticsvidhya.com/blog/2015/06/quick-guide-text-data-cleaning-python/
+* My NLP practice: https://github.com/hanhanwu/Hanhan_NLP
+
+
+************************************************************************
+
 Interesting Data Analysis Examples
 
 * Analysis with data visualization: https://www.analyticsvidhya.com/blog/2016/12/who-is-the-superhero-of-cricket-battlefield-an-in-depth-analysis/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
