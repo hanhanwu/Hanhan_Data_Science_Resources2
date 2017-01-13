@@ -117,6 +117,20 @@ Big Data
 
 ************************************************************************
 
+Cloud
+
+* For Cloud Machine Learning in Spark, AWS and Azure Machine Learning, check my previous summary here: https://github.com/hanhanwu/Hanhan_Data_Science_Resources
+
+* Compute Canada
+ * How to apply for an account: https://www.computecanada.ca/research-portal/account-management/apply-for-an-account/
+ * login Compute Canada cloud through terminal: https://www.westgrid.ca//support/quickstart/new_users#about
+ * Note: the GUI the above guidance mentioned means the graphical tool, not interactive user interface...
+ * Run X11 in Mac OS X with XQuartz: http://osxdaily.com/2012/12/02/x11-mac-os-x-xquartz/
+ * When you are using XQuartz, once xterm appeared, loggin into Canada Computer with SSH X forwarding through xterm: https://www.westgrid.ca/support/visualization/remote_visualization/x11
+
+
+************************************************************************
+
 TEXT ANALYSIS
 
 * Text data preprocessing basic steps: https://www.analyticsvidhya.com/blog/2015/06/quick-guide-text-data-cleaning-python/
