@@ -113,6 +113,7 @@ Big Data
  * Choice of Spark DataFrame, DataSets and RDD, P35
  * Structured Streaming, P57-59
 * Lessons from large scale machine learning deployment on Spark, 2.0: https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/Lessons_from_Large-Scale_Machine_Learning_Deployments_on_Spark.pdf
+* Hadoop 10 years: https://upxacademy.com/hadoop-10-years/
 
 
 ************************************************************************
