@@ -104,6 +104,10 @@ Machine Learning Algorithms
 Data Visualization
 
 * Psychology of Intelligence Analysis: https://www.cia.gov/library/center-for-the-study-of-intelligence/csi-publications/books-and-monographs/psychology-of-intelligence-analysis/PsychofIntelNew.pdf
+* NLP Visualization
+ * On Jan 20, 2017, SFU Linguistics Lab invited an UBC researcher to show NLP data visualization, which is very interesting. By doing topic modeling, graph base clustering, they are able to categorize large amount of comments and opinions into groups, by using interactive visualization, the tools they developed will help readers read online comments in a more efficient way.
+ * ConVis: https://www.cs.ubc.ca/cs-research/lci/research-groups/natural-language-processing/ConVis.html
+ * MultiConVis: https://www.cs.ubc.ca/cs-research/lci/research-groups/natural-language-processing/MultiConVis.html
  
  
 ************************************************************************
