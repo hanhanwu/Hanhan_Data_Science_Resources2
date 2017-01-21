@@ -101,6 +101,13 @@ Machine Learning Algorithms
  
 ************************************************************************
 
+Data Visualization
+
+* Psychology of Intelligence Analysis: https://www.cia.gov/library/center-for-the-study-of-intelligence/csi-publications/books-and-monographs/psychology-of-intelligence-analysis/PsychofIntelNew.pdf
+ 
+ 
+************************************************************************
+
 Big Data
 
 * Pig vs Hive: https://upxacademy.com/pig-vs-hive/
