@@ -137,6 +137,7 @@ Cloud
  * When you are using XQuartz, once xterm appeared, loggin into Canada Computer with SSH X forwarding through xterm: https://www.westgrid.ca/support/visualization/remote_visualization/x11
  * Creat Computer Canada Cloud (it seems that Computer Canada Cloud and West Grid are different cloud, but you apply for West Grid through Compute Canada account): https://www.computecanada.ca/research-portal/national-services/compute-canada-cloud/create-a-cloud-account/
  * Tutorial for creating Compute Canada cloud (the video at the bottom): https://www.computecanada.ca/research-portal/national-services/compute-canada-cloud/ 
+ * Cloud Canada Quick Start: https://docs.computecanada.ca/wiki/Cloud_Quick_Start
 
 
 ************************************************************************
