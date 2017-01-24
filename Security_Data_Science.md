@@ -10,3 +10,16 @@ News and Notes
  * Neural Network for unsupervised learning looks also interesting and here is details for Autoencoders: http://ufldl.stanford.edu/tutorial/unsupervised/Autoencoders/
 * NuData Security Selected as Excellence Award: https://www.linkedin.com/pulse/nudata-security-selected-excellence-award-threat-sc-lisa-baergen-apr
 * The Papers from NuData Security are really good: https://nudatasecurity.com/papers/
+
+
+******************************************************
+
+Research Papers
+
+<b>Offense and Defense</b>
+
+* Finding Vulnerabilities
+ * [Driller: Augmenting Fuzzing Through Selective Symbolic Execution][1]
+ 
+ 
+[1]: https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/2016_NDSS_Driller.pdf
