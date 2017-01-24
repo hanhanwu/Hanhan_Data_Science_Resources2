@@ -142,6 +142,7 @@ Cloud
  * Creat Computer Canada Cloud (it seems that Computer Canada Cloud and West Grid are different cloud, but you apply for West Grid through Compute Canada account): https://www.computecanada.ca/research-portal/national-services/compute-canada-cloud/create-a-cloud-account/
  * Tutorial for creating Compute Canada cloud (the video at the bottom): https://www.computecanada.ca/research-portal/national-services/compute-canada-cloud/ 
  * Cloud Canada Quick Start: https://docs.computecanada.ca/wiki/Cloud_Quick_Start
+ * Command lines: https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/WestGrid_commands.md
 
 
 ************************************************************************
