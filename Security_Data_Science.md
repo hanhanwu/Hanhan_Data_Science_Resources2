@@ -21,5 +21,18 @@ Research Papers
 * Finding Vulnerabilities
  * [Driller: Augmenting Fuzzing Through Selective Symbolic Execution][1]
  
+
+******************************************************
+
+SFU Cyber Security Seminar
+
+* [2017-1-24] Privacy as a Service
+ * They created 3 cloud service protection to deal with powerful threats in Cloud, Networks and clients end
+ * [uProxy, for Network][2]
+ * [Radiatus, for Clients end][3]
+ * Talek, deals with utrusted cloud
+ 
  
 [1]: https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/2016_NDSS_Driller.pdf
+[2]: https://github.com/uProxy/uproxy
+[3]: https://www.cs.washington.edu/education/grad/UW-CSE-13-11-01.PDF
