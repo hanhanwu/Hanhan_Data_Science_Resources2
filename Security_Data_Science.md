@@ -32,7 +32,16 @@ SFU Cyber Security Seminar
  * [Radiatus, for Clients end][3]
  * Talek, deals with utrusted cloud
  
+* [2017-1-25] Securing the Internet Routing Infrastructure
+ * Routing prototypes glue the Internet communiation
+ * BGP is an important protocol used to route between the network (intern network routing), but BGP is a distributed algorithm, which means routing decisions are the results made by all "peers", what if there is a mistake or attack, things can be a disaster.
+ * Their project is to check whether routers are ok and try to analysis whether there is hijack attack. Checking routers are very complex, so they developed a structure called "Pop" which is a connection of of routers and other networking devices in a campus of that certain region.
+ * With PoP, they built the GeoIP database, created PopGeo embeding and PoP Map
+ * Their solution is important because, they cannot always expect thr router or data encryption could solve the problem, since encrypted data has just been proved that it is breakable
+ * [Their solution][4]
+ 
  
 [1]: https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/2016_NDSS_Driller.pdf
 [2]: https://github.com/uProxy/uproxy
 [3]: https://www.cs.washington.edu/education/grad/UW-CSE-13-11-01.PDF
+[4]: http://www.bgprotect.com/
