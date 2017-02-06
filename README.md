@@ -68,6 +68,29 @@ Statistics in Data Science
  * Difference between gradient descent and stochastic gradient descent: https://www.quora.com/Whats-the-difference-between-gradient-descent-and-stochastic-gradient-descent
  * <b>Bias</b> is useful to quantify how much on an average are the predicted values different from the actual value. A high bias error means we have a <b>under-performing</b> model which keeps on missing important trends. <b>Varianc</b> on the other side quantifies how are the prediction made on same observation different from each other. A high variance model will <b>over-fit</b> on your training population and perform badly on any observation beyond training.
  * <b>OLS</b> and <b>Maximum likelihood</b> are the methods used by the respective regression methods to approximate the unknown parameter (coefficient) value. OLS is to linear regression. Maximum likelihood is to logistic regression. Ordinary least square(OLS) is a method used in linear regression which approximates the parameters resulting in <b>minimum distance between actual and predicted values.</b> Maximum Likelihood helps in choosing the the values of parameters which <b>maximizes the likelihood that the parameters are most likely to produce observed data.</b>
+ * <b>Standard Deviation</b> – It is the amount of variation in the <b>population data</b>. It is given by σ. <b>Standard Error</b> – It is the amount of variation in the <b>sample data</b>. It is related to Standard Deviation as σ/√n, where, n is the sample size, σ is the standandard deviation of the <b>population</b>
+ * 95% <b> confidence interval does not mean</b> the probability of a population mean to lie in an interval is 95%. Instead, 95% C.I <b>means that 95% of the Interval estimates will contain the population statistic</b>.
+ * If a sample mean lies in the margin of error range then, it might be possible that its actual value is equal to the population mean and the difference is occurring by chance.
+ * <b>Difference between z-scores and t-values</b> are that t-values are dependent on Degree of Freedom of a sample, and t-values use sample standard deviation while z-scores use population standard deviation.
+ * <b>The Degree of Freedom</b> – It is the number of variables that have the choice of having more than one arbitrary value. For example, in a sample of size 10 with mean 10, 9 values can be arbitrary but the 1oth value is forced by the sample mean.
+ * <b>Residual Sum of Squares (RSS)</b> - It can be interpreted as the amount by which the predicted values deviated from the actual values. Large deviation would indicate that the model failed at predicting the correct values for the dependent variable. <b>Regression (Explained) Sum of Squares (ESS)</b> – It can be interpreted as the amount by which the predicted values deviated from the the mean of actual values.
+ * <b>Co-efficient of Determination = ESS/(ESS + RSS)</b>. It represents the strength of correlation between two variables. <b>Correlation Coefficient = sqrt(Co-efficient of Determination)</b>, also represents the strength of correlation between two variables, ranges between [-1,1]. 0 means no correlation, 1 means strong positive correlation, -1 means strong neagtive correlation.
+ 
+* [Comprehensive and Practical Statistics Guide for Data Science][1] - A real good one!
+ * Sample Distribution and Population Distribution, Central Limit Theorem, Confidence Interval
+ * Hypothesis Testing
+ * [t-test calculator][2]
+ * ANOVA (Analysis of Variance), continuous and categorical variables, ANOVA also requires data from approximately normally distributed populations with equal variances between factor levels.
+ * [F-ratio calculator][3]
+ * Chi-square test, categorical variables
+ * [p value (chi-square) calculator][4]
+ * Regression and ANOVA, it is important is knowing the degree to which your model is successful in explaining the trend (variance) in dependent variable. ANOVA helps finding the effectiveness of regression models.
+ 
+
+[1]:https://www.analyticsvidhya.com/blog/2017/01/comprehensive-practical-guide-inferential-statistics-data-science/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+[2]:http://www.danielsoper.com/statcalc/calculator.aspx?id=98
+[3]:http://stattrek.com/online-calculator/f-distribution.aspx
+[4]:http://stattrek.com/online-calculator/chi-square.aspx
 
 
 ************************************************************************
