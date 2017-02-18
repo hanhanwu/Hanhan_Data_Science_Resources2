@@ -86,6 +86,9 @@ Statistics in Data Science
  * [p value (chi-square) calculator][4]
  * Regression and ANOVA, it is important is knowing the degree to which your model is successful in explaining the trend (variance) in dependent variable. ANOVA helps finding the effectiveness of regression models.
  
+* Probability
+ * Probability cheat sheet: http://www.cs.elte.hu/~mesti/valszam/kepletek
+
 
 [1]:https://www.analyticsvidhya.com/blog/2017/01/comprehensive-practical-guide-inferential-statistics-data-science/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [2]:http://www.danielsoper.com/statcalc/calculator.aspx?id=98
@@ -156,6 +159,7 @@ Big Data
  * Structured Streaming, P57-59
 * Lessons from large scale machine learning deployment on Spark, 2.0: https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/Lessons_from_Large-Scale_Machine_Learning_Deployments_on_Spark.pdf
 * Hadoop 10 years: https://upxacademy.com/hadoop-10-years/
+* Hive function cheat sheet: https://www.qubole.com/resources/cheatsheet/hive-function-cheat-sheet/
 
 
 ************************************************************************
