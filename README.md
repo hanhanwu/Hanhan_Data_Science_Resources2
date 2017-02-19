@@ -86,14 +86,22 @@ Statistics in Data Science
  * [p value (chi-square) calculator][4]
  * Regression and ANOVA, it is important is knowing the degree to which your model is successful in explaining the trend (variance) in dependent variable. ANOVA helps finding the effectiveness of regression models.
  
-* Probability
- * Probability cheat sheet: http://www.cs.elte.hu/~mesti/valszam/kepletek
+
+* Probability cheat sheet: http://www.cs.elte.hu/~mesti/valszam/kepletek
+* [Probability basics with examples][5]
+ * binonial distribution: a binomial distribution is the discrete probability distribution of the number of success in a sequence of n independent Bernoulli trials (having only yes/no or true/false outcomes).
+ * The normal distribution is perfectly symmetrical about the mean. The probabilities move similarly in both directions around the mean. The total area under the curve is 1, since summing up all the possible probabilities would give 1.
+ * Area Under the Normal Distribution
+ * Z score: The distance in terms of number of standard deviations, the observed value is away from the mean, is the standard score or the Z score. <b>Observed value = µ+zσ</b> [µ is the mean and σ is the standard deviation]
+ * [Z table][6]
 
 
 [1]:https://www.analyticsvidhya.com/blog/2017/01/comprehensive-practical-guide-inferential-statistics-data-science/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [2]:http://www.danielsoper.com/statcalc/calculator.aspx?id=98
 [3]:http://stattrek.com/online-calculator/f-distribution.aspx
 [4]:http://stattrek.com/online-calculator/chi-square.aspx
+[5]:https://www.analyticsvidhya.com/blog/2017/02/basic-probability-data-science-with-examples/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+[6]:https://s3.amazonaws.com/udacity-hosted-downloads/ZTable.jpg
 
 
 ************************************************************************
