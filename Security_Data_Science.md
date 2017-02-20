@@ -14,6 +14,15 @@ News and Notes
 
 ******************************************************
 
+Data Science Applications 
+
+Spam Detection
+* SpamBayes is a tool to detect spams, it uses machine learning methods: http://spambayes.sourceforge.net/
+* In this paper, it indicates the attacks that SpamBayes may not be able to find, Exploiting machine learning to subvert your spam filter: https://people.eecs.berkeley.edu/~tygar/papers/SML/Spam_filter.pdf
+
+
+******************************************************
+
 Research Papers
 
 <b>Offense and Defense</b>
