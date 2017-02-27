@@ -145,11 +145,25 @@ Machine Learning Algorithms
 Data Visualization
 
 * Psychology of Intelligence Analysis: https://www.cia.gov/library/center-for-the-study-of-intelligence/csi-publications/books-and-monographs/psychology-of-intelligence-analysis/PsychofIntelNew.pdf
+* How to lie with Statistics: http://www.horace.org/blog/wp-content/uploads/2012/05/How-to-Lie-With-Statistics-1954-Huff.pdf
+
 * NLP Visualization
  * On Jan 20, 2017, SFU Linguistics Lab invited an UBC researcher to show NLP data visualization, which is very interesting. By doing topic modeling, graph base clustering, they are able to categorize large amount of comments and opinions into groups, by using interactive visualization, the tools they developed will help readers read online comments in a more efficient way.
  * ConVis: https://www.cs.ubc.ca/cs-research/lci/research-groups/natural-language-processing/ConVis.html
  * MultiConVis: https://www.cs.ubc.ca/cs-research/lci/research-groups/natural-language-processing/MultiConVis.html
+
 * Python Bokeh, an open source data visualization tool (its presentation target is web browser, but I think Tableau and d3 all could do this): https://www.analyticsvidhya.com/blog/2015/08/interactive-data-visualization-library-python-bokeh/?utm_content=buffer58668&utm_medium=social&utm_source=plus.google.com&utm_campaign=buffer
+
+* Tableau Resources
+ * Reference Guide: http://www.dataplusscience.com/TableauReferenceGuide/
+ * Advanced Highlight: http://onlinehelp.tableau.com/current/pro/desktop/en-us/actions_highlight_advanced.html
+ * Having 1+ pills in Color: http://drawingwithnumbers.artisart.org/measure-names-on-the-color-shel/
+ * Mark Labels: http://onlinehelp.tableau.com/current/pro/desktop/en-us/annotations_marklabels_showhideindividual.html
+ * Show or hide labels: http://paintbynumbersblog.blogspot.ca/2013/08/a-quick-tableau-tip-showing-and-hiding.html
+ * Filter and parameter: https://www.quora.com/What-is-the-difference-between-filters-and-parameters-in-a-tableau-What-is-an-explanation-of-this-scenario
+ * Tableau detailed user guide on parameter: http://onlinehelp.tableau.com/current/pro/desktop/en-us/help.html#parameters_swap.html
+ * Logincal function: http://onlinehelp.tableau.com/current/pro/desktop/en-us/functions_functions_logical.html
+ * Tableau functions: http://onlinehelp.tableau.com/current/pro/desktop/en-us/functions.html
  
  
 ************************************************************************
