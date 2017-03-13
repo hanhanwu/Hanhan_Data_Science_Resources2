@@ -172,6 +172,10 @@ Data Visualization
  * Logincal function: http://onlinehelp.tableau.com/current/pro/desktop/en-us/functions_functions_logical.html
  * Tableau functions: http://onlinehelp.tableau.com/current/pro/desktop/en-us/functions.html
  
+* Jigsaw - Data Visualization for text data
+ * Tutorial Videos (each video is very short, good): http://www.cc.gatech.edu/gvu/ii/jigsaw/tutorial/
+ * Jigsaw manual: http://www.cc.gatech.edu/gvu/ii/jigsaw/tutorial/manual/#initiating-session
+ 
  
 ************************************************************************
 
@@ -215,6 +219,9 @@ TEXT ANALYSIS
 
 * Text data preprocessing basic steps: https://www.analyticsvidhya.com/blog/2015/06/quick-guide-text-data-cleaning-python/
 * My NLP practice: https://github.com/hanhanwu/Hanhan_NLP
+* Jigsaw - Data Visualization for text data
+ * Tutorial Videos (each video is very short, good): http://www.cc.gatech.edu/gvu/ii/jigsaw/tutorial/
+ * Jigsaw manual: http://www.cc.gatech.edu/gvu/ii/jigsaw/tutorial/manual/#initiating-session
 
 
 ************************************************************************
