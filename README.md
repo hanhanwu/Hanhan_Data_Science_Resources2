@@ -176,6 +176,15 @@ Data Visualization
  * Tutorial Videos (each video is very short, good): http://www.cc.gatech.edu/gvu/ii/jigsaw/tutorial/
  * Jigsaw manual: http://www.cc.gatech.edu/gvu/ii/jigsaw/tutorial/manual/#initiating-session
  
+* Gephi
+ * It create interactive graph-network visualization
+ * Tutorials: https://gephi.org/users/
+ * This is a sample data input, showing what kind of data structure you need for visualizing network in Grphi, normally, 2 files, one for Nodes one for Edges: https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/gephi%20data%20set.zip
+ * With the dataset I give you here, you will be able to find girls dinning group at school and make assumptions about how rumor spreaded (network is so scary, right?)
+ * Here is what I listed about the advantages of using Gephi for network visualization, compared with writing python visualization: https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/gephi.png
+ * But something is wrong with the Gephi on my machine.. I don't have partition or ranking settings and cannot choose dirested graph and so on...
+ * However, seeing the changes of those vosualization with different graph algorithm is interesting, for example, Force Atlas 2: https://github.com/gephi/gephi/wiki/Force-Atlas-2
+ 
  
 ************************************************************************
 
