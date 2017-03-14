@@ -97,7 +97,10 @@ Statistics in Data Science
  * Area Under the Normal Distribution
  * Z score: The distance in terms of number of standard deviations, the observed value is away from the mean, is the standard score or the Z score. <b>Observed value = µ+zσ</b> [µ is the mean and σ is the standard deviation]
  * [Z table !!!][6]
-
+* [Very Basic Conditional Probability and Bayes Theorem][7]
+ * Independent, Exclusive, Exhaustive events
+ * Each time, when it's something about statistics pr probability, I will still read all the content to guarantee that I won't miss anything useful. This one is basic but I like the way it starts from simple concepts, using real life examples and finally leads to how does Bayes Theorem work. Although, there is an error in formula `P (no cancer and +) = P (no cancer) * P(+) = 0.99852*0.99`, it should be `0.99852*0.01`
+ * There are 2 major formulas here are important to Bayes Theorem: `P(A/B) = P(A AND B)/P(B)`, `P(b1|A) + P(b2|A) + .... + P(bn|A) = P(A)`
 
 [1]:https://www.analyticsvidhya.com/blog/2017/01/comprehensive-practical-guide-inferential-statistics-data-science/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [2]:http://www.danielsoper.com/statcalc/calculator.aspx?id=98
@@ -105,6 +108,7 @@ Statistics in Data Science
 [4]:http://stattrek.com/online-calculator/chi-square.aspx
 [5]:https://www.analyticsvidhya.com/blog/2017/02/basic-probability-data-science-with-examples/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [6]:https://s3.amazonaws.com/udacity-hosted-downloads/ZTable.jpg
+[7]:https://www.analyticsvidhya.com/blog/2017/03/conditional-probability-bayes-theorem/?utm_content=buffer7afce&utm_medium=social&utm_source=plus.google.com&utm_campaign=buffer
 
 
 ************************************************************************
