@@ -154,9 +154,11 @@ Machine Learning Algorithms
 
 Data Visualization
 
-* Psychology of Intelligence Analysis: https://www.cia.gov/library/center-for-the-study-of-intelligence/csi-publications/books-and-monographs/psychology-of-intelligence-analysis/PsychofIntelNew.pdf
-* How to lie with Statistics: http://www.horace.org/blog/wp-content/uploads/2012/05/How-to-Lie-With-Statistics-1954-Huff.pdf
-* The Signal and the Noise (to respect the author): https://www.amazon.com/Signal-Noise-Many-Predictions-Fail-but/dp/0143125087/ref=sr_1_1?ie=UTF8&qid=1488403387&sr=8-1&keywords=signal+and+the+noise
+* Readings
+  * Psychology of Intelligence Analysis: https://www.cia.gov/library/center-for-the-study-of-intelligence/csi-publications/books-and-monographs/psychology-of-intelligence-analysis/PsychofIntelNew.pdf
+  * How to lie with Statistics: http://www.horace.org/blog/wp-content/uploads/2012/05/How-to-Lie-With-Statistics-1954-Huff.pdf
+  * The Signal and the Noise (to respect the author): https://www.amazon.com/Signal-Noise-Many-Predictions-Fail-but/dp/0143125087/ref=sr_1_1?ie=UTF8&qid=1488403387&sr=8-1&keywords=signal+and+the+noise
+  * Non-designer's design book: https://diegopiovesan.files.wordpress.com/2010/07/livro_-_the_non-designers_desi.pdf
 
 * NLP Visualization
  * On Jan 20, 2017, SFU Linguistics Lab invited an UBC researcher to show NLP data visualization, which is very interesting. By doing topic modeling, graph base clustering, they are able to categorize large amount of comments and opinions into groups, by using interactive visualization, the tools they developed will help readers read online comments in a more efficient way.
