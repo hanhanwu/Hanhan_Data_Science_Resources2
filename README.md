@@ -102,6 +102,10 @@ Statistics in Data Science
   * Each time, when it's something about statistics pr probability, I will still read all the content to guarantee that I won't miss anything useful. This one is basic but I like the way it starts from simple concepts, using real life examples and finally leads to how does Bayes Theorem work. Although, there is an error in formula `P (no cancer and +) = P (no cancer) * P(+) = 0.99852*0.99`, it should be `0.99852*0.01`
   * There are 2 major formulas here are important to Bayes Theorem: `P(A/B) = P(A AND B)/P(B)`, `P(b1|A) + P(b2|A) + .... + P(bn|A) = P(A)`
 
+
+* [Dispersion][8] - In statistics, dispersion (also called variability, scatter, or spread) is the extent to which a distribution is stretched or squeezed.[1] Common examples of measures of statistical dispersion are the variance, standard deviation, and interquartile range.
+
+
 [1]:https://www.analyticsvidhya.com/blog/2017/01/comprehensive-practical-guide-inferential-statistics-data-science/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [2]:http://www.danielsoper.com/statcalc/calculator.aspx?id=98
 [3]:http://stattrek.com/online-calculator/f-distribution.aspx
@@ -109,6 +113,7 @@ Statistics in Data Science
 [5]:https://www.analyticsvidhya.com/blog/2017/02/basic-probability-data-science-with-examples/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [6]:https://s3.amazonaws.com/udacity-hosted-downloads/ZTable.jpg
 [7]:https://www.analyticsvidhya.com/blog/2017/03/conditional-probability-bayes-theorem/?utm_content=buffer7afce&utm_medium=social&utm_source=plus.google.com&utm_campaign=buffer
+[8]:https://en.wikipedia.org/wiki/Statistical_dispersion
 
 
 ************************************************************************
@@ -145,9 +150,11 @@ Machine Learning Algorithms
   * The problem with linear dimensional reduction, is that they concentrate on placing dissimilar data points far apart in a lower dimension representation. However, it is also important to put similar data close together, linear dimensional reduction does not do this
   * In t-SNE, there are local approaches and global approaches. Local approaches seek to map nearby points on the manifold to nearby points in the low-dimensional representation. Global approaches on the other hand attempt to preserve geometry at all scales, i.e mapping nearby points to nearby points and far away points to far away points  
   * It is important to know that most of the nonlinear techniques other than t-SNE are not capable of retaining both the local and global structure of the data at the same time.
-  * The algorithm computes pairwise conditional probabilities and tries to minimize the sum of the difference of the probabilities in higher and lower dimensions. This involves a lot of calculations and computations. So the algorithm is quite heavy on the system resources. t-SNE has a quadratic O(n2) time and space complexity in the number of data points. This makes it particularly slow and resource draining while applying it to data sets comprising of more than 10,000 observations. 
+  * The algorithm computes pairwise conditional probabilities and tries to minimize the sum of the difference of the probabilities in higher and lower dimensions. This involves a lot of calculations and computations. So the algorithm is quite heavy on the system resources. t-SNE has a quadratic O(n2) time and space complexity in the number of data points. This makes it particularly slow and resource draining while applying it to data sets comprising of more than 10,000 observations. Another drawback is, it doesn’t always provide a similar output on successive runs.
   * How it works: it clusters similar data reocrds together, but it's not clustering because once the data has been mapped to lower dimensional, the original features are no longer recognizable. 
   * NOTE: t-SNE could also help to make semanticly similar words close to each other, which could help create text summary, text comparison
+  * R practice code: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/t-SNE_practice.R
+  * Python practice code: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/t-SNE_Practice.ipynb
 
  
 * Optimization - Genetic Algorithm
