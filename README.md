@@ -155,6 +155,16 @@ Machine Learning Algorithms
   * NOTE: t-SNE could also help to make semanticly similar words close to each other, which could help create text summary, text comparison
   * R practice code: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/t-SNE_practice.R
   * Python practice code: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/t-SNE_Practice.ipynb
+* [For more Dimensional Reduction, check "DATA PREPROCESSING" section][9] 
+* [some dimentional methods][10]
+* [A little more about Factor Analysis][11]
+  * Fator Analysis is a variable reduction technique. It is used to determine <b>factor structure or model</b>. It also explains the maximum amount of variance in the model
+  * EFA (Exploratory Factor Analysis) – Identifies and summarizes the <b>underlying correlation structure</b> in a data set
+  * CFA (Confirmatory Factor Analysis) – Attempts to <b>confirm hypothesis</b> using the correlation structure and <b>rate ‘goodness of fit’</b>.
+
+[9]:https://github.com/hanhanwu/Hanhan_Data_Science_Resources
+[10]:https://www.analyticsvidhya.com/blog/2015/07/dimension-reduction-methods/
+[11]:https://www.analyticsvidhya.com/blog/2015/11/8-ways-deal-continuous-variables-predictive-modeling/?utm_content=bufferfb56f&utm_medium=social&utm_source=linkedin.com&utm_campaign=buffer
 
  
 * Optimization - Genetic Algorithm
