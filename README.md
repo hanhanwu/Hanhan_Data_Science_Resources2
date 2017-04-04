@@ -229,6 +229,10 @@ Big Data
 * Lessons from large scale machine learning deployment on Spark, 2.0: https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/Lessons_from_Large-Scale_Machine_Learning_Deployments_on_Spark.pdf
 * Hadoop 10 years: https://upxacademy.com/hadoop-10-years/
 * Hive function cheat sheet: https://www.qubole.com/resources/cheatsheet/hive-function-cheat-sheet/
+* Distributing System
+  * Spack New Physical Plan: https://databricks.com/blog/2017/04/01/next-generation-physical-planning-in-apache-spark.html?utm_campaign=Databricks&utm_content=51844317&utm_medium=social&utm_source=linkedin
+  * CAP Theorem: https://en.wikipedia.org/wiki/CAP_theorem
+  * CAPP: https://drive.google.com/file/d/0B3Um1hpy8q7gVjhVT3dGUWFxRm8/view
 
 
 ************************************************************************
