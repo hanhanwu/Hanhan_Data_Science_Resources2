@@ -12,6 +12,7 @@ SUMMARIZED RESOURCES
 * Summarized Tableau Learning Resources: https://www.analyticsvidhya.com/learning-paths-data-science-business-analytics-business-intelligence-big-data/tableau-learning-path/
 * Summarized Big Data Learning Resources: https://www.analyticsvidhya.com/resources-big-data/
 * Data Science Media Resources: https://www.analyticsvidhya.com/data-science-blogs-communities-books-podcasts-newsletters-follow/
+* This is a new UC Berkeley data science cousre, it servers for undergraduate and therefore everything is introductory, however it covers relative statistics, math, data visualization, I think it will be helpful, since sometimes if we only study statistics may still have difficulty to apply the knowledge in data science. This program has slides and video for each class online, available to the public immeddiately: http://www.ds100.org/sp17/
 
 
 ************************************************************************
