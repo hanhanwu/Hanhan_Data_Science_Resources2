@@ -15,6 +15,16 @@ News and Notes
 
 ******************************************************
 
+How Others Do Security
+
+MICROSOFT
+* Azure Network Security: https://azure.microsoft.com/en-us/blog/azure-network-security/
+* MSFT Cyber Security Blog: https://blogs.microsoft.com/microsoftsecure/category/cybersecurity/
+* MSFT Security: https://www.microsoft.com/en-us/security/default.aspx
+
+
+******************************************************
+
 Data Science Applications 
 
 Spam Detection
