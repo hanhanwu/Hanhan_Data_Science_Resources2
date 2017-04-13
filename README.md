@@ -24,6 +24,21 @@ TREE BASED MODELS
 
 ************************************************************************
 
+DATA PREPROCESSING
+
+* For more data preprocessing, check `DATA PREPROCESSING` section: https://github.com/hanhanwu/Hanhan_Data_Science_Resources
+
+* Entity Resolution
+  * Basics of Entity Resolution with Python and Dedup: http://blog.districtdatalabs.com/basics-of-entity-resolution?imm_mid=0f0aec&cmp=em-data-na-na-newsltr_20170412
+  * Three primary tasks
+    * Deduplication: eliminating duplicate (exact) copies of repeated data.
+    * Record linkage: identifying records that reference the same entity across different sources.
+    * Canonicalization: converting data with more than one possible representation into a standard form.
+  * In the url above, they have done some experiments with Python and Dedup
+
+
+************************************************************************
+
 MODEL EVALUATION
 
 * 7 important model evaluation metrics and cross validation: https://www.analyticsvidhya.com/blog/2016/02/7-important-model-evaluation-error-metrics/
@@ -158,7 +173,7 @@ Machine Learning Algorithms
   * R practice code: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/t-SNE_practice.R
   * Python practice code: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/t-SNE_Practice.ipynb
 * [For more Dimensional Reduction, check "DATA PREPROCESSING" section][9] 
-* [some dimentional methods][10]
+* [some dimentional reduction methods][10]
 * [A little more about Factor Analysis][11]
   * Fator Analysis is a variable reduction technique. It is used to determine <b>factor structure or model</b>. It also explains the maximum amount of variance in the model
   * EFA (Exploratory Factor Analysis) – Identifies and summarizes the <b>underlying correlation structure</b> in a data set
