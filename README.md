@@ -17,9 +17,13 @@ SUMMARIZED RESOURCES
 
 ************************************************************************
 
-TREE BASED MODELS
+TREE BASED MODELS & ENSEMBLING
 
+* For more ensembling, check `ENSEMBLE` sections and Experiences.md here: https://github.com/hanhanwu/Hanhan_Data_Science_Resources
 * Tree based models in detail with R & Python example: https://www.analyticsvidhya.com/blog/2016/04/complete-tutorial-tree-based-modeling-scratch-in-python/?utm_content=bufferade26&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer
+* [R Implementation] Choose models for emsemling: https://www.analyticsvidhya.com/blog/2015/10/trick-right-model-ensemble/?utm_content=buffer6b42d&utm_medium=social&utm_source=plus.google.com&utm_campaign=buffer
+  * The models are les correlated to each other
+  * The code in this tutorial is trying to test the results made by multiple models and choose the model combination that gets the best result (I'm thinking how do they deal with random seed issues)
 
 
 ************************************************************************
