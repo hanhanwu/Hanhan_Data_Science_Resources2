@@ -12,6 +12,13 @@ News and Notes
 * NuData Security Selected as Excellence Award: https://www.linkedin.com/pulse/nudata-security-selected-excellence-award-threat-sc-lisa-baergen-apr
 * The Papers from NuData Security are really good: https://nudatasecurity.com/papers/
 
+* Collection of Biometrics
+  * Fingerprints breach: http://findbiometrics.com/opm-hack-5-6-million-fingerprints-29233/
+  * GOOLIGAN Attack, call for non-traditional security detection methods: http://www.biocatch.com/blog/android-malware-compromises-google-accounts
+
+* Collections of Attacks
+  * 7 most commen RATs (remote access Trojans): http://www.darkreading.com/perimeter/the-7-most-common-rats-in-use-today-/a/d-id/1321965
+
 
 ******************************************************
 
@@ -21,6 +28,7 @@ MICROSOFT
 * Azure Network Security: https://azure.microsoft.com/en-us/blog/azure-network-security/
 * MSFT Cyber Security Blog: https://blogs.microsoft.com/microsoftsecure/category/cybersecurity/
 * MSFT Security: https://www.microsoft.com/en-us/security/default.aspx
+* BioCatch is working with Azure for their analysis now
 
 
 ******************************************************
