@@ -15,6 +15,7 @@ News and Notes
 * Collection of Biometrics
   * Fingerprints breach: http://findbiometrics.com/opm-hack-5-6-million-fingerprints-29233/
   * GOOLIGAN Attack, call for non-traditional security detection methods: http://www.biocatch.com/blog/android-malware-compromises-google-accounts
+  * Some BioMetrics mentioned by BioCatch: https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/BioCatch_WP_PREVENTING_FRAUD_IN_MOBILE_ERA.pdf
 
 * Collections of Attacks
   * 7 most commen RATs (remote access Trojans): http://www.darkreading.com/perimeter/the-7-most-common-rats-in-use-today-/a/d-id/1321965
