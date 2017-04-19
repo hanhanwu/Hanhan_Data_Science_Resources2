@@ -358,3 +358,11 @@ OTHER
 * Some ideas about social media analysis: https://www.analyticsvidhya.com/blog/2017/02/social-media-analytics-business/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 * Linear Programming: https://www.analyticsvidhya.com/blog/2017/02/lintroductory-guide-on-linear-programming-explained-in-simple-english/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 * How to create an R package, and publish on CRAN, GitHub: https://www.analyticsvidhya.com/blog/2017/03/create-packages-r-cran-github/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+* Behavioral Science: https://www.analyticsvidhya.com/blog/2017/04/behavioral-analytics-when-psychology-collides-analytics/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+  * Most of the fundamentals in behavioral science apply on any type of population.
+  * compromise effect - Human has a tendency to find the middle option.
+  * decoy effect - Human mind is trained to make choices between similar objects
+  * anchoring effect - The price of any item is based on perception rather than the actual cost of the raw materials used.  We start with a price and start bidding higher. The starting price is an anchor and the final price at which the item is sold is highly correlated to this anchor.
+  * steep temporal discounting effect - We have a tendency to value money in near future with a strong discounting factor but such discounting factor becomes small when we talk about longer time frames.
+  * “unknown unknowns” effect - Human has a tendency to underestimate probabilities when they face ambiguity.
+  * extreme probability bias effect - We tend to underestimate probability between 0 and 0.5 if event is favorable and exactly opposite happens when event is unfavorable. With underestimated perceived probability, we underestimate the value of Risky transactions.
