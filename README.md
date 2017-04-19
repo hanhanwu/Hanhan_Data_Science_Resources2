@@ -121,7 +121,11 @@ Statistics in Data Science
 * [Very Basic Conditional Probability and Bayes Theorem][7]
   * Independent, Exclusive, Exhaustive events
   * Each time, when it's something about statistics pr probability, I will still read all the content to guarantee that I won't miss anything useful. This one is basic but I like the way it starts from simple concepts, using real life examples and finally leads to how does Bayes Theorem work. Although, there is an error in formula `P (no cancer and +) = P (no cancer) * P(+) = 0.99852*0.99`, it should be `0.99852*0.01`
-  * There are 2 major formulas here are important to Bayes Theorem: `P(A/B) = P(A AND B)/P(B)`, `P(b1|A) + P(b2|A) + .... + P(bn|A) = P(A)`
+  * There are some major formulas here are important to Bayes Theorem: 
+    * `P(A|B) = P(A AND B)/P(B)`
+    * `P(A|B) = P(B|A)*P(A)/P(B)`
+    * `P(A AND B) = P(B|A)*P(A) = P(A|B)*P(B)`
+    * `P(b1|A) + P(b2|A) + .... + P(bn|A) = P(A)`
 
 
 * [Dispersion][8] - In statistics, dispersion (also called variability, scatter, or spread) is the extent to which a distribution is stretched or squeezed.[1] Common examples of measures of statistical dispersion are the variance, standard deviation, and interquartile range.
@@ -319,6 +323,10 @@ Data Science Skillset Tests
 * Regression skillset test: https://www.analyticsvidhya.com/blog/2016/12/45-questions-to-test-a-data-scientist-on-regression-skill-test-regression-solution/?utm_content=buffer5229b&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer
 * Tree based skillset test: https://www.analyticsvidhya.com/blog/2016/12/detailed-solutions-for-skilltest-tree-based-algorithms/?utm_content=bufferde46d&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer
 * Clustering Skillset test: https://www.analyticsvidhya.com/blog/2017/02/test-data-scientist-clustering/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+* Probability Skillset test: https://www.analyticsvidhya.com/blog/2017/04/40-questions-on-probability-for-all-aspiring-data-scientists/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+  * Some answers may have problems. For example, I think if question 33 has the right answer then question 28 has the wrong answer
+  * Majorly uses the Byesian Theorem taught in conditional probability theorem: https://www.analyticsvidhya.com/blog/2017/03/conditional-probability-bayes-theorem/
+  * An interesting take-away is about Monty Hall’s problem (I don't fullt understand, especially after seeing the debat after the post), the problem looks interesting: https://www.analyticsvidhya.com/blog/2014/04/probability-action-monty-halls-money-show/
 * Interview questions: https://www.analyticsvidhya.com/blog/2016/09/40-interview-questions-asked-at-startups-in-machine-learning-data-science/
 
 
