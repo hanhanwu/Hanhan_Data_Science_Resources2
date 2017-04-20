@@ -237,6 +237,9 @@ Data Visualization
   * But something is wrong with the Gephi on my machine.. I don't have partition or ranking settings and cannot choose dirested graph and so on...
   * However, seeing the changes of those vosualization with different graph algorithm is interesting, for example, Force Atlas 2: https://github.com/gephi/gephi/wiki/Force-Atlas-2
  
+* My d3 Practice
+ * code: https://github.com/hanhanwu/Hanhan_d3
+ 
  
 ************************************************************************
 
