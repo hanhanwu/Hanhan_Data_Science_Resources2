@@ -268,6 +268,7 @@ Big Data
 Cloud
 
 * For Cloud Machine Learning in Spark, AWS and Azure Machine Learning, check my previous summary here: https://github.com/hanhanwu/Hanhan_Data_Science_Resources
+* My AWS practice: https://github.com/hanhanwu/Hanhan_AWS
 
 * Compute Canada & West Grid
   * How to apply for an account: https://www.computecanada.ca/research-portal/account-management/apply-for-an-account/
