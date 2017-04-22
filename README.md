@@ -261,6 +261,9 @@ Big Data
   * Spack New Physical Plan: https://databricks.com/blog/2017/04/01/next-generation-physical-planning-in-apache-spark.html?utm_campaign=Databricks&utm_content=51844317&utm_medium=social&utm_source=linkedin
   * CAP Theorem: https://en.wikipedia.org/wiki/CAP_theorem
   * CAPP: https://drive.google.com/file/d/0B3Um1hpy8q7gVjhVT3dGUWFxRm8/view
+* S survey summary on NoSQL: https://www.linkedin.com/pulse/survey-nosql-key-value-pair-databases-uzma-ali-pmp?trk=v-feed&lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BspSXDtIY3PN6lbk4C%2FTwTg%3D%3D
+  * I like the summary table in this poster
+  * They did survey on Cassandra, Redis, DynamoDB, Riak, HBASE, Voldemort (among them, I have only used HBASE so far...)
 
 
 ************************************************************************
