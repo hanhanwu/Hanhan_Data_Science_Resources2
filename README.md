@@ -264,6 +264,12 @@ Big Data
 * S survey summary on NoSQL: https://www.linkedin.com/pulse/survey-nosql-key-value-pair-databases-uzma-ali-pmp?trk=v-feed&lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BspSXDtIY3PN6lbk4C%2FTwTg%3D%3D
   * I like the summary table in this poster
   * They did survey on Cassandra, Redis, DynamoDB, Riak, HBASE, Voldemort (among them, I have only used HBASE so far...)
+* A book - I Heart Logs
+  * The book: https://github.com/hanhanwu/readings/blob/master/I_Heart_Logs.pdf
+  * It talks about how powerful logs can be in distributing systems, streaming processing, etc, each section has a real-life example. I like the streaming processing part in this book most.
+  * It is a great book that has broaden and deepen the concepts we have heard many time times but may has misunderstanding, such as "logs", "streaming processing" and even "ETL".
+  * Google Caffeine: https://googleblog.blogspot.ca/2010/06/our-new-search-index-caffeine.html
+    * It rebuilt its web crawling, processing, and indexing pipeline—what has to be one of the most complex, largest scale data processing systems on the planet —on top of a stream processing system.
 
 
 ************************************************************************
