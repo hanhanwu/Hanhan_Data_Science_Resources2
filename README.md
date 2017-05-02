@@ -379,3 +379,5 @@ OTHER
   * steep temporal discounting effect - We have a tendency to value money in near future with a strong discounting factor but such discounting factor becomes small when we talk about longer time frames.
   * “unknown unknowns” effect - Human has a tendency to underestimate probabilities when they face ambiguity.
   * extreme probability bias effect - We tend to underestimate probability between 0 and 0.5 if event is favorable and exactly opposite happens when event is unfavorable. With underestimated perceived probability, we underestimate the value of Risky transactions.
+* Winnning Strategy in Casino (blackjack): https://www.analyticsvidhya.com/blog/2017/04/flawless-winning-strategy-casino-blackjack-data-science/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+  * Looks calculation intensive, I dind't read them throughly, but only checked the insights :)
