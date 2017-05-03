@@ -47,7 +47,10 @@ Simple Ideas Spark
 
 * AI in Banking:https://www.analyticsvidhya.com/blog/2017/04/5-ai-applications-in-banking-to-look-out-for-in-next-5-years/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
   * Most of these are not new to people, but it makes me think whether bots can be used to encourage more biometrics input and to collect more biometrics?
-
+  
+* Unsupervised learnining - Association Rules
+  * Related behaviours - When detecting biometrics, would association rules related algorithms help? Because some behaviors are linked together. Meanwhile, the order of these behaviours are also important.
+  * Predict behaviours - would a behaviour can be predicted based on the previous behaviour series, or order series?
 
 ******************************************************
 
