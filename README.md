@@ -237,10 +237,14 @@ Data Visualization
   * But something is wrong with the Gephi on my machine.. I don't have partition or ranking settings and cannot choose dirested graph and so on...
   * However, seeing the changes of those vosualization with different graph algorithm is interesting, for example, Force Atlas 2: https://github.com/gephi/gephi/wiki/Force-Atlas-2
  
+* MicrosoStrategy - Visual Analytics Course List: https://www.microstrategy.com/us/services/education/course-list#filter-role:path=default|filter-platform:path=default|filter-version:path=._10_5|filter-certification:path=default|sort-course-number:path~type~order=.card-corner~text~asc
+
+* Previous Visualization collections, check "VISUALIZATION" section: https://github.com/hanhanwu/Hanhan_Data_Science_Resources/blob/master/README.md
+
 * My d3 Practice
  * code: https://github.com/hanhanwu/Hanhan_d3
- 
- 
+
+
 ************************************************************************
 
 Big Data
