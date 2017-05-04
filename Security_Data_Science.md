@@ -51,6 +51,9 @@ Simple Ideas Spark
 * Unsupervised learnining - Association Rules
   * Related behaviours - When detecting biometrics, would association rules related algorithms help? Because some behaviors are linked together. Meanwhile, the order of these behaviours are also important.
   * Predict behaviours - would a behaviour can be predicted based on the previous behaviour series, or order series?
+  
+* Unsupervised learning - PCA and Sparse PCA in shape data
+  * Some biometrics can be shape data, such as sighed images. PCA is a popular tool applied to <b>shape data</b>, sometimes Sparsed PCA is more informative and saves reousrces than Standard PCA.
 
 ******************************************************
 
