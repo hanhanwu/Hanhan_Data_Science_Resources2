@@ -61,6 +61,7 @@ DATA PREPROCESSING
   * Dimension Reduction Must Know
     * Reference: https://www.analyticsvidhya.com/blog/2017/03/questions-dimensionality-reduction-data-scientist/?utm_content=bufferc792d&utm_medium=social&utm_source=linkedin.com&utm_campaign=buffer
     * Besides different algorithms to help reduce number of features, we can also use existing features to form less features as a dimensional reduction method. For example, we have features A, B, C, D, then we form E = 2*A+B, F = 3*C-D, then only choose E, F as the features for analysis
+    * Cost function of SNE is asymmetric in nature. Which makes it difficult to converge using gradient decent. A symmetric cost function is one of the major differences between SNE and t-SNE.
 
 [9]:https://github.com/hanhanwu/Hanhan_Data_Science_Resources
 [10]:https://www.analyticsvidhya.com/blog/2015/07/dimension-reduction-methods/
