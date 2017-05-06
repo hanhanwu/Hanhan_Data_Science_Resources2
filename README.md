@@ -194,6 +194,44 @@ Machine Learning Algorithms
  
 * Optimization - Genetic Algorithm
   * More about Crossover and Mutation: https://www.researchgate.net/post/What_is_the_role_of_mutation_and_crossover_probability_in_Genetic_algorithms
+  
+* Survey of Optimization
+  * Page 10, strength and weakness of each optimization method: https://github.com/hanhanwu/readings/blob/master/SurveyOfOptimization.pdf
+  
+* Optimization - Gradient Descent
+  * Reference: https://www.analyticsvidhya.com/blog/2017/03/introduction-to-gradient-descent-algorithm-along-its-variants/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+  * Challenges for gradient descent
+    * data challenge: cannot be used on non-convex optimization problem; may end up at local optimum instead of global optimum; may even not an optimal point when gradient is 0 (saddle point)
+    * gradient challenge: when gradient is too small or too large, vanishing gradient or exploding gradient could happen
+    * implementation chanllenge: memory, hardware/software limitations
+  * Type 1 - Vanilla Gradient Descent
+    * "Vanilla" means pure here
+    * `update = learning_rate * gradient_of_parameters`
+    * `parameters = parameters - update`
+  * Type 2 - Gradient Descent with Momentum
+    * `update = learning_rate * gradient`
+    * `velocity = previous_update * momentum`
+    * `parameter = parameter + velocity – update`
+    * With `velocity`, it considers the previous update
+  * Type 3 - ADAGRAD
+    * ADAGRAD uses adaptive technique for learning rate updation. 
+    * `grad_component = previous_grad_component + (gradient * gradient)`
+    * `rate_change = square_root(grad_component) + epsilon`
+    * `adapted_learning_rate = learning_rate * rate_change`
+    * `update = adapted_learning_rate * gradient`
+    * `parameter = parameter – update`
+    * `epsilon` is a constant which is used to keep rate of change of learning rate
+  * Type 4 - ADAM
+    * ADAM is one more adaptive technique which builds on adagrad and further reduces it downside. In other words, you can consider this as momentum + ADAGRAD.
+    * `adapted_gradient = previous_gradient + ((gradient – previous_gradient) * (1 – beta1))`
+    * `gradient_component = (gradient_change – previous_learning_rate)`
+    * `adapted_learning_rate =  previous_learning_rate + (gradient_component * (1 – beta2))`
+    * `update = adapted_learning_rate * adapted_gradient`
+    * `parameter = parameter – update`
+  * Tips for choose models
+    * For rapid prototyping, use adaptive techniques like Adam/Adagrad. These help in getting quicker results with much less efforts. As here, you don’t require much hyper-parameter tuning.
+    * To get the best results, you should use vanilla gradient descent or momentum. gradient descent is slow to get the  desired results, but these results are mostly better than adaptive techniques.
+    * If your data is small and can be fit in a single iteration, you can use 2nd order techniques like l-BFGS. This is because 2nd order techniques are extremely fast and accurate, but are only feasible when data is small enough
  
  
 ************************************************************************
