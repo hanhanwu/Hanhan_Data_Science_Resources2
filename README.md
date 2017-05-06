@@ -39,6 +39,32 @@ DATA PREPROCESSING
     * Record linkage: identifying records that reference the same entity across different sources.
     * Canonicalization: converting data with more than one possible representation into a standard form.
   * In the url above, they have done some experiments with Python and Dedup
+  
+* Dimension Reduction
+  * t-SNE, non-linear dimensional reduction
+    * Reference (a pretty good one!): https://www.analyticsvidhya.com/blog/2017/01/t-sne-implementation-r-python/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+    * (t-SNE) t-Distributed Stochastic Neighbor Embedding is a non-linear dimensionality reduction algorithm used for exploring high-dimensional data
+    * The problem with linear dimensional reduction, is that they concentrate on placing dissimilar data points far apart in a lower dimension representation. However, it is also important to put similar data close together, linear dimensional reduction does not do this
+    * In t-SNE, there are local approaches and global approaches. Local approaches seek to map nearby points on the manifold to nearby points in the low-dimensional representation. Global approaches on the other hand attempt to preserve geometry at all scales, i.e mapping nearby points to nearby points and far away points to far away points  
+    * It is important to know that most of the nonlinear techniques other than t-SNE are not capable of retaining both the local and global structure of the data at the same time.
+    * The algorithm computes pairwise conditional probabilities and tries to minimize the sum of the difference of the probabilities in higher and lower dimensions. This involves a lot of calculations and computations. So the algorithm is quite heavy on the system resources. t-SNE has a quadratic O(n2) time and space complexity in the number of data points. This makes it particularly slow and resource draining while applying it to data sets comprising of more than 10,000 observations. Another drawback is, it doesn’t always provide a similar output on successive runs.
+    * How it works: it clusters similar data reocrds together, but it's not clustering because once the data has been mapped to lower dimensional, the original features are no longer recognizable. 
+    * NOTE: t-SNE could also help to make semanticly similar words close to each other, which could help create text summary, text comparison
+    * R practice code: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/t-SNE_practice.R
+    * Python practice code: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/t-SNE_Practice.ipynb
+  * [For more Dimensional Reduction, check "DATA PREPROCESSING" section][9] 
+  * [Some dimentional reduction methods][10]
+  * [A little more about Factor Analysis][11]
+    * Fator Analysis is a variable reduction technique. It is used to determine <b>factor structure or model</b>. It also explains the maximum amount of variance in the model
+    * EFA (Exploratory Factor Analysis) – Identifies and summarizes the <b>underlying correlation structure</b> in a data set
+    * CFA (Confirmatory Factor Analysis) – Attempts to <b>confirm hypothesis</b> using the correlation structure and <b>rate ‘goodness of fit’</b>.
+  * Dimension Reduction Must Know
+    * Reference: https://www.analyticsvidhya.com/blog/2017/03/questions-dimensionality-reduction-data-scientist/?utm_content=bufferc792d&utm_medium=social&utm_source=linkedin.com&utm_campaign=buffer
+    * Besides different algorithms to help reduce number of features, we can also use existing features to form less features as a dimensional reduction method. For example, we have features A, B, C, D, then we form E = 2*A+B, F = 3*C-D, then only choose E, F as the features for analysis
+
+[9]:https://github.com/hanhanwu/Hanhan_Data_Science_Resources
+[10]:https://www.analyticsvidhya.com/blog/2015/07/dimension-reduction-methods/
+[11]:https://www.analyticsvidhya.com/blog/2015/11/8-ways-deal-continuous-variables-predictive-modeling/?utm_content=bufferfb56f&utm_medium=social&utm_source=linkedin.com&utm_campaign=buffer
 
 
 ************************************************************************
@@ -168,29 +194,6 @@ Machine Learning Algorithms
   * Difference between Random Forest and GBM: Random Forest is bagging while GBM is boosting. In bagging technique, a data set is divided into n samples using randomized sampling. Then, using a <b>single learning algorithm</b> a model is build on all samples. Later, the resultant predictions are combined using voting or averaging. <b>Bagging is done is parallel.</b> In boosting, after the first round of predictions, the algorithm weighs misclassified predictions higher, such that they can be corrected in the succeeding round. This sequential process of giving higher weights to misclassified predictions continue until a stopping criterion is reached.Random forest improves model accuracy by reducing variance (mainly). The trees grown are uncorrelated to maximize the decrease in variance. On the other hand, <b>GBM improves accuracy my reducing both bias and variance in a model.</b>
  
 * Online Learning vs Batch Learning: https://www.analyticsvidhya.com/blog/2015/01/introduction-online-machine-learning-simplified-2/
- 
-* t-SNE, non-linear dimensional reduction
-  * Reference (a pretty good one!): https://www.analyticsvidhya.com/blog/2017/01/t-sne-implementation-r-python/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
-  * (t-SNE) t-Distributed Stochastic Neighbor Embedding is a non-linear dimensionality reduction algorithm used for exploring high-dimensional data
-  * The problem with linear dimensional reduction, is that they concentrate on placing dissimilar data points far apart in a lower dimension representation. However, it is also important to put similar data close together, linear dimensional reduction does not do this
-  * In t-SNE, there are local approaches and global approaches. Local approaches seek to map nearby points on the manifold to nearby points in the low-dimensional representation. Global approaches on the other hand attempt to preserve geometry at all scales, i.e mapping nearby points to nearby points and far away points to far away points  
-  * It is important to know that most of the nonlinear techniques other than t-SNE are not capable of retaining both the local and global structure of the data at the same time.
-  * The algorithm computes pairwise conditional probabilities and tries to minimize the sum of the difference of the probabilities in higher and lower dimensions. This involves a lot of calculations and computations. So the algorithm is quite heavy on the system resources. t-SNE has a quadratic O(n2) time and space complexity in the number of data points. This makes it particularly slow and resource draining while applying it to data sets comprising of more than 10,000 observations. Another drawback is, it doesn’t always provide a similar output on successive runs.
-  * How it works: it clusters similar data reocrds together, but it's not clustering because once the data has been mapped to lower dimensional, the original features are no longer recognizable. 
-  * NOTE: t-SNE could also help to make semanticly similar words close to each other, which could help create text summary, text comparison
-  * R practice code: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/t-SNE_practice.R
-  * Python practice code: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/t-SNE_Practice.ipynb
-* [For more Dimensional Reduction, check "DATA PREPROCESSING" section][9] 
-* [some dimentional reduction methods][10]
-* [A little more about Factor Analysis][11]
-  * Fator Analysis is a variable reduction technique. It is used to determine <b>factor structure or model</b>. It also explains the maximum amount of variance in the model
-  * EFA (Exploratory Factor Analysis) – Identifies and summarizes the <b>underlying correlation structure</b> in a data set
-  * CFA (Confirmatory Factor Analysis) – Attempts to <b>confirm hypothesis</b> using the correlation structure and <b>rate ‘goodness of fit’</b>.
-
-[9]:https://github.com/hanhanwu/Hanhan_Data_Science_Resources
-[10]:https://www.analyticsvidhya.com/blog/2015/07/dimension-reduction-methods/
-[11]:https://www.analyticsvidhya.com/blog/2015/11/8-ways-deal-continuous-variables-predictive-modeling/?utm_content=bufferfb56f&utm_medium=social&utm_source=linkedin.com&utm_campaign=buffer
-
  
 * Optimization - Genetic Algorithm
   * More about Crossover and Mutation: https://www.researchgate.net/post/What_is_the_role_of_mutation_and_crossover_probability_in_Genetic_algorithms
@@ -383,6 +386,7 @@ Data Science Skillset Tests
   * Majorly uses the Byesian Theorem taught in conditional probability theorem: https://www.analyticsvidhya.com/blog/2017/03/conditional-probability-bayes-theorem/
   * An interesting take-away is about Monty Hall’s problem (I don't fullt understand, especially after seeing the debat after the post), the problem looks interesting: https://www.analyticsvidhya.com/blog/2014/04/probability-action-monty-halls-money-show/
 * Time series skillset test: https://www.analyticsvidhya.com/blog/2017/04/40-questions-on-time-series-solution-skillpower-time-series-datafest-2017/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+* Dimensional Reduction skillset test: https://www.analyticsvidhya.com/blog/2017/03/questions-dimensionality-reduction-data-scientist/?utm_content=bufferc792d&utm_medium=social&utm_source=linkedin.com&utm_campaign=buffer
 * Interview questions: https://www.analyticsvidhya.com/blog/2016/09/40-interview-questions-asked-at-startups-in-machine-learning-data-science/
 
 
