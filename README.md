@@ -43,7 +43,7 @@ DATA PREPROCESSING
 * Dimension Reduction
   * t-SNE, non-linear dimensional reduction
     * Reference (a pretty good one!): https://www.analyticsvidhya.com/blog/2017/01/t-sne-implementation-r-python/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
-    * (t-SNE) t-Distributed Stochastic Neighbor Embedding is a non-linear dimensionality reduction algorithm used for exploring high-dimensional data
+    * (t-SNE) t-Distributed Stochastic Neighbor Embedding is a non-linear dimensionality reduction algorithm used for exploring high-dimensional data, it considers nearest neighbours when reduce the data. It is a non-parametric mapping.
     * The problem with linear dimensional reduction, is that they concentrate on placing dissimilar data points far apart in a lower dimension representation. However, it is also important to put similar data close together, linear dimensional reduction does not do this
     * In t-SNE, there are local approaches and global approaches. Local approaches seek to map nearby points on the manifold to nearby points in the low-dimensional representation. Global approaches on the other hand attempt to preserve geometry at all scales, i.e mapping nearby points to nearby points and far away points to far away points  
     * It is important to know that most of the nonlinear techniques other than t-SNE are not capable of retaining both the local and global structure of the data at the same time.
@@ -62,6 +62,12 @@ DATA PREPROCESSING
     * Reference: https://www.analyticsvidhya.com/blog/2017/03/questions-dimensionality-reduction-data-scientist/?utm_content=bufferc792d&utm_medium=social&utm_source=linkedin.com&utm_campaign=buffer
     * Besides different algorithms to help reduce number of features, we can also use existing features to form less features as a dimensional reduction method. For example, we have features A, B, C, D, then we form E = 2*A+B, F = 3*C-D, then only choose E, F as the features for analysis
     * Cost function of SNE is asymmetric in nature. Which makes it difficult to converge using gradient decent. A symmetric cost function is one of the major differences between SNE and t-SNE.
+    * For the perfect representations of higher dimensions to lower dimensions, the conditional probabilities for similarity of two points must remain unchanged in both higher and lower dimension, which means the similarity is unchanged
+    * LDA aims to maximize the distance between class and minimize the within class distance. If the discriminatory information is not in the mean but in the variance of the data, LDA will fail.
+    * Both LDA and PCA are linear transformation techniques. LDA is supervised whereas PCA is unsupervised. PCA maximize the variance of the data, whereas LDA maximize the separation between different classes.
+    * When eigenvalues are roughly equal, PCA will perform badly, because when all eigen vectors are same in such case you won’t be able to select the principal components because in that case all principal components are equal. <b> When using PCA</b>, it is better to scale data in the same unit
+    * When using PCA, features will lose interpretability and they may not carry all the info of the data. <b>You don’t need to initialize parameters in PCA, and PCA can’t be trapped into local minima problem</b>. PCA is a <b>deterministic algorithm</b> which doesn’t have parameters to initialize. PCA can be used for lossy image compression, and it is not invariant to shadows.
+    * Logistic Regression vs LDA: If the classes are well separated, the parameter estimates for logistic regression can be unstable. If the sample size is small and distribution of features are normal for each class. In such case, linear discriminant analysis (LDA) is more stable than logistic regression.
 
 [9]:https://github.com/hanhanwu/Hanhan_Data_Science_Resources
 [10]:https://www.analyticsvidhya.com/blog/2015/07/dimension-reduction-methods/
