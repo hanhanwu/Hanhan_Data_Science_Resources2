@@ -365,6 +365,7 @@ Non-Machine Learning Data Analysis Examples
 
 AI
 
+* Neural Network vs Deep Learning: <b>When there are more hidden layers and increase depth of neural network a neural network becomes deep learning.</b>
 * Something about AI (those brief explaination about real life applications are useful and intresting): https://www.analyticsvidhya.com/blog/2016/12/artificial-intelligence-demystified/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 * Deep Learning Videos: https://www.analyticsvidhya.com/blog/2016/12/21-deep-learning-videos-tutorials-courses-on-youtube-from-2016/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 * <b>Deep Learning Learning Resources</b>: https://www.analyticsvidhya.com/blog/2016/08/deep-learning-path/
@@ -372,6 +373,17 @@ AI
 * Reinforcement Learning with Python Example: https://www.analyticsvidhya.com/blog/2017/01/introduction-to-reinforcement-learning-implementation/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 * Deeping Learning APIs, help you build simple apps (it's interesting): https://www.analyticsvidhya.com/blog/2017/02/6-deep-learning-applications-beginner-python/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 * 5 More Deep Learning APIs [Python]: https://www.analyticsvidhya.com/blog/2017/02/5-deep-learning-applications-beginner-python/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+* Deep Learning Skillset Test1: https://www.analyticsvidhya.com/blog/2017/01/must-know-questions-deep-learning/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+  * Neural Networks cannot do data preprocessing themselves
+  * <b>Neural Network Dropout</b> can be seen as an extreme form of <b>Bagging</b> in which each model is trained on a single case and each parameter of the model is very strongly regularized by sharing it with the corresponding parameter in all the other models.
+  * Neural Network uses hidden layers to reduce dimensionality, it is based on  <b>predictive capability</b> of the features. By comparison, PCA does dimensional reduction based on <b>feature correlation</b>
+  * People set a metric called <b>bayes error</b> which is the error they hope to achieve, this is because: Input variables may not contain complete information about the output variable; System (that creates input-output mapping) may be stochastic; Limited training data
+  * The number of neurons in the output layer dose NOT have to match the number of classes. If your outputis using one-hot encoding, they have to match. Otherwise, you can use other methods. For example, 2 neurons represent 4 classes using binary bits (00, 01, 10, 11)
+  * Without knowing what are the weights and biases of a neural network, we cannot comment on what output it would give.
+  * Convolutional Neural Network would be better suited for image related problems because of its inherent nature for taking into account changes in nearby locations of an image
+  * A neural network is said to be a universal function approximator, so it can theoretically represent any decision boundary.
+  * To decrease the “ups and downs” when visualizing errors, you can try to increase the batch size. But the "ups and downs" are no need to worry as long as there is a cumulative decrease in both training and validation error.
+  * When you want to re-use a pre-trained NN model on similar problems, you can keep the previous layers but only re-train the last layer, since all the previous layers work as feature extractors
 
 
 ************************************************************************
@@ -395,6 +407,7 @@ Data Science Skillset Tests
   * An interesting take-away is about Monty Hall’s problem (I don't fullt understand, especially after seeing the debat after the post), the problem looks interesting: https://www.analyticsvidhya.com/blog/2014/04/probability-action-monty-halls-money-show/
 * Time series skillset test: https://www.analyticsvidhya.com/blog/2017/04/40-questions-on-time-series-solution-skillpower-time-series-datafest-2017/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 * Dimensional Reduction skillset test: https://www.analyticsvidhya.com/blog/2017/03/questions-dimensionality-reduction-data-scientist/?utm_content=bufferc792d&utm_medium=social&utm_source=linkedin.com&utm_campaign=buffer
+* Deep Learning Skillset Test1: https://www.analyticsvidhya.com/blog/2017/01/must-know-questions-deep-learning/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 * Interview questions: https://www.analyticsvidhya.com/blog/2016/09/40-interview-questions-asked-at-startups-in-machine-learning-data-science/
 
 
