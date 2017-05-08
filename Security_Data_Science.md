@@ -55,6 +55,7 @@ Simple Ideas Spark
 * Unsupervised learning - PCA and Sparse PCA in shape data
   * Some biometrics can be shape data, such as sighed images. PCA is a popular tool applied to <b>shape data</b>, sometimes Sparsed PCA is more informative and saves reousrces than Standard PCA.
   * When preprocessing images, it is better to Align the predict target in the same position in the image. Scale or crop all images to the same size.
+  * NOTE: if want to use neural network for image processing, <b>Convolutional Neural Network</b> would be better suited for image related problems because of its inherent nature for taking into account changes in nearby locations of an image
 
 
 ******************************************************
