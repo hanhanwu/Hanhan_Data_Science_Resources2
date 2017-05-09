@@ -69,10 +69,6 @@ DATA PREPROCESSING
     * When using PCA, features will lose interpretability and they may not carry all the info of the data. <b>You don’t need to initialize parameters in PCA, and PCA can’t be trapped into local minima problem</b>. PCA is a <b>deterministic algorithm</b> which doesn’t have parameters to initialize. PCA can be used for lossy image compression, and it is not invariant to shadows.
     * Logistic Regression vs LDA: If the classes are well separated, the parameter estimates for logistic regression can be unstable. If the sample size is small and distribution of features are normal for each class. In such case, linear discriminant analysis (LDA) is more stable than logistic regression.
 
-[9]:https://github.com/hanhanwu/Hanhan_Data_Science_Resources
-[10]:https://www.analyticsvidhya.com/blog/2015/07/dimension-reduction-methods/
-[11]:https://www.analyticsvidhya.com/blog/2015/11/8-ways-deal-continuous-variables-predictive-modeling/?utm_content=bufferfb56f&utm_medium=social&utm_source=linkedin.com&utm_campaign=buffer
-
 
 ************************************************************************
 
@@ -131,6 +127,7 @@ Statistics in Data Science
   * <b>Difference between z-scores and t-values</b> are that t-values are dependent on Degree of Freedom of a sample, and t-values use sample standard deviation while z-scores use population standard deviation.
   * <b>The Degree of Freedom</b> – It is the number of variables that have the choice of having more than one arbitrary value. For example, in a sample of size 10 with mean 10, 9 values can be arbitrary but the 1oth value is forced by the sample mean.
   * <b>Residual Sum of Squares (RSS)</b> - It can be interpreted as the amount by which the predicted values deviated from the actual values. Large deviation would indicate that the model failed at predicting the correct values for the dependent variable. <b>Regression (Explained) Sum of Squares (ESS)</b> – It can be interpreted as the amount by which the predicted values deviated from the the mean of actual values.
+  * Residuals is also known as the prediction error, they are vertical distance of points from the regression line
   * <b>Co-efficient of Determination = ESS/(ESS + RSS)</b>. It represents the strength of correlation between two variables. <b>Correlation Coefficient = sqrt(Co-efficient of Determination)</b>, also represents the strength of correlation between two variables, ranges between [-1,1]. 0 means no correlation, 1 means strong positive correlation, -1 means strong neagtive correlation.
  
 * [Comprehensive and Practical Statistics Guide for Data Science][1] - A real good one!
@@ -161,17 +158,33 @@ Statistics in Data Science
     * `P(b1|A) + P(b2|A) + .... + P(bn|A) = P(A)`
 
 
-* [Dispersion][8] - In statistics, dispersion (also called variability, scatter, or spread) is the extent to which a distribution is stretched or squeezed.[1] Common examples of measures of statistical dispersion are the variance, standard deviation, and interquartile range.
+* [Dispersion][8] - In statistics, dispersion (also called variability, scatter, or spread) is the extent to which a distribution is stretched or squeezed. Common examples of measures of statistical dispersion are the variance, standard deviation, and interquartile range.
 
-
-[1]:https://www.analyticsvidhya.com/blog/2017/01/comprehensive-practical-guide-inferential-statistics-data-science/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
-[2]:http://www.danielsoper.com/statcalc/calculator.aspx?id=98
-[3]:http://stattrek.com/online-calculator/f-distribution.aspx
-[4]:http://stattrek.com/online-calculator/chi-square.aspx
-[5]:https://www.analyticsvidhya.com/blog/2017/02/basic-probability-data-science-with-examples/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
-[6]:https://s3.amazonaws.com/udacity-hosted-downloads/ZTable.jpg
-[7]:https://www.analyticsvidhya.com/blog/2017/03/conditional-probability-bayes-theorem/?utm_content=buffer7afce&utm_medium=social&utm_source=plus.google.com&utm_campaign=buffer
-[8]:https://en.wikipedia.org/wiki/Statistical_dispersion
+* Common Formulas
+  * Examples: https://www.analyticsvidhya.com/blog/2017/05/41-questions-on-statisitics-data-scientists-analysts/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+  * <b>About z-score</b>
+    * When looking for probability, calculate z score first and check the value in the Z table, that value is the probability
+    * <b>Observed value = µ+zσ</b> [µ is the mean and σ is the standard deviation]
+    * <b>Standard Error = σ/√N</b>, [N is the number of Sample]; <b>z = (Sample Mean - Population Mean)/Standard Error</b>
+    * [Z table][6]
+    * [Z table for different distributions, and z critical values][12]
+  * <b>About t-score</b>
+    * When compare 2 groups, calculate t-score
+    * <b>t-statistic = (group1 Mean - group2 Mean)/Standard Error</b>
+    * <b>degree of freedom (df)</b>, if there are n sample, <b>df=n-1</b>
+    * [t table with df, 1-tail, 2-tails and confidence level][13], compare your t-statistic with the relative value in this table, and decide whether to reject null hypothesis
+    * <b>percentage of variability = t-statistic^2/(t-statistic^2 + degree of freedom) = correlation_coefficient ^2</b>, so <b>coefficient of determination</b> equals to "percentage of variability"
+  * <b>About F-statistic</b>
+    * F-statistic is the value we receive when we run an ANOVA test on different groups to <b>understand the differences between them</b>.
+    * <b>F-statistic  = (sum of squared error for between group/degree of freedom for between group)/(sum of squared error for within group/degree of freedom for within group)</b>, as you can see from this formula, it cannot be negative
+  * <b>Correlation</b>
+    * Methods to calculate correlations between different data types: https://www.analyticsvidhya.com/blog/2016/01/guide-data-exploration/
+    * Formula to calculate correlation between 2 numerical variables (Question 28): https://www.analyticsvidhya.com/blog/2017/05/41-questions-on-statisitics-data-scientists-analysts/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+  * <b>Significance level = 1- Confidence level</b>
+  * <b>Mean Absolute Error</b> = the mean of absolute errors
+  
+* Linear regression line attempts to minimize the squared distance between the points and the regression line. By definition the ordinary least squares (OLS) regression tries to have the minimum sum of squared errors. This means that the sum of squared residuals should be minimized. This may or may not be achieved by passing through the maximum points in the data. The most common case of not passing through all points and reducing the error is when the data has a lot of outliers or is not very strongly linear.
+* Person vs Spearman: Pearson correlation evaluated the <b>linear relationship</b> between two continuous variables. <b>A relationship is linear when a change in one variable is associated with a proportional change in the other variable.</b> Spearman evaluates a <b>monotonic relationship</b>. <b>A monotonic relationship is one where the variables change together but not necessarily at a constant rate.</b>
 
 
 ************************************************************************
@@ -410,6 +423,7 @@ Data Science Skillset Tests
 * Regression skillset test: https://www.analyticsvidhya.com/blog/2016/12/45-questions-to-test-a-data-scientist-on-regression-skill-test-regression-solution/?utm_content=buffer5229b&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer
 * Tree based skillset test: https://www.analyticsvidhya.com/blog/2016/12/detailed-solutions-for-skilltest-tree-based-algorithms/?utm_content=bufferde46d&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer
 * Clustering Skillset test: https://www.analyticsvidhya.com/blog/2017/02/test-data-scientist-clustering/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+* Statistics Skillset test: https://www.analyticsvidhya.com/blog/2017/05/41-questions-on-statisitics-data-scientists-analysts/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 * Probability Skillset test: https://www.analyticsvidhya.com/blog/2017/04/40-questions-on-probability-for-all-aspiring-data-scientists/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
   * Some answers may have problems. For example, I think if question 33 has the right answer then question 28 has the wrong answer
   * Majorly uses the Byesian Theorem taught in conditional probability theorem: https://www.analyticsvidhya.com/blog/2017/03/conditional-probability-bayes-theorem/
@@ -459,3 +473,19 @@ OTHER
   * extreme probability bias effect - We tend to underestimate probability between 0 and 0.5 if event is favorable and exactly opposite happens when event is unfavorable. With underestimated perceived probability, we underestimate the value of Risky transactions.
 * Winnning Strategy in Casino (blackjack): https://www.analyticsvidhya.com/blog/2017/04/flawless-winning-strategy-casino-blackjack-data-science/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
   * Looks calculation intensive, I dind't read them throughly, but only checked the insights :)
+
+
+
+[1]:https://www.analyticsvidhya.com/blog/2017/01/comprehensive-practical-guide-inferential-statistics-data-science/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+[2]:http://www.danielsoper.com/statcalc/calculator.aspx?id=98
+[3]:http://stattrek.com/online-calculator/f-distribution.aspx
+[4]:http://stattrek.com/online-calculator/chi-square.aspx
+[5]:https://www.analyticsvidhya.com/blog/2017/02/basic-probability-data-science-with-examples/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+[6]:https://s3.amazonaws.com/udacity-hosted-downloads/ZTable.jpg
+[7]:https://www.analyticsvidhya.com/blog/2017/03/conditional-probability-bayes-theorem/?utm_content=buffer7afce&utm_medium=social&utm_source=plus.google.com&utm_campaign=buffer
+[8]:https://en.wikipedia.org/wiki/Statistical_dispersion
+[9]:https://github.com/hanhanwu/Hanhan_Data_Science_Resources
+[10]:https://www.analyticsvidhya.com/blog/2015/07/dimension-reduction-methods/
+[11]:https://www.analyticsvidhya.com/blog/2015/11/8-ways-deal-continuous-variables-predictive-modeling/?utm_content=bufferfb56f&utm_medium=social&utm_source=linkedin.com&utm_campaign=buffer
+[12]:http://pegasus.cc.ucf.edu/~pepe/Tables
+[13]:http://www.sjsu.edu/faculty/gerstman/StatPrimer/t-table.pdf
