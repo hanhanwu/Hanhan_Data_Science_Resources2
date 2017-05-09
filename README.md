@@ -381,10 +381,18 @@ AI
   * The number of neurons in the output layer dose NOT have to match the number of classes. If your outputis using one-hot encoding, they have to match. Otherwise, you can use other methods. For example, 2 neurons represent 4 classes using binary bits (00, 01, 10, 11)
   * Without knowing what are the weights and biases of a neural network, we cannot comment on what output it would give.
   * Convolutional Neural Network would be better suited for image related problems because of its inherent nature for taking into account changes in nearby locations of an image
+  * Recurrent neural network works best for sequential data. Recurrent neuron can be thought of as a neuron sequence of infinite length of time steps. Dropout does not work well with recurrent layer.
   * A neural network is said to be a universal function approximator, so it can theoretically represent any decision boundary.
   * To decrease the “ups and downs” when visualizing errors, you can try to increase the batch size. But the "ups and downs" are no need to worry as long as there is a cumulative decrease in both training and validation error.
   * When you want to re-use a pre-trained NN model on similar problems, you can keep the previous layers but only re-train the last layer, since all the previous layers work as feature extractors
   * To deal with overfitting in NN, you can use Dropout, Regularization and Batch Normalization. Using Batch Normalization is possbile to reach higher level accuracy. Dropout is designed as a regulazer in order to reduce the gap between the tester and the trainer; Batch Normalization is designed to make optimization easier, so it does less regularization. So Batch Normalization is not as strong as dropout. <b>When the dataset is very small, Dropout should be better than Batch Normalization.</b> Batch Normalization video: https://www.youtube.com/watch?v=Xogn6veSyxA
+* Deep Learning Skillset Test2: https://www.analyticsvidhya.com/blog/2017/04/40-questions-test-data-scientist-deep-learning/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+  * NN is a representative algorithm, which means: it converts data to a form that better solve the problem
+  * <b>Perplexity</b> is a commonly used evaluation technique when applying deep learning for NLP tasks. Lower the perplexity the better.
+  * Sigmoid was the most commonly used activation function in neural network, until an issue was identified. The issue is that when the gradients are too large in positive or negative direction, the resulting gradients coming out of the activation function get squashed. This is called <b>saturation of the neuron</b>. That is why ReLU function was proposed, which kept the gradients same as before in the positive direction. ReLU also gets saturated, but it's on the negative side of x-axis.
+  * Dropout Rate is the probability of keeping a neuron active. Higher the dropout rate, lower is the regularization
+  * l-BFGS is a second order gradient descent technique whereas SGD is a first order gradient descent technique. When `Data is sparse` or `Number of parameters of neural network are small`, l-BFGS is better
+  * For non-continuous objective during optimization in deep neural net, Subgradient method is better
 
 
 ************************************************************************
