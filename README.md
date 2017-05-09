@@ -384,6 +384,7 @@ AI
   * A neural network is said to be a universal function approximator, so it can theoretically represent any decision boundary.
   * To decrease the “ups and downs” when visualizing errors, you can try to increase the batch size. But the "ups and downs" are no need to worry as long as there is a cumulative decrease in both training and validation error.
   * When you want to re-use a pre-trained NN model on similar problems, you can keep the previous layers but only re-train the last layer, since all the previous layers work as feature extractors
+  * To deal with overfitting in NN, you can use Dropout, Regularization and Batch Normalization. Using Batch Normalization is possbile to reach higher level accuracy. Dropout is designed as a regulazer in order to reduce the gap between the tester and the trainer; Batch Normalization is designed to make optimization easier, so it does less regularization. So Batch Normalization is not as strong as dropout. <b>When the dataset is very small, Dropout should be better than Batch Normalization.</b> Batch Normalization video: https://www.youtube.com/watch?v=Xogn6veSyxA
 
 
 ************************************************************************
