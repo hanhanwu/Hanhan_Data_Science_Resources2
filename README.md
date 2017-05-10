@@ -67,6 +67,7 @@ DATA PREPROCESSING
     * Both LDA and PCA are linear transformation techniques. LDA is supervised whereas PCA is unsupervised. PCA maximize the variance of the data, whereas LDA maximize the separation between different classes.
     * When eigenvalues are roughly equal, PCA will perform badly, because when all eigen vectors are same in such case you won’t be able to select the principal components because in that case all principal components are equal. <b> When using PCA</b>, it is better to scale data in the same unit
     * When using PCA, features will lose interpretability and they may not carry all the info of the data. <b>You don’t need to initialize parameters in PCA, and PCA can’t be trapped into local minima problem</b>. PCA is a <b>deterministic algorithm</b> which doesn’t have parameters to initialize. PCA can be used for lossy image compression, and it is not invariant to shadows.
+    * A deterministic algorithm has no param to initialize, and it gives the same result if we run again.
     * Logistic Regression vs LDA: If the classes are well separated, the parameter estimates for logistic regression can be unstable. If the sample size is small and distribution of features are normal for each class. In such case, linear discriminant analysis (LDA) is more stable than logistic regression.
 
 
@@ -180,6 +181,7 @@ Statistics in Data Science
   * <b>Correlation</b>
     * Methods to calculate correlations between different data types: https://www.analyticsvidhya.com/blog/2016/01/guide-data-exploration/
     * Formula to calculate correlation between 2 numerical variables (Question 28): https://www.analyticsvidhya.com/blog/2017/05/41-questions-on-statisitics-data-scientists-analysts/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+    * Correlation between the features won’t change if you add or subtract a constant value in the features.
   * <b>Significance level = 1- Confidence level</b>
   * <b>Mean Absolute Error</b> = the mean of absolute errors
   
@@ -423,11 +425,30 @@ Data Science Skillset Tests
 * Regression skillset test: https://www.analyticsvidhya.com/blog/2016/12/45-questions-to-test-a-data-scientist-on-regression-skill-test-regression-solution/?utm_content=buffer5229b&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer
 * Tree based skillset test: https://www.analyticsvidhya.com/blog/2016/12/detailed-solutions-for-skilltest-tree-based-algorithms/?utm_content=bufferde46d&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer
 * Clustering Skillset test: https://www.analyticsvidhya.com/blog/2017/02/test-data-scientist-clustering/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+* Machine Learning Skillset test: https://www.analyticsvidhya.com/blog/2017/04/40-questions-test-data-scientist-machine-learning-solution-skillpower-machine-learning-datafest-2017/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+  * 2 variables can relate to each other but with 0 pearson correlation
+  * SGD vs GD: In SGD for each iteration you choose the batch which is generally contain the random sample of data But in case of GD each iteration contain the all of the training observations.
 * Statistics Skillset test: https://www.analyticsvidhya.com/blog/2017/05/41-questions-on-statisitics-data-scientists-analysts/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 * Probability Skillset test: https://www.analyticsvidhya.com/blog/2017/04/40-questions-on-probability-for-all-aspiring-data-scientists/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
   * Some answers may have problems. For example, I think if question 33 has the right answer then question 28 has the wrong answer
   * Majorly uses the Byesian Theorem taught in conditional probability theorem: https://www.analyticsvidhya.com/blog/2017/03/conditional-probability-bayes-theorem/
   * An interesting take-away is about Monty Hall’s problem (I don't fullt understand, especially after seeing the debat after the post), the problem looks interesting: https://www.analyticsvidhya.com/blog/2014/04/probability-action-monty-halls-money-show/
+  * When applying Onehot Encoding, make sure the frequency distribution is the same in training and testing data
+  * Output value range:
+    * tanh function: [-1, 1]
+    * SIGMOID function: [0, 1]
+    * ReLU function: [0, infinite]
+  * When there are multicollinear features (highly correlated features), solutions can be:
+    * remove one of the correlated variables
+    * use penalized regression models like ridge or lasso regression
+  * Ensembling is using weak learners, these learners are less likely to have overfit since each of them are sure about part of the problems, and therefore they may have low variance but high bias (how much the predicted value is different from the real value)
+  * If a classifier is confident about an incorrect classification, then log-loss will penalise it heavily. For a particular observation, the classifier assigns a very small probability for the correct class then the corresponding contribution to the log-loss will be very large. Lower the log-loss, the better is the model.
+* Ensembling Skillset test: https://www.analyticsvidhya.com/blog/2017/02/40-questions-to-ask-a-data-scientist-on-ensemble-modeling-techniques-skilltest-solution/?
+  * Creating an ensemble of diverse models is a very important factor to achieve better results. Generally, an ensemble method works better, if the individual base models have less correlation among predictions
+  * If you have m base models in stacking, that will generate m features for second stage models
+  * Dropout in a neural network can be considered as an ensemble technique, where multiple sub-networks are trained together by “dropping” out certain connections between neurons.
+  * !! Bagging of unstable classifiers is a good idea. [Based on this paper][14], "If perturbing the learning set can cause signicant
+changes in the predictor constructed, then bagging can improve accuracy."
 * Time series skillset test: https://www.analyticsvidhya.com/blog/2017/04/40-questions-on-time-series-solution-skillpower-time-series-datafest-2017/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 * Dimensional Reduction skillset test: https://www.analyticsvidhya.com/blog/2017/03/questions-dimensionality-reduction-data-scientist/?utm_content=bufferc792d&utm_medium=social&utm_source=linkedin.com&utm_campaign=buffer
 * Deep Learning Skillset Test1: https://www.analyticsvidhya.com/blog/2017/01/must-know-questions-deep-learning/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
@@ -489,3 +510,4 @@ OTHER
 [11]:https://www.analyticsvidhya.com/blog/2015/11/8-ways-deal-continuous-variables-predictive-modeling/?utm_content=bufferfb56f&utm_medium=social&utm_source=linkedin.com&utm_campaign=buffer
 [12]:http://pegasus.cc.ucf.edu/~pepe/Tables
 [13]:http://www.sjsu.edu/faculty/gerstman/StatPrimer/t-table.pdf
+[14]:http://statistics.berkeley.edu/sites/default/files/tech-reports/421.pdf
