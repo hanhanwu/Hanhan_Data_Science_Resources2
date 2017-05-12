@@ -454,6 +454,10 @@ changes in the predictor constructed, then bagging can improve accuracy."
 * Deep Learning Skillset Test1: https://www.analyticsvidhya.com/blog/2017/01/must-know-questions-deep-learning/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 * Deep Learning Skillset Test2: https://www.analyticsvidhya.com/blog/2017/04/40-questions-test-data-scientist-deep-learning/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 * R Skillset test: https://www.analyticsvidhya.com/blog/2017/05/40-questions-r-for-data-science/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+* SQL Skillset test1: https://www.analyticsvidhya.com/blog/2017/01/46-questions-on-sql-to-test-a-data-science-professional-skilltest-solution/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+  * My disagrees:
+    * Q9, the answer is only right when there is forgin key relationship
+    * Q10, the answer should be (B)
 * Interview questions: https://www.analyticsvidhya.com/blog/2016/09/40-interview-questions-asked-at-startups-in-machine-learning-data-science/
 
 
