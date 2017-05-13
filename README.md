@@ -455,9 +455,13 @@ changes in the predictor constructed, then bagging can improve accuracy."
 * Deep Learning Skillset Test2: https://www.analyticsvidhya.com/blog/2017/04/40-questions-test-data-scientist-deep-learning/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 * R Skillset test: https://www.analyticsvidhya.com/blog/2017/05/40-questions-r-for-data-science/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 * SQL Skillset test1: https://www.analyticsvidhya.com/blog/2017/01/46-questions-on-sql-to-test-a-data-science-professional-skilltest-solution/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
-  * My disagrees:
-    * Q9, the answer is only right when there is forgin key relationship
-    * Q10, the answer should be (B)
+  * TRUNCATE vs DELETE: `truncate` is ddl (data definition language) command, it does not has rollback info and will release the memory; `delete`  is dml (data manipulation language) command, it contains rollback info and will not release the memory.
+  * If a relation is satisfying higher normal forms, it automatically satisfies lower normal forms. Such as if it satisfies 3NF, it should automatically satisfies 1NF.
+  * Minimal super key is a candidate key. Only one Candidate Key can be Primary Key.
+  * PROJECT vs SELECT: In relational algebra ‘PROJECT’ operation gives the unique record but in case of ‘SELECT’ operation in SQL you need to use distinct keyword for getting unique records.
+  * SQL Index doesn’t help for the `like` clause. The addition of the index didn’t change the query execution plan.  for example, the index on rating will not work for the query (Salary * 100 > 5000). But you can create an index on (Salary * 100) which will help.
+  * `CREATE TABLE avian ( emp_id SERIAL PRIMARY KEY, name varchar);` creates index as primary key
+  * My disagrees: Q10, the answer should be (B)
 * Interview questions: https://www.analyticsvidhya.com/blog/2016/09/40-interview-questions-asked-at-startups-in-machine-learning-data-science/
 
 
