@@ -462,6 +462,14 @@ changes in the predictor constructed, then bagging can improve accuracy."
   * SQL Index doesn’t help for the `like` clause. The addition of the index didn’t change the query execution plan.  for example, the index on rating will not work for the query (Salary * 100 > 5000). But you can create an index on (Salary * 100) which will help.
   * `CREATE TABLE avian ( emp_id SERIAL PRIMARY KEY, name varchar);` creates index as primary key
   * My disagrees: Q10, the answer should be (B)
+* SQL Skillset test2: https://www.analyticsvidhya.com/blog/2017/05/questions-sql-for-all-aspiring-data-scientists/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+  * When you have created a view based on the table, using `drop` cannot drop the table. Try `drop .. cascade` will drop the table and its dependent objects too
+  * <b>cartesian product</b>: https://en.wikipedia.org/wiki/Cartesian_product
+  * My disagree: Q1, the answer should be B
+  * Some of the answers in this test make me doubt, such as Q2, Q4. Meanwhile, Q8, Q35 has confusing question
+  * In Q27, the answer description should be, "A" to 1, "N" to 2 and "K" to 3. Did the author fall asleep when wrinting this article?
+  * In Q28, the column names should start with an upper case, otherwise it will be an error
+  * I didn't think about questions from 39 to 42, but only quickly went through them, it seems that the question of Q40 is still not logically strict to me. I really cannot stand this post. Howcome it has so many problems.
 * Interview questions: https://www.analyticsvidhya.com/blog/2016/09/40-interview-questions-asked-at-startups-in-machine-learning-data-science/
 
 
