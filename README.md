@@ -470,6 +470,8 @@ changes in the predictor constructed, then bagging can improve accuracy."
   * In Q27, the answer description should be, "A" to 1, "N" to 2 and "K" to 3. Did the author fall asleep when wrinting this article?
   * In Q28, the column names should start with an upper case, otherwise it will be an error
   * I didn't think about questions from 39 to 42, but only quickly went through them, it seems that the question of Q40 is still not logically strict to me. I really cannot stand this post. Howcome it has so many problems.
+* Python Skillset test: https://www.analyticsvidhya.com/blog/2017/05/questions-python-for-data-science/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+  * I didn't check this one
 * Interview questions: https://www.analyticsvidhya.com/blog/2016/09/40-interview-questions-asked-at-startups-in-machine-learning-data-science/
 
 
