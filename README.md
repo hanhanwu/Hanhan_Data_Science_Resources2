@@ -95,9 +95,10 @@ MODEL EVALUATION
   * Residual deviance indicates the response predicted by a model on adding independent variables. Lower the value, better the model.
 * Regularization becomes necessary when the model begins to ovefit / underfit. This technique introduces a cost term for bringing in more features with the objective function. Hence, <b>it tries to push the coefficients for many variables to zero and hence reduce cost term.</b> This helps to reduce model complexity so that the model can become better at predicting (generalizing).
 
+
 ************************************************************************
 
-Applied Data Science in Python/R
+Applied Data Science in Python/R/Java
 
 * [R] Caret package for data imputing, feature selection, model training (I will show my experience of using caret with detailed code in Hanhan_Data_Science_Practice): https://www.analyticsvidhya.com/blog/2016/12/practical-guide-to-implement-machine-learning-with-caret-package-in-r-with-practice-problem/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 * [Python & R] A brief classified summary of Python Scikit-Learn and R Caret: https://www.analyticsvidhya.com/blog/2016/12/cheatsheet-scikit-learn-caret-package-for-python-r-respectively/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
@@ -105,6 +106,10 @@ Applied Data Science in Python/R
   * 3 types of Naive Bayesian: Gaussian (if you assume that features follow a normal distribution); Multinomial (used for discrete counts, you can think of it as “number of times outcome number x_i is observed over the n trials”.); Bernoulli(useful if your <b>feature vectors are binary</b>); 
   * Tips to improve the power of Naive Bayes Model: If test data set has zero frequency issue, apply <b>smoothing techniques</b> “Laplace Correction” to predict the class of test data set. Focus on your  pre-processing of data and the feature selection, because of thelimited paramter choices. “ensembling, boosting, bagging” won’t help since their purpose is to reduce variance. <b>Naive Bayes has no variance to minimize</b>
 * [R] Clsuter Analysis: https://rstudio-pubs-static.s3.amazonaws.com/33876_1d7794d9a86647ca90c4f182df93f0e8.html
+* [Java] SPMF, it contains many algorithms that cannot be found in R/Scikit-Learn/Spark, especailly algorithms about Pattern Mining: http://www.philippe-fournier-viger.com/spmf/index.php?link=algorithms.php
+  * SPMF examples: http://www.philippe-fournier-viger.com/spmf/index.php?link=documentation.php
+  * Algorithm mapping: http://www.philippe-fournier-viger.com/spmf/map_algorithms_spmf_data_mining097.png
+  * Download: http://www.philippe-fournier-viger.com/spmf/index.php?link=download.php
 
 
 ************************************************************************
