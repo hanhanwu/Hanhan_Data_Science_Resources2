@@ -270,6 +270,8 @@ Machine Learning Algorithms
 
 Data Visualization
 
+* Previous Visualization collections, check "VISUALIZATION" section: https://github.com/hanhanwu/Hanhan_Data_Science_Resources/blob/master/README.md
+
 * Readings
   * Psychology of Intelligence Analysis: https://www.cia.gov/library/center-for-the-study-of-intelligence/csi-publications/books-and-monographs/psychology-of-intelligence-analysis/PsychofIntelNew.pdf
   * How to lie with Statistics: http://www.horace.org/blog/wp-content/uploads/2012/05/How-to-Lie-With-Statistics-1954-Huff.pdf
@@ -309,7 +311,10 @@ Data Visualization
  
 * MicrosoStrategy - Visual Analytics Course List: https://www.microstrategy.com/us/services/education/course-list#filter-role:path=default|filter-platform:path=default|filter-version:path=._10_5|filter-certification:path=default|sort-course-number:path~type~order=.card-corner~text~asc
 
-* Previous Visualization collections, check "VISUALIZATION" section: https://github.com/hanhanwu/Hanhan_Data_Science_Resources/blob/master/README.md
+* Python Elastic Search & Kibana for data visualization: https://www.analyticsvidhya.com/blog/2017/05/beginners-guide-to-data-exploration-using-elastic-search-and-kibana/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+  * I still prefer R or Spark for visualized data exploration, if you care about the speed. otherwise, tableau
+  * "Elastic Search is an open source, RESTful distributed and scalable search engine. Elastic search is extremely fast in fetching results for simple or complex queries on large amounts of data (Petabytes) because of it’s simple design and distributed nature. It is also much easier to work with than a conventional database constrained by schemas, tables."
+  * The tutorial prevides the method to indexing the data for Elastic Search
 
 * My d3 Practice
  * code: https://github.com/hanhanwu/Hanhan_d3
