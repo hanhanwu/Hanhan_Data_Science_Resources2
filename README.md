@@ -364,7 +364,6 @@ Big Data
   * Amazon DynamoDB vs. Amazon Redshift vs. Oracle NoSQL: https://db-engines.com/en/system/Amazon+DynamoDB%3BAmazon+Redshift
     * It seems that DynamoDB is NoSql while Redshift is a data warehouse based on psql   
 
-
 ************************************************************************
 
 Cloud
