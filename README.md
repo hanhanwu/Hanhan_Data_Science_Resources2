@@ -349,6 +349,20 @@ Big Data
   * It is a great book that has broaden and deepen the concepts we have heard many time times but may has misunderstanding, such as "logs", "streaming processing" and even "ETL".
   * Google Caffeine: https://googleblog.blogspot.ca/2010/06/our-new-search-index-caffeine.html
     * It rebuilt its web crawling, processing, and indexing pipeline—what has to be one of the most complex, largest scale data processing systems on the planet —on top of a stream processing system.
+* NoSQL
+  * CAP theorem (could only choose 2)
+    * Consistency: all clients always have the same view of data
+    * Avability: client can always read and write
+    * Partition tolerance means that the system works well across physical network partitions
+  * There are different types of NoSql databases
+    * Column oriented
+    * Documented oriented
+    * Graph database
+    * Key-value oriented
+  * NoSql visual guide: http://blog.nahurst.com/visual-guide-to-nosql-systems
+  * Some other description: http://stackoverflow.com/questions/2798251/whats-the-difference-been-nosql-and-a-column-oriented-database
+  * Amazon DynamoDB vs. Amazon Redshift vs. Oracle NoSQL: https://db-engines.com/en/system/Amazon+DynamoDB%3BAmazon+Redshift
+    * It seems that DynamoDB is NoSql while Redshift is a data warehouse based on psql   
 
 
 ************************************************************************
