@@ -446,6 +446,7 @@ AI
   * Dropout Rate is the probability of keeping a neuron active. Higher the dropout rate, lower is the regularization
   * l-BFGS is a second order gradient descent technique whereas SGD is a first order gradient descent technique. When `Data is sparse` or `Number of parameters of neural network are small`, l-BFGS is better
   * For non-continuous objective during optimization in deep neural net, Subgradient method is better
+* Some ideas about GPU: https://www.analyticsvidhya.com/blog/2017/05/gpus-necessary-for-deep-learning/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 
 
 ************************************************************************
