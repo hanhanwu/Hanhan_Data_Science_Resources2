@@ -137,6 +137,18 @@ Statistics in Data Science
   * <b>Residual Sum of Squares (RSS)</b> - It can be interpreted as the amount by which the predicted values deviated from the actual values. Large deviation would indicate that the model failed at predicting the correct values for the dependent variable. <b>Regression (Explained) Sum of Squares (ESS)</b> – It can be interpreted as the amount by which the predicted values deviated from the the mean of actual values.
   * Residuals is also known as the prediction error, they are vertical distance of points from the regression line
   * <b>Co-efficient of Determination = ESS/(ESS + RSS)</b>. It represents the strength of correlation between two variables. <b>Correlation Coefficient = sqrt(Co-efficient of Determination)</b>, also represents the strength of correlation between two variables, ranges between [-1,1]. 0 means no correlation, 1 means strong positive correlation, -1 means strong neagtive correlation.
+  
+
+* About Data Sampling: http://psc.dss.ucdavis.edu/sommerb/sommerdemo/sampling/types.htm
+  * Probability sampling can be representative, non-probability sampling may not
+  * probability Sampling
+    * Random sample. (I guess R `sample()` is random sampling by default, so that each feature has the same weight)
+    * Stratified sample
+  * Nonprobability Sampling
+    * Quota sample
+    * Purposive sample
+    * Convenience sample
+ 
  
 * [Comprehensive and Practical Statistics Guide for Data Science][1] - A real good one!
   * Sample Distribution and Population Distribution, Central Limit Theorem, Confidence Interval
