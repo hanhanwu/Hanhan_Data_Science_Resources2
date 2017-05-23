@@ -110,6 +110,11 @@ Applied Data Science in Python/R/Java
   * SPMF examples: http://www.philippe-fournier-viger.com/spmf/index.php?link=documentation.php
   * Algorithm mapping: http://www.philippe-fournier-viger.com/spmf/map_algorithms_spmf_data_mining097.png
   * Download: http://www.philippe-fournier-viger.com/spmf/index.php?link=download.php
+* [Python] Scikit-Learn algorithms map and Estimators
+  * map: http://scikit-learn.org/stable/tutorial/machine_learning_map/
+  * I'm sure that I have copied this before, but today I have learned something new about this map! Those green squares are clickable, and they are the estimators
+  * An estimator is used to help tune parameters and estimate the model
+  * This map also helps you find some algorithms in Scikit-Learn based on data size, data type
 
 
 ************************************************************************
