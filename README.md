@@ -408,7 +408,7 @@ TEXT ANALYSIS
 
 ************************************************************************
 
-Non-Machine Learning Data Analysis Examples
+Non-Machine Learning Data Analysis Examples亖？云
 
 * Analysis with data visualization: https://www.analyticsvidhya.com/blog/2016/12/who-is-the-superhero-of-cricket-battlefield-an-in-depth-analysis/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 
@@ -417,6 +417,30 @@ Non-Machine Learning Data Analysis Examples
 
 AI
 
+* Deep Learning basic concepts (it's a real good one!): https://www.analyticsvidhya.com/blog/2017/05/25-must-know-terms-concepts-for-beginners-in-deep-learning/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+  * how does `activation function` work:
+    * `u = ∑W*X+b`, X is the input vector, W is the weights vector, b is bias
+    * apply activation function `f()` to u, `f(u)` is the output of the layer
+  * Different activation functions
+    * The <b>sigmoid</b> transformation generates a more smooth range of values between 0 and 1. We might need to observe the changes in the output with slight changes in the input values. Smooth curves allow us to do that and are hence preferred over step functions.
+    * The major benefit of using <b>ReLU</b> is that it has a constant derivative value for all inputs greater than 0. The constant derivative value helps the network to train faster.
+    * <b>softmax</b>, normally used in the output layer for classification. It is similar to sigmoid but its output is normalized to make the sum as 1. Meanwhile, sigmoid is used for binary classification while softmax can be used on multi-class classification.
+  * Gradient Descent & Optimization & Cost function: Gradient descent is an optimization method, aiming at minimizing the cost/loss
+  * Backpropagation is used to update weights
+  * Batches: While training a neural network, instead of sending the entire input in one go, we divide in input into <b>several chunks of equal size randomly</b>. Training the data on batches makes the model more generalized as compared to the model built when the entire data set is fed to the network in one go.
+  * Epochs: An epoch is defined as <b>a single training iteration of all batches</b> in both forward and back propagation. This means 1 epoch is a single forward and backward pass of the entire input data. Higher epochs could lead to higher accuracy but maybe also overfitting, the higher one also takes longer time.
+  * Dropout: Dropout is a regularization technique which prevents over-fitting of the network. When training a certain number of neurons in the hidden layer is randomly dropped. This means that the training happens on several architectures of the neural network on different combinations of the neurons. You can think of drop out as an ensemble technique, where the output of multiple networks is then used to produce the final output.
+  * Batch Normalization, it is used to ensure the data distribution will be the same as the next layer expected. Because after backpropagation, the weights changed and the data distribution may also changed while te next layer expects to see similar data distribution it has seen before.
+  * CNN (Convolutional Neural Network)
+    * Filter: is a smaller window of data, it used to filter the entire data into multiples windows, each window generates a convoluted value. All the convoluted values form a new set of data. Using this method, an image can be convoluted into less parameters. CNN is often used on image
+    * Pooling: a pooling layer is often added between convolutional layers to reduce parameters in order to reduce overfitting. For example, in practice, MAX pooling works better
+    * Padding: Padding refers to adding extra layer of zeros across the images so that the output image has the same size as the input
+    * Data Augmentation: the addition of new data derived from the given data, which might prove to be beneficial for prediction. Such as brightening/rotating the image
+  * RNN (Recurrent Neural Network)
+    * Recurrent Neuron: A recurrent neuron is one in which the output of the neuron is sent back to it for t time stamps.
+    * RNN is often used for sequential data, such as time series
+  * Vanishing Gradient Problem – Vanishing gradient problem arises in cases where the gradient of the activation function is very small. During back propagation when the weights are multiplied with these low gradients, they tend to become very small and “vanish” as they go further deep in the network. This makes the neural network to forget the long range dependency. This generally becomes a problem in cases of recurrent neural networks where long term dependencies are very important for the network to remember. <b>This can be solved by using activation functions like ReLu which do not have small gradients.</b>
+  * Exploding Gradient Problem – This is the exact opposite of the vanishing gradient problem, where the gradient of the activation function is too large. During back propagation, it makes the weight of a particular node very high with respect to the others rendering them insignificant. This can be easily solved by clipping the gradient so that it doesn’t exceed a certain value.
 * Deep Learning talks from PyData (it also has some other data science talks): https://www.analyticsvidhya.com/blog/2017/05/pydata-amsterdam-2017-machine-learning-deep-learning-data-science/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 * Neural Network vs Deep Learning: <b>When there are more hidden layers and increase depth of neural network a neural network becomes deep learning.</b>
 * Something about AI (those brief explaination about real life applications are useful and intresting): https://www.analyticsvidhya.com/blog/2016/12/artificial-intelligence-demystified/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
