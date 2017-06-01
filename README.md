@@ -352,6 +352,7 @@ Big Data
   * Structured Streaming, P57-59
 * Lessons from large scale machine learning deployment on Spark, 2.0: https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/Lessons_from_Large-Scale_Machine_Learning_Deployments_on_Spark.pdf
 * Hadoop 10 years: https://upxacademy.com/hadoop-10-years/
+* Why Cloud Service is better than HDFS: https://databricks.com/blog/2017/05/31/top-5-reasons-for-choosing-s3-over-hdfs.html?utm_campaign=Company%20Blog&utm_content=55155959&utm_medium=social&utm_source=linkedin
 * Hive function cheat sheet: https://www.qubole.com/resources/cheatsheet/hive-function-cheat-sheet/
 * Distributing System
   * Spack New Physical Plan: https://databricks.com/blog/2017/04/01/next-generation-physical-planning-in-apache-spark.html?utm_campaign=Databricks&utm_content=51844317&utm_medium=social&utm_source=linkedin
@@ -413,7 +414,7 @@ TEXT ANALYSIS
 
 ************************************************************************
 
-Non-Machine Learning Data Analysis Examples亖？云
+Non-Machine Learning Data Analysis Examples
 
 * Analysis with data visualization: https://www.analyticsvidhya.com/blog/2016/12/who-is-the-superhero-of-cricket-battlefield-an-in-depth-analysis/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 
