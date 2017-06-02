@@ -39,6 +39,19 @@ MICROSOFT
 * MSFT Cyber Security Blog: https://blogs.microsoft.com/microsoftsecure/category/cybersecurity/
 * MSFT Security: https://www.microsoft.com/en-us/security/default.aspx
 * BioCatch is working with Azure for their analysis now
+* Azure Security Center (ASC) and Cyber Security (these in fact are interesting)
+  * First of all, ASC added alerts to help threat investigation
+    * https://azure.microsoft.com/en-us/blog/azure-security-center-adds-context-alerts-to-aid-threat-investigation/
+    * It seems that, the basic steps is to check system data, including the time order of system events (any abnormal order, any abnormal event, etc); objects being created/downloaded/launched/etc.
+    * Created scheduled task can also be suspective, since many attacks will schedule to happen repeatedly
+  * Here is a very detailed SQL Brute Force Attack investigation process and prevention solution
+    * https://azure.microsoft.com/en-us/blog/how-azure-security-center-helps-reveal-a-cyberattack/
+    * It seems that their auto detection methods include not only machine learning methods, but also implemented investication process that is same as human investigation process
+    * This is a very interesting article!
+  * How ASC detects Bitcoin Mining Attack
+    * https://azure.microsoft.com/en-us/blog/how-azure-security-center-detects-a-bitcoin-mining-attack/
+    * <b>Bitcoin Miners</b> are a special class of software that use mining algorithms to generate or “mine” bitcoins, which are a form of digital currency. Mining software is often flagged as malicious because <b>it hijacks</b> system hardware resources like the Central Processing Unit (<b>CPU</b>) or Graphics Processing Unit (<b>GPU</b>) as well as <b>network bandwidth of an affected host</b>. Cryptonight is one such mining algorithm which relies specifically on the host’s CPU. 
+    * In their investigations, they’ve seen bitcoin miners installed through a variety of techniques including <b>malicious downloads, emails with malicious links, attachments downloaded by already-installed malware, peer to peer file sharing networks, and through cracked installers/bundlers</b>.
 
 
 ******************************************************
