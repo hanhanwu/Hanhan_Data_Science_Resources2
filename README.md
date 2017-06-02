@@ -14,6 +14,13 @@ SUMMARIZED RESOURCES
 * Data Science Media Resources: https://www.analyticsvidhya.com/data-science-blogs-communities-books-podcasts-newsletters-follow/
 * This is a new UC Berkeley data science cousre, it servers for undergraduate and therefore everything is introductory, however it covers relative statistics, math, data visualization, I think it will be helpful, since sometimes if we only study statistics may still have difficulty to apply the knowledge in data science. This program has slides and video for each class online, available to the public immeddiately: http://www.ds100.org/sp17/
 
+* Summarized From Others
+  * 16 data science repositories (these may contain more statistical analysis, so it's good to learn): http://www.analyticbridge.datasciencecentral.com/profiles/blogs/16-data-science-repositories
+  * 21 articles about time series: http://www.datasciencecentral.com/profiles/blogs/21-great-articles-and-tutorials-on-time-series
+  * 13 articles about correlation: http://www.datasciencecentral.com/profiles/blogs/13-great-articles-and-tutorials-about-correlation
+  * 10 articles about outliers: http://www.datasciencecentral.com/profiles/blogs/11-articles-and-tutorials-about-outliers
+  * 14 articles clustering: http://www.datasciencecentral.com/profiles/blogs/14-great-articles-and-tutorials-on-clustering
+
 
 ************************************************************************
 
