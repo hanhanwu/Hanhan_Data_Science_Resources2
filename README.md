@@ -128,6 +128,7 @@ Applied Data Science in Python/R/Java
 
 Statistics in Data Science
 
+* <b>Find All Calculators</b> [here][15], this one is easier to understand and better to use
 * Termology glossary for statistics in machine learning: https://www.analyticsvidhya.com/glossary-of-common-statistics-and-machine-learning-terms/
 * Statistics behind Boruta feature selection: https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/boruta_statistics.pdf
 * How the laws of group theory provide a useful codification of the practical lessons of building efficient distributed and real-time aggregation systems (from 22:00, he started to talk about HyperLogLog and other approximation data structures): https://www.infoq.com/presentations/abstract-algebra-analytics
@@ -145,7 +146,7 @@ Statistics in Data Science
   * 95% <b> confidence interval does not mean</b> the probability of a population mean to lie in an interval is 95%. Instead, 95% C.I <b>means that 95% of the Interval estimates will contain the population statistic</b>.
   * If a sample mean lies in the margin of error range then, it might be possible that its actual value is equal to the population mean and the difference is occurring by chance.
   * <b>Difference between z-scores and t-values</b> are that t-values are dependent on Degree of Freedom of a sample, and t-values use sample standard deviation while z-scores use population standard deviation.
-  * <b>The Degree of Freedom</b> – It is the number of variables that have the choice of having more than one arbitrary value. For example, in a sample of size 10 with mean 10, 9 values can be arbitrary but the 1oth value is forced by the sample mean.
+  * <b>The Degree of Freedom</b> – It is the number of variables that have the choice of having more than one arbitrary value. For example, in a sample of size 10 with mean 10, 9 values can be arbitrary but the 10th value is forced by the sample mean.
   * <b>Residual Sum of Squares (RSS)</b> - It can be interpreted as the amount by which the predicted values deviated from the actual values. Large deviation would indicate that the model failed at predicting the correct values for the dependent variable. <b>Regression (Explained) Sum of Squares (ESS)</b> – It can be interpreted as the amount by which the predicted values deviated from the the mean of actual values.
   * Residuals is also known as the prediction error, they are vertical distance of points from the regression line
   * <b>Co-efficient of Determination = ESS/(ESS + RSS)</b>. It represents the strength of correlation between two variables. <b>Correlation Coefficient = sqrt(Co-efficient of Determination)</b>, also represents the strength of correlation between two variables, ranges between [-1,1]. 0 means no correlation, 1 means strong positive correlation, -1 means strong neagtive correlation.
@@ -171,6 +172,12 @@ Statistics in Data Science
   * Chi-square test, categorical variables
   * [p value (chi-square) calculator][4]
   * Regression and ANOVA, it is important is knowing the degree to which your model is successful in explaining the trend (variance) in dependent variable. ANOVA helps finding the effectiveness of regression models.
+  * <b>An example of hypothesis test with chi-square</b>:
+    *  chi-square tests the hypothesis that A and B are independent, that is, there is no correlation between them. <b>Chi-square is used to calculate the correlation between characteristical variables</b>
+    * In this example, you have already calculated chi-square value as 507.93
+    * B feature has 2 levels, "science-fiction", "history"; A feature has 2 levels, "female", "male". So we can form a 2x2 table. <b>The degree of freedom</b> = (2-1)*(2-1) = 1
+    * Use the calculator [here][4] to calculate <b>significant level</b>, type degree of freedom as 1, probability as 0.001 (you can choose a probability you'd like). The calculated significant level is 10.82756617 
+    * chi-square value 507.93 is much larger than the significant level, so we reject the hypothesis that A, B are independent and not correlated
  
 
 * Probability cheat sheet: http://www.cs.elte.hu/~mesti/valszam/kepletek
@@ -179,7 +186,7 @@ Statistics in Data Science
   * The normal distribution is perfectly symmetrical about the mean. The probabilities move similarly in both directions around the mean. The total area under the curve is 1, since summing up all the possible probabilities would give 1.
   * Area Under the Normal Distribution
   * Z score: The distance in terms of number of standard deviations, the observed value is away from the mean, is the standard score or the Z score. <b>Observed value = µ+zσ</b> [µ is the mean and σ is the standard deviation]
-  * [Z table !!!][6]
+  * [Find Z Table here][12]
 * [Very Basic Conditional Probability and Bayes Theorem][7]
   * Independent, Exclusive, Exhaustive events
   * Each time, when it's something about statistics pr probability, I will still read all the content to guarantee that I won't miss anything useful. This one is basic but I like the way it starts from simple concepts, using real life examples and finally leads to how does Bayes Theorem work. Although, there is an error in formula `P (no cancer and +) = P (no cancer) * P(+) = 0.99852*0.99`, it should be `0.99852*0.01`
@@ -198,8 +205,7 @@ Statistics in Data Science
     * When looking for probability, calculate z score first and check the value in the Z table, that value is the probability
     * <b>Observed value = µ+zσ</b> [µ is the mean and σ is the standard deviation]
     * <b>Standard Error = σ/√N</b>, [N is the number of Sample]; <b>z = (Sample Mean - Population Mean)/Standard Error</b>
-    * [Z table][6]
-    * [Z table for different distributions, and z critical values][12]
+    * [Find Z Table, t-distribution, chi-distribution here][12]
   * <b>About t-score</b>
     * When compare 2 groups, calculate t-score
     * <b>t-statistic = (group1 Mean - group2 Mean)/Standard Error</b>
@@ -215,6 +221,10 @@ Statistics in Data Science
     * Correlation between the features won’t change if you add or subtract a constant value in the features.
   * <b>Significance level = 1- Confidence level</b>
   * <b>Mean Absolute Error</b> = the mean of absolute errors
+  * <b>Normalization Methods</b>
+    * min-max normalization = (x - min)/(max - min)
+    * z-score normalization = (x - mean)/standard deviation
+    * decimal scaling = x/1000, x/100, etc (depends on how could you make the values into [0,1] range) 
   
 * Linear regression line attempts to minimize the squared distance between the points and the regression line. By definition the ordinary least squares (OLS) regression tries to have the minimum sum of squared errors. This means that the sum of squared residuals should be minimized. This may or may not be achieved by passing through the maximum points in the data. The most common case of not passing through all points and reducing the error is when the data has a lot of outliers or is not very strongly linear.
 * Person vs Spearman: Pearson correlation evaluated the <b>linear relationship</b> between two continuous variables. <b>A relationship is linear when a change in one variable is associated with a proportional change in the other variable.</b> Spearman evaluates a <b>monotonic relationship</b>. <b>A monotonic relationship is one where the variables change together but not necessarily at a constant rate.</b>
@@ -595,7 +605,7 @@ OTHER
 [1]:https://www.analyticsvidhya.com/blog/2017/01/comprehensive-practical-guide-inferential-statistics-data-science/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [2]:http://www.danielsoper.com/statcalc/calculator.aspx?id=98
 [3]:http://stattrek.com/online-calculator/f-distribution.aspx
-[4]:http://stattrek.com/online-calculator/chi-square.aspx
+[4]:http://www.danielsoper.com/statcalc/calculator.aspx?id=12
 [5]:https://www.analyticsvidhya.com/blog/2017/02/basic-probability-data-science-with-examples/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [6]:https://s3.amazonaws.com/udacity-hosted-downloads/ZTable.jpg
 [7]:https://www.analyticsvidhya.com/blog/2017/03/conditional-probability-bayes-theorem/?utm_content=buffer7afce&utm_medium=social&utm_source=plus.google.com&utm_campaign=buffer
@@ -606,3 +616,4 @@ OTHER
 [12]:http://pegasus.cc.ucf.edu/~pepe/Tables
 [13]:http://www.sjsu.edu/faculty/gerstman/StatPrimer/t-table.pdf
 [14]:http://statistics.berkeley.edu/sites/default/files/tech-reports/421.pdf
+[15]:http://www.danielsoper.com/statcalc/default.aspx
