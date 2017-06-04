@@ -311,6 +311,13 @@ Data Visualization
   * How to lie with Statistics: http://www.horace.org/blog/wp-content/uploads/2012/05/How-to-Lie-With-Statistics-1954-Huff.pdf
   * The Signal and the Noise (to respect the author): https://www.amazon.com/Signal-Noise-Many-Predictions-Fail-but/dp/0143125087/ref=sr_1_1?ie=UTF8&qid=1488403387&sr=8-1&keywords=signal+and+the+noise
   * Non-designer's design book: https://diegopiovesan.files.wordpress.com/2010/07/livro_-_the_non-designers_desi.pdf
+  
+* Python LIME - make machine learning models more readable
+  * This was why I chose HCI in my last semester. Many people are working on visualization methods to make machine learning models more interpretable. This is good, especially when you are working in the industry, business leaders, customers or even techinical people all prefer an easy-to-understand way.
+  * This python library focuses on interpreting classification models now. Majorly about indicating which features contribute to which class
+  * Open source: https://github.com/marcotcr/lime
+  * Code examples: https://www.analyticsvidhya.com/blog/2017/06/building-trust-in-machine-learning-models/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+  * I didn't try the code because it does not contain clustering. And in fact confusion matrix is easier for me to understand, compared with their visualization, and it cannot tell the feature rankings for their contributions to the prediction. But their ideas are still a good start, they have converted decision tree ideas into other classification interpretation.
 
 * NLP Visualization
   * On Jan 20, 2017, SFU Linguistics Lab invited an UBC researcher to show NLP data visualization, which is very interesting. By doing topic modeling, graph base clustering, they are able to categorize large amount of comments and opinions into groups, by using interactive visualization, the tools they developed will help readers read online comments in a more efficient way.
