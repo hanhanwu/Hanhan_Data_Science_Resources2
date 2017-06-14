@@ -170,7 +170,7 @@ Statistics in Data Science
   * ANOVA (Analysis of Variance), continuous and categorical variables, ANOVA also requires data from approximately normally distributed populations with equal variances between factor levels.
   * [F-ratio calculator][3]
   * Chi-square test, categorical variables
-  * [p value (chi-square) calculator][4]
+  * [chi-square calculator][4]
   * Regression and ANOVA, it is important is knowing the degree to which your model is successful in explaining the trend (variance) in dependent variable. ANOVA helps finding the effectiveness of regression models.
   * <b>An example of hypothesis test with chi-square</b>:
     *  chi-square tests the hypothesis that A and B are independent, that is, there is no correlation between them. <b>Chi-square is used to calculate the correlation between characteristical variables</b>
