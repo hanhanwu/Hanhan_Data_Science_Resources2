@@ -13,6 +13,22 @@ SUMMARIZED RESOURCES
 * Summarized Big Data Learning Resources: https://www.analyticsvidhya.com/resources-big-data/
 * Data Science Media Resources: https://www.analyticsvidhya.com/data-science-blogs-communities-books-podcasts-newsletters-follow/
 * This is a new UC Berkeley data science cousre, it servers for undergraduate and therefore everything is introductory, however it covers relative statistics, math, data visualization, I think it will be helpful, since sometimes if we only study statistics may still have difficulty to apply the knowledge in data science. This program has slides and video for each class online, available to the public immeddiately: http://www.ds100.org/sp17/
+* Microsoft DMTK (Distributed Machine Learning Toolkit)
+  * First of all, I'm surprised to see it is created by MSFT, but it looks cool
+  * Official Website: http://www.dmtk.io/
+  * GitGub: https://github.com/Microsoft/DMTK
+  * Currently, they have:
+    * DMTK framework(Multiverso): The parameter server framework for distributed machine learning.
+    * LightLDA: Scalable, fast and lightweight system for large-scale topic modeling.
+    * LightGBM: LightGBM is a fast, distributed, high performance gradient boosting (GBDT, GBRT, GBM or MART) framework based on decision tree algorithms, used for ranking, classification and many other machine learning tasks.
+    * Distributed word embedding: Distributed algorithm for word embedding implemented on multiverso.
+  * LightGBM
+    * What I am interested in is to run machine learning algorithms with GPU
+    * Features (include GPU tutorials): https://github.com/Microsoft/LightGBM/wiki/Features
+    * Experiment Results: https://github.com/Microsoft/LightGBM/wiki/Experiments#comparison-experiment
+    * GitHub: https://github.com/Microsoft/LightGBM/tree/d65f87b6f8c172ed441b1ad2a7bd83bd3268d447
+    * Parallel Learning Guide: https://github.com/Microsoft/LightGBM/wiki/Parallel-Learning-Guide
+  
 
 * Summarized From Others
   * 16 data science repositories (these may contain more statistical analysis, so it's good to learn): http://www.analyticbridge.datasciencecentral.com/profiles/blogs/16-data-science-repositories
@@ -31,6 +47,7 @@ TREE BASED MODELS & ENSEMBLING
 * [R Implementation] Choose models for emsemling: https://www.analyticsvidhya.com/blog/2015/10/trick-right-model-ensemble/?utm_content=buffer6b42d&utm_medium=social&utm_source=plus.google.com&utm_campaign=buffer
   * The models are les correlated to each other
   * The code in this tutorial is trying to test the results made by multiple models and choose the model combination that gets the best result (I'm thinking how do they deal with random seed issues)
+* 
 
 
 ************************************************************************
@@ -509,6 +526,9 @@ AI
   * l-BFGS is a second order gradient descent technique whereas SGD is a first order gradient descent technique. When `Data is sparse` or `Number of parameters of neural network are small`, l-BFGS is better
   * For non-continuous objective during optimization in deep neural net, Subgradient method is better
 * Some ideas about GPU: https://www.analyticsvidhya.com/blog/2017/05/gpus-necessary-for-deep-learning/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+* Microsoft CNTK (Cognitive Toolkit)
+  * Official Website: https://www.microsoft.com/en-us/cognitive-toolkit/
+  * GitHub: https://github.com/Microsoft/CNTK
 
 
 ************************************************************************
