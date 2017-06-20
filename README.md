@@ -47,7 +47,6 @@ TREE BASED MODELS & ENSEMBLING
 * [R Implementation] Choose models for emsemling: https://www.analyticsvidhya.com/blog/2015/10/trick-right-model-ensemble/?utm_content=buffer6b42d&utm_medium=social&utm_source=plus.google.com&utm_campaign=buffer
   * The models are les correlated to each other
   * The code in this tutorial is trying to test the results made by multiple models and choose the model combination that gets the best result (I'm thinking how do they deal with random seed issues)
-* 
 
 
 ************************************************************************
