@@ -47,6 +47,15 @@ TREE BASED MODELS & ENSEMBLING
 * [R Implementation] Choose models for emsemling: https://www.analyticsvidhya.com/blog/2015/10/trick-right-model-ensemble/?utm_content=buffer6b42d&utm_medium=social&utm_source=plus.google.com&utm_campaign=buffer
   * The models are les correlated to each other
   * The code in this tutorial is trying to test the results made by multiple models and choose the model combination that gets the best result (I'm thinking how do they deal with random seed issues)
+* Light GBM
+  * Reference: https://www.analyticsvidhya.com/blog/2017/06/which-algorithm-takes-the-crown-light-gbm-vs-xgboost/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+  * <b>Leaf-wise</b>: Other boosting algorithms use <b>depth-wise or level-wise</b>, while Light BGM is using leaf-wise. With this method, Light GBM becomes more complexity and has less info loss and therefore can be more accurate than other boosting methods.
+  * Sometimes, overfitting could happen, and therfore need to set `max-depth`
+  * Advantages
+    * Faster Training - histogram method to bucket continuous features into discrete bins
+    * Better Accuracy than other boosting methods, such as XGBoost
+    * Performe on large dataset
+    * Parallel Learning
 
 
 ************************************************************************
