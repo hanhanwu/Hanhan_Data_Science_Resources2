@@ -537,6 +537,7 @@ AI
 * Microsoft CNTK (Cognitive Toolkit)
   * Official Website: https://www.microsoft.com/en-us/cognitive-toolkit/
   * GitHub: https://github.com/Microsoft/CNTK
+* Age Detection Tutorial: https://www.analyticsvidhya.com/blog/2017/06/hands-on-with-deep-learning-solution-for-age-detection-practice-problem/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 
 
 ************************************************************************
