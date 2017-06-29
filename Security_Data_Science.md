@@ -22,6 +22,8 @@ News and Notes
     * Each individual flow may function reasonably well on its own. 
     * Multiple types of authentication can be deployed based on risk, cost, and customer preference and can be optimized by channel. It can also help enable a smooth multichannel experience for customers when they need to move from a self-service to an assisted channel
     * Authentication methods can be added, removed, and combined, and business logic for authentication can be consolidated and coordinated, and can evolve over time. With consistent integration and communication standards can lower costs and improve time to market when adding new authentication options and managing those in place.
+  * Page 15, Physical BioMetrics: https://nudatasecurity.com/wp-content/uploads/2017/06/E-Book-The-Next-Evolution-of-Authentication-NuData-Security.pdf?utm_source=NuData+Security+Opt-in&utm_campaign=78cfccd098-Newsletter_June2017&utm_medium=email&utm_term=0_d94819affe-78cfccd098-218614237
+
 
 * Collections of Attacks
   * 7 most commen RATs (remote access Trojans): http://www.darkreading.com/perimeter/the-7-most-common-rats-in-use-today-/a/d-id/1321965
