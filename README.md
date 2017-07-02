@@ -550,7 +550,10 @@ AI
 * Age Detection Tutorial: https://www.analyticsvidhya.com/blog/2017/06/hands-on-with-deep-learning-solution-for-age-detection-practice-problem/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 * Generative Adversarial Networks (GNA): https://www.analyticsvidhya.com/blog/2017/06/introductory-generative-adversarial-networks-gans/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
   * Reads like, how to train your dragon
-  * Anyway, it's cool to see see this video: https://www.youtube.com/watch?v=6OAHfBoxyx8
+  * Anyway, it's cool to see this video: https://www.youtube.com/watch?v=6OAHfBoxyx8
+    * I like the idea that if he kills the shadow, he dies; but if he does nothing, he dies; only when he tried to merge with the shadow, he becomes stronger... Quite like this GNA concepts
+    * I even found Prince of Persia 1989-2013 short history: https://www.youtube.com/watch?v=SscOEEXmy84
+    * It must be very cool to have a boyfriend who likes playing games
 
 
 ************************************************************************
