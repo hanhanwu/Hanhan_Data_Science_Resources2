@@ -496,6 +496,17 @@ AI
     * Pooling: a pooling layer is often added between convolutional layers to reduce parameters in order to reduce overfitting. For example, in practice, MAX pooling works better
     * Padding: Padding refers to adding extra layer of zeros across the images so that the output image has the same size as the input
     * Data Augmentation: the addition of new data derived from the given data, which might prove to be beneficial for prediction. Such as brightening/rotating the image
+  * Detailed CNN Go Through: https://www.analyticsvidhya.com/blog/2017/06/architecture-of-convolutional-neural-networks-simplified-demystified/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+    * Not a big fan of deep learning, but I am paying attention to all these tuutorials as well, to learn more about them. This article is a real good one. I love this typy of go through, from the very beginning, step by step, telling you how an algorithm work, with examples :)
+    * CNN is a popular algorithm for image classification
+    * Images are formed by pixels, if the order or color of these pixels change, the image will change too. Machine will break an image into a matrix of pixels, and store the color code of each pixel at the representative position
+    * A fully connected network would take this image as an array by flattening it and considering pixel values as features to predict the number in image. What CNN does is to take the input image, define a weight matrix and the input is convolved to extract specific features from the image without losing the information about its spatial arrangement, this also significantly reduces number of features
+    * The convolution layer - k*k matrix with 0,1 weights, use this k*K matrix in the whole n*n matrix to extract features. Weights are learnt such that the loss function will be minimized. When there are multiple convolution layer, the deeper the layer is, the more complex features it extratced. An activation map is the output of the convolution layer.
+    * <b>Stride</b>: If the weight matrix moves 1 pixel at a time, we call it as a stride of 1. The size of image keeps on reducing as we increase the stride value
+    * <b>Padding</b>: Padding the input image with zeros across it when the size shrinked after stride. This is to preserve the size of the image
+    * The spatial size of the output image can be calculated as `([W-F+2P]/S)+1`. Here, W is the input volume size, F is the size of the filter, P is the number of padding applied and S is the number of strides.
+    * Output Layer - The convolution and pooling layers would only be able to extract features and reduce the number of parameters from the  original images. However, to generate the final output we need to apply <b>a fully connected layer</b> to generate an output equal to the number of classes we need. The output layer has a <b>loss function</b>like categorical cross-entropy, to compute the error in prediction. Once the forward pass is complete the <b>backpropagation begins to update the weight and biases for error and loss reduction</b>.
+    * <b>Images should be resized to the same shape and size</b> before using CNN. You can use Python `cv2` for image resizing. `images[i]=cv2.resize(images[i],(300,300))`
   * RNN (Recurrent Neural Network)
     * Recurrent Neuron: A recurrent neuron is one in which the output of the neuron is sent back to it for t time stamps.
     * RNN is often used for sequential data, such as time series
