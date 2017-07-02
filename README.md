@@ -27,6 +27,11 @@ SUMMARIZED RESOURCES
     * Experiment Results: https://github.com/Microsoft/LightGBM/wiki/Experiments#comparison-experiment
     * GitHub: https://github.com/Microsoft/LightGBM/tree/d65f87b6f8c172ed441b1ad2a7bd83bd3268d447
     * Parallel Learning Guide: https://github.com/Microsoft/LightGBM/wiki/Parallel-Learning-Guide
+* Google Tensorflow
+  * It seems that, it is not somehting just for deep learning. You can do both deep learning and other machine learning here
+  * Tensorflow Paper: http://download.tensorflow.org/paper/whitepaper2015.pdf
+  * Tensorflow ecosystem: https://github.com/tensorflow
+  * Install: https://www.tensorflow.org/install/install_mac
   
 
 * Summarized From Others
