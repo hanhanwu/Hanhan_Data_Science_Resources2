@@ -548,6 +548,9 @@ AI
   * Official Website: https://www.microsoft.com/en-us/cognitive-toolkit/
   * GitHub: https://github.com/Microsoft/CNTK
 * Age Detection Tutorial: https://www.analyticsvidhya.com/blog/2017/06/hands-on-with-deep-learning-solution-for-age-detection-practice-problem/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+* Generative Adversarial Networks (GNA): https://www.analyticsvidhya.com/blog/2017/06/introductory-generative-adversarial-networks-gans/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+  * Reads like, how to train your dragon
+  * Anyway, it's cool to see see this video: https://www.youtube.com/watch?v=6OAHfBoxyx8
 
 
 ************************************************************************
