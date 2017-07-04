@@ -13,20 +13,24 @@ SUMMARIZED RESOURCES
 * Summarized Big Data Learning Resources: https://www.analyticsvidhya.com/resources-big-data/
 * Data Science Media Resources: https://www.analyticsvidhya.com/data-science-blogs-communities-books-podcasts-newsletters-follow/
 * This is a new UC Berkeley data science cousre, it servers for undergraduate and therefore everything is introductory, however it covers relative statistics, math, data visualization, I think it will be helpful, since sometimes if we only study statistics may still have difficulty to apply the knowledge in data science. This program has slides and video for each class online, available to the public immeddiately: http://www.ds100.org/sp17/
+
 * Microsoft DMTK (Distributed Machine Learning Toolkit)
   * Official Website: http://www.dmtk.io/
   * GitGub: https://github.com/Microsoft/DMTK
   * Currently, they have:
-    * DMTK framework(Multiverso): The parameter server framework for distributed machine learning.
-    * LightLDA: Scalable, fast and lightweight system for large-scale topic modeling.
-    * LightGBM: LightGBM is a fast, distributed, high performance gradient boosting (GBDT, GBRT, GBM or MART) framework based on decision tree algorithms, used for ranking, classification and many other machine learning tasks.
-    * Distributed word embedding: Distributed algorithm for word embedding implemented on multiverso.
+    * <b>DMTK framework(Multiverso)</b>: The parameter server framework for distributed machine learning.
+    * <b>LightLDA</b>: Scalable, fast and lightweight system for large-scale topic modeling.
+    * <b>LightGBM</b>: LightGBM is a fast, distributed, high performance gradient boosting (GBDT, GBRT, GBM or MART) framework based on decision tree algorithms, used for ranking, classification and many other machine learning tasks.
+    * <b>Distributed word embedding</b>: Distributed algorithm for word embedding implemented on multiverso.
   * LightGBM
     * What I am interested in is to run machine learning algorithms with GPU
     * Features (include GPU tutorials): https://github.com/Microsoft/LightGBM/wiki/Features
     * Experiment Results: https://github.com/Microsoft/LightGBM/wiki/Experiments#comparison-experiment
     * GitHub: https://github.com/Microsoft/LightGBM/tree/d65f87b6f8c172ed441b1ad2a7bd83bd3268d447
+    * Installation Guide: https://github.com/Microsoft/LightGBM/wiki/Installation-Guide
+    * <b>NOTE</b>: after running above intallation commands successfully, type `cd LightGBM/python-package`, then type `python setup.py install` (for Python2.7), `python3.5 setup.py install` (for python3.5)
     * Parallel Learning Guide: https://github.com/Microsoft/LightGBM/wiki/Parallel-Learning-Guide
+    
 * Google Tensorflow
   * It seems that, it is not somehting just for deep learning. You can do both deep learning and other machine learning here
   * Tensorflow Paper: http://download.tensorflow.org/paper/whitepaper2015.pdf
@@ -60,6 +64,16 @@ TREE BASED MODELS & ENSEMBLING
     * Better Accuracy than other boosting methods, such as XGBoost
     * Performe on large dataset
     * Parallel Learning
+  * Param Highlight
+    * Hight Parameter - `device`: default= cpu ; options = gpu,cpu. Device on which we want to train our model. Choose GPU for faster training.
+    * Hight Parameter - `label`: type=string ; specify the label column
+    * Hight Parameter - `categorical_feature`: type=string ; specify the categorical features we want to use for training our model
+    * Hight Parameter - `num_class`: default=1 ; type=int ; used only for multi-class classification
+    * Hight Parameter - `num_iterations`: number of boosting iterations to be performed ; default=100; type=int
+    * Hight Parameter - `num_leaves`: number of leaves in <b>one tree</b>; default = 31 ; type =int
+    * Hight Parameter - `max_depth`: <b>deal with overfitting</b>
+    * Hight Parameter - `bagging_fraction`: default=1 ; specifies the fraction of data to be used for each iteration and is generally used to <b>speed up the training</b> and <b>avoid overfitting</b>.
+    * Hight Parameter - `num_threads`: default=OpenMP_default, type=int ;Number of threads for Light GBM.
 
 
 ************************************************************************
