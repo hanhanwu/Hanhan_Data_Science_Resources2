@@ -54,6 +54,9 @@ MICROSOFT
     * https://azure.microsoft.com/en-us/blog/how-azure-security-center-detects-a-bitcoin-mining-attack/
     * <b>Bitcoin Miners</b> are a special class of software that use mining algorithms to generate or “mine” bitcoins, which are a form of digital currency. Mining software is often flagged as malicious because <b>it hijacks</b> system hardware resources like the Central Processing Unit (<b>CPU</b>) or Graphics Processing Unit (<b>GPU</b>) as well as <b>network bandwidth of an affected host</b>. Cryptonight is one such mining algorithm which relies specifically on the host’s CPU. 
     * In their investigations, they’ve seen bitcoin miners installed through a variety of techniques including <b>malicious downloads, emails with malicious links, attachments downloaded by already-installed malware, peer to peer file sharing networks, and through cracked installers/bundlers</b>.
+  * How Azure Security Center detect DDoS
+    * https://azure.microsoft.com/en-us/blog/how-azure-security-center-detects-ddos-attack-using-cyber-threat-intelligence/
+    * DDoS - distributed denial of services
 * White Papers from Hexadite
   * When I was running the code, I checked cyber security news and saw this company has been bought by Microsoft recently. Out of curiosity, I started to check this company, and it does write pretty good white papers. I especially like the process it explains to you about how security analyst work and how intelligent security automation work in the same way but at machine speed
   * Security Automation Details (process, what to check, which vendor to use in different sitations, etc.): https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/What%20is%20Security%20Automation%20Whitepaper%20RC2.pdf
