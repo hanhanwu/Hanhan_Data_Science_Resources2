@@ -57,8 +57,19 @@ TREE BASED MODELS & ENSEMBLING
   * The code in this tutorial is trying to test the results made by multiple models and choose the model combination that gets the best result (I'm thinking how do they deal with random seed issues)
 * Light GBM
   * Reference: https://www.analyticsvidhya.com/blog/2017/06/which-algorithm-takes-the-crown-light-gbm-vs-xgboost/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
-  * <b>Leaf-wise</b>: Other boosting algorithms use <b>depth-wise or level-wise</b>, while Light BGM is using leaf-wise. With this method, Light GBM becomes more complexity and has less info loss and therefore can be more accurate than other boosting methods.
+  * <b>Leaf-wise</b> - Optimization in Accuracy: Other boosting algorithms use <b>depth-wise or level-wise</b>, while Light BGM is using leaf-wise. With this method, Light GBM becomes more complexity and has less info loss and therefore can be more accurate than other boosting methods.
   * Sometimes, overfitting could happen, and therfore need to set `max-depth`
+  * <b>Using Histogram Based Algorithms</b>
+    * Many boosting tools as using pre-sorted based algorithms (default XGBoost algorithm) for decision tree learning, which makes the solution but less easier to optimize
+    * LightGBM uses the histogram based algorithms, which bucketing continuous features into discrete bins, <b>to speed up training procedure and reduce memory usage</b>
+    * Reduce Calculation Cost of Split Gain: pre-sorted based cost O(#data) to calculate; histogram based needs O(#data) to construcu histogram but O(#bins) to calculate Split Gain. #bins often smaller than #data, and this is why if you tune #bins to a smaller number, it will speed up the algorithm
+    * Use histogram subtraction for further speed-up: To get one leaf's histograms in a binary tree, can use the histogram subtraction of its parent and its neighbor, only needs to construct histograms for one leaf (with smaller #data than its neighbor), then can get histograms of its neighbor by histogram subtraction with small cost( O(#bins) )
+    * Reduce Memory usage: with small number of bins, can use smaller data type to store trainning data; no need to store extra info for pre-sorting features
+  * Sparse Optimization: Only need O(2 x #non_zero_data) to construct histogram for sparse features
+  * Oprimization in Parallel Learning
+    * Feature Parallel - Different from traditional feature parallel, which partitions data vertically for each worker. In LightGBM, every worker holds the full data. Therefore, no need to communicate for split result of data since every worker know how to split data. Then Workers find local best split point{feature, threshold} on local feature set -> Communicate local best splits with each other and get the best one -> Perform best split
+    * Data Parallel - However, when data is hugh, feature parallel will still be overhead. Use Data Parallel instead. Reduce communiation. Reduced communication cost from O(2 * #feature* #bin) to O(0.5 * #feature* #bin) for data parallel in LightGBM. Instead of "Merge global histograms from all local histograms", LightGBM use "Reduce Scatter" to merge histograms of different(non-overlapping) features for different workers. Then workers find local best split on local merged histograms and sync up global best split. LightGBM use histogram subtraction to speed up training. Based on this, it can communicate histograms only for one leaf, and get its neighbor's histograms by subtraction as well.
+    * Voting Parallel - Further reduce the communication cost in Data parallel to constant cost. It uses two stage voting to reduce the communication cost of feature Histograms.
   * Advantages
     * Faster Training - histogram method to bucket continuous features into discrete bins
     * Better Accuracy than other boosting methods, such as XGBoost
