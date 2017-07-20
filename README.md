@@ -290,6 +290,10 @@ Statistics in Data Science
 * Linear regression line attempts to minimize the squared distance between the points and the regression line. By definition the ordinary least squares (OLS) regression tries to have the minimum sum of squared errors. This means that the sum of squared residuals should be minimized. This may or may not be achieved by passing through the maximum points in the data. The most common case of not passing through all points and reducing the error is when the data has a lot of outliers or is not very strongly linear.
 * Person vs Spearman: Pearson correlation evaluated the <b>linear relationship</b> between two continuous variables. <b>A relationship is linear when a change in one variable is associated with a proportional change in the other variable.</b> Spearman evaluates a <b>monotonic relationship</b>. <b>A monotonic relationship is one where the variables change together but not necessarily at a constant rate.</b>
 
+* Coefficient
+  * Does similar work as correlation
+  * Tutorial to use it in Linear Regression: https://www.analyticsvidhya.com/blog/2017/06/a-comprehensive-guide-for-linear-ridge-and-lasso-regression/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+
 * Linear Algebra with Python calculations
   * reference: https://www.analyticsvidhya.com/blog/2017/05/comprehensive-guide-to-linear-algebra/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
   * It talkes about those planes in linear algebra, matrix calculation
