@@ -55,6 +55,7 @@ TREE BASED MODELS & ENSEMBLING
 * [R Implementation] Choose models for emsemling: https://www.analyticsvidhya.com/blog/2015/10/trick-right-model-ensemble/?utm_content=buffer6b42d&utm_medium=social&utm_source=plus.google.com&utm_campaign=buffer
   * The models are les correlated to each other
   * The code in this tutorial is trying to test the results made by multiple models and choose the model combination that gets the best result (I'm thinking how do they deal with random seed issues)
+
 * Light GBM
   * Reference: https://www.analyticsvidhya.com/blog/2017/06/which-algorithm-takes-the-crown-light-gbm-vs-xgboost/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
   * <b>Leaf-wise</b> - Optimization in Accuracy: Other boosting algorithms use <b>depth-wise or level-wise</b>, while Light BGM is using leaf-wise. With this method, Light GBM becomes more complexity and has less info loss and therefore can be more accurate than other boosting methods.
@@ -85,6 +86,12 @@ TREE BASED MODELS & ENSEMBLING
     * Hight Parameter - `max_depth`: <b>deal with overfitting</b>
     * Hight Parameter - `bagging_fraction`: default=1 ; specifies the fraction of data to be used for each iteration and is generally used to <b>speed up the training</b> and <b>avoid overfitting</b>.
     * Hight Parameter - `num_threads`: default=OpenMP_default, type=int ;Number of threads for Light GBM.
+
+* CatBoost
+  * Wow, it looks like a well developed package, in includes Python, R libraries and also StackOverflow tag.
+  * [Python] Library: https://tech.yandex.com/catboost/doc/dg/concepts/python-installation-docpage/
+  * [R] Package: https://tech.yandex.com/catboost/doc/dg/concepts/r-installation-docpage/
+  * Param Tuning: https://tech.yandex.com/catboost/doc/dg/concepts/parameter-tuning-docpage/
 
 
 ************************************************************************
