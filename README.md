@@ -300,6 +300,11 @@ Statistics in Data Science
   * It talkes about those planes in linear algebra, matrix calculation
   * What I like most is Eigenvalues and Eigenvectors part, because it's talking about how they related to machine learning. So Eigenvalues and Eigenvectors can be used in dimensional reduction such as PCA and reduce info loss.
   * Singular Value Decomposition (SVD), used in removig redundant features, can be considered as a type of dimensional reduction too, but doesn't change the rest data as PCA does
+  
+* To comapre the similarity between 2 curves
+  * Kolmogorov–Smirnov test
+    * its null hypothesis this, the smaple is drawn from the reference graph
+    * So, if the generated p-value is <b>smaller</b> than the threshold, reject null hypothesis, which means the 2 curves are not similar
 
 
 ************************************************************************
