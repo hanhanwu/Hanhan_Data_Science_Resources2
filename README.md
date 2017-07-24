@@ -305,6 +305,10 @@ Statistics in Data Science
   * Kolmogorov–Smirnov test
     * its null hypothesis this, the smaple is drawn from the reference graph
     * So, if the generated p-value is <b>smaller</b> than the threshold, reject null hypothesis, which means the 2 curves are not similar
+    
+* Simulation Methods
+  * Monte Carlo Simulation: http://www.palisade.com/risk/monte_carlo_simulation.asp
+    * It can simulate all types of possible outcomes and probability of each outcome
 
 
 ************************************************************************
