@@ -36,6 +36,8 @@ SUMMARIZED RESOURCES
   * Tensorflow Paper: http://download.tensorflow.org/paper/whitepaper2015.pdf
   * Tensorflow ecosystem: https://github.com/tensorflow
   * Install: https://www.tensorflow.org/install/install_mac
+  * TensorBoard, the visualization and debug tool: https://www.tensorflow.org/get_started/summaries_and_tensorboard
+    * A basic introduction to TensorBoard (the author forgot to normalize the data before NN training, but anyway, he found TensorBorad to help): https://www.analyticsvidhya.com/blog/2017/07/debugging-neural-network-with-tensorboard/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
   
 
 * Summarized From Others
