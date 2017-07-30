@@ -530,6 +530,8 @@ Non-Machine Learning Data Analysis Examples
 
 AI
 
+* BOOK - Fundamentals of Deep Learning: https://github.com/hanhanwu/readings/blob/master/fundamentals-of-deep-learning-sampler.pdf
+  * I found the full book in school library, it should be able to be found at Microsoft library too :)
 * Deep Learning basic concepts (it's a real good one!): https://www.analyticsvidhya.com/blog/2017/05/25-must-know-terms-concepts-for-beginners-in-deep-learning/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
   * how does `activation function` work:
     * `u = ∑W*X+b`, X is the input vector, W is the weights vector, b is bias
