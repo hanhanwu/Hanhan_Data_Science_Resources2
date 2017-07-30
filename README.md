@@ -111,6 +111,8 @@ DATA PREPROCESSING
     * If the features in both the dataset belong to different distributions then, they should be able to separate the dataset into old and new sets significantly. These features are <b>drifting features</b>
     * <b>Prior probability shift</b> - Shift in label. For example, when you use Byesian model to predict multiple categories, then all the classes appeared in testing data has to appear in training, if not then it is Prior probability shift
     * <b>Concept Shift</b> - Shift in the relationship between features and the label. For example, in the old dataset, Feature1 could lead to Class 'Y', but in the new dataset, it could lead to Class 'N'
+  * My Code: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/deal_with_data_shifting.ipynb
+  * Reference: https://www.analyticsvidhya.com/blog/2017/07/covariate-shift-the-hidden-problem-of-real-world-data-science/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
     
 
 * Entity Resolution
