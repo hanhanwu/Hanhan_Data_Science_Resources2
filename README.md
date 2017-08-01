@@ -198,6 +198,11 @@ Applied Data Science in Python/R/Java
   * I'm sure that I have copied this before, but today I have learned something new about this map! Those green squares are clickable, and they are the estimators
   * An estimator is used to help tune parameters and estimate the model
   * This map also helps you find some algorithms in Scikit-Learn based on data size, data type
+* [Python] TPOT - Automated Feature Selection with Optimization
+  * TPOT documentation: http://rhiever.github.io/tpot/
+  * TPOT Python API: http://rhiever.github.io/tpot/api/
+  * It automatically does feature preprocessing, feature construction, feature selection, model selection and optimization
+  * For optimization, it is using <b>Genetic Algorithm</b>
 
 
 ************************************************************************
