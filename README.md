@@ -198,11 +198,32 @@ Applied Data Science in Python/R/Java
   * I'm sure that I have copied this before, but today I have learned something new about this map! Those green squares are clickable, and they are the estimators
   * An estimator is used to help tune parameters and estimate the model
   * This map also helps you find some algorithms in Scikit-Learn based on data size, data type
-* [Python] TPOT - Automated Feature Selection with Optimization
+* [Python] TPOT - Automated Model Selection with Param Optimization
   * TPOT documentation: http://rhiever.github.io/tpot/
   * TPOT Python API: http://rhiever.github.io/tpot/api/
   * It automatically does feature preprocessing, feature construction, feature selection, model selection and optimization
   * For optimization, it is using <b>Genetic Algorithm</b>
+* [Python] MLBox - Automated Model Selection with Param Optimization
+  * MLBox GitHub: https://github.com/AxeldeRomblay/MLBox
+  * It does some data cleanning and preprocessing for you, but better to do things on your own before using it
+  * It also does model selction and param optimization like TPOT, what makes MLBox looks good is, each step of work, it ourputs some info to give you more insights of its performance
+  * MLBox Data Cleaning, in `train_test_split()`
+    * Delete unnamed cols
+    * Remove duplicates
+    * Extract month, year and day of the week from a Date column
+  * Remove Shifting Data automatically, `Drift_thresholder().fit_transform(data)`
+    * But it may be differ from manually removing shifting data, check my code here: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/deal_with_data_shifting.ipynb
+    * Only deals with covariate shifting (shifting in fetures)
+    * Details for how data shifting checking in MLBox works: https://www.analyticsvidhya.com/blog/2017/07/mlbox-library-automated-machine-learning/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+  * It uses Entity Embeding to enclode categorical data
+    * It seems that, with `Entity Encoding`, you can link similar/relavant categorical values together
+  * Model Selection and Param Optimization
+    * It uses hyperopt library which is fast, below are the param categories you can set:
+    * Check params can be set in `optimize()`: http://mlbox.readthedocs.io/en/latest/features.html#optimisation
+    * Also check my code sample: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/try_mlbox.ipynb
+  * Shortages:
+    * Still in development, also some libraries used now can be out of dated in the next version
+    * No support to unsupervised learning for now
 
 
 ************************************************************************
