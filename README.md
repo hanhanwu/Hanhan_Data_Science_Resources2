@@ -605,6 +605,18 @@ AI
     * RNN is often used for sequential data, such as time series
   * Vanishing Gradient Problem – Vanishing gradient problem arises in cases where the gradient of the activation function is very small. During back propagation when the weights are multiplied with these low gradients, they tend to become very small and “vanish” as they go further deep in the network. This makes the neural network to forget the long range dependency. This generally becomes a problem in cases of recurrent neural networks where long term dependencies are very important for the network to remember. <b>This can be solved by using activation functions like ReLu which do not have small gradients.</b>
   * Exploding Gradient Problem – This is the exact opposite of the vanishing gradient problem, where the gradient of the activation function is too large. During back propagation, it makes the weight of a particular node very high with respect to the others rendering them insignificant. This can be easily solved by clipping the gradient so that it doesn’t exceed a certain value.
+* Computer Vision & Deep Learning Architectures
+  * https://www.analyticsvidhya.com/blog/2017/08/10-advanced-deep-learning-architectures-data-scientists/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+  * Computer Vision Tasks:
+    * Object Recognition / classification
+    * Classification + Localisation
+    * Object Detection
+    * Image Segmentation
+  * Architectures
+    * AlexNet: a simple architecture with convolutional and pooling layers one on top of the other, followed by fully connected layers at the top. AlexNet speeds up the training by 10 times just by the use of GPU.
+    * VGG Net: characterized by its pyramidal shape, where the bottom layers which are closer to the image are wide, whereas the top layers are deep. It contains subsequent convolutional layers followed by pooling layers. It is very slow to train if trained from scratch, even on a decent GPU. But pre-trained networks for VGG are available freely on the internet, so it is commonly used out of the box for various applications.
+    * GoogleNet: made a novel approach called the Inception Module. It is a drastic change from the sequential architectures. In a single layer, multiple types of “feature extractors” are present. The network at training itself has many options to choose from when solving the task. It can either choose to convolve the input, or to pool it directly.
+    
 * NN examples in R and Python: https://www.analyticsvidhya.com/blog/2017/05/neural-network-from-scratch-in-python-and-r/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 * Use pre-trained model for deep learning: https://www.analyticsvidhya.com/blog/2017/06/transfer-learning-the-art-of-fine-tuning-a-pre-trained-model/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 * Deep Learning talks from PyData (it also has some other data science talks): https://www.analyticsvidhya.com/blog/2017/05/pydata-amsterdam-2017-machine-learning-deep-learning-data-science/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
