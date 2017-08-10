@@ -34,6 +34,8 @@ SUMMARIZED RESOURCES
 * Google Tensorflow
   * It seems that, it is not somehting just for deep learning. You can do both deep learning and other machine learning here
   * Tensorflow Paper: http://download.tensorflow.org/paper/whitepaper2015.pdf
+    * “TensorFlow is an open source software library for numerical computation using dataflow graphs. <b>Nodes</b> in the graph represents <b>mathematical operations</b>, while <b>graph edges</b> represent <b>multi-dimensional data arrays</b> (aka <b>tensors</b>) communicated between them. The flexible architecture allows you to deploy computation to one or more CPUs or GPUs in a desktop, server, or mobile device with a single API.”
+    * TensorFlow follows a <b>lazy programming paradigm</b>. It first builds a graph of all the operation to be done, and then when a “session” is called, it “runs” the graph. Building a computational graph can be considered as the main ingredient of TensorFlow.
   * Tensorflow ecosystem: https://github.com/tensorflow
   * Install: https://www.tensorflow.org/install/install_mac
   * TensorBoard, the visualization and debug tool: https://www.tensorflow.org/get_started/summaries_and_tensorboard
