@@ -36,6 +36,9 @@ SUMMARIZED RESOURCES
   * Tensorflow Paper: http://download.tensorflow.org/paper/whitepaper2015.pdf
     * “TensorFlow is an open source software library for numerical computation using dataflow graphs. <b>Nodes</b> in the graph represents <b>mathematical operations</b>, while <b>graph edges</b> represent <b>multi-dimensional data arrays</b> (aka <b>tensors</b>) communicated between them. The flexible architecture allows you to deploy computation to one or more CPUs or GPUs in a desktop, server, or mobile device with a single API.”
     * TensorFlow follows a <b>lazy programming paradigm</b>. It first builds a graph of all the operation to be done, and then when a “session” is called, it “runs” the graph. Building a computational graph can be considered as the main ingredient of TensorFlow.
+  * [Tensorflow Playground][16]
+    * It's showing you what does NN look like while it's training the data, and you can tune some params
+    * I really love this idea, because it's showing not only creativity but also passion! Data Science is an area that is full of passion!
   * Tensorflow ecosystem: https://github.com/tensorflow
   * Install: https://www.tensorflow.org/install/install_mac
   * TensorBoard, the visualization and debug tool: https://www.tensorflow.org/get_started/summaries_and_tensorboard
@@ -794,3 +797,4 @@ OTHER
 [13]:http://www.sjsu.edu/faculty/gerstman/StatPrimer/t-table.pdf
 [14]:http://statistics.berkeley.edu/sites/default/files/tech-reports/421.pdf
 [15]:http://www.danielsoper.com/statcalc/default.aspx
+[16]:http://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=4,2&seed=0.14502&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false
