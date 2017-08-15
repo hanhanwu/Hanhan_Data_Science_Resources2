@@ -101,7 +101,13 @@ TREE BASED MODELS & ENSEMBLING
   * [Python] Library: https://tech.yandex.com/catboost/doc/dg/concepts/python-installation-docpage/
   * [R] Package: https://tech.yandex.com/catboost/doc/dg/concepts/r-installation-docpage/
   * Param Tuning: https://tech.yandex.com/catboost/doc/dg/concepts/parameter-tuning-docpage/
+  * Categorical to Numerical automatically
+    * One of the advantage of CatBoost is, it converts categorical data into numerical data with statistical methods, automatically: https://tech.yandex.com/catboost/doc/dg/concepts/algorithm-main-stages_cat-to-numberic-docpage/
+    * My opinion is, you should try their methods, but approaches such as one-hot encoding should be tried at the same time when you are doing feature engineering
   * There is also a comparison with LightGBM, XGBoost and H2O, using logloss: https://catboost.yandex
+    * CatBoost does not require conversion of data set to any specific format like XGBoost and LightGBM.
+    * It performs better for both tuned and default versions, when compare wither other boosting methods on those datasets.
+  * As poswerful as my baby E!
 
 
 ************************************************************************
