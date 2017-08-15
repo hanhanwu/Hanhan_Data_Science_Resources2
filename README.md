@@ -97,9 +97,11 @@ TREE BASED MODELS & ENSEMBLING
 
 * CatBoost
   * Wow, it looks like a well developed package, in includes Python, R libraries and also StackOverflow tag.
+  * CatBoost GitHub: https://github.com/catboost
   * [Python] Library: https://tech.yandex.com/catboost/doc/dg/concepts/python-installation-docpage/
   * [R] Package: https://tech.yandex.com/catboost/doc/dg/concepts/r-installation-docpage/
   * Param Tuning: https://tech.yandex.com/catboost/doc/dg/concepts/parameter-tuning-docpage/
+  * There is also a comparison with LightGBM, XGBoost and H2O, using logloss: https://catboost.yandex
 
 
 ************************************************************************
