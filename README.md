@@ -110,7 +110,7 @@ TREE BASED MODELS & ENSEMBLING
   * There is also a comparison with LightGBM, XGBoost and H2O, using logloss: https://catboost.yandex
     * CatBoost does not require conversion of data set to any specific format like XGBoost and LightGBM.
     * It performs better for both tuned and default versions, when compare wither other boosting methods on those datasets.
-  * As poswerful as my baby E!
+  * My baby E is more powerful!
 
 
 ************************************************************************
