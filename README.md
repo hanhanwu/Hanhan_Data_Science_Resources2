@@ -99,6 +99,7 @@ TREE BASED MODELS & ENSEMBLING
   * Wow, it looks like a well developed package, in includes Python, R libraries and also StackOverflow tag.
   * CatBoost GitHub: https://github.com/catboost
   * CatBoost tutorials in IPython: https://github.com/catboost/catboost/tree/master/catboost/tutorials
+  * My basic code here: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/try_CatBoost_basics.ipynb
   * [Python] Library: https://tech.yandex.com/catboost/doc/dg/concepts/python-installation-docpage/
     * Python source code: https://github.com/catboost/catboost/tree/master/catboost/python-package/catboost
   * [R] Package: https://tech.yandex.com/catboost/doc/dg/concepts/r-installation-docpage/
