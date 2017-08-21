@@ -257,6 +257,9 @@ Statistics in Data Science
     * <b>"Bayesian statistics is a mathematical procedure that applies probabilities to statistical problems. It provides people the tools to update their beliefs in the evidence of new data."</b>
     * <b>Bayes theorem</b> is built on top of conditional probability and lies in the heart of Bayesian Inference. 
     * Bayes Theorem Wiki is better: https://en.wikipedia.org/wiki/Bayes%27_theorem
+    * Bayes Inference part here is good, especially in explaining `prior, likelyhood of observing prior, evidence and posterior`. The probability of observing prior depends upon the fairness
+    * <b>The reason that we chose prior belief is to obtain a beta distribution</b>. This is because when we multiply it with a likelihood function, posterior distribution yields a form similar to the prior distribution which is much easier to relate to and understand
+    * Bayes factor is the equivalent of p-value in the bayesian framework. The null hypothesis in bayesian framework assumes ∞ probability distribution only at a particular value of a parameter (say θ=0.5) and a zero probability else where. (M1); The alternative hypothesis is that all values of θ are possible, hence a flat curve representing the distribution. (M2). `Bayes factor is defined as the ratio of the posterior odds to the prior odds`. `To reject a null hypothesis, a BF <1/10 is preferred.`
     
 * <b>Find All Calculators</b> [here][15], this one is easier to understand and better to use
 * Termology glossary for statistics in machine learning: https://www.analyticsvidhya.com/glossary-of-common-statistics-and-machine-learning-terms/
