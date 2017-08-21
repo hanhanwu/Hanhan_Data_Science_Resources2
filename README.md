@@ -246,6 +246,18 @@ Applied Data Science in Python/R/Java
 
 Statistics in Data Science
 
+* Bayesian Statistics
+  * Reference: https://www.analyticsvidhya.com/blog/2016/06/bayesian-statistics-beginners-simple-english/
+  * Frequentist Statistics
+    * Frequentist Statistics tests whether an event (hypothesis) occurs or not. It calculates the probability of an event in the long run of the experiment (i.e the experiment is repeated under the same conditions to obtain the outcome).
+    * Drawback 1 - p-value changes when sample size and stop intention change
+    * Drawback 2 - confidence level (C.L) also heavily depends on sample size like p-value
+    * Drawback 3 - confidence level (C.L) are not probability distributions therefore they do not provide the most probable value for a parameter and the most probable values
+  * Because of the drawbacks of Frequentist Statistics, here comes Bayesian Statistics
+    * <b>"Bayesian statistics is a mathematical procedure that applies probabilities to statistical problems. It provides people the tools to update their beliefs in the evidence of new data."</b>
+    * <b>Bayes theorem</b> is built on top of conditional probability and lies in the heart of Bayesian Inference. 
+    * Bayes Theorem Wiki is better: https://en.wikipedia.org/wiki/Bayes%27_theorem
+    
 * <b>Find All Calculators</b> [here][15], this one is easier to understand and better to use
 * Termology glossary for statistics in machine learning: https://www.analyticsvidhya.com/glossary-of-common-statistics-and-machine-learning-terms/
 * Statistics behind Boruta feature selection: https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/boruta_statistics.pdf
