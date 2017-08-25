@@ -110,7 +110,6 @@ TREE BASED MODELS & ENSEMBLING
   * There is also a comparison with LightGBM, XGBoost and H2O, using logloss: https://catboost.yandex
     * CatBoost does not require conversion of data set to any specific format like XGBoost and LightGBM.
     * It performs better for both tuned and default versions, when compare wither other boosting methods on those datasets.
-  * My baby E is more powerful!
 
 
 ************************************************************************
@@ -373,9 +372,16 @@ Statistics in Data Science
   * Singular Value Decomposition (SVD), used in removig redundant features, can be considered as a type of dimensional reduction too, but doesn't change the rest data as PCA does
   
 * To comapre the similarity between 2 curves
-  * Kolmogorov–Smirnov test
+  * Try to compare from these perspectives:
+    * Distance
+    * Shape
+    * Size of the Area in between
+  * Kolmogorov–Smirnov test - distance based
     * its null hypothesis this, the smaple is drawn from the reference graph
     * So, if the generated p-value is <b>smaller</b> than the threshold, reject null hypothesis, which means the 2 curves are not similar
+  * Dynamic Time Wrapping (DTW) - distance based
+    * https://en.wikipedia.org/wiki/Dynamic_time_warping
+  * Check the consistency of Peak and non-peak points of the 2 curves - shape based
     
 * Simulation Methods
   * Monte Carlo Simulation: http://www.palisade.com/risk/monte_carlo_simulation.asp
@@ -698,7 +704,6 @@ AI
   * Anyway, it's cool to see this video: https://www.youtube.com/watch?v=6OAHfBoxyx8
     * I like the idea that if he kills the shadow, he dies; but if he does nothing, he dies; only when he tried to merge with the shadow, he becomes stronger... Quite like this GNA concepts
     * I even found Prince of Persia 1989-2013 short history: https://www.youtube.com/watch?v=SscOEEXmy84
-    * It must be very cool to have a boyfriend who likes playing games
 
 
 ************************************************************************
