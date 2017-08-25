@@ -313,6 +313,9 @@ Statistics in Data Science
  
 
 * Probability cheat sheet: http://www.cs.elte.hu/~mesti/valszam/kepletek
+* Likelihood vs Probability: http://mathworld.wolfram.com/Likelihood.html
+  * <b>Likelihood</b> is the hypothetical probability that a past event would yield a specific outcome.
+  * Probability refers to the occurrence of future events, while Likelihood refers to past events with known outcomes.
 * [Probability basics with examples][5]
   * binonial distribution: a binomial distribution is the discrete probability distribution of the number of success in a sequence of n independent Bernoulli trials (having only yes/no or true/false outcomes).
   * The normal distribution is perfectly symmetrical about the mean. The probabilities move similarly in both directions around the mean. The total area under the curve is 1, since summing up all the possible probabilities would give 1.
