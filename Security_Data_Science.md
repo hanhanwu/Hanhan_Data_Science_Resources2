@@ -74,6 +74,32 @@ Spam Detection
 
 ******************************************************
 
+SECURITY TIPS
+
+* Secure your Device (Windows Surface 8, 10)
+  * Sometimes, as a data scientist, you still have to do other work. For example, you are going to take multiple devices to travel out and present, then secure your devices can be important. I'm going to summarize multiple points I tried this morning:
+  * Encrypt HardDrive
+    * How to: https://www.onmsft.com/news/encrypt-hard-drives-windows-10-keeping-data-safe-secure
+    * Check whether your hard drive has been encrypted: http://mywindowshub.com/check-bitlocker-drive-encryption-status-drive-windows-10/
+  * Change your screen password
+  * Create BIOS password
+    * What is BIOS: https://www.lifewire.com/bios-basic-input-output-system-2625820
+      * BIOS - Basic Input Output System
+      * BIOS instructs the computer on how to perform a number of basic functions such as booting and keyboard control
+      * BIOS is also used to identify and configure the hardware in a computer such as the hard drive, floppy drive, optical drive, CPU, memory, etc
+    * For Surface Windows 8, you can just keep pressing `Del` button when your machine is restarting, then you will enter into BIOS page
+    * For Surface Windows 10, UEFI is BIOS, and here's how to enter into BIOS page: https://www.laptopmag.com/articles/access-bios-windows-10
+    * In BIOS page, you may need to disable many things, such as side port, SDCard, network, etc. You can even disabale the keyboard port that Sufrface has
+ * Disable USB Port
+   * In BIOS, you can make USB port unbootable, but it still may not be disabled. Try methods here: https://www.computerhope.com/issues/ch001554.htm
+     * This method won't disable plug-in mouse, but when you have a USB drive plugged in, it won't work
+ * Other minor things
+   * For Surface, you may need to change between Tablet and Laptop mode
+   * If you present a web-like demo, start with full screen by default may needed
+    
+
+******************************************************
+
 Simple Ideas Spark
 
 * AI in Banking:https://www.analyticsvidhya.com/blog/2017/04/5-ai-applications-in-banking-to-look-out-for-in-next-5-years/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
