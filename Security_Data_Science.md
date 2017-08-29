@@ -30,6 +30,13 @@ News and Notes
   * Click Farm
     * http://vesselnews.io/look-inside-chinese-click-farm-fake-followers-fake-likes-fake-reviews/
     * http://m.essexlive.news/watch-how-these-bizarre-click-farms-in-china-are-able-to-offer-fake-social-media-likes-and-reviews/story-30352810-detail/story.html
+    
+    
+******************************************************
+
+SECURITY TOOLS
+
+* Tor: https://www.torproject.org/index.html.en
 
 
 ******************************************************
@@ -87,6 +94,7 @@ SECURITY TIPS
       * BIOS - Basic Input Output System
       * BIOS instructs the computer on how to perform a number of basic functions such as booting and keyboard control
       * BIOS is also used to identify and configure the hardware in a computer such as the hard drive, floppy drive, optical drive, CPU, memory, etc
+      * Check whether your security protection software will be diabled after disabled many thing in BIOS. If so, chekc whether you have Windows Defender installed and turned on. If so, it's good.
     * For Surface Windows 8, you can just keep pressing `Del` button when your machine is restarting, then you will enter into BIOS page
     * For Surface Windows 10, UEFI is BIOS, and here's how to enter into BIOS page: https://www.laptopmag.com/articles/access-bios-windows-10
     * In BIOS page, you may need to disable many things, such as side port, SDCard, network, etc. You can even disabale the keyboard port that Sufrface has
