@@ -110,6 +110,10 @@ SECURITY TIPS
 
 Simple Ideas Spark
 
+* http://www.wildcat.arizona.edu/article/2017/08/cyber-defense-research-designation-could-improve-research-opportunities
+  * "A core piece of CTI is <b>identifying which vulnerabilities individuals in hacker communities are exploring</b>, and addressing those vulnerabilities before they can be exploited."
+  * Time to mine Tor!
+
 * AI in Banking:https://www.analyticsvidhya.com/blog/2017/04/5-ai-applications-in-banking-to-look-out-for-in-next-5-years/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
   * Most of these are not new to people, but it makes me think whether bots can be used to encourage more biometrics input and to collect more biometrics?
   
