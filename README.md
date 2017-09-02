@@ -389,6 +389,13 @@ Statistics in Data Science
 * Simulation Methods
   * Monte Carlo Simulation: http://www.palisade.com/risk/monte_carlo_simulation.asp
     * It can simulate all types of possible outcomes and probability of each outcome
+    
+* <b>Saddle Points</b>
+  * The saddle point will always occur at a relative minimum along one axial direction (between peaks) and at a relative maximum along the crossing axis. [Saddle Point Wiki][17]
+  * [How to Escape Saddle Point Efficiently][18]
+    * Strict saddle points vs Non-strict saddle points: non-strict saddle points can be flat in the valley, strict saddle points require that there is at least one direction along which the curvature is strictly negative
+    * GD with only random initialization can be significantly slowed by saddle points, taking exponential time to escape. The behavior of PGD (projected GD) is strikingingly different — it can generically escape saddle points in polynomial time.
+    * [Difference between Projected Gradient Descent (PGD) and Gradient Descent (GD)][19]
 
 
 ************************************************************************
@@ -832,3 +839,6 @@ OTHER
 [14]:http://statistics.berkeley.edu/sites/default/files/tech-reports/421.pdf
 [15]:http://www.danielsoper.com/statcalc/default.aspx
 [16]:http://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=4,2&seed=0.14502&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false
+[17]:https://en.wikipedia.org/wiki/Saddle_point
+[18]:http://www.offconvex.org/2017/07/19/saddle-efficiency/
+[19]:https://math.stackexchange.com/questions/571068/what-is-the-difference-between-projected-gradient-descent-and-ordinary-gradient
