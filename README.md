@@ -396,7 +396,6 @@ Statistics in Data Science
     * Strict saddle points vs Non-strict saddle points: non-strict saddle points can be flat in the valley, strict saddle points require that there is at least one direction along which the curvature is strictly negative
     * GD with only random initialization can be significantly slowed by saddle points, taking exponential time to escape. The behavior of PGD (projected GD) is strikingingly different — it can generically escape saddle points in polynomial time.
     * [Difference between Projected Gradient Descent (PGD) and Gradient Descent (GD)][19]
-    * GD and SGD work well in non-convex situations
 
 
 ************************************************************************
@@ -618,6 +617,13 @@ AI
 
 * BOOK - Fundamentals of Deep Learning: https://github.com/hanhanwu/readings/blob/master/fundamentals-of-deep-learning-sampler.pdf
   * I found the full book in school library, it should be able to be found at Microsoft library too :)
+* Course - Standford Convolutional Network for Visual Recognition: http://cs231n.github.io/convolutional-networks/
+  * Younger kids are so lucky nowadays! I found the notes are pretty good to review important concepts that will be used in neural network implemention. Now let me review some courses here, otherwise it really gives me lots of difficulties in debugging CNN
+  * Lecture 5 - Convolution and pooling: http://cs231n.github.io/convolutional-networks/
+    * Demo architecture, 10 class classification: http://cs.stanford.edu/people/karpathy/convnetjs/demo/cifar10.html
+  * Wait for my notes here after I finish the lectures in plan....
+  
+ 
 * Deep Learning basic concepts (it's a real good one!): https://www.analyticsvidhya.com/blog/2017/05/25-must-know-terms-concepts-for-beginners-in-deep-learning/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
   * how does `activation function` work:
     * `u = ∑W*X+b`, X is the input vector, W is the weights vector, b is bias
