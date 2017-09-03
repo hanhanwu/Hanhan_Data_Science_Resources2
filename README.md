@@ -619,9 +619,8 @@ AI
   * I found the full book in school library, it should be able to be found at Microsoft library too :)
 * Course - Standford Convolutional Network for Visual Recognition: http://cs231n.github.io/convolutional-networks/
   * Younger kids are so lucky nowadays! I found the notes are pretty good to review important concepts that will be used in neural network implemention. Now let me review some courses here, otherwise it really gives me lots of difficulties in debugging CNN
-  * Lecture 5 - Convolution and pooling: http://cs231n.github.io/convolutional-networks/
-    * Demo architecture, 10 class classification: http://cs.stanford.edu/people/karpathy/convnetjs/demo/cifar10.html
-  * Wait for my notes here after I finish the lectures in plan....
+  * Demo architecture, 10 class classification: http://cs.stanford.edu/people/karpathy/convnetjs/demo/cifar10.html
+  * My notes: https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/Standford_CNN_Notes1.pdf
   
  
 * Deep Learning basic concepts (it's a real good one!): https://www.analyticsvidhya.com/blog/2017/05/25-must-know-terms-concepts-for-beginners-in-deep-learning/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
