@@ -396,6 +396,7 @@ Statistics in Data Science
     * Strict saddle points vs Non-strict saddle points: non-strict saddle points can be flat in the valley, strict saddle points require that there is at least one direction along which the curvature is strictly negative
     * GD with only random initialization can be significantly slowed by saddle points, taking exponential time to escape. The behavior of PGD (projected GD) is strikingingly different — it can generically escape saddle points in polynomial time.
     * [Difference between Projected Gradient Descent (PGD) and Gradient Descent (GD)][19]
+    * GD and SGD work well in non-convex situations
 
 
 ************************************************************************
