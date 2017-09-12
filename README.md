@@ -809,6 +809,16 @@ TRAIN YOUR BRAIN
 
 ************************************************************************
 
+DEF CON COLLECTION
+
+* Today, my colleague said DEF CON has many cyber security related talks and only if I'm a star employee + time schedule allows, the company will reimburse everything for this conference. I'm trying to collect info from DEF CON, to see whether it can be useful and interesting to me.
+* Home: https://www.defcon.org/index.html
+* Videos: https://www.youtube.com/user/DEFCONConference
+* Previous DEF CON: https://www.defcon.org/html/links/dc-archives.html
+
+
+************************************************************************
+
 OTHER
 
 * Make a wish to Data Science Santa! (I really like this idea, you just need to choose your 2017 data science learning goals and finally, they will give you a Christmas gift which is full of  relative learning resurces cater for your goals!): https://www.analyticsvidhya.com/blog/2016/12/launching-analytics-vidhya-secret-santa-kick-start-2017-with-this-gift/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
