@@ -127,6 +127,22 @@ Simple Ideas Spark
   * Some biometrics can be shape data, such as sighed images. PCA is a popular tool applied to <b>shape data</b>, sometimes Sparsed PCA is more informative and saves reousrces than Standard PCA.
   * When preprocessing images, it is better to Align the predict target in the same position in the image. Scale or crop all images to the same size.
   * NOTE: if want to use neural network for image processing, <b>Convolutional Neural Network</b> would be better suited for image related problems because of its inherent nature for taking into account changes in nearby locations of an image
+  
+
+************************************************************************
+
+BLACK HAT vs DEF CON COLLECTION
+
+* Black Hat
+  * It seems that, DEF CON is the conference for hackers, Black Hat is the one for defenders. What looks funny to me is, DEF CON will be held right after Balck Hat in Las Vegas each year.... haha
+    * https://www.blackhat.com/us-17/defcon.html
+  * Briefng: https://www.blackhat.com/us-17/briefings.html
+
+* DEF CON
+  * Today, my colleague said DEF CON has many cyber security related talks and only if I'm a star employee + time schedule allows, the company will reimburse everything for this conference. I'm trying to collect info from DEF CON, to see whether it can be useful and interesting to me.
+  * Home: https://www.defcon.org/index.html
+  * Videos: https://www.youtube.com/user/DEFCONConference
+  * Previous DEF CON: https://www.defcon.org/html/links/dc-archives.html
 
 
 ******************************************************
