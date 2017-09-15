@@ -44,6 +44,9 @@ SECURITY TOOLS
 How Others Do Security
 
 MICROSOFT
+* Azure Confidential Computing: https://azure.microsoft.com/en-us/blog/introducing-azure-confidential-computing/
+  * Trusted Execution Environment (TEE/enclave)
+  * Encryption while in use, without affecting the functionality
 * Azure Network Security: https://azure.microsoft.com/en-us/blog/azure-network-security/
 * MSFT Cyber Security Blog: https://blogs.microsoft.com/microsoftsecure/category/cybersecurity/
 * MSFT Security: https://www.microsoft.com/en-us/security/default.aspx
