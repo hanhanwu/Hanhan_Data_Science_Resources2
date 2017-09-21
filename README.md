@@ -245,6 +245,14 @@ Applied Data Science in Python/R/Java
 
 Statistics in Data Science
 
+* 6 distributions
+  * Overall
+    * <b>The expected value</b> of any distribution is the mean of the distribution
+  * <b>Bernoulli Distribution</b>
+    * only 2 possible outcomes
+    * The expected value for a random variable X in this distributioon is `p` (probability)
+    * The variance for a random variable X in this distributioon is `p(1-p)`
+
 * Bayesian Statistics
   * Reference: https://www.analyticsvidhya.com/blog/2016/06/bayesian-statistics-beginners-simple-english/
   * Frequentist Statistics
