@@ -252,6 +252,18 @@ Statistics in Data Science
     * only 2 possible outcomes
     * The expected value for a random variable X in this distributioon is `p` (probability)
     * The variance for a random variable X in this distributioon is `p(1-p)`
+  * <b>Uniform Distributionz</b>
+    * The probability of all the N number of outcomes are equally likely
+    * `a is min of uniform distribution`, `b is max of uniform distribution`, the probability of a random variable in X is `1/(b-a)`; the probability of a range (x1,x2) is `(x2-x1)/(b-a)`
+    * `mean = (a+b)/2`
+    * `variance = (b-a)^2/12`
+    * Standard Uniform Distribution has `a=0, b=1`, if x in [0,1] range, probability is 1, otherwise 0
+  * <b>Binomial Distribution</b>
+    * The probabilities for 2 outcomes are the same in each trail
+    * Each trail is independent
+    * `n` is the number of trails, `p` is the probability of success in each trail => `mean=n*p`, `variance=n*p*(1-p)`
+    * If the probability of 2 outcomes are the same, then the distribution is normal distribution
+    
 
 * Bayesian Statistics
   * Reference: https://www.analyticsvidhya.com/blog/2016/06/bayesian-statistics-beginners-simple-english/
