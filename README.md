@@ -263,7 +263,35 @@ Statistics in Data Science
     * Each trail is independent
     * `n` is the number of trails, `p` is the probability of success in each trail => `mean=n*p`, `variance=n*p*(1-p)`
     * If the probability of 2 outcomes are the same, then the distribution is normal distribution
-    
+  * <b>Normal Distribution</b>
+    * The mean, median and mode of the distribution coincide.
+    * The curve of the distribution is bell-shaped and symmetrical about the line x=μ.
+    * The total area under the curve is 1.
+    * Exactly half of the values are to the left of the center and the other half to the right.
+    * Standard normal distribution has mean 0 and standard deviation 1
+  * <b>Poisson Distribution</b>
+    * It is applicable in situations where events occur at random points of time and space where in our interest lies <b>only in the number of occurrences of the event</b>.
+      * e.g number of times of have ice-cream in a year; number of flowers in a garden. etc
+     * Any successful event should not influence the outcome of another successful event.
+     * The probability of success over a short interval must equal the probability of success over a longer interval.
+     * The probability of success in an interval approaches zero as the interval becomes smaller.
+     * `λ` is the rate at which an event occurs, `t` is the length of a time interval, and `X` is the number of events in that time interval. `mean = λ*t`
+   * <b>Exponential Distribution</b>
+     * Compared with poisson distribution, exponential distribution means the <b>time interval</b> between 2 events
+       * e.g the time interval between eating 2 ice-creams
+     * It is widely used in survival analysis. `λ` is called the failure rate of a device at any time `t`, given that it has survived up to t. For a random variable X, `mean=1/λ`, `variance=(1/λ)^2`. The greater the rate, the faster the curve drops and the lower the rate, flatter the curve.
+   * Relationship between distributions
+     * Bernoulli Distribution is a special case of Binomial Distribution with a single trial
+     * Poisson Distribution is a limiting case of binomial distribution under the following conditions:
+       * The number of trials is indefinitely large or n → ∞.
+       * The probability of success for each trial is same and indefinitely small or p →0.
+       * np = λ, is finite
+     * Normal distribution is another limiting form of binomial distribution under the following conditions:
+       * The number of trials is indefinitely large, n → ∞
+       * Both p and q are NOT indefinitely small, and p=q
+     * Normal distribution is also a limiting case of Poisson distribution with the parameter λ →∞
+     * If the times between random events follow exponential distribution with rate λ, then the total number of events in a time period of length t follows the Poisson distribution with parameter λt.
+   * reference: https://www.analyticsvidhya.com/blog/2017/09/6-probability-distributions-data-science/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 
 * Bayesian Statistics
   * Reference: https://www.analyticsvidhya.com/blog/2016/06/bayesian-statistics-beginners-simple-english/
