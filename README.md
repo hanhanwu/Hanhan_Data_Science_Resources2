@@ -218,6 +218,7 @@ Applied Data Science in Python/R/Java
   * TPOT Python API: http://rhiever.github.io/tpot/api/
   * It automatically does feature preprocessing, feature construction, feature selection, model selection and optimization
   * For optimization, it is using <b>Genetic Algorithm</b>
+  * <b>TPOT is built upon Scikit-Learn</b>, so those models, methods you can find in TPOT can be found in scikit-learn too. This is what I really like. For example, in Scikit-Learn, classification will use stratfied cross validation while regression will use k-fold. TPOT does the same, and it helps you find the best model with optimized params in its pipeline
 * [Python] MLBox - Automated Model Selection with Param Optimization
   * MLBox GitHub: https://github.com/AxeldeRomblay/MLBox
   * It does some data cleanning and preprocessing for you, but better to do things on your own before using it
