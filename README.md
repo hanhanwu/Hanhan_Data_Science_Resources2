@@ -673,7 +673,7 @@ AI
   * Demo architecture, 10 class classification: http://cs.stanford.edu/people/karpathy/convnetjs/demo/cifar10.html
   * My notes: https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/Standford_CNN_Notes1.pdf
   
- 
+* Neural Network is an Universal Approximators. Besides, Kernel SVM and Boosted Decision Trees are also universal approximators
 * Deep Learning basic concepts (it's a real good one!): https://www.analyticsvidhya.com/blog/2017/05/25-must-know-terms-concepts-for-beginners-in-deep-learning/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
   * how does `activation function` work:
     * `u = ∑W*X+b`, X is the input vector, W is the weights vector, b is bias
@@ -689,6 +689,7 @@ AI
   * Dropout: Dropout is a regularization technique which prevents over-fitting of the network. When training a certain number of neurons in the hidden layer is randomly dropped. This means that the training happens on several architectures of the neural network on different combinations of the neurons. You can think of drop out as an ensemble technique, where the output of multiple networks is then used to produce the final output.
   * Batch Normalization, it is used to ensure the data distribution will be the same as the next layer expected. Because after backpropagation, the weights changed and the data distribution may also changed while te next layer expects to see similar data distribution it has seen before.
   * CNN (Convolutional Neural Network)
+    * 1×1 convolution CNN can help in dimensionality reduction, feature pooling and it suffers less overfitting due to small kernel size
     * Filter: is a smaller window of data, it used to filter the entire data into multiples windows, each window generates a convoluted value. All the convoluted values form a new set of data. Using this method, an image can be convoluted into less parameters. CNN is often used on image
     * Pooling: a pooling layer is often added between convolutional layers to reduce parameters in order to reduce overfitting. For example, in practice, MAX pooling works better
     * Padding: Padding refers to adding extra layer of zeros across the images so that the output image has the same size as the input
@@ -802,7 +803,7 @@ Data Science Skillset Tests
   * Output value range:
     * tanh function: [-1, 1]
     * SIGMOID function: [0, 1]
-    * ReLU function: [0, infinite]
+    * ReLU function: [0, infinite], ReLU gives continuous output in range 0 to infinity, so if the output requires finite output, ReLU cannot be a choice
   * When there are multicollinear features (highly correlated features), solutions can be:
     * remove one of the correlated variables
     * use penalized regression models like ridge or lasso regression
@@ -812,8 +813,9 @@ Data Science Skillset Tests
   * Creating an ensemble of diverse models is a very important factor to achieve better results. Generally, an ensemble method works better, if the individual base models have less correlation among predictions
   * If you have m base models in stacking, that will generate m features for second stage models
   * Dropout in a neural network can be considered as an ensemble technique, where multiple sub-networks are trained together by “dropping” out certain connections between neurons.
-  * !! Bagging of unstable classifiers is a good idea. [Based on this paper][14], "If perturbing the learning set can cause signicant
-changes in the predictor constructed, then bagging can improve accuracy."
+  * !! Bagging of unstable classifiers is a good idea. [Based on this paper][14], "If perturbing the learning set can cause signicant changes in the predictor constructed, then bagging can improve accuracy."
+  * Better not to have same weights, it will make all the neurons to do the same thing and never converge
+  * Weights between input and hidden layer are constant
 * Time series skillset test: https://www.analyticsvidhya.com/blog/2017/04/40-questions-on-time-series-solution-skillpower-time-series-datafest-2017/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 * Dimensional Reduction skillset test: https://www.analyticsvidhya.com/blog/2017/03/questions-dimensionality-reduction-data-scientist/?utm_content=bufferc792d&utm_medium=social&utm_source=linkedin.com&utm_campaign=buffer
 * Deep Learning Skillset Test1: https://www.analyticsvidhya.com/blog/2017/01/must-know-questions-deep-learning/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
