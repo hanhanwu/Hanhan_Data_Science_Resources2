@@ -240,6 +240,7 @@ Applied Data Science in Python/R/Java
   * Shortages:
     * Still in development, also some libraries used now can be out of dated in the next version
     * No support to unsupervised learning for now
+* [Python]Deploy Machine Learning Model as an API, using Flask: https://www.analyticsvidhya.com/blog/2017/09/machine-learning-models-as-apis-using-flask/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 
 
 ************************************************************************
