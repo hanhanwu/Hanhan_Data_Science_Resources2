@@ -793,6 +793,14 @@ Data Science Skillset Tests
 * Linear Regression skillset test: https://www.analyticsvidhya.com/blog/2017/07/30-questions-to-test-a-data-scientist-on-linear-regression/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 * Tree based skillset test: https://www.analyticsvidhya.com/blog/2016/12/detailed-solutions-for-skilltest-tree-based-algorithms/?utm_content=bufferde46d&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer
 * Clustering Skillset test: https://www.analyticsvidhya.com/blog/2017/02/test-data-scientist-clustering/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+* KNN Skillset test: https://www.analyticsvidhya.com/blog/2017/09/30-questions-test-k-nearest-neighbors-algorithm/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+  * Computation time for testing data is longer than training time, since during testing time, you calculate the k nearest neighbours
+  * The training time for any k is the same.
+  * Larger k is, the smother the decision boundry is
+  * KNN can also be used in regression, you can use the test value to compare with mean or median of the subgroups and choose the k nearest ones
+  * KNN doesn't make any assumption but it works better of all the data is in the same scale; Also it works better for smaller set of data, because of the computation burden
+  * In KNN, if you want to calcuate the distance between ategorical variables, use <b>Hamming Distance</b>
+  * If there is noise data, you can try to increase k
 * Machine Learning Skillset test: https://www.analyticsvidhya.com/blog/2017/04/40-questions-test-data-scientist-machine-learning-solution-skillpower-machine-learning-datafest-2017/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
   * 2 variables can relate to each other but with 0 pearson correlation
   * SGD vs GD: In SGD for each iteration you choose the batch which is generally contain the random sample of data But in case of GD each iteration contain the all of the training observations.
