@@ -204,7 +204,7 @@ Applied Data Science in Python/R/Java
 * [Python] What to pay attention to when you are using Naive Bayesian with Scikit-Learn: https://www.analyticsvidhya.com/blog/2015/09/naive-bayes-explained/?utm_content=bufferaa6aa&utm_medium=social&utm_source=linkedin.com&utm_campaign=buffer
   * 3 types of Naive Bayesian: Gaussian (if you assume that features follow a normal distribution); Multinomial (used for discrete counts, you can think of it as “number of times outcome number x_i is observed over the n trials”.); Bernoulli(useful if your <b>feature vectors are binary</b>); 
   * Tips to improve the power of Naive Bayes Model: If test data set has zero frequency issue, apply <b>smoothing techniques</b> “Laplace Correction” to predict the class of test data set. Focus on your  pre-processing of data and the feature selection, because of thelimited paramter choices. “ensembling, boosting, bagging” won’t help since their purpose is to reduce variance. <b>Naive Bayes has no variance to minimize</b>
-* [R] Clsuter Analysis: https://rstudio-pubs-static.s3.amazonaws.com/33876_1d7794d9a86647ca90c4f182df93f0e8.html
+* [R] Cluster Analysis: https://rstudio-pubs-static.s3.amazonaws.com/33876_1d7794d9a86647ca90c4f182df93f0e8.html
 * [Java] SPMF, it contains many algorithms that cannot be found in R/Scikit-Learn/Spark, especailly algorithms about Pattern Mining: http://www.philippe-fournier-viger.com/spmf/index.php?link=algorithms.php
   * SPMF examples: http://www.philippe-fournier-viger.com/spmf/index.php?link=documentation.php
   * Algorithm mapping: http://www.philippe-fournier-viger.com/spmf/map_algorithms_spmf_data_mining097.png
@@ -626,6 +626,7 @@ Big Data
   * Some other description: http://stackoverflow.com/questions/2798251/whats-the-difference-been-nosql-and-a-column-oriented-database
   * Amazon DynamoDB vs. Amazon Redshift vs. Oracle NoSQL: https://db-engines.com/en/system/Amazon+DynamoDB%3BAmazon+Redshift
     * It seems that DynamoDB is NoSql while Redshift is a data warehouse based on psql   
+
 
 ************************************************************************
 
