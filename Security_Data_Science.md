@@ -73,6 +73,10 @@ MICROSOFT
   * Alert Fatigue (like that real life example - Target 2013): https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/alert-fatigue-best-1.pdf
   * Store Bot Conversation History: https://azure.microsoft.com/en-us/blog/bot-conversation-history-with-azure-cosmos-db/
     * Sentiment analysis, imrpve NLP accuracy, or to get some aggregated results
+  * Use machine learning to enable Adaptive Application Control
+    * https://azure.microsoft.com/en-us/blog/how-azure-security-center-uses-machine-learning-to-enable-adaptive-application-control/
+    * Machine learning to group VMs and decide good candidates for whitelisting, by analyzing the behaviour Azure VMs
+    * You can also change whitelists on your own too, and will get alerts of violations on whitelists
 
 
 ******************************************************
