@@ -146,6 +146,20 @@ BLACK HAT vs DEF CON COLLECTION
   * Home: https://www.defcon.org/index.html
   * Videos: https://www.youtube.com/user/DEFCONConference
   * Previous DEF CON: https://www.defcon.org/html/links/dc-archives.html
+  * Pwning Deep Learning Systems: https://www.youtube.com/watch?v=JAGDpJFFM2A&t=19s
+    * Deep Learning: auto feature engineering, hierarchical learning (Just know this :) )
+    * How to pwn
+      * Causative: insert misleading input (such as wrong images, wrong labels)
+      * Exploratory: you don't have access to the human input, but you can tricks the classifier
+        * Step 1 - use the model to do prediction first
+        * Step 2 - Based on prediction results, derive a pertubation tensor
+          * Traverse the manifold to find blind spot in the input space: Adversarial samples are the pockets in manifolds; brute force search (search for blind spots) can be inefficient since the input is high dimension; [Szegedy 2013] is the algorithm to help you optimize the search
+          * Linear adversarial pertubation: easily found by backpropagation [Goodfellow 2015]
+          * Saliency Map + Jacobian Matrix pertubation: uses forward propagation, obtained with respect to input features rather than network params; Only pertube dimensions that will have greatest impact on the output (salient dimensions), in order to reduce human detection probability
+        * Step 3 - Scale the pertubation tensor by some magnitude (but this makes human detection easier)
+      * Demo code:
+        * Generate Captcha: https://github.com/josecl/cool-php-captcha
+        * Neural network for solving captcha: https://github.com/wgrathwohl/captcha_crusher
 
 
 ******************************************************
