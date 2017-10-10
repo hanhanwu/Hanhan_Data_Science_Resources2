@@ -150,7 +150,7 @@ BLACK HAT vs DEF CON COLLECTION
   * Home: https://www.defcon.org/index.html
   * Videos: https://www.youtube.com/user/DEFCONConference
   * Previous DEF CON: https://www.defcon.org/html/links/dc-archives.html
-  * Pwning Deep Learning Systems: https://www.youtube.com/watch?v=JAGDpJFFM2A&t=19s
+  * <b>How to Pwning Deep Learning Systems</b>: https://www.youtube.com/watch?v=JAGDpJFFM2A&t=19s
     * Deep Learning: auto feature engineering, hierarchical learning (Just know this :) )
     * How to pwn
       * Causative: insert misleading input (such as wrong images, wrong labels)
@@ -164,6 +164,27 @@ BLACK HAT vs DEF CON COLLECTION
       * Demo code:
         * Generate Captcha: https://github.com/josecl/cool-php-captcha
         * Neural network for solving captcha: https://github.com/wgrathwohl/captcha_crusher
+  * <b>Offensive Malware Analysis: Dissecting OSX FruitFly</b>
+    * https://www.youtube.com/watch?v=q7VZtCUphgg
+    * Process Overview
+      * Step 1 - Build your custom command control server
+      * Step 2 - Task the malware
+      * Step 3 - Changing malware commnd params, and observe malware's response
+      * With returned response, you can monitor and do full analysis of the malware
+    * First of all, you need to find out the <b>Address</b> the malware is trying to connect to, and the <b>Protocol</b> it uses
+    * To passively observe malware: watch all things: network, files, processes, keyboard, mouse. In order to understand malware's capbility when task and monitoring the malware
+      * To explain "Tasking", for example, you are watching the network and observe how the malware influence the network, you use Wireshark, and you may find the location of the malware...
+    * Custom Command Control Server
+      * Now you have the address of the custom command control server(s), malware's protocol
+      * Extent your custom command control server to <b>Receive & Parse</b> client's data (such as version string, host name, username, etc.) when malware connects. My godness, even though you may not understand the malware commands, the data you got could be a screenshot of a user's computer screen, mouse movement, alert the attacker when the user is using the computer.... [This process is Tasking]
+      * You can keep changing the param value of the maleware command, and observe what's happening on the output
+    * This malware Fruitfly, targets normal people everyday
+      * He registered the command control server, then pointed to his custom command control server, he got many connected vistims' data...
+  * How to protect yourself
+    * Use the latest version of OS
+    * This guy also built some free open source, you can find them in the video. I am really cautious to use open source security tool, because my data will be in another person's hands....
+    * This is the published paper from this guy: https://www.virusbulletin.com/uploads/pdf/conference/vb2014/VB2014-Wardle.pdf
+      
 
 
 ******************************************************
