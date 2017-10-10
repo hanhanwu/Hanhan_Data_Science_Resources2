@@ -180,10 +180,10 @@ BLACK HAT vs DEF CON COLLECTION
       * You can keep changing the param value of the maleware command, and observe what's happening on the output
     * This malware Fruitfly, targets normal people everyday
       * He registered the command control server, then pointed to his custom command control server, he got many connected vistims' data...
-  * How to protect yourself
-    * Use the latest version of OS
-    * This guy also built some free open source, you can find them in the video. I am really cautious to use open source security tool, because my data will be in another person's hands....
-    * This is the published paper from this guy: https://www.virusbulletin.com/uploads/pdf/conference/vb2014/VB2014-Wardle.pdf
+    * How to protect yourself
+      * Use the latest version of OS
+      * This guy also built some free open source, you can find them in the video. I am really cautious to use open source security tool, because my data will be in another person's hands....
+      * This is the published paper from this guy: https://www.virusbulletin.com/uploads/pdf/conference/vb2014/VB2014-Wardle.pdf
       
 
 
