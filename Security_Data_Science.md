@@ -186,10 +186,12 @@ BLACK HAT vs DEF CON COLLECTION
       * This guy also built some free open source, you can find them in the video. I am really cautious to use open source security tool, because my data will be in another person's hands....
       * This is the published paper from this guy: https://www.virusbulletin.com/uploads/pdf/conference/vb2014/VB2014-Wardle.pdf
     
+* Learn it, Just Out of Curiosity
   * Safe Cracking Robots: https://www.youtube.com/watch?v=v9vIcfLrmiA
     * It's mind blowing.... I have never got attracted by a hardware presentation and fully understood what they were taling about and think it's amazing! Great presentation.
     * Recalled me a funnny moment in high school. My deskmate brought her dad's password key, and we tried to find the real password based on the sound we heard in each number..... This video is amazing and it's based on the similar things: pressure or sound.
     * Proved my theory again. Amazing solutions almost all based on simple ideas.
+  * https://www.youtube.com/watch?v=J3f0p3vTY-c 
 
 
 ******************************************************
