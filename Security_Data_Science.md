@@ -187,6 +187,9 @@ BLACK HAT vs DEF CON COLLECTION
       * This is the published paper from this guy: https://www.virusbulletin.com/uploads/pdf/conference/vb2014/VB2014-Wardle.pdf
     
 * Learn it, Just Out of Curiosity
+  * https://www.youtube.com/watch?v=S9MxbC0PO10
+    * The title is "All Your Things Are Belong To Us", I thought they hack into people's computer and got everything. No, they hack many devices that I don't use. In fact it looks cool that they almost hack everything. But no matter it's the hacking in hardware or software, all reminds of OS class in my last semester.... My feeling was complex when watching the their talk
+    * Finally there is a guy doing rap while they are showing the demo. It's cool, I just didn't get the whole process of how each attack work. And don't know how to prevent the attacks....
   * Safe Cracking Robots: https://www.youtube.com/watch?v=v9vIcfLrmiA
     * It's mind blowing.... I have never got attracted by a hardware presentation and fully understood what they were taling about and think it's amazing! Great presentation.
     * Recalled me a funnny moment in high school. My deskmate brought her dad's password key, and we tried to find the real password based on the sound we heard in each number..... This video is amazing and it's based on the similar things: pressure or sound.
