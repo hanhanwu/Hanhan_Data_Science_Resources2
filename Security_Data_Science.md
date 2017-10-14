@@ -164,6 +164,17 @@ BLACK HAT vs DEF CON COLLECTION
       * Demo code:
         * Generate Captcha: https://github.com/josecl/cool-php-captcha
         * Neural network for solving captcha: https://github.com/wgrathwohl/captcha_crusher
+  * <b>Weaponize Machine Learning</b>: https://www.youtube.com/watch?v=wbRx18VZlYA
+    * It's about weaponize AI in hacking :)
+    * The basic idea for DeepHack is, AI learns from the past/labeled training data, you can think the features are the code (binary code) and the label is the action that the code should take
+    * In their "Machine Learning 101", the description they gave sounds just like reinforcement learning, but if you think again, does other types of meachine learning (Classification, Clustering) do use rewards? I think so, that's different types of errors, telling the model to find better results. So, better to be open minded when we are learning from these hackers :)
+    * The way their DeepHack works, still requires label data, and it keep learning still need humans's input to help machines figure it out
+    * I like the inspirations from their future work
+      * Password Bruteforcing: you can use machine learning to find patterns in those cracked passwords, they can even find company password patterns. 
+        * I'm interesting in knowing whether there could be pattern in a list of random generated password, with or without changing seeds
+      * About the example they gave for what machine learning bad at, I'm thinking whether clustering could give some help. It may not be able to help a machine to learn in order to take actions, but at least it maybe able to find new classes
+    * BishopFox Github: https://github.com/bishopfox
+    * DeepHack (they are using neural network): https://github.com/BishopFox/deephack
         
   * <b>Offensive Malware Analysis: Dissecting OSX FruitFly</b>
     * https://www.youtube.com/watch?v=q7VZtCUphgg
