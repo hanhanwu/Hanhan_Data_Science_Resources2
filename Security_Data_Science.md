@@ -175,6 +175,10 @@ BLACK HAT vs DEF CON COLLECTION
       * About the example they gave for what machine learning bad at, I'm thinking whether clustering could give some help. It may not be able to help a machine to learn in order to take actions, but at least it maybe able to find new classes
     * BishopFox Github: https://github.com/bishopfox
     * DeepHack (they are using neural network): https://github.com/BishopFox/deephack
+  
+  * <b>Social Engineering - Understanding End User Attacks</b>: https://www.youtube.com/watch?v=UJdxrhERDyM
+    * This is a pretty good one. My godness! I have heared that most attacks are using social engineering methods since it's low cost and can be very powerful. I thought if I be cautious to those email/url which requires me to click or download word then I could be safe..... Now I don't feel any sense of security any more. Even if I have watched this video, I really still cannot guarantee that I won't be attacked....
+    * I have never laughed a lot while got scared like watching this video. This is a real fun, very cool and scary video, I won't share any details here. The demos are awesome, you have to admit!
         
   * <b>Offensive Malware Analysis: Dissecting OSX FruitFly</b>
     * https://www.youtube.com/watch?v=q7VZtCUphgg
