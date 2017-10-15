@@ -682,9 +682,9 @@ AI
     * `u = ∑W*X+b`, X is the input vector, W is the weights vector, b is bias
     * apply activation function `f()` to u, `f(u)` is the output of the layer
   * Different activation functions
-    * The <b>sigmoid</b> transformation generates a more smooth range of values between 0 and 1. We might need to observe the changes in the output with slight changes in the input values. Smooth curves allow us to do that and are hence preferred over step functions.
-    * The major benefit of using <b>ReLU</b> is that it has a constant derivative value for all inputs greater than 0. The constant derivative value helps the network to train faster.
-    * <b>softmax</b>, normally used in the output layer for classification. It is similar to sigmoid but its output is normalized to make the sum as 1. Meanwhile, sigmoid is used for binary classification while softmax can be used on multi-class classification.
+    * The <b>sigmoid</b> transformation generates a more <b>smooth range of values between 0 and 1</b>. We might need to observe the changes in the output with slight changes in the input values. Smooth curves allow us to do that and are hence preferred over step functions.
+    * The major benefit of using <b>ReLU</b> is that it has a constant derivative value for all inputs <b>greater than 0</b>. The constant derivative value helps the network to <b>train faster</b>.
+    * <b>softmax</b>, normally used in the output layer for classification. It is similar to sigmoid but its <b>output is normalized to make the sum as 1</b>. Meanwhile, sigmoid is used for binary classification while softmax can be used on multi-class classification.
   * Gradient Descent & Optimization & Cost function: Gradient descent is an optimization method, aiming at minimizing the cost/loss
   * Backpropagation is used to update weights
   * Batches: While training a neural network, instead of sending the entire input in one go, we divide in input into <b>several chunks of equal size randomly</b>. Training the data on batches makes the model more generalized as compared to the model built when the entire data set is fed to the network in one go.
