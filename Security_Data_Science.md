@@ -200,6 +200,7 @@ BLACK HAT vs DEF CON COLLECTION
       * Use the latest version of OS
       * This guy also built some free open source, you can find them in the video. I am really cautious to use open source security tool, because my data will be in another person's hands....
       * This is the published paper from this guy: https://www.virusbulletin.com/uploads/pdf/conference/vb2014/VB2014-Wardle.pdf
+  
     
 * Learn it, Just Out of Curiosity
   * https://www.youtube.com/watch?v=S9MxbC0PO10
@@ -210,6 +211,12 @@ BLACK HAT vs DEF CON COLLECTION
     * Recalled me a funnny moment in high school. My deskmate brought her dad's password key, and we tried to find the real password based on the sound we heard in each number..... This video is amazing and it's based on the similar things: pressure or sound.
     * Proved my theory again. Amazing solutions almost all based on simple ideas.
   * https://www.youtube.com/watch?v=J3f0p3vTY-c 
+  
+   * <b>Social Engineering - 7 Jedi Mind Tricks: Influence Your Target Without a Word</b>
+     * https://www.youtube.com/watch?v=VFnCRVWBISY&list=PL9fPq3eQfaaBgh8PZgxzgG1Coj-ocPQ7t&index=11
+     * At the very beginning, I just wanted to know what's Jedi mind and its relationship with hacking....
+     * But, consider how to be influential, it's useful, besides, yeah, culture is important. From my perspective, some of these advice are more difficult to do
+     * Q&A part is good
 
 
 ******************************************************
