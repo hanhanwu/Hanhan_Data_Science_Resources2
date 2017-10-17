@@ -204,6 +204,7 @@ BLACK HAT vs DEF CON COLLECTION
   * Industry Control Systems - Cyber Security issues with level 0 to 1 devices
     * https://www.youtube.com/watch?v=UgvVaniZhsk&list=PL9fPq3eQfaaAynYayYaIC8busZYn5-kIv&index=5
     * He talked about the problem that starts from sensor value, and also the problem for network anomaly detection which assumes the sensor value is correct. And this is also how Russia put their malware in some machines :)
+    * He also menioned process anomaly detection vs network anomaly detection
   
     
 * Learn it, Just Out of Curiosity
