@@ -201,12 +201,11 @@ BLACK HAT vs DEF CON COLLECTION
       * This guy also built some free open source, you can find them in the video. I am really cautious to use open source security tool, because my data will be in another person's hands....
       * This is the published paper from this guy: https://www.virusbulletin.com/uploads/pdf/conference/vb2014/VB2014-Wardle.pdf
   
-  * Industry Control Systems - Cyber Security issues with level 0 to 1 devices
-    * https://www.youtube.com/watch?v=UgvVaniZhsk&list=PL9fPq3eQfaaAynYayYaIC8busZYn5-kIv&index=5
+  * <b>Industry Control Systems - Cyber Security issues with level 0 to 1 devices</b>: https://www.youtube.com/watch?v=UgvVaniZhsk&list=PL9fPq3eQfaaAynYayYaIC8busZYn5-kIv&index=5
     * He talked about the problem that starts from sensor value, and also the problem for network anomaly detection which assumes the sensor value is correct. And this is also how Russia put their malware in some machines :)
     * He also menioned process anomaly detection vs network anomaly detection
   
-    
+  
 * Learn it, Just Out of Curiosity
   * https://www.youtube.com/watch?v=S9MxbC0PO10
     * The title is "All Your Things Are Belong To Us", I thought they hack into people's computer and got everything. No, they hack many devices that I don't use. In fact it looks cool that they almost hack everything. But no matter it's the hacking in hardware or software, all reminds of OS class in my last semester.... My feeling was complex when watching the their talk
