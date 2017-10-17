@@ -217,6 +217,11 @@ BLACK HAT vs DEF CON COLLECTION
      * At the very beginning, I just wanted to know what's Jedi mind and its relationship with hacking....
      * But, consider how to be influential, it's useful, besides, yeah, culture is important. From my perspective, some of these advice are more difficult to do
      * Q&A part is good
+     
+   * <b>Industry Control Systems - Cyber Security issues with level 0 to 1 devices</b>
+     * https://www.youtube.com/watch?v=UgvVaniZhsk&list=PL9fPq3eQfaaAynYayYaIC8busZYn5-kIv&index=5
+     * He talked about the problem that starts from sensor value, and also the problem for network anomaly detection which assumes the sensor value is correct. And this is also how Russia put their malware in some machines :)
+     * He also menioned process anomaly detection vs network anomaly detection
 
 
 ******************************************************
