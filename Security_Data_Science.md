@@ -200,7 +200,24 @@ BLACK HAT vs DEF CON COLLECTION
       * Use the latest version of OS
       * This guy also built some free open source, you can find them in the video. I am really cautious to use open source security tool, because my data will be in another person's hands....
       * This is the published paper from this guy: https://www.virusbulletin.com/uploads/pdf/conference/vb2014/VB2014-Wardle.pdf
-  
+      
+  * <b>Forensic Fails - Shift + Delete Won't Help You Here</b>: https://www.youtube.com/watch?v=NG9Cg_vBKOg
+    * They have 7 real world cases, it's very interesting
+    * They check these places:
+      * delete files in unallocated space (when you type Shift + Delete, things go to unallocated space)
+      * recent file used by common programs (such as Excel, Word)
+      * USB device insertion
+      * Linked files: Show opened files
+      * BagMRU: registry key shows user folder activity
+      * Jump list: shows opened files (Win7+)
+      * IE history: shows accessed files  >> files can also be in the cloud
+      * Email can be recovered through recovery tool
+    * From them, data destruction software is almost always detectable, they may not know what you deleted but they know you have deleted something
+    * File signature analysis will be running on every file on HDD, comparing file contents with filename extensions, any file with discrepancy will bump up
+      * rename a file is not data hiding
+    * IE history is difficult to wipe, uploading files can also leave traces, it can show when you opened a file
+    * Be default, remote desktop mapes to your printer when you connect to a remote machine, this could make the attacker detectable (in your printer setting, you could uncheck "map printer to your machine")
+    * Log entries, sometimes, just check what the system is doing, can tell what the user is doing
   
 * Learn it, Just Out of Curiosity
   * https://www.youtube.com/watch?v=S9MxbC0PO10
