@@ -218,6 +218,11 @@ BLACK HAT vs DEF CON COLLECTION
     * IE history is difficult to wipe, uploading files can also leave traces, it can show when you opened a file
     * Be default, remote desktop mapes to your printer when you connect to a remote machine, this could make the attacker detectable (in your printer setting, you could uncheck "map printer to your machine")
     * Log entries, sometimes, just check what the system is doing, can tell what the user is doing
+    
+  * <b>Confessions of a Professional Cyber Stalker</b>: https://www.youtube.com/watch?v=zVJGY2bZ-Ko
+    * It's in fact a very cool video, it's about data mining and cyber security
+    * This guy worked with police to deal with theft, by using some hacking methods, they will be able to identify criminals
+    * The data points they collect are interesting, I won't share all the details here
   
 * Learn it, Just Out of Curiosity
   * https://www.youtube.com/watch?v=S9MxbC0PO10
