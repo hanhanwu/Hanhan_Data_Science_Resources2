@@ -244,6 +244,11 @@ BLACK HAT vs DEF CON COLLECTION
      * https://www.youtube.com/watch?v=UgvVaniZhsk&list=PL9fPq3eQfaaAynYayYaIC8busZYn5-kIv&index=5
      * He talked about the problem that starts from sensor value, and also the problem for network anomaly detection which assumes the sensor value is correct. And this is also how Russia put their malware in some machines :)
      * He also menioned process anomaly detection vs network anomaly detection
+     
+   * <b>Social Engineering - The Human Factor Why Are We So Bad at Security</b>: https://www.youtube.com/watch?v=MgXhjUzi_I0&list=UU6Om9kAkl32dWlDSNlDS9Iw&index=29
+     * It's a pure theory talk, so while watching the video, I have finished multiple housework. Great achievemnt for myself!
+     * When they are building the model, they no longer make the assumption that human beings are rational. Thank you for proving my theory. To me, this is more useful in the workplace, no one is rational and everyone are different, it's quite easy for others to have totally different view. Accept this truth, and try your best to collaborate with those different people. And yes, because your are different, if you really hope others will do what you want, use strategies when communicating with them. 
+     * On the other hand, I really don't know how can I defend against those hackers who are mastering social engineering, all the time...
 
 
 ******************************************************
