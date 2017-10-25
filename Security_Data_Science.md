@@ -224,6 +224,12 @@ BLACK HAT vs DEF CON COLLECTION
     * It's in fact a very cool video, it's about data mining and cyber security
     * This guy worked with police to deal with theft, by using some hacking methods, they will be able to identify criminals
     * The data points they collect are interesting, I won't share all the details here
+    
+  * <b>Heavy Diving For Credentials</b>: https://www.youtube.com/watch?v=mxI_2On_fG8&index=39&list=UU6Om9kAkl32dWlDSNlDS9Iw
+    * This may be why, IELTS added accent in its linstening section...
+    * If you use Tor Gateway, your info maybe exposed
+      * They suggest to download Tor and configer your router
+    ![onion limitations](https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/onion%20limitations.png)
   
 * Learn it, Just Out of Curiosity
   * https://www.youtube.com/watch?v=S9MxbC0PO10
