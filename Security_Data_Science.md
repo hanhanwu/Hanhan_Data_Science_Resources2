@@ -67,6 +67,7 @@ MICROSOFT
   * How Azure Security Center detect DDoS
     * https://azure.microsoft.com/en-us/blog/how-azure-security-center-detects-ddos-attack-using-cyber-threat-intelligence/
     * DDoS - distributed denial of services
+  * How Azure Security Center automates the detection of cyber attack: https://azure.microsoft.com/en-us/blog/how-azure-security-center-automates-the-detection-of-cyber-attack/
 * White Papers from Hexadite
   * When I was running the code, I checked cyber security news and saw this company has been bought by Microsoft recently. Out of curiosity, I started to check this company, and it does write pretty good white papers. I especially like the process it explains to you about how security analyst work and how intelligent security automation work in the same way but at machine speed
   * Security Automation Details (process, what to check, which vendor to use in different sitations, etc.): https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/What%20is%20Security%20Automation%20Whitepaper%20RC2.pdf
