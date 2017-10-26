@@ -225,6 +225,8 @@ BLACK HAT vs DEF CON COLLECTION
     * This guy worked with police to deal with theft, by using some hacking methods, they will be able to identify criminals
     * The data points they collect are interesting, I won't share all the details here
     
+  * <b>Beyond Phishing – Building & Sustaining a Corporate SE Program</b>: https://www.youtube.com/watch?v=VeXlppLn5H4&index=35&list=UU6Om9kAkl32dWlDSNlDS9Iw
+    
   * <b>Heavy Diving For Credentials</b>: https://www.youtube.com/watch?v=mxI_2On_fG8&index=39&list=UU6Om9kAkl32dWlDSNlDS9Iw
     * This may be why, IELTS added accent in its linstening section...
     * If you use Tor Gateway, your info maybe exposed
