@@ -180,6 +180,14 @@ BLACK HAT vs DEF CON COLLECTION
   * <b>Social Engineering - Understanding End User Attacks</b>: https://www.youtube.com/watch?v=UJdxrhERDyM
     * This is a pretty good one. My godness! I have heared that most attacks are using social engineering methods since it's low cost and can be very powerful. I thought if I be cautious to those email/url which requires me to click or download word then I could be safe..... Now I don't feel any sense of security any more. Even if I have watched this video, I really still cannot guarantee that I won't be attacked....
     * I have never laughed a lot while got scared like watching this video. This is a real fun, very cool and scary video, I won't share any details here. The demos are awesome, you have to admit!
+    
+  * <b>Strategies on Securing Your Banks and Enterprises</b>: https://www.youtube.com/watch?v=iLPI0EGs6kY
+    * This is also an amazing one!
+    * Especially like what he said, if you can break, you also have to know how to fix it!!
+    * Tools he suggested to check whether your employee would share something harmful to the company:
+      * Intel Technique Search Tools: https://inteltechniques.com/links.HTML
+      * Pastebin: https://pastebin.com/login
+        * It will give you warning once your company name appeared there, which means it got hacked
         
   * <b>Offensive Malware Analysis: Dissecting OSX FruitFly</b>
     * https://www.youtube.com/watch?v=q7VZtCUphgg
