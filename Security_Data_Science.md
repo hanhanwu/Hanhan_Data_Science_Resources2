@@ -187,8 +187,21 @@ BLACK HAT vs DEF CON COLLECTION
     * Tools he suggested to check whether your employee would share something harmful to the company:
       * Intel Technique Search Tools: https://inteltechniques.com/links.HTML
       * Pastebin: https://pastebin.com/login
-        * It will give you warning once your company name appeared there, which means it got hacked
-        
+        * It will give you show your company got hacked if you put some key words there
+      * Many others
+      * Google!
+    * <b>Suggestions to protect</b>
+      * Create segment in network, not wall. So that when one part is down/attacked, others are fine
+      * Create segment in network, not wall. So that when one part is down/attacked, others are fine
+      * PATCH policy
+      * 1*1 pixel.gif to record IP, OS, Useragent of whoever clicked it. Because people may not click that but bots, fishing scripts, etc. And alerts you
+      * Useragent string, helps to block and limit attacks
+      * Own as many domains similar to yours as possible
+      * Be cautions to link, attachment, you may download virus. Scan them before downloading.
+      * Good code in web development
+      * Trainings to employees
+    * I love this presentation!
+      
   * <b>Offensive Malware Analysis: Dissecting OSX FruitFly</b>
     * https://www.youtube.com/watch?v=q7VZtCUphgg
     * Process Overview
