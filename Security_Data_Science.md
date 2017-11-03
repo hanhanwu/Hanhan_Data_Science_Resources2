@@ -253,6 +253,27 @@ BLACK HAT vs DEF CON COLLECTION
     * If you use Tor Gateway, your info maybe exposed
       * They suggest to download Tor and configer your router
     ![onion limitations](https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/onion%20limitations.png)
+    
+  * <b>Social Engineering With Google Analytics</b>: https://www.youtube.com/watch?v=3bb87rb70jU&index=37&list=UU6Om9kAkl32dWlDSNlDS9Iw
+    * Google Analytics is a freemium web analytics service offered by Google that tracks and reports website traffic.
+      * It uses IP to decide where the traffics come from, so sometimes it may look like many traffics from the same spot. So, using IP is not a good way to identify a real single user. The IP could make the attacker get touble
+    * The attacker can send POST to Google Analytics, and create lots of fake traffic. It looks like simple technique, but the scenarios he mentioned sounds interesting:
+      * Content Control - by creating the fake traffic, you can support/discourage the content of a website (which uses Google Analytics)
+      * Ecommerce Control - by creating the fake traffic, you can try to support/discourage product, features, sales
+      * Web Development Espionage - by creating the fake traffic, you can overflow the traffic, fake the visiting traffic, in order to break the client and WebDev company's (the website uses Google Analytics) relationship
+      * Nation State Espionage - you can create many good traffics to hide bad traffic
+      * Search Engine Optimization & Traffic Scam - similar to clicking farm
+      * Attackers - to know visotors
+      * denial of service
+    * He suggested a good way for user emulation
+      * To mimic a real user, better not show this user appeared and then disappeared. Better to show the user visited pages and interact with the site, but don't do too much (you can check the average in your google analytics statistics)
+      * Geo spoofing, to protect IP and also to make it looks like users from 1+ spot
+      * Randomness
+      * threading
+      * Auto urls: automatically grab urls from google
+      * Proxy to protect yourself (really?)
+    * To prevent user emulation attacks
+      * Don't put Google Analytics JS in your website, and script in server logs, and POSTS to analytics on user's behalf
   
 * Learn it, Just Out of Curiosity
   * https://www.youtube.com/watch?v=S9MxbC0PO10
