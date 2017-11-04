@@ -363,7 +363,13 @@ Statistics in Data Science
     * B feature has 2 levels, "science-fiction", "history"; A feature has 2 levels, "female", "male". So we can form a 2x2 table. <b>The degree of freedom</b> = (2-1)*(2-1) = 1
     * Use the calculator [here][4] to calculate <b>significant level</b>, type degree of freedom as 1, probability as 0.001 (you can choose a probability you'd like). The calculated significant level is 10.82756617 
     * chi-square value 507.93 is much larger than the significant level, so we reject the hypothesis that A, B are independent and not correlated
- 
+
+* Hypothesis Testing
+  * https://www.analyticsvidhya.com/blog/2017/01/comprehensive-practical-guide-inferential-statistics-data-science/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+  * When we want to get more accuracy results from data samples, we often try to:
+    * Increase sample size
+    * Test more other random samples
+  * But what if you don't have time/money/computer meory to do above methods, we can try to <b>calculate random chance probability</b>
 
 * Probability cheat sheet: http://www.cs.elte.hu/~mesti/valszam/kepletek
 * Likelihood vs Probability: http://mathworld.wolfram.com/Likelihood.html
