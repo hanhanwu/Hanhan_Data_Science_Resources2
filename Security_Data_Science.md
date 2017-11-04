@@ -300,6 +300,14 @@ BLACK HAT vs DEF CON COLLECTION
      * It's a pure theory talk, so while watching the video, I have finished multiple housework. Great achievemnt for myself!
      * When they are building the model, they no longer make the assumption that human beings are rational. Thank you for proving my theory. To me, this is more useful in the workplace, no one is rational and everyone are different, it's quite easy for others to have totally different view. Accept this truth, and try your best to collaborate with those different people. And yes, because your are different, if you really hope others will do what you want, use strategies when communicating with them. 
      * On the other hand, I really don't know how can I defend against those hackers who are mastering social engineering, all the time...
+     
+   * <b>Breaking Bitcoin Hardware Wallet</b>: https://www.youtube.com/watch?v=hAtoRrxFBWs
+     * Hardware wallets keeps your private key which used for your bitcoin security
+     * The attack applies here is to add external stress on electronic system, which could cause security failure
+       * Fault Injection
+         * Clock glitching - you drop the voltage at a specific time by listining to the clock signals, so that you can skip specific instructions, such as you can skip the password
+         * Vcc glitching - drop voltage into controler, to make it to do things that shouldn't. Such as, you drop the voltage at a certain time then it cannot read and write memory right
+       * Fault Exploitation - You get the fault and time it at the right spot, then exploit happens
 
 
 ******************************************************
