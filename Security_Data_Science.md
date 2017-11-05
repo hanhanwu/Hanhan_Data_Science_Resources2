@@ -274,6 +274,15 @@ BLACK HAT vs DEF CON COLLECTION
       * Proxy to protect yourself (really?)
     * To prevent user emulation attacks
       * Don't put Google Analytics JS in your website, and script in server logs, and POSTS to analytics on user's behalf
+      
+  * <b>Next Generation of Tor</b>: https://www.youtube.com/watch?v=Di7qAVidy1Y
+    * This guy builds Tor. I like this talk! I also like all talks that give their release timeline.
+    * New Tor vs Old Tor
+      * Old Onion Key was weak (The first 80 bits of the SHA-1 of the 1024-bit RSA key), while the new Tor uses ED25519 (such as much stronger ECC keys). 
+      * The six daily HSDir relays for a given onion address are too predictable. So they wants to add input into that hash function which changes everyday. It needs to be a Global Shared Random Value that evryone agrees but not predictable
+      * HSDir gets to learn onion addresses. The onion service descriptor gets uploaded to HSDir, including public key for the service so that everyone can check the signature. Therefore, you can run relays and if you are one of those 6 I published to you, you can discover my unpublished onlion addresses after seeing the onion descriptor
+      * The new cryptosystem allows you to sign onion descriptor with a subkey, so everyone can check the signature, but no one can learn the main key from the subkey or signature
+      * They need multiple layers of guards to protect better against Sybil+compromise attacks, it's still open research area
   
 * Learn it, Just Out of Curiosity
   * https://www.youtube.com/watch?v=S9MxbC0PO10
