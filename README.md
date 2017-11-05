@@ -381,7 +381,7 @@ Statistics in Data Science
         * All the samples should be <b>fixed size</b>
         * Sample size must be sufficient, >= 30
       * For other distributions, `z-score = (sample_mean - population mean)/sample_satndard_deviation = (sample_mean - population mean)/population standard deviation/sqrt(N)`, therefore you can also get p-value to show the probability. But the precondition is, <b>you know the population standard deviation, population mean</b>
-    * <b>Significant Level & Confidence</b> - no matter what distribution, finally you get a probability (p-value) of how much the sample mean is higher than population mean. High probability shows the acceptance of randomness, while low probabilty shows the behaviour differences. With Significant Level, we can decide what is high probability and what is low probability
+    * <b>Significant Level & Confidence</b> - no matter what distribution, finally you get a probability (p-value) of how much the sample mean is higher than population mean (because you use sample mean minus population mean). High probability shows the acceptance of randomness, while low probabilty shows the behaviour differences. With Significant Level, we can decide what is high probability and what is low probability
       * For example, with significant level 5%, also known as α level, if the probability you got is less than 5%, it means there is behaviour of difference between 2 population. Then we can say, we have 95% confidence that the sample mean is not driven by randomness, but driven by behaviour difference.
   * <b>Steps to do Hypothesis Testing</b>
     * NULL HYPOTHESIS (H0) - The difference between sample and population mean is due to randomness (also means there is no difference between sample and population)
@@ -395,6 +395,21 @@ Statistics in Data Science
   * reference: https://www.analyticsvidhya.com/blog/2015/09/hypothesis-testing-explained/
     * In its second example, the result should be accept null hypothesis  
    
+* Non-Parametric Tests
+  * Parametric tests are used when the information about the <b>population parameters</b> is completely known whereas non-parametric tests are used when there is no or few information available about the population parameters. That is to say, <b>non-parametric tests make no assumption about the data</b>.
+  * But, <b>if there is a parametric solution to the problem, using non-parametric tests could lead to much lower accuracy</b>
+  * Pros for non-parametric tests:
+    * When there is no parametric test solution, using non-parametric test is better, and it works even when the data sample is small
+    * It also works for all data types, such as categorical, ordinal, interval or data with outliers
+  * Cons for non-parametric tests:
+    * critical value tables for non-parametric tests are not inlcuded in many software packages...
+  * <b>Steps to do Hypothesis Testing with non-parametric tests</b>
+    * H0 (NULL Hypothesis): There is no significant difference between sample mean and population mean
+    * H1 (ALTERNATIVE Hypothesis): There is significant significant difference between sample mean and population mean
+    * Set significant level, decide it's one-tail or two-tail problem. Decide decision rule (when t reject null hypothsis)
+    * Test Statistics - In non-parametric tests, the sample is converted into ranks and then ranks are treated as a test statistic
+    * Compare test statistics and decision rule, to decide reject/accept null hypothesis
+    
 
 * Probability cheat sheet: http://www.cs.elte.hu/~mesti/valszam/kepletek
 * Likelihood vs Probability: http://mathworld.wolfram.com/Likelihood.html
