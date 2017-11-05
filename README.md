@@ -262,10 +262,10 @@ Statistics in Data Science
     * `variance = (b-a)^2/12`
     * Standard Uniform Distribution has `a=0, b=1`, if x in [0,1] range, probability is 1, otherwise 0
   * <b>Binomial Distribution</b>
-    * The probabilities for 2 outcomes are the same in each trail
+    * The probabilities x, y for 2 outcomes are the same in each trail （but these 2 probability can be different）
     * Each trail is independent
     * `n` is the number of trails, `p` is the probability of success in each trail => `mean=n*p`, `variance=n*p*(1-p)`
-    * If the probability of 2 outcomes are the same, then the distribution is normal distribution
+    * If the probability of 2 outcomes x, y are the same, then the distribution is normal distribution
   * <b>Normal Distribution</b>
     * The mean, median and mode of the distribution coincide.
     * The curve of the distribution is bell-shaped and symmetrical about the line x=μ.
@@ -370,6 +370,21 @@ Statistics in Data Science
     * Increase sample size
     * Test more other random samples
   * But what if you don't have time/money/computer meory to do above methods, we can try to <b>calculate random chance probability</b>
+  * Relevant Basics First
+    * <b>z-value/z-score</b>: It tells how many standard deviation the observed value is away from mean. For example, z-score = 1.7 indicates that the observed value is 1.7 standard deviation away from mean. <b>Associated with the standard normal distribution only</b>. `z-score = (observed_value - mean)/standard_deviation`
+    * <b>p-value</b>: it tells the probability that observed value is away from mean. Therefore, in order to get p-value, you check z-table with the z-score you got. <b>Associated with the standard normal distribution only</b>.
+    * For other distributions, use <b>Central Limit Theorem</b>:
+      * <b>Mean of Sample Means</b> (X random samples) - is close to the population mean
+      * <b>The distribution of sample means is normal regardless of the actual population distribution</b> - this is the core idea for Central Limit Theorem
+      * `standard deviation of sample means = population standard deviation/sqrt(N)`, N is the sample size. This is knows as <b>standard error of means</b>. You check this satdard error of means to tell how accurate your random samples that can determind population mean
+        * Greater the sample size, lower standard error of means, and more accuracy to use the sample mean to determine the population mean
+        * All the samples should be <b>fixed size</b>
+        * Sample size must be sufficient, >= 30
+    * <b>Significant Level & Confidence</b> - no matter you use p-value or Central Limit Theorem, finally you get a probability of sample mean. High probability shows the acceptance of randomness, while low probabilty shows the behaviour differences. With Significant Level, we can decide what is high probability and what is low probability
+      * For example, with significant level 5%, also known as α level, if the probability you got is less than 5%, it means there is behaviour of difference between 2 population. Then we can say, we have 95% confidence that the sample mean is not driven by randomness, but driven by behaviour difference.
+    * <b>Steps to do Hypothesis Testing</b>
+      * NULL HYPOTHESIS (H0) - The difference between sample and population mean is due to randomness (also means there is no difference between sample and population)
+      * ALTERNATIVE HYPOTHESIS (H1)
 
 * Probability cheat sheet: http://www.cs.elte.hu/~mesti/valszam/kepletek
 * Likelihood vs Probability: http://mathworld.wolfram.com/Likelihood.html
