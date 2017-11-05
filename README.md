@@ -380,11 +380,21 @@ Statistics in Data Science
         * Greater the sample size, lower standard error of means, and more accuracy to use the sample mean to determine the population mean
         * All the samples should be <b>fixed size</b>
         * Sample size must be sufficient, >= 30
-    * <b>Significant Level & Confidence</b> - no matter you use p-value or Central Limit Theorem, finally you get a probability of sample mean. High probability shows the acceptance of randomness, while low probabilty shows the behaviour differences. With Significant Level, we can decide what is high probability and what is low probability
+      * For other distributions, `z-score = (sample_mean - population mean)/sample_satndard_deviation = (sample_mean - population mean)/population standard deviation/sqrt(N)`, therefore you can also get p-value to show the probability. But the precondition is, <b>you know the population standard deviation, population mean</b>
+    * <b>Significant Level & Confidence</b> - no matter what distribution, finally you get a probability (p-value) of how much the sample mean is higher than population mean. High probability shows the acceptance of randomness, while low probabilty shows the behaviour differences. With Significant Level, we can decide what is high probability and what is low probability
       * For example, with significant level 5%, also known as α level, if the probability you got is less than 5%, it means there is behaviour of difference between 2 population. Then we can say, we have 95% confidence that the sample mean is not driven by randomness, but driven by behaviour difference.
-    * <b>Steps to do Hypothesis Testing</b>
-      * NULL HYPOTHESIS (H0) - The difference between sample and population mean is due to randomness (also means there is no difference between sample and population)
-      * ALTERNATIVE HYPOTHESIS (H1)
+  * <b>Steps to do Hypothesis Testing</b>
+    * NULL HYPOTHESIS (H0) - The difference between sample and population mean is due to randomness (also means there is no difference between sample and population)
+    * ALTERNATIVE HYPOTHESIS (H1)
+    * After you got the p-value, if it's higher than significant level (say, 5%), reject NULL Hypothesis
+      * The decision to reject the null hypothesis could be incorrect, it is known as <b>Type I error</b>.
+      * The decision to retain the null hypothesis could be incorrect, it is know as <b>Type II error</b>.
+    * <b>One Tail Test</b> - your alternate hypothesis is greater or less than the population mean so it is also known as <b>Directional Hypothesis test</b>
+    * If you are not sure, it's <b>Two Tail Test/Non Directional Hypothesis</b>. In two tail test, `real significant level for each direction = significant level/2`
+    * In one tail test, we reject the Null hypothesis if the sample mean is either positive or negative extreme any one of them. But, in case of two tail test we can reject the Null hypothesis in any direction (positive or negative).
+  * reference: https://www.analyticsvidhya.com/blog/2015/09/hypothesis-testing-explained/
+    * In its second example, the result should be accept null hypothesis  
+   
 
 * Probability cheat sheet: http://www.cs.elte.hu/~mesti/valszam/kepletek
 * Likelihood vs Probability: http://mathworld.wolfram.com/Likelihood.html
