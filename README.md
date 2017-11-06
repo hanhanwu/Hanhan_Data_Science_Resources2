@@ -409,7 +409,45 @@ Statistics in Data Science
     * Set significant level, decide it's one-tail or two-tail problem. Decide decision rule (when t reject null hypothsis)
     * Test Statistics - In non-parametric tests, the sample is converted into ranks and then ranks are treated as a test statistic
     * Compare test statistics and decision rule, to decide reject/accept null hypothesis
-    
+  * Different Types of non-parametric tests
+    * <b>Mann Whitney U test/Mann Whitney Wilcoxon test/Wilcoxon rank sum test</b>
+      * It is an alternative to independent sample t-test
+      * You have 2 samples, sample one has size n1, sample two has size n2. R1, R2 are the sum of ranks for each sample respectively.
+        * In order to calculate R1, R2, you arrange the values of both samples together, in ascending order (from left to right), and you give them 1,2,3...,(n1+n2) index. For those values such as X that appeared multiple times, say p times, you use the sum of idex of X values devided by p (`sum(index_of_this_same_value)/p`) as the new index for each X, in this way, you can make sure the sum of all the final idex equals to `n*(n+1)/2`, it also equals to (1+2+3+...+n)
+      * `U1 = n1*n2 + n1*(n1+1)/2 - R1`, `U2 = n1*n2 + n2*(n2+1)/2 - R2`
+      * `U = min(U1, U2)`, U1+U2 = n1*n2. U lies in range (0, n1*n2). 0 means the 2 samples are totally different from each other, while n1*n2 indicates some relationship between the 2 groups. 
+      * Find critical value here: http://ocw.umb.edu/psychology/psych-270/other-materials/RelativeResourceManager.pdf
+      * If `U <= critical value`, reject H0, else accept H0
+    * <b>Wilcoxon Sign-Rank Test</b>
+      * There are n values in each group. You calculate the difference between the 2 values that share the same index in both groups
+      * Then order the difference by ignoring their positive/neagtive sign. Ranking them, using the same method used in Mann Whitney U test, that for same absolute value, the rank is the average of their initial ranks
+      * Now add their original positive/negative sign to the ranks
+      * `W1 = sum(positive ranks)`, `W2 = abs(sum(neagtive ranks))`
+      * `W = min(W1, W2)`
+      * Choose critical value based on α and one-tail/two-tail here: http://www.stat.ufl.edu/~winner/tables/wilcox_signrank.pdf
+      * If `W <= critical value` reject H0, else accept H0
+    * <b>Sign Test</b>
+      * This method is quite similar to Wilcoxon Sign-Rank Test. The difference is, after you got signed ranks, you ignore the values, but only focus on +, - signs. 
+      * `W1 = number of + sign`, `W2 = number of - sign`
+      * `W = min(W1, W2)`
+      * Still choose critical value based on α and one-tail/two-tail here: http://www.stat.ufl.edu/~winner/tables/wilcox_signrank.pdf
+      * If `W <= critical value` reject H0, else accept H0
+    * <b>Kruskal-Wallis Test</b>
+      * This test is extremely useful when you are dealing with <b>more than 2 independent groups</b> and it compares median among k populations
+      * This test is an alternative to One way ANOVA when the data violates the assumptions of normal distribution and when the sample size is too small.
+      * The way you do rankings is almost the same as the above methods
+      * `H = (12/n*(n+1) * sum(pow(R1, 2)/n1 + pow(R2, 2)/n2 +... + pow(Rk, 2)/nk)) - 3*(n-1)`, n is the total sample size, k is the number of samples, Ri is the sum of ranks of ith sample, ni is the sample size of ith sample
+      * Table of critical values: http://webspace.ship.edu/pgmarr/Geo441/Tables/Kruskal-Wallis%20H%20Table.pdf
+      * If `H >= critical value`, reject H0, else accept H0
+    * <b>Spearman Rank Correlation</b>
+      * If there is correlation between 2 datasets, use this method
+      * H0: There is no relation between the 2 groups; H1: there is relation between the 2 groups
+      * Spearman Rank Correlation should be used to check the strength and direction of the correlation. Spearman rank correlation is a non-parametric alternative to Pearson correlation coefficient.
+      * I will use built-in packages or online tools to calculate this value...
+      * Check critical value here: http://webspace.ship.edu/pgmarr/Geo441/Tables/Spearman%20Ranked%20Correlation%20Table.pdf
+      * `degree of freedom = n-2`, n is the sample size. If your `calculated result >= critical value`, reject H0, else accept
+  * reference: https://www.analyticsvidhya.com/blog/2017/11/a-guide-to-conduct-analysis-using-non-parametric-tests/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+    * For Spearman Rank Correlation, it seems that the critical value at freedom of degree 8 with α = 0.025 (2 tail) is larger than 0.67, so it should accept the null hypothesis
 
 * Probability cheat sheet: http://www.cs.elte.hu/~mesti/valszam/kepletek
 * Likelihood vs Probability: http://mathworld.wolfram.com/Likelihood.html
