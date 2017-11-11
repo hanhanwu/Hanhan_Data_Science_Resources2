@@ -283,6 +283,12 @@ BLACK HAT vs DEF CON COLLECTION
       * HSDir gets to learn onion addresses. The onion service descriptor gets uploaded to HSDir, including public key for the service so that everyone can check the signature. Therefore, you can run relays and if you are one of those 6 I published to you, you can discover my unpublished onlion addresses after seeing the onion descriptor
       * The new cryptosystem allows you to sign onion descriptor with a subkey, so everyone can check the signature, but no one can learn the main key from the subkey or signature
       * They need multiple layers of guards to protect better against Sybil+compromise attacks, it's still open research area
+
+  * <b>SE vs Predator: Using SE In Ways I Never Thought</b>: https://www.youtube.com/watch?v=PNuPkpLuaws
+    * hahahahahahaha!!! This is an amazing video!! It's so fun! He was showing the phone calls when he was doing social engineering. hahahahaha, it's so fun!! And he's doing great things in a legal way
+    * To help protect people from human trafficking: 
+      * http://polarisproject.org/
+      * www.innocentlivesfoundation.org
   
 * Learn it, Just Out of Curiosity
   * https://www.youtube.com/watch?v=S9MxbC0PO10
