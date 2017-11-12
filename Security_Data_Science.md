@@ -289,6 +289,10 @@ BLACK HAT vs DEF CON COLLECTION
     * To help protect people from human trafficking: 
       * http://polarisproject.org/
       * www.innocentlivesfoundation.org
+      
+  * <b>Skills for a Red Teamer</b>: https://www.youtube.com/watch?v=yJCq8ajdd0U
+    * At the end, they provide a set of toolkits that you should bring when you are doing this type of work
+    * Again, this is a video with funny stories. At the same time, I don't want to take any note here maybe because social engineering makes me feel controversial, if you want to get your job done, althoug you are doing everything legal, you have to lie in a very natural way and this looks more professional. This makes me think, for professional social engineers, how could their family members trust them? If people can lie professionally in the work, could they really be honest in life? How many people will totally seperate work time and life time?
   
 * Learn it, Just Out of Curiosity
   * https://www.youtube.com/watch?v=S9MxbC0PO10
