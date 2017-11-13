@@ -293,6 +293,11 @@ BLACK HAT vs DEF CON COLLECTION
   * <b>Skills for a Red Teamer</b>: https://www.youtube.com/watch?v=yJCq8ajdd0U
     * At the end, they provide a set of toolkits that you should bring when you are doing this type of work
     * Again, this is a video with funny stories. At the same time, I don't want to take any note here maybe because social engineering makes me feel controversial, if you want to get your job done, althoug you are doing everything legal, you have to lie in a very natural way and this looks more professional. This makes me think, for professional social engineers, how could their family members trust them? If people can lie professionally in the work, could they really be honest in life? How many people will totally seperate work time and life time?
+    
+  * <b>Change Agents How to Affect Corp. Culture</b>: https://www.youtube.com/watch?v=mYRXlCGMP0Q&t=44s
+    * This video does not have any story, not to say fun story. But! You have really mentioned many situations I was facing, I am dealing with and I will confront in the future. It's about how to make changes in a company. Maybe even several years later, I should review this talk to get suggestions for my work
+    * Working in data science area, no matter hpw fast it's developing nowadays, now matter how many people are becoming crazy about data scientist job. When you are in the industry environment, you have to deal with those old thoughts, old people, and everyone has egos, you too, and you have to learn to make others egos to be your friends. This video simply made me recall my experience in Vancity, and I can't agree more about what this video said, considering the issues I am dealing with in current company. Even in years later, even if I will have my own team or even my own company, I may act as a change agent, this can be especially true in data science area. Tills that time, you still have to deal with people who all want to be heros, but holding quite different perspectives of success. 
+    * Makes me think a lot and recalled a lot. It's a video deserves to watch multiple times
   
 * Learn it, Just Out of Curiosity
   * https://www.youtube.com/watch?v=S9MxbC0PO10
