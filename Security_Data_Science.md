@@ -300,6 +300,10 @@ BLACK HAT vs DEF CON COLLECTION
     * Makes me think a lot and recalled a lot. It's a video deserves to watch multiple times
     
   * <b>Dark Data</b>: https://www.youtube.com/watch?v=1nvYGi7-Lxo
+    * They created a browser plug-in, to track users' browser history, which contains timestamp, url
+    * From browser history, it's almost can expose everything about your life
+    * They developed an algorithm, that they collcted huge amount of urls, and find users that check many domains they collected. With these targeted users' matching domains/video id/etc., they can find a user's real name. Then when there comes to a new url, it's possible for them to figure out which user it belongs to, since the user's name can appear in the url
+    * I'm just wondering, if baby Emmanuel would see my browser history, would he realize how much do I love him?
   
 * Learn it, Just Out of Curiosity
   * https://www.youtube.com/watch?v=S9MxbC0PO10
