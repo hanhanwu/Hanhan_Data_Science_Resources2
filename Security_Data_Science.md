@@ -298,6 +298,8 @@ BLACK HAT vs DEF CON COLLECTION
     * This video does not have any story, not to say fun story. But! You have really mentioned many situations I was facing, I am dealing with and I will confront in the future. It's about how to make changes in a company. Maybe even several years later, I should review this talk to get suggestions for my work
     * Working in data science area, no matter hpw fast it's developing nowadays, now matter how many people are becoming crazy about data scientist job. When you are in the industry environment, you have to deal with those old thoughts, old people, and everyone has egos, you too, and you have to learn to make others egos to be your friends. This video simply made me recall my experience in Vancity, and I can't agree more about what this video said, considering the issues I am dealing with in current company. Even in years later, even if I will have my own team or even my own company, I may act as a change agent, this can be especially true in data science area. Tills that time, you still have to deal with people who all want to be heros, but holding quite different perspectives of success. 
     * Makes me think a lot and recalled a lot. It's a video deserves to watch multiple times
+    
+  * <b>Dark Data</b>: https://www.youtube.com/watch?v=1nvYGi7-Lxo
   
 * Learn it, Just Out of Curiosity
   * https://www.youtube.com/watch?v=S9MxbC0PO10
