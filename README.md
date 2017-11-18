@@ -243,6 +243,17 @@ Applied Data Science in Python/R/Java
     * No support to unsupervised learning for now
 * [Python]Deploy Machine Learning Model as an API, using Flask: https://www.analyticsvidhya.com/blog/2017/09/machine-learning-models-as-apis-using-flask/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 
+* Python MapReduce
+  * With this tool, you can run your python code in map reduce way, so that it's much faster, and when you are not using this map resuce, the same python code can be running as single thread
+  * Install `mrjob`: https://pythonhosted.org/mrjob/guides/quickstart.html
+  * Write a pyhton file that contains map reduce job: https://pythonhosted.org/mrjob/guides/quickstart.html, let's call this file mr_job.py
+  * Your real python logic is in abother file, let's call it my_python_main.py
+  * Create a python virtual environment, in case some module cannot be found and you have to modify PYTHONPATH.
+    * I don't want to change pythonpath prmanently, so this is the command I use when there is error showing module not found: `export PYTHONPATH="your_module_folder:$PYTHONPATH"`
+      * You need to type this command each time when you activated your environment
+  * run your map reduce job with your logic, read input and create output: `python my_python_main.py < test_data/test_file.test > outfile.new`
+    * The input, output looks like rows of dictionary
+  
 
 ************************************************************************
 
