@@ -252,7 +252,8 @@ Applied Data Science in Python/R/Java
     * I don't want to change pythonpath prmanently, so this is the command I use when there is error showing module not found: `export PYTHONPATH="your_module_folder:$PYTHONPATH"`
       * You need to type this command each time when you activated your environment
   * run your map reduce job with your logic, read input and create output: `python my_python_main.py < test_data/test_file.test > outfile.new`
-    * The input, output looks like rows of dictionary
+    * The input, output can be whatever format readable, in your mapper, you can do some data preprocessing to format the data
+    * In your code, you can write `print` to help debug, the printed output will be in your output file, won't be shown through terminal
   
 
 ************************************************************************
