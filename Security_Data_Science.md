@@ -176,6 +176,14 @@ BLACK HAT vs DEF CON COLLECTION
       * About the example they gave for what machine learning bad at, I'm thinking whether clustering could give some help. It may not be able to help a machine to learn in order to take actions, but at least it maybe able to find new classes
     * BishopFox Github: https://github.com/bishopfox
     * DeepHack (they are using neural network): https://github.com/BishopFox/deephack
+    
+  * <b>Automated Bulk Intelligence</b>: https://www.youtube.com/watch?v=GqAiirvD9Tg
+    * The speaker is a woman, that's the original reason motivated me to choose this video today
+    * In fact, this tool she developped looks good to me and does give me some inspiration
+      * Yalda, the tool: https://github.com/fideliscyber/yalda
+      * They are using STRING clustering to group malicious and clear data. The clear data will be sent to whitelist to reduce false positive. It sounds like a good way to deal with big data, you clustering the data you have, building malicious group, suscipious group and clear group, when the new data comes in, you can measure which group the new data is close to. Right now, what makes me think are:
+        * If when the new data comes in, it turns out one of the group is overloaded, and you got false positive or false negative increased a lot, you need to cluster all the data, then the cost can be huge. When the data increases, that cost can be even bigger. How to deal with this?
+        * Also for clustering, how to deal with data shifting, such as a previously suspicious data finally turned out to be clear, Similar to above question, but convers more situations
   
   * <b>Social Engineering - Understanding End User Attacks</b>: https://www.youtube.com/watch?v=UJdxrhERDyM
     * This is a pretty good one. My godness! I have heared that most attacks are using social engineering methods since it's low cost and can be very powerful. I thought if I be cautious to those email/url which requires me to click or download word then I could be safe..... Now I don't feel any sense of security any more. Even if I have watched this video, I really still cannot guarantee that I won't be attacked....
