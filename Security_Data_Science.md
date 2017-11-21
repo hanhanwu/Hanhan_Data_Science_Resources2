@@ -78,6 +78,8 @@ MICROSOFT
     * https://azure.microsoft.com/en-us/blog/how-azure-security-center-uses-machine-learning-to-enable-adaptive-application-control/
     * Machine learning to group VMs and decide good candidates for whitelisting, by analyzing the behaviour Azure VMs
     * You can also change whitelists on your own too, and will get alerts of violations on whitelists
+  * MSFT Red Teaming: https://cloudblogs.microsoft.com/microsoftsecure/2015/10/08/cloud-security-controls-series-penetration-testing-red-teaming-forensics/
+    * This is my first time to see, this company has some passion
 
 
 ******************************************************
