@@ -314,6 +314,10 @@ BLACK HAT vs DEF CON COLLECTION
     * From browser history, it's almost can expose everything about your life
     * They developed an algorithm, that they collcted huge amount of urls, and find users that check many domains they collected. With these targeted users' matching domains/video id/etc., they can find a user's real name. Then when there comes to a new url, it's possible for them to figure out which user it belongs to, since the user's name can appear in the url
     * I'm just wondering, if baby Emmanuel would see my browser history, would he realize how much do I love him?
+    
+  * <b>You're Going to Connect to the Wrong Domain Name</b>: https://www.youtube.com/watch?v=izfL_tBO8Hg
+    * They created a tool, that can prevent you from registering to the wrong domain by checking whether the character are real right engligh character
+    * It seems that without this type of tool, many people will fall into the trap. Attackers could bring characters from other languages that looks just very similar to English character, who will recognize that.... Sometimes people even cannot tell the difference between some english characters :)
   
 * Learn it, Just Out of Curiosity
   * https://www.youtube.com/watch?v=S9MxbC0PO10
