@@ -991,6 +991,7 @@ OTHER
 * Tons of data analysis tools:
   * Orange (drag & Drop): https://www.analyticsvidhya.com/blog/2017/09/building-machine-learning-model-fun-using-orange/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
   * Docker (Sharable Data Science Code/Application): https://www.analyticsvidhya.com/blog/2017/11/reproducible-data-science-docker-for-data-science/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+  * Julia (a language for data science, does the same thing as R, Python): https://www.analyticsvidhya.com/blog/2017/10/comprehensive-tutorial-learn-data-science-julia-from-scratch/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 
 
 
