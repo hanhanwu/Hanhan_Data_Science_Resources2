@@ -988,8 +988,9 @@ OTHER
   * extreme probability bias effect - We tend to underestimate probability between 0 and 0.5 if event is favorable and exactly opposite happens when event is unfavorable. With underestimated perceived probability, we underestimate the value of Risky transactions.
 * Winnning Strategy in Casino (blackjack): https://www.analyticsvidhya.com/blog/2017/04/flawless-winning-strategy-casino-blackjack-data-science/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
   * Looks calculation intensive, I dind't read them throughly, but only checked the insights :)
-* Drag and Drop data analysis tools:
-  * Orange: https://www.analyticsvidhya.com/blog/2017/09/building-machine-learning-model-fun-using-orange/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+* Tons of data analysis tools:
+  * Orange (drag & Drop): https://www.analyticsvidhya.com/blog/2017/09/building-machine-learning-model-fun-using-orange/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+  * Docker (Sharable Data Science Code/Application): https://www.analyticsvidhya.com/blog/2017/11/reproducible-data-science-docker-for-data-science/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 
 
 
