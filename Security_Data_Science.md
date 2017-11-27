@@ -318,6 +318,26 @@ BLACK HAT vs DEF CON COLLECTION
   * <b>You're Going to Connect to the Wrong Domain Name</b>: https://www.youtube.com/watch?v=izfL_tBO8Hg
     * They created a tool, that can prevent you from registering to the wrong domain by checking whether the character are real right engligh character
     * It seems that without this type of tool, many people will fall into the trap. Attackers could bring characters from other languages that looks just very similar to English character, who will recognize that.... Sometimes people even cannot tell the difference between some english characters :)
+    
+  * <b>IP Spoofing</b>: https://www.youtube.com/watch?v=9edSBCEY_Fw
+    * You can transmit whatever data through the network. Here IP spoofing means, you put malicious IP address in the source IP port of the IP packet. When IP got spoofed, you won't know whether the IP address you got is from the real user
+    * Direct Attacks
+      * Investigation: `Flags [S]` > BPF/XDP
+        * BPF Tools: https://github.com/cloudflare/bpftools
+      * Identify the source
+        * Direct Peering - you can call them not to send junks or attack, and it usually works :)
+        * Attacker used Local Internet Exchange - The router won't know the original ISP but will accept whatever packets, because Internet Exchange is using different layers for input and output
+        * Attacker used Internet Carrier - They only deliver packets without doing any filtering (Off course the speaker will think this is sad. Well, have you met the situations that other teams simply count on you to do more work or even everything? Same logic....)
+      * But at least based on the IP clusters pattern, the speaker can tell whether it's more likely to be attacks
+    * Amplification Attacks
+      * Here, no way to track back the attackers
+    * How the Internet can fix IP Spoofing
+      * Promote BCP38 (network process)
+      * spoofer.caida.org  >> allows you to see to which degree the network allows spoofing
+      * vendor defaults
+      * Filtering should be done closer to the source, and filtering is hard
+      * BGP Flowspec firewall - the protocol creates BGP which allows you to push firewall rules up to the routing chain
+      * Netflow/IP Fix to help trace back - Netflow is the protocol that allows routers to send flow samples to the central location, no privacy issues, and you can collect data for analysis, to understand who is actually behind the packet delivering. But it still has privacy concern
   
 * Learn it, Just Out of Curiosity
   * https://www.youtube.com/watch?v=S9MxbC0PO10
