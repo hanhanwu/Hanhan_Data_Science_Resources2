@@ -338,6 +338,14 @@ BLACK HAT vs DEF CON COLLECTION
       * Filtering should be done closer to the source, and filtering is hard
       * BGP Flowspec firewall - the protocol creates BGP which allows you to push firewall rules up to the routing chain
       * Netflow/IP Fix to help trace back - Netflow is the protocol that allows routers to send flow samples to the central location, no privacy issues, and you can collect data for analysis, to understand who is actually behind the packet delivering. But it still has privacy concern
+      
+  * <b>Traffic Analysis in Cyberspace</b>: https://www.youtube.com/watch?v=KwilB5FmGeo
+    * These analysis are actually very interesting. Just through traffic, the speaker could find so many interesting relationships between different types of securty issue with countries and economy
+    
+  * <b>Blue Team TLS Hugs</b>: https://www.youtube.com/watch?v=RT6VqSkQQtI
+    * TLS: a protocol used for determining which crypto to use between 2 endpoints which son't know what each other support
+    * `ssh -p443 user@myhost`, port 443 is universal firewall bypass port, with this command, it will just let you go through
+    * This is a blue team talk!?
   
 * Learn it, Just Out of Curiosity
   * https://www.youtube.com/watch?v=S9MxbC0PO10
