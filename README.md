@@ -310,6 +310,9 @@ Statistics in Data Science
    
 * <b>Odds</b>: Odds are defined as the ratio of the probability of success and the probability of failure. For example, a fair coin has probability of success is 1/2 and the probability of failure is 1/2 so odd would be 1
 
+* <b>Errors</b>
+  * Generalisation Error (out of sample error) - It tells how accurate the model can predict the previsely <b>unseen</b> data
+
 * Bayesian Statistics
   * Reference: https://www.analyticsvidhya.com/blog/2016/06/bayesian-statistics-beginners-simple-english/
   * Frequentist Statistics
@@ -566,6 +569,9 @@ Machine Learning Algorithms
   * Logistic Regression: it is classification, predicting the probability of discrete values. It chooses parameters that maximize the likelihood of observing the sample values rather than that minimize the sum of squared errors (like in ordinary regression).
   * Decision Tree: serves for both categorical and numerical data. Split with the most significant variable each time to make as distinct groups as possible, using various techniques like Gini, Information Gain = (1- entropy), Chi-square. A decision tree algorithm is known to work best to detect non – linear interactions. The reason why decision tree failed to provide robust predictions because it couldn’t map the linear relationship as good as a regression model did. 
   * SVM: seperate groups with a line and maximize the margin distance. Good for small dataset, especially those with large number of features
+    * The effectiveness of SVM depends on Selection of Kernel, Kernel Parameters and Soft Margin Parameter C, they can also help reduce errors and overfitting
+    * The larger C parameter, the heavier penality for misclassification. So when C param is set to infinite, no room for error, optimal hyperplane (if exists) should seperate the data completely
+    * Gamma value indicates how far the influence points to the hyperplane. Higher the Gamma value is, closer the influence points are
   * Naive Bayes: the assumption of equally importance and the independence between predictors. Very simple and good for large dataset, also majorly used in text classification and multi-class classification. <b>Likelihood</b> is the probability of classifying a given observation as 1 in presence of some other variable. For example: The probability that the word ‘FREE’ is used in previous spam message is likelihood. <b>Marginal likelihood</b> is, the probability that the word ‘FREE’ is used in any message. 
   * KNN: can be used for both classification and regression. Computationally expensive since it stores all the cases. Variables should be normalized else higher range variables can bias it. Data preprocessing before using KNN, such as dealing with outliers, missing data, noise
   * K-Means
@@ -899,6 +905,8 @@ Data Science Skillset Tests
   * KNN doesn't make any assumption but it works better of all the data is in the same scale; Also it works better for smaller set of data, because of the computation burden
   * In KNN, if you want to calcuate the distance between ategorical variables, use <b>Hamming Distance</b>
   * If there is noise data, you can try to increase k
+* SVM Skillset test: https://www.analyticsvidhya.com/blog/2017/10/svm-skilltest/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+  * I don't agree with all the answers, such as 19th questions, I think it should be 2&3.
 * Machine Learning Skillset test: https://www.analyticsvidhya.com/blog/2017/04/40-questions-test-data-scientist-machine-learning-solution-skillpower-machine-learning-datafest-2017/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
   * 2 variables can relate to each other but with 0 pearson correlation
   * SGD vs GD: In SGD for each iteration you choose the batch which is generally contain the random sample of data But in case of GD each iteration contain the all of the training observations.
