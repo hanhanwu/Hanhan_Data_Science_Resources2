@@ -907,6 +907,7 @@ Data Science Skillset Tests
   * If there is noise data, you can try to increase k
 * SVM Skillset test: https://www.analyticsvidhya.com/blog/2017/10/svm-skilltest/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
   * I don't agree with all the answers, such as 19th questions, I think it should be 2&3.
+* Image Processing skillset: https://www.analyticsvidhya.com/blog/2017/10/image-skilltest/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 * Machine Learning Skillset test: https://www.analyticsvidhya.com/blog/2017/04/40-questions-test-data-scientist-machine-learning-solution-skillpower-machine-learning-datafest-2017/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
   * 2 variables can relate to each other but with 0 pearson correlation
   * SGD vs GD: In SGD for each iteration you choose the batch which is generally contain the random sample of data But in case of GD each iteration contain the all of the training observations.
