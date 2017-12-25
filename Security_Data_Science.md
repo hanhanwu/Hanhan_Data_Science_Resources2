@@ -380,6 +380,15 @@ BLACK HAT vs DEF CON COLLECTION
          * Clock glitching - you drop the voltage at a specific time by listining to the clock signals, so that you can skip specific instructions, such as you can skip the password
          * Vcc glitching - drop voltage into controler, to make it to do things that shouldn't. Such as, you drop the voltage at a certain time then it cannot read and write memory right
        * Fault Exploitation - You get the fault and time it at the right spot, then exploit happens
+       
+   * <b>Designning for Privacy</b>: https://www.youtube.com/watch?v=nVx7BMYypy8
+     * You know what, I agree with her, just store the data you use. This is hard, people often think later they may use that piece of data to build something good, but they really never use that data, and cost so much memory
+     
+   * <b>SHA-3 vs the world</b>: https://www.youtube.com/watch?v=BJnjAF2cz48&t=5s
+     * Hash functions and collisions found timeline: http://valerieaurora.org/hash.html
+     * SHA 3 is more secure but slow in software, it is fast in hardware hashing
+     * You can use SHAKE, same construction as SHA 3 but faster. SHA 3 is standard
+     * Such a long time talk....
 
 
 ******************************************************
