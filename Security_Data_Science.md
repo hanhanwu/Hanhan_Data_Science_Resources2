@@ -389,7 +389,38 @@ BLACK HAT vs DEF CON COLLECTION
      * SHA 3 is more secure but slow in software, it is fast in hardware hashing
      * You can use SHAKE, same construction as SHA 3 but faster. SHA 3 is standard
      * Such a long time talk....
+     
+   * <b>Strengthen Secops By Leveraging Neurodiversity</b>: https://www.youtube.com/watch?v=6jN8kNyO0-k
+     * Time to be kind and spread something good
+     * These are the assets that people with altism can bring:
+     ![autism assets](https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/autism_assets.png)
+     * The speaker here has autism, but she used her own experience and other examples in different areas to show in many cases, people with autism can do the same work and with their assets they can even do better. She also suggested managers to manage autism people in another way, such as:
+       * Telling them specific timeline, don't give any abstract info, that can be hard for them to interpret
+       * Help them do the priorities
+     * This is my first time to know more about this group of people. Good to know these. I think for managers who have to manage PhDs,that's a another special group in industry, they can also borrow some suggestions here. Meanwhile, what makes those PhDs more difficult to work with are, they think they are smart but many of them cannot realize they are not; compared with people with autism, people with a PhD degree may even has no passion in the work, and companiess need to motivate them, push them, so hard; people with a PhD degree may disobey the team plan and start to do something else not priority or even not relevant, and they never admit how stupid they are; people with altism maybe given an independent task, but people with a PhD degree may be assigned to work with others and delay others' progress.
+     * My reason tells me, people are quite different, no matter whether they have autism or whether they have a PhD degree, better to know each employee and find a customized way to manage each. 
 
+  * <b>Past, Present and Future of High Speed Packet</b>: https://www.youtube.com/watch?v=O38eY1VsWm8
+    * Past - iptables is a good tool, but cannot handle large packets flood well adn executes too late in the stack
+    * The speaker explaied the path of a packet in Linux kernel, which I don't quite understand
+      * So sad that I dind't learn well in both network and OS
+      * But to summarize, it tells to drop a packet is expensive
+    * Present - Kernel Bypass for Packet Filtering
+      * How it works
+        * No sk_buffer allocation, NIC uses circular preallocated buffer
+        * No kernel processing overhead
+        * Selectively offload traffic with flow-steering rules
+        * Inspect raw packets and reject the leight ones, and drop the malicious ones
+      * There are many frames do these work
+      * It's faster than iptables, 6-8 Mpps on a single core
+        * Mpps - Million Packets Per Second
+      * Limitations
+        * Legit traffic has to be reinhected and it's expensive
+        * One or more core has to be reserved
+        * Kernel space/userspace context switches
+    * Future - XDP
+      * Filter packetsas soon as they are received
+      * The speaker also mentioned how to try this new method
 
 ******************************************************
 
