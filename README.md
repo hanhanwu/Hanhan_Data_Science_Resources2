@@ -560,6 +560,13 @@ Machine Learning Algorithms
   * It needs good data preprocessing such as missing data imputing, categorical to numerical
   * k normally choose the square root of total data observations
   * It is also known as lazy learner because it involves minimal training of model. Hence, it doesn’t use training data to make generalization on unseen data set.
+  * Distance Methods used in KNN: https://github.com/hanhanwu/readings/blob/master/knn_distance_algs.pdf
+    * There are definitions of 11 distance methods
+    * They have compared 8 datasets with 11 distance methods and found:
+    * Hamming and Jaccard perform worst since these 2 methods will be affected by the ratio of the members of each class, while other methods won't be affected
+    * The top 6 distance methods a they tried in KNN are: City-block, Chebychev, Euclidean, Mahalanobis, Minkowski, Standardized Enuclidean techniques
+  * When it comes to information retrieval, KNN could help classification, but can be slow. KDTree can be faster, if it's not the worst case.
+    * My code: https://github.com/hanhanwu/Hanhan_NLP/blob/master/KDTree_Information_Retrieval.ipynb
 
 * SVM with Python example: https://www.analyticsvidhya.com/blog/2015/10/understaing-support-vector-machine-example-code/?utm_content=buffer02b8d&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer
  
