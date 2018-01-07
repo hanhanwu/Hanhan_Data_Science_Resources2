@@ -346,6 +346,23 @@ BLACK HAT vs DEF CON COLLECTION
     * TLS: a protocol used for determining which crypto to use between 2 endpoints which son't know what each other support
     * `ssh -p443 user@myhost`, port 443 is universal firewall bypass port, with this command, it will just let you go through
     * This is a blue team talk!?
+    
+  * <b>How to Weaponize Your Data</b>: https://www.youtube.com/watch?v=dm6bsXuYEkg&index=34&list=UU6Om9kAkl32dWlDSNlDS9Iw
+    * This talk reviews frameworks for clean, consistent data collection and provides an overview of how predictive analytics works, from data collection to data engineering & data preprocessing to predictive analytics to forecasts. The allows the blue team to focus on potential risks instead of trying to put out every fire.
+    * Note: I think when she mentioned "data mining", it's data engineering, data prepricessing and find patterns. Data Mining in fact includes almost all the data work including machine learning, it's a very general topic
+    * <b>A good framework for data collection</b>
+      * Incident Tracking
+      * Victims Demographics
+      * Discovery & Response
+      * Impact Assessment
+    * Data Collection
+      * Incident report provides trend analysis
+      * System logs provide data for broad analysis
+      * Application logs provide data for focused data
+      * In a word - <b>Always have logs for the things you built</b>
+    * Suggestions from the speaker
+      * You really need people who truly love data to work on data work (I agree with her!)
+      * When you are going to throw away the data, create the data summary so that later you can still build the model based on it
   
 * Learn it, Just Out of Curiosity
   * https://www.youtube.com/watch?v=S9MxbC0PO10
