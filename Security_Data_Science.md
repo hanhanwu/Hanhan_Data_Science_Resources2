@@ -153,6 +153,10 @@ BLACK HAT vs DEF CON COLLECTION
   * Home: https://www.defcon.org/index.html
   * Videos: https://www.youtube.com/user/DEFCONConference
   * Previous DEF CON: https://www.defcon.org/html/links/dc-archives.html
+  
+  * <b>How Hackers Changed The Security Industry</b>: https://www.youtube.com/watch?v=srJXU7DVo7Y&index=37&list=UU6Om9kAkl32dWlDSNlDS9Iw
+    * The speaker really has been a hacker for a very long time. He's talking about the history from the time when industry did not undertsand hacker tools and the benefits that good hackers can bring to them. Now, he's encouraging next generations to keep "making troubles".
+  
   * <b>How to Pwning Deep Learning Systems</b>: https://www.youtube.com/watch?v=JAGDpJFFM2A&t=19s
     * Deep Learning: auto feature engineering, hierarchical learning (Just know this :) )
     * How to pwn
