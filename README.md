@@ -550,6 +550,10 @@ Statistics in Data Science
     * GD with only random initialization can be significantly slowed by saddle points, taking exponential time to escape. The behavior of PGD (projected GD) is strikingingly different — it can generically escape saddle points in polynomial time.
     * [Difference between Projected Gradient Descent (PGD) and Gradient Descent (GD)][19]
 
+* How to calculate Confidence: http://www.stat.yale.edu/Courses/1997-98/101/confint.htm
+  * For <b>Unknown Population Mean and Known Standard Deviation</b>
+  * For <b>Unknown Population Mean and Unknown Standard Deviation</b> - t-distribution, standard error (SE)
+  * Both assumes the distribution is bell shape (normal distribution or t-distribution)
 
 ************************************************************************
 
