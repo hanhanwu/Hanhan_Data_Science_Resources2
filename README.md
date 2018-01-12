@@ -671,6 +671,15 @@ Data Visualization
   * Tableau detailed user guide on parameter: http://onlinehelp.tableau.com/current/pro/desktop/en-us/help.html#parameters_swap.html
   * Logincal function: http://onlinehelp.tableau.com/current/pro/desktop/en-us/functions_functions_logical.html
   * Tableau functions: http://onlinehelp.tableau.com/current/pro/desktop/en-us/functions.html
+  * Some GUidance: https://www.analyticsvidhya.com/blog/2018/01/tableau-for-intermediate-data-science/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+    * Dual Axis
+    * Create sets and combined sets
+  * Aggregate + Group by + Clustering + Clustering Distribution + Coloring clusters
+    * For example, you need to generate the average prices group by product categories, then you want to generate multiple groups using the price range, finally check the distribution of each group
+    * In the first sheet, you put product_category as ROWS, price as Columns and get AVG. Then click Analytics tab form the left bar, select clustering, Tableau will use k-means, and you can define the number of clusters you want. It works very well each time I tried.
+    * Drag your clusters to Dimensions (categorical data in tableau).
+    * In your second sheet, now you have that clusters as a piece of data, you know how to create distribution
+    * To color your clusters, you can create group or create calculation field, then put this new variable in Color
  
 * Jigsaw - Data Visualization for text data
   * Tutorial Videos (each video is very short, good): http://www.cc.gatech.edu/gvu/ii/jigsaw/tutorial/
