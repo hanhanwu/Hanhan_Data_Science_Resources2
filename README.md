@@ -110,7 +110,7 @@ TREE BASED MODELS & ENSEMBLING
     * My opinion is, you should try their methods, but approaches such as one-hot encoding should be tried at the same time when you are doing feature engineering
   * There is also a comparison with LightGBM, XGBoost and H2O, using logloss: https://catboost.yandex
     * CatBoost does not require conversion of data set to any specific format like XGBoost and LightGBM.
-    * It performs better for both tuned and default versions, when compare wither other boosting methods on those datasets.
+    * It performs better for both tuned and default versions, when compare with other boosting methods on those datasets.
 
 
 ************************************************************************
@@ -634,6 +634,13 @@ Machine Learning Algorithms
     * To get the best results, you should use vanilla gradient descent or momentum. gradient descent is slow to get the  desired results, but these results are mostly better than adaptive techniques.
     * If your data is small and can be fit in a single iteration, you can use 2nd order techniques like l-BFGS. This is because 2nd order techniques are extremely fast and accurate, but are only feasible when data is small enough
  
+* Factorization Machines
+  * Large dataset can be sparse, with Factorization, you can extract important or hidden features
+  * With a lower dimension dense matrix, factorization could represent a similar relationship between the target and the predictors
+  * The drawback of linear regression and logistic regression is, they only learn the effects of all features individually, instead of in combination
+  * For example, you have `Fields` Color, Category, Temperature, and `Features` Pink, Ice-cream, Cold, each feature have different values
+    * Linear regression: `w0 + wPink * xPink + wCold * xCold + wIce-cream * xIce-cream`
+    * Factorization Machines (FMs): `w0 + wPink * xPink + wCold * xCold + wIce-cream * xIce-cream + dot_product()`
  
 ************************************************************************
 
