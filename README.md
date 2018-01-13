@@ -640,7 +640,12 @@ Machine Learning Algorithms
   * The drawback of linear regression and logistic regression is, they only learn the effects of all features individually, instead of in combination
   * For example, you have `Fields` Color, Category, Temperature, and `Features` Pink, Ice-cream, Cold, each feature have different values
     * Linear regression: `w0 + wPink * xPink + wCold * xCold + wIce-cream * xIce-cream`
-    * Factorization Machines (FMs): `w0 + wPink * xPink + wCold * xCold + wIce-cream * xIce-cream + dot_product()`
+    * Factorization Machines (FMs): `w0 + wPink * xPink + wCold * xCold + wIce-cream * xIce-cream + dot_product(Pink, Cold) + dot_product(Pink, Ice-cream) + dot_product(Cold, Ice-cream)`
+      * dot-product: `a.b = |a|*|b|cosθ`, when θ=0, cosθ=1 and the dot product reaches to the highest value. In FMs, dor product is used to measure the similarity
+      * `dot_product(Pink, Cold) = v(Pink1)*v(Cold1) + v(Pink2)*v(Cold2) + v(Pink3)*v(Cold3)`, here k=3. This formula means dot product for 2 features in size 3
+    * Field-aware factorization Machines (FFMs)
+      * Not quite sure what does "latent effects" meantioned in the tutorial so far, but FFMs has awared the fields, instead of using `dot_product(Pink, Cold) + dot_product(Pink, Ice-cream) + dot_product(Cold, Ice-cream)`, it's using Fields here, `dot_product(Color_Pink, Temperature_Cold) + dot_product(Color_Pink, Category_Ice-cream) + dot_product(Temperature_Cold, Category_Ice-cream)`, Color & Temperature, Color & category, Temperature & Category
+  * Reference: https://www.analyticsvidhya.com/blog/2018/01/factorization-machines/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
  
 ************************************************************************
 
