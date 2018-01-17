@@ -396,7 +396,7 @@ Statistics in Data Science
         * Greater the sample size, lower standard error of means, and more accuracy to use the sample mean to determine the population mean
         * All the samples should be <b>fixed size</b>
         * Sample size must be sufficient, >= 30
-      * For other distributions, `z-score = (sample_mean - population mean)/sample_satndard_deviation = (sample_mean - population mean)/population standard deviation/sqrt(N)`, therefore you can also get p-value to show the probability. But the precondition is, <b>you know the population standard deviation, population mean</b>
+      * For other distributions, `z-score = (sample_mean - population mean)/sample_standard_deviation = (sample_mean - population mean)/population standard deviation/sqrt(N)`, therefore you can also get p-value to show the probability. But the precondition is, <b>you know the population standard deviation, population mean</b>
     * <b>Significant Level & Confidence</b> - no matter what distribution, finally you get a probability (p-value) of how much the sample mean is higher than population mean (because you use sample mean minus population mean). High probability shows the acceptance of randomness, while low probabilty shows the behaviour differences. With Significant Level, we can decide what is high probability and what is low probability
       * For example, with significant level 5%, also known as α level, if the probability you got is less than 5%, it means there is behaviour of difference between 2 population. Then we can say, we have 95% confidence that the sample mean is not driven by randomness, but driven by behaviour difference.
   * <b>Steps to do Hypothesis Testing</b>
@@ -554,6 +554,23 @@ Statistics in Data Science
   * For <b>Unknown Population Mean and Known Standard Deviation</b>
   * For <b>Unknown Population Mean and Unknown Standard Deviation</b> - t-distribution, standard error (SE)
   * Both assumes the distribution is bell shape (normal distribution or t-distribution)
+  * When there are only 2 datasets to compre, we can use t-distribution, but when there are more than 2, t-distribution won't handle it. Try ANOVA.
+  
+* <b>ANOVA</b>
+  * It compares samples based on means. It can handle 2+ samples. By comparing the means, ANOVA checks the impact of one or more factors.
+  * When there are just 2 samples, t-distribution and ANOVA get same results
+  * Terminology
+    * <b>Grand Mean µ</b>: The mean of all sample means
+    * Null Hypothesis in ANOVA is valid, when all the sample means are equal, or they don't have any significant difference
+    * Alternative Hypothesis is valid when at least one of the sample mean is different from others. But you ay need to use other methods to tell which is the different sample mean
+    * <b>Between-group variability</b>
+      * It tells the variation between the distributions of samples. If the distributions are close or overlap, the grand mean will be similar to sample means; but if the distributions are further away, the difference between the grand mean and the sample means can be large
+      * To calculate Between-group variability, is quite similar to calculate standard deviation/variance
+        * How to calculate standard deviation: https://www.youtube.com/watch?v=pFGcMIL2NVo
+        * Variance = pow(standard deviation, 2)
+        * The difference between calculating standard deviation and Between-group variability
+          * There are weights for each pow((µi-µj),2), and the weight is ni, the sample size of group i
+          * The sum of those squared sample mean difference are divided by degrees
 
 ************************************************************************
 
