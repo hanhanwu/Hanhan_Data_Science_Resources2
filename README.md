@@ -570,7 +570,10 @@ Statistics in Data Science
         * Variance = pow(standard deviation, 2)
         * The difference between calculating standard deviation and Between-group variability
           * There are weights for each pow((µi-µj),2), and the weight is ni, the sample size of group i
-          * The sum of those squared sample mean difference are divided by degrees
+          * The sum of those squared sample mean difference are divided by degrees of freedom. If there are k (µi-µj), then the degree of freedom is `k-1`
+          * Finally, you don't need to calculate squared root
+  * Reference: https://www.analyticsvidhya.com/blog/2018/01/anova-analysis-of-variance/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+
 
 ************************************************************************
 
