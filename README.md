@@ -565,7 +565,7 @@ Statistics in Data Science
     * Alternative Hypothesis is valid when at least one of the sample mean is different from others. But you ay need to use other methods to tell which is the different sample mean
     * <b>Between-group variability</b>
       * It tells the variation between the distributions of samples. If the distributions are close or overlap, the grand mean will be similar to sample means; but if the distributions are further away, the difference between the grand mean and the sample means can be large
-      * `(n1*pow(µ1-µG,2) + n2*pow(µ2-µG,2) + n3*pow(µ3-µG,2) + .... + nk*pow(µk-µG,2))/(k-1)`
+      * `(n1*pow(µ1-µG,2) + n2*pow(µ2-µG,2) + n3*pow(µ3-µG,2) + .... + nk*pow(µk-µG,2))/(k-1) = SSbetween/(k-1)`
       * To calculate Between-group variability, is quite similar to calculate standard deviation/variance
         * How to calculate standard deviation: https://www.youtube.com/watch?v=pFGcMIL2NVo
         * Variance = pow(standard deviation, 2)
@@ -575,15 +575,35 @@ Statistics in Data Science
           * Finally, you don't need to calculate squared root
     * <b>Within-group variability</b>
       * It's about the variation in each sample, and sum them up. This is because a group of samples that overlap a lot and can have the same sample mean & grand mean with another group of samples which have no oberlap. Between-group variability cannot help, we need within-group variability too.
-      * `sum(pow(xij-µj, 2))/(N-k)`, µj is the sample mean of sample j, xij is the ith value in sample j. `N-k` is the degree of freedom, N is the sum of sizes, k is the number of samples. You can think it's minus 1 from each sample, so that's k
-      * <b>F-Ratio/F-Statistics</b>
-        * It measures whether the means of different samples are <b>significantly different</b> or not. Lower F-Ration indicates more similar the samples and we cannot reject the null hypothesis
-        * `F = Between group variability / Within group variability`
-          * This tells us, the larger the between-group variability, the more likely those samples are different
-          * When `F-Ratio > F-critical α`, which means it's lands in the critical region, we reject null hypothesis, and say the differences between samples are significant
-          * For different α, F-critical value can be found here: http://www.socr.ucla.edu/applets.dir/f_table.html
-        * Unlike z-distribution, t-distribution, F-distribution does not have any negative values
+      * `sum(pow(xij-µj, 2))/(N-k) = SSwithin/(N-k)`, µj is the sample mean of sample j, xij is the ith value in sample j. `N-k` is the degree of freedom, N is the sum of sizes, k is the number of samples. You can think it's minus 1 from each sample, so that's k
+    * <b>F-Ratio/F-Statistics</b>
+      * It measures whether the means of different samples are <b>significantly different</b> or not. Lower F-Ration indicates more similar the samples and we cannot reject the null hypothesis
+      * `F = Between group variability / Within group variability`
+        * This tells us, the larger the between-group variability, the more likely those samples are different
+        * When `F-Ratio > F-critical α`, which means it's lands in the critical region, we reject null hypothesis, and say the differences between samples are significant. Also, when you are using tools such as Excel, it generates p-value at the same time, if this p-value is lower than α, we reject null hypothesis too
+        * For different α, F-critical value can be found here: http://www.socr.ucla.edu/applets.dir/f_table.html
+          * df means degree of freedom here. df1 is between group degree of freedom, df2 is within group degree of freedom
+      * Unlike z-distribution, t-distribution, F-distribution does not have any negative values
+    * One-way ANOVA
+      * The limitation of one-way ANOVA: cannot tell which sample is different
+      * To find the different group, you compare each pair of the groups
+      * `eta square = SSbetween/SStotal`, `SStotoal = SSwithin * (N-k)/(N-1)`, eta square is used to measure how much between group difference contributes to the variability. It also helps tell <b>whether the independent variablies really have an impact on dependent variable</b>
+      * Make sure there is only one variable affects the results
+    * Two-Way ANOVA
+      * When there can be 2 factors/variables affect the results, this ANOVA method measures which variable affects more
+      * 2 null hypothesis, each for one variable, 1 alternative hypothesis
+      * You compare F-ratio & F-critical value or p-value & α value, to decide whether to reject the 2 null hypothesis
+      * There is also F-ratio and F-critical value for interaction, to measure whether there is combined effect from the 2 variables. When F-ratio < F-critical value, no combined effect
+    * Multi-variate ANOVA (MANOVA)
+      * Works when there are multiple variables
+      * It cannot tell which variable affects the results, so you need multiple one-way ANOVA summary to figure out the variable that affects the result
+    * Bonferroni approach: Methods used to find samples that represent the population
+    * Tukey’s HSD : https://www.sfu.ca/~jackd/Stat302/Wk04-2_Full.pdf
+    * Least significant difference test (LSD): https://www.utd.edu/~herve/abdi-LSD2010-pretty.pdf
+      * http://www.itl.nist.gov/div898/handbook/prc/section4/prc473.htm
   * Reference: https://www.analyticsvidhya.com/blog/2018/01/anova-analysis-of-variance/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+    * The author is giving detailed Excel methods
+    * In its one-way ANOVA, finally the author found group A is quite different from group B, C. But I don't think this difference could prove constant music can really improve the performance. If students in group A are much better students then group B, C, group A can still be quite different. I think the final result only indicates group A is quite different from group B, C. If they want to prove constant music could really improve performance, how about ask the same group, say group A, to test under variable music/no sound situation first, then test in constant music situation and check how different the results are. In a word, try to <b>make sure there is only one variable</b>
 
 
 ************************************************************************
