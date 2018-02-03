@@ -367,6 +367,11 @@ BLACK HAT vs DEF CON COLLECTION
     * Suggestions from the speaker
       * You really need people who truly love data to work on data work (I agree with her!)
       * When you are going to throw away the data, create the data summary so that later you can still build the model based on it
+      
+ * <b>Social Engineering - How to Un Work Job</b>: https://www.youtube.com/watch?v=7BmBiWbQO2o&index=2&list=PL9fPq3eQfaaBgh8PZgxzgG1Coj-ocPQ7t
+   * I agree what he said, you need to look at the bigger picture, about how people think and how you can change the way they think. This applies to not only SE, but also many other areas when we are working or studying, good or bad, so many areas. I need to come up with more ideas about how to influence the way people think along the time
+   * He also mentioned how people such as spies unwork the job and create troubles. It just recalled my recent meories! some people are not hard working in the workplace, not talented to do a good job but they will do many things to unwork others' job, they don't really need to be spies. The person in my team had a PhD degree in crimilogy and he was focusing on social engineering. The more I learned about SE, the more I realized how did this person create troubles in my work and even try to manipulate people. About unwork part, what this person did are just similar to what the speaker talked here. I'm still very cautious, and will never hesitate to communicate to the management team.
+  
   
 * Learn it, Just Out of Curiosity
   * https://www.youtube.com/watch?v=S9MxbC0PO10
@@ -442,6 +447,7 @@ BLACK HAT vs DEF CON COLLECTION
     * Future - XDP
       * Filter packetsas soon as they are received
       * The speaker also mentioned how to try this new method
+
 
 ******************************************************
 
