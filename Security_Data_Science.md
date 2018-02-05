@@ -32,6 +32,33 @@ News and Notes
     * http://m.essexlive.news/watch-how-these-bizarre-click-farms-in-china-are-able-to-offer-fake-social-media-likes-and-reviews/story-30352810-detail/story.html
     
     
+* Information Security with Data Science
+  * https://www.analyticsvidhya.com/blog/2018/02/demystifying-security-data-science/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+  * logs!
+  * Rule-based vs Anomalies Detection systems
+    * Rules don’t capture the dynamic nature of events and context around the events
+    * Anomalies detection systems are based on the normal behavior models of hosts and networks. It detects:
+      * anomalous ports
+      * unusual traffic from a host
+      * excessive DNS failures
+      * endpoints having unusual processes/applications/registry changes
+      * users/hosts having unusual behaviors
+      * Use algorithms such as: Clustering, Robust-PCA, SVD, One-Class SVM, DB Scan and KDE
+    * Most of the anomalies detection systems raise false alarms and need security analysts to validate the results
+  * Security Data Lakes/SIEM
+    * successful whden data is large, but slow and lack of an intelligent layer
+  * UEBA, Malware detection
+    * Real time
+    * User Entity Behavior Analysis - real time anomalies detection for abnormal behavior
+    * Malware Detection - real time classify malware with machine learning methods
+  * Deception-triggered data science
+    * Collect and describe the context around a deception alert, starts from a real attack, and find other real attacks
+    * In this way, you don't need to do anomalies detection, and it will reduce false positive, according the author
+  * Information Security Collections from the author
+    * https://github.com/jivoi/awesome-ml-for-cybersecurity
+    * http://www.covert.io/the-definitive-security-datascience-and-machinelearning-guide/
+    
+    
 ******************************************************
 
 SECURITY TOOLS
