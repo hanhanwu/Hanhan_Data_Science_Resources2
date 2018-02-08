@@ -626,6 +626,8 @@ Machine Learning Algorithms
     * They have compared 8 datasets with 11 distance methods and found:
     * Hamming and Jaccard perform worst since these 2 methods will be affected by the ratio of the members of each class, while other methods won't be affected
     * The top 6 distance methods a they tried in KNN are: City-block, Chebychev, Euclidean, Mahalanobis, Minkowski, Standardized Enuclidean techniques
+    * Besides, there is also Manhattan distance, scaled Manhattan distance. The paper here, page 10: https://github.com/hanhanwu/readings/blob/master/I%20can%20be%20You-%20Questioning%20the%20use%20of%20Keystroke%20Dynamics%20as%20Biometrics.pdf
+    * <b>The distance methods can help calculate the consistency</b>, the paper above 10, 11
   * When it comes to information retrieval, KNN could help classification, but can be slow. KDTree can be faster, if it's not the worst case.
     * My code: https://github.com/hanhanwu/Hanhan_NLP/blob/master/KDTree_Information_Retrieval.ipynb
 
