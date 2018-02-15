@@ -627,6 +627,9 @@ Machine Learning Algorithms
     * Hamming and Jaccard perform worst since these 2 methods will be affected by the ratio of the members of each class, while other methods won't be affected
     * The top 6 distance methods a they tried in KNN are: City-block, Chebychev, Euclidean, Mahalanobis, Minkowski, Standardized Enuclidean techniques
     * Besides, there is also Manhattan distance, scaled Manhattan distance. The paper here, page 10: https://github.com/hanhanwu/readings/blob/master/I%20can%20be%20You-%20Questioning%20the%20use%20of%20Keystroke%20Dynamics%20as%20Biometrics.pdf
+    * Python SciPy distance methods: https://docs.scipy.org/doc/scipy-0.15.1/reference/generated/scipy.spatial.distance.cdist.html
+      * Check my code here: https://github.com/hanhanwu/Basic_But_Useful/blob/master/python_dataframe.py
+      * `get_scaled_dist()`
     * <b>The distance methods can help calculate the consistency</b>, the paper above 10, 11
   * When it comes to information retrieval, KNN could help classification, but can be slow. KDTree can be faster, if it's not the worst case.
     * My code: https://github.com/hanhanwu/Hanhan_NLP/blob/master/KDTree_Information_Retrieval.ipynb
