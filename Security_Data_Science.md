@@ -30,7 +30,10 @@ News and Notes
   * Click Farm
     * http://vesselnews.io/look-inside-chinese-click-farm-fake-followers-fake-likes-fake-reviews/
     * http://m.essexlive.news/watch-how-these-bizarre-click-farms-in-china-are-able-to-offer-fake-social-media-likes-and-reviews/story-30352810-detail/story.html
-    
+  * Exploiting Speculative Execution: https://github.com/hanhanwu/readings/blob/master/spectre.pdf
+    * A fundamental security assumption underpinning all of these is that the CPU will faithfully execute software, including its safety checks. Specula- tive execution unfortunately violates this assumption in ways that allow adversaries to violate the secrecy.
+    * These attacks represent a serious threat to actual systems, since vulnerable speculative execution capabilities are found in microprocessors from Intel, AMD, and ARM that are used in billions of devices
+    
     
 * Information Security with Data Science
   * https://www.analyticsvidhya.com/blog/2018/02/demystifying-security-data-science/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
