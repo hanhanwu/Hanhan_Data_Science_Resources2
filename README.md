@@ -762,6 +762,7 @@ Data Visualization
     * Drag your clusters to Dimensions (categorical data in tableau).
     * In your second sheet, now you have that clusters as a piece of data, you know how to create distribution
     * To color your clusters, you can create group or create calculation field, then put this new variable in Color
+  * Motion Chart: https://www.analyticsvidhya.com/blog/2018/03/tableau-for-advanced-users-easy-expertise-in-data-visualisation/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
  
 * Jigsaw - Data Visualization for text data
   * Tutorial Videos (each video is very short, good): http://www.cc.gatech.edu/gvu/ii/jigsaw/tutorial/
