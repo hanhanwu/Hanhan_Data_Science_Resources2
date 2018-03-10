@@ -404,6 +404,8 @@ BLACK HAT vs DEF CON COLLECTION
   
   
 * Learn it, Just Out of Curiosity
+  * The Gentleman Thief: https://www.youtube.com/watch?v=1kkOKvPrdZ4
+    * Wow
   * https://www.youtube.com/watch?v=S9MxbC0PO10
     * The title is "All Your Things Are Belong To Us", I thought they hack into people's computer and got everything. No, they hack many devices that I don't use. In fact it looks cool that they almost hack everything. But no matter it's the hacking in hardware or software, all reminds of OS class in my last semester.... My feeling was complex when watching the their talk
     * Finally there is a guy doing rap while they are showing the demo. It's cool, I just didn't get the whole process of how each attack work. And don't know how to prevent the attacks....
