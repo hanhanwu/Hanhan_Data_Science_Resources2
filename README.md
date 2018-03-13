@@ -269,6 +269,7 @@ Applied Data Science in Python/R/Java
   * Scikit-Learn param turning methods: http://scikit-learn.org/stable/modules/classes.html#hyper-parameter-optimizers
   * Optunity: https://pypi.python.org/pypi/Optunity
   * Spearmint: https://github.com/JasperSnoek/spearmint
+    * Improved version: https://github.com/HIPS/Spearmint
   
 
 ************************************************************************
