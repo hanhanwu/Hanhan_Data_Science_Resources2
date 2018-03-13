@@ -260,6 +260,15 @@ Applied Data Science in Python/R/Java
   * run your map reduce job with your logic, read input and create output: `python my_python_main.py < test_data/test_file.test > outfile.new`
     * The input, output can be whatever format readable, in your mapper, you can do some data preprocessing to format the data
     * In your code, you can write `print` to help debug, the printed output will be in your output file, won't be shown through terminal
+    
+* Python Param Tuning Tools
+  * How to use Hyperopt: http://steventhornton.ca/hyperparameter-tuning-with-hyperopt-in-python/
+    * "Hyperopt package provides algorithms that are able to outperform randomized search and can find results comparable to a grid search while fitting substantially less models"
+    * tutorial: http://steventhornton.ca/hyperparameter-tuning-with-hyperopt-in-python/
+    * code: https://github.com/steventhornton/Hyperparameter-Tuning-with-hyperopt-in-Python
+  * Scikit-Learn param turning methods: http://scikit-learn.org/stable/modules/classes.html#hyper-parameter-optimizers
+  * Optunity: https://pypi.python.org/pypi/Optunity
+  * Spearmint: https://github.com/JasperSnoek/spearmint
   
 
 ************************************************************************
