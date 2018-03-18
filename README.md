@@ -276,6 +276,8 @@ Applied Data Science in Python/R/Java
 
 Statistics in Data Science
 
+* My Applied Statistics: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/Applied_Statistics/ReadMe.md
+
 * 6 distributions
   * Overall
     * <b>The expected value</b> of any distribution is the mean of the distribution
