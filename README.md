@@ -271,6 +271,9 @@ Applied Data Science in Python/R/Java
   * Spearmint: https://github.com/JasperSnoek/spearmint
     * Improved version: https://github.com/HIPS/Spearmint
   
+* Rough Sets (RST) & Fuzzy Rough Sets (FRST)
+  * Code about basic data analysis with RST & FRST: https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/RoughSets_FuzzyRoughSets.R
+  * reference: https://cran.r-project.org/web/packages/RoughSets/RoughSets.pdf
 
 ************************************************************************
 
