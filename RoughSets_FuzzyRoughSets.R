@@ -134,6 +134,3 @@ pred_vals
 dCM <- confusionMatrix(real_label, unlist(pred_vals))
 dCM  # 0.9167   0.8524   0.9375
 summary(as.factor(mydata$class))  # 59 71 48
-
-
-# predict using FRST nearest neighbor classifiers
