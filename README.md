@@ -273,6 +273,8 @@ Applied Data Science in Python/R/Java
   
 * Rough Sets (RST) & Fuzzy Rough Sets (FRST)
   * Code about basic data analysis with RST & FRST: https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/RoughSets_FuzzyRoughSets.R
+    * With Rough Sets and Fuzzy Rough Sets in this library, you do use rule induction for classification
+    * The libraru also allows you to do instance selection, which removes noisy, unnecessary or inconsistent instances
   * reference: https://cran.r-project.org/web/packages/RoughSets/RoughSets.pdf
 
 ************************************************************************
