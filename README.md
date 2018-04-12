@@ -854,6 +854,15 @@ Big Data
 
 ************************************************************************
 
+Build Machine Learning Platform
+
+* Uber Engineering - Machine Learning Platform they built
+  * https://eng.uber.com/michelangelo/
+  * I like the name, Michelangelo
+
+
+************************************************************************
+
 Cloud
 
 * For Cloud Machine Learning in Spark, AWS and Azure Machine Learning, check my previous summary here: https://github.com/hanhanwu/Hanhan_Data_Science_Resources
