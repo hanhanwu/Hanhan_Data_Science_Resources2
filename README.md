@@ -271,11 +271,19 @@ Applied Data Science in Python/R/Java
   * Spearmint: https://github.com/JasperSnoek/spearmint
     * Improved version: https://github.com/HIPS/Spearmint
   
-* Rough Sets (RST) & Fuzzy Rough Sets (FRST)
-  * Code about basic data analysis with RST & FRST: https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/RoughSets_FuzzyRoughSets.R
+* Learn Rough Sets (RST) & Fuzzy Rough Sets (FRST)
+  * Learning Code about basic data analysis with RST & FRST: https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/RoughSets_FuzzyRoughSets.R
     * With Rough Sets and Fuzzy Rough Sets in this library, you do use rule induction for classification
     * The libraru also allows you to do instance selection, which removes noisy, unnecessary or inconsistent instances
   * reference: https://cran.r-project.org/web/packages/RoughSets/RoughSets.pdf
+  
+* Learn Markov Chain
+  * Learning Code about Markov Chain: https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/learn_markov_chain.R
+    * To visualize a transition system, we can use DiagrammeR: http://rich-iannone.github.io/DiagrammeR/graphviz_and_mermaid.html
+    * A transition from 0 to 1 means an item was not in previous state but in current state; a transition from 1 to 1 means an item was in previous state and also in current state. With Markov Chain, we can calculate the conditional probabilities of transitioning from state to state. For example P10 = [Pk+1=1 | Pk=0] means, given kth state as 0, what's the probability of (k+1)th state as 1. For each state, its previous state will only have 1 or 0, therefore:
+      * `P00 + P01 = 1`
+      * `P10 + P11 = 1`
+      * So we only need to calculate 2 probabilities and will get the other 2
 
 ************************************************************************
 
