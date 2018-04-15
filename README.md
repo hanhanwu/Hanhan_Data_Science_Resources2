@@ -284,6 +284,10 @@ Applied Data Science in Python/R/Java
       * `P00 + P01 = 1`
       * `P10 + P11 = 1`
       * So we only need to calculate 2 probabilities and will get the other 2
+  * reference: https://www.kaggle.com/mmotoki/markov-chain-tutorial/notebook
+    * <b>The main idea is to calculate the probability of transition between previous and current states</b>
+    * You can generate product list by order_id or user_id
+    * it's majorly using bin drop count methods to count transitions, very easy to be confused. Till now, I'm not very clear about reasons for the last step +1, +2
 
 ************************************************************************
 
