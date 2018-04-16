@@ -288,6 +288,10 @@ Applied Data Science in Python/R/Java
     * <b>The main idea is to calculate the probability of transition between previous and current states</b>
     * You can generate product list by order_id or user_id
     * it's majorly using bin drop count methods to count transitions, very easy to be confused. Till now, I'm not very clear about reasons for the last step +1, +2
+    
+* Learn Hidden Markov Model (HMM)
+  * The model is hidden but we have historical data and maximum likelihood estimation
+    * maximum likelihood estimation (ME): it produces distributional parameters that maximize the probability of observing the data at hand 
 
 ************************************************************************
 
