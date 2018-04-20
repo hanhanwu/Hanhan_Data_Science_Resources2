@@ -177,6 +177,12 @@ MODEL EVALUATION
 * 7 important model evaluation metrics and cross validation: https://www.analyticsvidhya.com/blog/2016/02/7-important-model-evaluation-error-metrics/
   * Confusion Matrix
   * <b>Lift / Gain charts</b> are widely used in campaign targeting problems. This tells us till which decile can we target customers for an specific campaign. Also, it tells you how much response do you expect from the new target base.
+    * The diagonal shows random situation, and you should compare your model with this diagonal (similar to ROC logic). The graph tells you how well is your model segregating responders from non-responders
+    * The first decile means, at 10% population (x-axis), if you got 14% responders, it means you have 140% lift at first decile
+    * The very first step is to create this gain/lift chart, so that you can plot other charts:
+    ![gain/lift chart](https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/gain:lift%20chart.png)
+    * With graph Lift@Decile, you can figure out till which decile, your model still works well, so that later you will know to which level you can adjust your model
+      * `lift@decile = number of respindents at that decile/total number of respondents`
   * Kolmogorov-Smirnov (K-S) chart is a measure of the degree of separation between the positive and negative distributions. The K-S is 100, the higher the value the better the model is at separating the positive from negative cases.
   * The ROC curve is the plot between sensitivity and (1- specificity). (1- specificity) is also known as false positive rate and sensitivity is also known as True Positive rate. To bring ROC curve down to a single number, AUC, which is  the ratio under the curve and the total area. .90-1 = excellent (A) ; .80-.90 = good (B) ; .70-.80 = fair (C) ; .60-.70 = poor (D) ; .50-.60 = fail (F). But this might simply be over-fitting. In such cases it becomes very important to to in-time and out-of-time validations. For a model which gives class as output, will be represented as a single point in ROC plot. In case of probabilistic model, we were fortunate enough to get a single number which was AUC-ROC. But still, we need to look at the entire curve to make conclusive decisions.
     * There is a theory saying when there is data imbalance problem, ROC may not work well, especially <b>when positive class is very small and you are interested in positive class, try precision-recall curve (PR curve)</b>
