@@ -210,6 +210,30 @@ MODEL EVALUATION
   * Residual deviance indicates the response predicted by a model on adding independent variables. Lower the value, better the model.
 * Regularization becomes necessary when the model begins to ovefit / underfit. This technique introduces a cost term for bringing in more features with the objective function. Hence, <b>it tries to push the coefficients for many variables to zero and hence reduce cost term.</b> This helps to reduce model complexity so that the model can become better at predicting (generalizing).
 
+* Probability vs Response
+  * Probability means predict probability, Response means predict specific classes
+  * Response Measures
+    * Confused Matrix >> Precision-Recall, F Score, Specificity & Sensitivity, ROC-AUC/Banalced Accuracy, Gini Coefficient
+    * Concordant & Discordant
+  * Probability Measures
+    * Logloss (often used by Kaggle) - it focuses on penalizing false classification. So the goal to improve your model is to minimize logloss
+    * Adjusted R-square - used to reduce collineary problem (reduce correlated features) in regression
+    * RMSE, sensitive to large outliers, mean is not statistical robust
+    * Since mean is not statistical robust, we can try:
+      * Quantile of Errors
+      * Median Absolute Percentage = `|(yi - y_median)/yi|`
+   
+* Data Validation
+  * Hold Out - Your dataset is seperated into training and Testing
+  * When your dataset is small
+    * Cross Validation
+      * Leave One Out/JackKnife
+      * k-fold
+    * Bootstrap
+      * Resample with replacement
+      * UNIFORMALY random draw
+      * The advantage of draw with replacement is, the distribution of the data won't be changed when you are drawing
+
 
 ************************************************************************
 
