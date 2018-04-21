@@ -1191,6 +1191,7 @@ OTHER
   * Orange (drag & Drop): https://www.analyticsvidhya.com/blog/2017/09/building-machine-learning-model-fun-using-orange/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
   * Docker (Sharable Data Science Code/Application): https://www.analyticsvidhya.com/blog/2017/11/reproducible-data-science-docker-for-data-science/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
   * Julia (a language for data science, does the same thing as R, Python): https://www.analyticsvidhya.com/blog/2017/10/comprehensive-tutorial-learn-data-science-julia-from-scratch/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+  * [5 years of building Analytics Vidhya, their jorney and learnings][20]
 
 
 
@@ -1213,3 +1214,4 @@ OTHER
 [17]:https://en.wikipedia.org/wiki/Saddle_point
 [18]:http://www.offconvex.org/2017/07/19/saddle-efficiency/
 [19]:https://math.stackexchange.com/questions/571068/what-is-the-difference-between-projected-gradient-descent-and-ordinary-gradient
+[20]:https://www.analyticsvidhya.com/blog/2018/04/5-years-building-analytics-vidhya-journey-learnings/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A%20AnalyticsVidhya%20%28Analytics%20Vidhya%29
