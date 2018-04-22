@@ -340,6 +340,7 @@ Applied Data Science in Python/R/Java
      * The author provided her detailed mathematical description: https://codefying.com/2016/09/15/a-tutorial-on-hidden-markov-model-with-a-stock-price-example/
        * Her code: https://github.com/elena-sharova/HiddenMarkovModel
          * I just tried `yahoo-finance`, it had 2 major class for Currency and Share. But at least Share no longer works, the YQL has been disabled. Although this is not the first time I saw yql discontinued services, when you are seeing a past giant company is reducing its services more and more, while in fact many of the services were great, the feeling is complex
+         * But we can download some sample data here: https://github.com/matplotlib/mpl_finance/tree/master/examples/data
      * The author's evaluation results: https://codefying.com/2016/09/19/a-tutorial-on-hidden-markov-model-with-a-stock-price-example-part-2/
        * Lessons learned from here, only using End of Day share time series to predict didn't work well. So maybe better sequence predictions requires more granular data
 
