@@ -336,14 +336,19 @@ Applied Data Science in Python/R/Java
       * Baum-Welch algorithm
         * Either the initial model defines the optimal point of the likelihood function and λ
         * Or the converged solution provides model parameters that are more likely for a given sequence of observations 
-   * References
-     * The author provided her detailed mathematical description: https://codefying.com/2016/09/15/a-tutorial-on-hidden-markov-model-with-a-stock-price-example/
-       * Her code: https://github.com/elena-sharova/HiddenMarkovModel
-         * I just tried `yahoo-finance`, it had 2 major class for Currency and Share. But at least Share no longer works, the YQL has been disabled. Although this is not the first time I saw yql discontinued services, when you are seeing a past giant company is reducing its services more and more, while in fact many of the services were great, the feeling is complex
-         * But we can download some sample data here: https://github.com/matplotlib/mpl_finance/tree/master/examples/data
-     * The author's evaluation results: https://codefying.com/2016/09/19/a-tutorial-on-hidden-markov-model-with-a-stock-price-example-part-2/
-       * Lessons learned from here, only using End of Day share time series to predict didn't work well. So maybe better sequence predictions requires more granular data
-
+  * References
+    * The author provided her detailed mathematical description: https://codefying.com/2016/09/15/a-tutorial-on-hidden-markov-model-with-a-stock-price-example/
+      * Her code: https://github.com/elena-sharova/HiddenMarkovModel
+        * I just tried `yahoo-finance`, it had 2 major class for Currency and Share. But at least Share no longer works, the YQL has been disabled. Although this is not the first time I saw yql discontinued services, when you are seeing a past giant company is reducing its services more and more, while in fact many of the services were great, the feeling is complex
+        * But we can download some sample data here: https://github.com/matplotlib/mpl_finance/tree/master/examples/data
+    * The author's evaluation results: https://codefying.com/2016/09/19/a-tutorial-on-hidden-markov-model-with-a-stock-price-example-part-2/
+      * Lessons learned from here, only using End of Day share time series to predict didn't work well. So maybe better sequence predictions requires more granular data
+  * Deprecated in hmmlearn and scikit-learn for now
+    * I tried both hmmlearn and scikit-learn, in hmmlearn, I tried both Gaussian hmm and Gaussian Mixture hmm. All got deprecation errors. hmmlearn is showing one of the function is deprecated, I checked the solution in open source, they pointed to scikit-learn hmm, but it has been deprecated started from scikit-learn 0.17, the version contains it was too old. I think deprecation did have reasons. Maybe at this moment, R is the best solution.
+    * My code: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/sequencial_analysis/try_hidden_markov.ipynb
+      * I have also found the sample data used in hmmlearn tutorial: https://github.com/hmmlearn/hmmlearn/blob/master/examples/plot_hmm_stock_analysis.py
+  * For More about my Markov Chain & Sequnetial Analysis practice, check: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/tree/master/sequencial_analysis
+       
 
 ************************************************************************
 
