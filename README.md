@@ -174,6 +174,7 @@ DATA PREPROCESSING
 
 MODEL EVALUATION
 
+* For my past notes on evaluation methods, check: https://github.com/hanhanwu/Hanhan_Data_Science_Resources/blob/master/Experiences.md
 * 7 important model evaluation metrics and cross validation: https://www.analyticsvidhya.com/blog/2016/02/7-important-model-evaluation-error-metrics/
   * Confusion Matrix
   * <b>Lift / Gain charts</b> are widely used in campaign targeting problems. This tells us till which decile can we target customers for an specific campaign. Also, it tells you how much response do you expect from the new target base.
