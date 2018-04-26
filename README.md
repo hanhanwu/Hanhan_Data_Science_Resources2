@@ -207,6 +207,10 @@ MODEL EVALUATION
 * To measure logistic regression:
   * AUC-ROC curve along with confusion matrix to determine its performance.
   * The analogous metric of adjusted R² in logistic regression is AIC. AIC is the measure of fit which penalizes model for the number of model coefficients. Therefore, we always prefer model with minimum AIC value.
+  * AIC vs BIC: https://methodology.psu.edu/AIC-vs-BIC
+    * AIC is an estimate of a constant plus the relative distance between the unknown true likelihood function of the data and the fitted likelihood function of the model, so that a lower AIC means a model is considered to be closer to the truth.
+    * BIC is an estimate of a function of the posterior probability of a model being true, under a certain Bayesian setup, so that a lower BIC means that a model is considered to be more likely to be the true model.
+    * They both penalize model coefficients. They are similar, but BIC penalize cmoplex models more
   * Null Deviance indicates the response predicted by a model with nothing but an intercept. Lower the value, better the model. 
   * Residual deviance indicates the response predicted by a model on adding independent variables. Lower the value, better the model.
 * Regularization becomes necessary when the model begins to ovefit / underfit. This technique introduces a cost term for bringing in more features with the objective function. Hence, <b>it tries to push the coefficients for many variables to zero and hence reduce cost term.</b> This helps to reduce model complexity so that the model can become better at predicting (generalizing).
@@ -349,6 +353,11 @@ Applied Data Science in Python/R/Java
     * My code: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/sequencial_analysis/try_hidden_markov.ipynb
       * I have also found the sample data used in hmmlearn tutorial: https://github.com/hmmlearn/hmmlearn/blob/master/examples/plot_hmm_stock_analysis.py
   * For More about my Markov Chain & Sequnetial Analysis practice, check: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/tree/master/sequencial_analysis
+  
+* Bayesian
+  * Bayesian Models (Naive Bayesian, GaussianNB, etc.) has priori for you to set. In this python sklearn example, you will see how to set priori: https://stackoverflow.com/questions/30896367/how-to-specify-the-prior-probability-for-scikit-learns-naive-bayes?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
+    * It seems that the priori here indicates which class do you want to focus on the prediction, the the priori you set is more like the weights of the classes
+  * Bayesian Method can also be used for model comparison, check page 20 here: http://www.mpia.de/homes/calj/astrostats2013/astrostats2013_bayes.pdf
        
 
 ************************************************************************
@@ -431,6 +440,14 @@ Statistics in Data Science
 * How the laws of group theory provide a useful codification of the practical lessons of building efficient distributed and real-time aggregation systems (from 22:00, he started to talk about HyperLogLog and other approximation data structures): https://www.infoq.com/presentations/abstract-algebra-analytics
 * Confusing Concepts
   * Errors and Residuals: https://en.wikipedia.org/wiki/Errors_and_residuals
+    * Statistical Error is the amount by which an observation differs from its expected value (mean of the population). Since the mean of the population is not observable in most of the cases, error is not an observable either.
+    * Residual is observable, it is an observable estimate of the unobservable statistical error. Residual is the amount by which an observation differs from its sample mean (not population mean).
+  * Explained Variation vs Residual Variation
+    * Residual Variation is unobservable.... It indicates the variance around the regression line.
+    * This video is good: https://www.coursera.org/learn/regression-models/lecture/WMAET/residual-variance
+    ![Explained Variation vs Residual Variation](https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/ExplainedVariance_ResudualVariance.png)
+    * `Residual Variance = Total Variance - Explained Variance`
+    * `R-Squared = Explained Variance/Total Variance`, so explained variance higher, the better, although it will get similar criticism as R-Square for not be able to handle multicolineary
   * Heteroskedasticity: led by non-constant variance in error terms. Usually, non-constant variance is caused by outliers or extreme values
   * Coefficient and p-value/t-statistics: coefficient measures the strength of the relationship of 2 variables, while p-value/t-statistics measures how strong the evidence that there is non-zero association
   * Anscombe's quartet comprises four datasets that have nearly identical simple statistical properties, yet appear very different when graphed: https://en.wikipedia.org/wiki/Anscombe's_quartet
