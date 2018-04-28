@@ -358,7 +358,8 @@ Applied Data Science in Python/R/Java
   * Bayesian Models (Naive Bayesian, GaussianNB, etc.) has priori for you to set. In this python sklearn example, you will see how to set priori: https://stackoverflow.com/questions/30896367/how-to-specify-the-prior-probability-for-scikit-learns-naive-bayes?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
     * It seems that the priori here indicates which class do you want to focus on the prediction, the the priori you set is more like the weights of the classes
   * Bayesian Method can also be used for model comparison, check page 20 here: http://www.mpia.de/homes/calj/astrostats2013/astrostats2013_bayes.pdf
-       
+  * Hierarchical Bayesian: https://github.com/hanhanwu/readings/blob/master/hierarchical_bayesian.pdf
+    * So difficult to understand....
 
 ************************************************************************
 
