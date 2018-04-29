@@ -218,7 +218,7 @@ MODEL EVALUATION
 * Probability vs Response
   * Probability means predict probability, Response means predict specific classes
   * Response Measures
-    * Confused Matrix >> Precision-Recall, F Score, Specificity & Sensitivity, ROC-AUC/Banalced Accuracy, Gini Coefficient
+    * Confused Matrix >> Precision-Recall, F Score, Specificity & Sensitivity, ROC-AUC/Banalced Accuracy/G-Mean, Gini Coefficient
     * Concordant & Discordant
   * Probability Measures
     * Logloss (often used by Kaggle) - it focuses on penalizing false classification. So the goal to improve your model is to minimize logloss
