@@ -359,6 +359,7 @@ Applied Data Science in Python/R/Java
     * It seems that the priori here indicates which class do you want to focus on the prediction, the the priori you set is more like the weights of the classes
   * Bayesian Method can also be used for model comparison, check page 20 here: http://www.mpia.de/homes/calj/astrostats2013/astrostats2013_bayes.pdf
     * Here's the description about how to use Bayesian Method to compare models: https://stats.stackexchange.com/questions/342605/how-to-use-bayesian-evidence-to-compare-models
+    * Here's more description from PyMC3 on Bayes Factors and Marginal Likelihood: http://docs.pymc.io/notebooks/Bayes_factor.html
 
 ************************************************************************
 
