@@ -373,6 +373,7 @@ Applied Data Science in Python/R/Java
 Statistics in Data Science
 
 * My Applied Statistics: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/Applied_Statistics/ReadMe.md
+* Some basic formulas: http://mtweb.mtsu.edu/stats/dictionary/formula.htm
 
 * 6 distributions
   * Overall
@@ -682,7 +683,7 @@ Statistics in Data Science
   * It compares samples based on means. It can handle 2+ samples. By comparing the means, ANOVA checks the impact of one or more factors.
   * When there are just 2 samples, t-distribution and ANOVA get same results
   * Terminology
-    * <b>Grand Mean µ</b>: The mean of all sample means
+    * <b>Grand Mean µ</b>: The mean of all sample means
     * Null Hypothesis in ANOVA is valid, when all the sample means are equal, or they don't have any significant difference
     * Alternative Hypothesis is valid when at least one of the sample mean is different from others. But you ay need to use other methods to tell which is the different sample mean
     * <b>Between-group variability</b>
