@@ -222,11 +222,18 @@ MODEL EVALUATION
     * Concordant & Discordant
   * Probability Measures
     * Logloss (often used by Kaggle) - it focuses on penalizing false classification. So the goal to improve your model is to minimize logloss
-    * Adjusted R-square - used to reduce collineary problem (reduce correlated features) in regression
+    * Adjusted R-square - used to reduce collineary problem (reduce correlated features) in regression. We can check both Adjusted R-Square and R-Square, if R-Square is much higher, it means we have unnecessary features that do not contribute much in the model
+    * Expected Variance & Residual Variance
+      * R-Square = Expected Variance/Total Variance, so higher expected variance can be better, although it can suffer simiar critics that R-Square got
+      * Residual Variance (Unexplained Variance) = Total Variance - Expected Variance, lower the better
     * RMSE, sensitive to large outliers, mean is not statistical robust
     * Since mean is not statistical robust, we can try:
       * Quantile of Errors
-      * Median Absolute Percentage = `|(yi - y_median)/yi|`
+      * Median Absolute Percentage = `median(|(yi_true - yi_forecast)/yi_true|)`
+    * Brier Score
+      * It is calculated by Uncertainty, Resolution and Reliability scores
+      * You just need ground truth and the probability prediction results to do the calculation. 
+      * This is the best tutorial I have found from description to implementation: https://timvangelder.com/2015/05/18/brier-score-composition-a-mini-tutorial/
    
 * Data Validation
   * Hold Out - Your dataset is seperated into training and Testing
