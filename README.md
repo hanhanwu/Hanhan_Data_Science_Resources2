@@ -241,6 +241,11 @@ MODEL EVALUATION
     * Cross Validation
       * Leave One Out/JackKnife
       * k-fold
+      * Repeated k-fold
+      * Stratified k-fold
+      * Adversarial Validation
+        * This method is special. It checks the similarity between training data and testing data by generating the probability of 'is_train' for all the training & testing data. With the generated probability, you sort training data in probability descending order, and chose the top x% as the validation set, the rest training data as training set.
+      * My code [Python]: https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/validation_methods_sumamry.ipynb
     * Bootstrap
       * Resample with replacement
       * UNIFORMALY random draw
