@@ -245,7 +245,11 @@ MODEL EVALUATION
       * Stratified k-fold
       * Adversarial Validation
         * This method is special. It checks the similarity between training data and testing data by generating the probability of 'is_train' for all the training & testing data. With the generated probability, you sort training data in probability descending order, and chose the top x% as the validation set, the rest training data as training set.
+      * Time Series Cross Validation
+        * In each split, it adds one more new data as teting data, and all the previous data as training data
       * My code [Python]: https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/validation_methods_sumamry.ipynb
+      * reference: https://www.analyticsvidhya.com/blog/2018/05/improve-model-performance-cross-validation-in-python-r/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+        * My code is better, the reference code is missing a few code
     * Bootstrap
       * Resample with replacement
       * UNIFORMALY random draw
