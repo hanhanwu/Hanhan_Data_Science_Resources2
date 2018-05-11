@@ -250,6 +250,8 @@ MODEL EVALUATION
       * My code [Python]: https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/validation_methods_sumamry.ipynb
       * reference: https://www.analyticsvidhya.com/blog/2018/05/improve-model-performance-cross-validation-in-python-r/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
         * My code is better, the reference code is missing a few code
+      * My code [R]: https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/validation_methods_summary.R
+        * Without using `mlr` library, if you just want to use R `train` method to call different machine learning algorithms, check [R - train models by tag][21]
     * Bootstrap
       * Resample with replacement
       * UNIFORMALY random draw
@@ -1264,3 +1266,4 @@ OTHER
 [18]:http://www.offconvex.org/2017/07/19/saddle-efficiency/
 [19]:https://math.stackexchange.com/questions/571068/what-is-the-difference-between-projected-gradient-descent-and-ordinary-gradient
 [20]:https://www.analyticsvidhya.com/blog/2018/04/5-years-building-analytics-vidhya-journey-learnings/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A%20AnalyticsVidhya%20%28Analytics%20Vidhya%29
+[21]:http://topepo.github.io/caret/train-models-by-tag.html
