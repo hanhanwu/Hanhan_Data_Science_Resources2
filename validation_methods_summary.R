@@ -28,4 +28,5 @@ sum_dt <- dist_dt[, sum(freq), by = folds]
 setnames(sum_dt, "V1", "fold_ct")
 sum_dt
 merge_df <- merge(dist_dt, sum_dt)
-merge_df$perct <- merge$fre
+merge_df$perct <- merge_df$freq/merge_df$fold_ct
+merge_df
