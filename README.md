@@ -216,7 +216,7 @@ MODEL EVALUATION
 * Regularization becomes necessary when the model begins to ovefit / underfit. This technique introduces a cost term for bringing in more features with the objective function. Hence, <b>it tries to push the coefficients for many variables to zero and hence reduce cost term.</b> This helps to reduce model complexity so that the model can become better at predicting (generalizing).
 
 * Probability vs Response
-  * Probability means predict probability, Response means predict specific classes
+  * Probability means predict continuous values (such as probability), Response means predict specific classes
   * Response Measures
     * Confused Matrix >> Precision-Recall, F Score, Specificity & Sensitivity, ROC-AUC/Banalced Accuracy/G-Mean, Gini Coefficient
     * Concordant & Discordant
@@ -234,6 +234,20 @@ MODEL EVALUATION
       * It is calculated by Uncertainty, Resolution and Reliability scores
       * You just need ground truth and the probability prediction results to do the calculation. 
       * This is the best tutorial I have found from description to implementation: https://timvangelder.com/2015/05/18/brier-score-composition-a-mini-tutorial/
+  * Logloss vs MSE
+    * Imagine the problem here we have are numerical classification (predict discrete numbers) and regression (predict continuous numbers).
+    * MSE (Squared Error) works better for continuous output while Logloss works better for numerical classification
+      * Similar to MSE, logloss will increase when the predicted probability diverges from the actual value. At the same time, Logloss takes into account the uncertainty of the predictions based on how much it varies from the ground truth.
+      * MSE would be bad if we're aiming to have our model output discrete values (such as 0, 1), because the model would end up trying to keep values close to 0 or 1 (basically estimating the mean of the distribution) and wouldn't learn to do anything very sophisticated around distribution estimation. However when your targets are continuous, RMSE/MSE works fairly well - in other words, squared error is a good measure for regression but not for numerical classification. 
+      * Logloss does maximum likelihood estimation of a multinomial distribution, it also punishes bad class labelling, but only when those labels have high confidence. So Logloss is better for numerical classification.
+  * ROC vs Precision-Recall
+    * References
+      * https://github.com/hanhanwu/readings/blob/master/ROC_vs_precisionrecall.pdf
+      * https://classeval.wordpress.com/introduction/introduction-to-the-precision-recall-plot/
+    * In a word, AUC of Precision-Recall can be more reliable than AUC for ROC, especially when the label distribution is highly skewed. 
+    * Python has built-in methods to calculate AUC of precision-recall
+      * http://scikit-learn.org/stable/modules/generated/sklearn.metrics.average_precision_score.html#sklearn.metrics.average_precision_score
+      * http://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_recall_curve.html#sklearn.metrics.precision_recall_curve
    
 * Data Validation
   * Hold Out - Your dataset is seperated into training and Testing
