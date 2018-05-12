@@ -3,6 +3,7 @@ library(caret)
 library(rpart)
 library(plyr)
 library(data.table)
+library(AUC)
 
 data("iris")
 head(iris)
@@ -30,3 +31,28 @@ sum_dt
 merge_df <- merge(dist_dt, sum_dt)
 merge_df$perct <- merge_df$freq/merge_df$fold_ct
 merge_df
+## cross validation with given folds
+### reference: https://cran.r-project.org/web/packages/groupdata2/vignettes/cross-validation_with_groupdata2.html
+k=3
+performances <- c()
+for (fold in 1:k){
+  # Create training set for this iteration
+  # Subset all the datapoints where .folds does not match the current fold
+  training_set <- iris[iris$folds != fold,]
+  
+  # Create test set for this iteration
+  # Subset all the datapoints where .folds matches the current fold
+  val_set <- iris[iris$folds == fold,]
+  
+  ## Train model
+  model <- train(Species~., data=training_set, method="rf")
+  ## Validate model
+  predicted <- predict(model, val_set)
+  dcm <- confusionMatrix(val_set$Species, predicted)
+  balanced_auc <- (auc(sensitivity(predicted, val_set$Species)) + auc(specificity(predicted, val_set$Species)))/2
+  
+  performances[fold] <- balanced_auc
+}
+
+cv_auc <- mean(performances)
+cv_auc
