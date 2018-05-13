@@ -266,6 +266,11 @@ MODEL EVALUATION
         * My code is better, the reference code is missing a few code
       * My code [R]: https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/validation_methods_summary.R
         * Without using `mlr` library, if you just want to use R `train` method to call different machine learning algorithms, check [R - train models by tag][21]
+        * In stratify cross validation, it has the code for:
+          * Generating the label value distribution
+          * Do cross validation given just fold labels of each row
+        * In leave-one-out cross validation
+          * Better to use regression prediction results, because if it's classification with response results, how could you calculate metrics with 1 row validation set?
     * Bootstrap
       * Resample with replacement
       * UNIFORMALY random draw
