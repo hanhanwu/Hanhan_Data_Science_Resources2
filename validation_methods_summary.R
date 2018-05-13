@@ -56,3 +56,33 @@ for (fold in 1:k){
 
 cv_auc <- mean(performances)
 cv_auc
+
+
+# Method 3 - Leave One Out Cross Validation
+library(tidyverse)
+iris <- tibble::rowid_to_column(iris, "ID")
+head(iris)
+
+k=dim(iris)[1]
+performances <- c()
+for (fold in 1:k){
+  # Create training set for this iteration
+  # Subset all the datapoints where .folds does not match the current fold
+  training_set <- iris[iris$ID != fold,]
+  
+  # Create test set for this iteration
+  # Subset all the datapoints where .folds matches the current fold
+  val_set <- iris[iris$ID == fold,]
+  
+  ## Train model
+  model <- train(Species~., data=training_set, method="rf")
+  ## Validate model
+  predicted <- predict(model, val_set)
+  dcm <- confusionMatrix(val_set$Species, predicted)
+  balanced_auc <- (auc(sensitivity(predicted, val_set$Species)) + auc(specificity(predicted, val_set$Species)))/2
+  
+  performances[fold] <- balanced_auc
+}
+
+cv_auc <- mean(performances)
+cv_auc
