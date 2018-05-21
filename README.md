@@ -387,7 +387,7 @@ Applied Data Science in Python/R/Java
       * Lessons learned from here, only using End of Day share time series to predict didn't work well. So maybe better sequence predictions requires more granular data
   * Deprecated in hmmlearn and scikit-learn for now
     * I tried both hmmlearn and scikit-learn, in hmmlearn, I tried both Gaussian hmm and Gaussian Mixture hmm. All got deprecation errors. hmmlearn is showing one of the function is deprecated, I checked the solution in open source, they pointed to scikit-learn hmm, but it has been deprecated started from scikit-learn 0.17, the version contains it was too old. I think deprecation did have reasons. Maybe at this moment, R is the best solution.
-    * My code: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/sequencial_analysis/try_hidden_markov.ipynb
+    * My code (the sklearn deprecation made this code not useful!): https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/sequencial_analysis/try_hidden_markov.ipynb
       * I have also found the sample data used in hmmlearn tutorial: https://github.com/hmmlearn/hmmlearn/blob/master/examples/plot_hmm_stock_analysis.py
   * For More about my Markov Chain & Sequnetial Analysis practice, check: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/tree/master/sequencial_analysis
   
