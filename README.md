@@ -346,6 +346,8 @@ Applied Data Science in Python/R/Java
   * Optunity: https://pypi.python.org/pypi/Optunity
   * Spearmint: https://github.com/JasperSnoek/spearmint
     * Improved version: https://github.com/HIPS/Spearmint
+  * My code: https://github.com/hanhanwu/Basic_But_Useful/blob/master/RandomSearch_vs_GridSearch_cv.ipynb
+    * Here I used hyperopt implemented in sklearn, it is random search. I also used sklearn grid search, random search
   
 * Learn Rough Sets (RST) & Fuzzy Rough Sets (FRST)
   * Learning Code about basic data analysis with RST & FRST: https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/RoughSets_FuzzyRoughSets.R
