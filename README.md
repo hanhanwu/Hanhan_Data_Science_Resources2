@@ -989,6 +989,12 @@ Big Data
 
 Build Machine Learning Platform
 
+* AWS Sagemaker
+  * How it works: https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works.html
+  * "Amazon SageMaker is a fully managed service that enables you to quickly and easily integrate machine learning-based models into your applications"
+  ![AWS Sagemaker](https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/aws_sagemaker.png)
+  * It also allows the code, data to be shared within the team. With Sagemaker, you can create an EC2 instance and run the code that can takes long time to execute on your local machine. It also helps to connect to many other AWS resources such as S3, Glue, AWS visualization, etc.
+
 * Uber Engineering - Machine Learning Platform they built
   * https://eng.uber.com/michelangelo/
   * I like the name, Michelangelo
