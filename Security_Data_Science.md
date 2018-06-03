@@ -33,6 +33,11 @@ News and Notes
   * Exploiting Speculative Execution: https://github.com/hanhanwu/readings/blob/master/spectre.pdf
     * A fundamental security assumption underpinning all of these is that the CPU will faithfully execute software, including its safety checks. Specula- tive execution unfortunately violates this assumption in ways that allow adversaries to violate the secrecy.
     * These attacks represent a serious threat to actual systems, since vulnerable speculative execution capabilities are found in microprocessors from Intel, AMD, and ARM that are used in billions of devices
+    
+
+* Collections of Threats
+  * From Your Browser
+    * If our browser has 15 to 20 types of info, especially those browsers enabled Flash and Java, the info will make our browser unique, that even if we delete cookies frequently and not install super cookie, the unique info can still help identify our identity. When these info got fingerprinted by attackers, it's dangerous. They can even link current cookie to the older ones.
     
     
 * Information Security with Data Science
