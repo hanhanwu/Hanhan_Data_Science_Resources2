@@ -37,11 +37,15 @@ News and Notes
 
 * Collections of Threats
   * From Your Browser
-    * Browser Uniqueness: https://github.com/hanhanwu/readings/blob/master/browser-uniqueness.pdf
+    * Browser Uniqueness [2010]: https://github.com/hanhanwu/readings/blob/master/browser-uniqueness.pdf
       * If our browser has 15 to 20 types of info, especially those browsers enabled Flash and Java, the info will make our browser unique, that even if we delete cookies frequently and not install super cookie, the unique info can still help identify our identity. When these info got fingerprinted by attackers, it's dangerous. They can even link current cookie to the older ones.
       * <b>They used 8 components in browser to detect browser uniqueness. They came up with a simple algorithm to compare the concated string similarity, in order to see whether the changed string belong to a previous user who used another string</b>
       * The paper disclosed the paradox in security, that complex and unique browser info were designed for user privacy, but instead made fingerprinting easier and can expose user identity easier
       * Desktop browsers are easier to be detected, comparing with iPhone and Android, since desktop browsers have more various browser plugins. However iPhone and Android have cookies that are easier to be tracked without using fingerprinting technique
+    * Cross Browser Tracking [2017]: https://github.com/hanhanwu/readings/blob/master/crossbrowsertracking_NDSS17.pdf
+      * The description of feature extraction, and how to make their features more reliable is pretty good
+      * They use uniqueness, stability and entropy as the measures. When uniqueness is high, stability of a feature will drop, and vice versa. So they used uniqueness * stability to measure multiple features
+      * The paper also mentioned the observations for single browser fingerprinting and cross browser fingerprinting
     
     
 * Information Security with Data Science
