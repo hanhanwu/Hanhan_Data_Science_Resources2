@@ -48,8 +48,7 @@ News and Notes
       * The paper also mentioned the observations for single browser fingerprinting and cross browser fingerprinting
       * Their open source: https://github.com/Song-Li/cross_browser
   * Extensive Coverage & Analysis of Online Tracking Methods
-    * Background
-      * Third party online tracking: when you are visiting web sites, there are third parties such as ad networks embedded in many websites, they can track your browser history through a combinations of cookies and uniquely identify you. Sometimes private info such as email address can also be obtained
+    * Third party online tracking: when you are visiting web sites, there are third parties such as ad networks embedded in many websites, they can track your browser history through a combinations of cookies and uniquely identify you. Sometimes private info such as email address can also be obtained
     
     
 * Information Security with Data Science
