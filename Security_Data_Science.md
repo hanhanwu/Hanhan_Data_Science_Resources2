@@ -47,8 +47,11 @@ News and Notes
       * They use uniqueness, stability and entropy as the measures. When uniqueness is high, stability of a feature will drop, and vice versa. So they used uniqueness * stability to measure multiple features
       * The paper also mentioned the observations for single browser fingerprinting and cross browser fingerprinting
       * Their open source: https://github.com/Song-Li/cross_browser
-  * Extensive Coverage & Analysis of Online Tracking Methods
+  * Extensive Coverage & Analysis of Online Tracking Methods [2016]: https://github.com/hanhanwu/readings/blob/master/ccs16_online_tracking_methods.pdf
     * Third party online tracking: when you are visiting web sites, there are third parties such as ad networks embedded in many websites, they can track your browser history through a combinations of cookies and uniquely identify you. Sometimes private info such as email address can also be obtained
+    * Cookies are stored in key:value pair
+    * This paper has many implementation details, here's there open source: https://github.com/hanhanwu/OpenWPM
+      * "OpenWPM is a web privacy measurement framework which makes it easy to collect data for privacy studies on a scale of thousands to millions of websites."
     
     
 * Information Security with Data Science
