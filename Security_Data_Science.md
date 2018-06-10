@@ -58,7 +58,7 @@ News and Notes
     * Simply disabeling JavaScript won't help, since there is also other methods to get font info, such as through CSS
     * They used greedy method to generate feature subset, start from highest entropy to lower entropy
     * While they proposed how to make user identity less unique, they used both entropy and anonymity and measure them when the sample size increases
-      * Anonymity = N/pow(2, Entropy)
+      * `Anonymity = N/pow(2, Entropy)`
       * For their proposal, higher anonymity the better
     * Tor Browser design:https://www.torproject.org/projects/torbrowser/design/
       * This is the browser mentioned in the paper that prevents more attacks, and they were planning to work together to add font fingerprinting prevention on the browser
