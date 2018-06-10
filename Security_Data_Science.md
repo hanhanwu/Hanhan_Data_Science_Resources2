@@ -47,6 +47,11 @@ News and Notes
       * They use uniqueness, stability and entropy as the measures. When uniqueness is high, stability of a feature will drop, and vice versa. So they used uniqueness * stability to measure multiple features
       * The paper also mentioned the observations for single browser fingerprinting and cross browser fingerprinting
       * Their open source: https://github.com/Song-Li/cross_browser
+      * Cross Browser Fingerprinting [2011]: https://github.com/hanhanwu/readings/blob/master/cross-browser_fingerprinting_2010.pdf
+        * This is an old paper, and latest papers are more reliable
+        * They provided the description of useragent string
+        ![useragent string](https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/ua_string.png)
+        * They also mentioned that a user's dynamic IP change won't influence their analysis, since they only used the <b>first 2 octets of each IP</b>
   * Extensive Coverage & Analysis of Online Tracking Methods [2016]: https://github.com/hanhanwu/readings/blob/master/ccs16_online_tracking_methods.pdf
     * Third party online tracking: when you are visiting web sites, there are third parties such as ad networks embedded in many websites, they can track your browser history through a combinations of cookies and uniquely identify you. Sometimes private info such as email address can also be obtained
     * Cookies are stored in key:value pair
