@@ -52,6 +52,18 @@ News and Notes
     * Cookies are stored in key:value pair
     * This paper has many implementation details, here's there open source: https://github.com/hanhanwu/OpenWPM
       * "OpenWPM is a web privacy measurement framework which makes it easy to collect data for privacy studies on a scale of thousands to millions of websites."
+  * Fingerprinting Web Users Through Font Metrics [2015]: https://www.bamsoftware.com/papers/fontfp.pdf
+    * Their presentation PPT: https://www.bamsoftware.com/talks/fc15-fontfp/fontfp.html
+    * Your fonts rendering can also expose your identity, it's even more varied (higher entropy) than useragent string
+    * Simply disabeling JavaScript won't help, since there is also other methods to get font info, such as through CSS
+    * They used greedy method to generate feature subset, start from highest entropy to lower entropy
+    * While they proposed how to make user identity less unique, they used both entropy and anonymity and measure them when the sample size increases
+      * Anonymity = N/pow(2, Entropy)
+      * For their proposal, higher anonymity the better
+    * Tor Browser design:https://www.torproject.org/projects/torbrowser/design/
+      * This is the browser mentioned in the paper that prevents more attacks, and they were planning to work together to add font fingerprinting prevention on the browser
+    * I could not access to their source code, but this GitHub folder provides APIs to get CSS info: https://github.com/w3c/css-houdini-drafts
+      * font metrics API: https://github.com/w3c/css-houdini-drafts/tree/master/font-metrics-api
     
     
 * Information Security with Data Science
