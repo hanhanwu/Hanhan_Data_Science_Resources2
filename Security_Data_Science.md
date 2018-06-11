@@ -75,11 +75,12 @@ News and Notes
     * It collects both server side and client side data, also asks for user consent. The consent could decide their initial weights
     * It uses Hoeffding trees to classify whether a testing fingerprint belong to a user appeared in the training set
     * It also checks other features, comparing them and came uo with a risk score to indicate how likely this can be the same user
-  * Dynamic Tracking [2017]: https://hal.inria.fr/hal-01652021/document
+  * Dynamic Tracking [2017]: https://github.com/hanhanwu/readings/blob/master/FPStalker-hal-version.pdf
     * It proposed 2 algorithms to track users even when their browser fingerprints changed
       * Rule based algorithm, the order of the rules are important.
       * First 3 rules + random forest. With random forest, they can tell feature importance, and predict the probility of which browser instance the new instance belongs to
       * Rule based is fast, and their rule+random forest method is more accurate
+    * Their source code: https://github.com/Spirals-Team/FPStalker
     
     
 * Information Security with Data Science
