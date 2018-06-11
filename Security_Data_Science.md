@@ -69,6 +69,8 @@ News and Notes
       * This is the browser mentioned in the paper that prevents more attacks, and they were planning to work together to add font fingerprinting prevention on the browser
     * I could not access to their source code, but this GitHub folder provides APIs to get CSS info: https://github.com/w3c/css-houdini-drafts
       * font metrics API: https://github.com/w3c/css-houdini-drafts/tree/master/font-metrics-api
+  * Fingerprinting through Canvas Rendering [2012]: https://github.com/hanhanwu/readings/blob/master/html5-fingerprint-canvas_2012.pdf
+    * They mentioned multiple canvas rendering, although looks more like font rendering. I personally don't like the evaluation methods here, they simply used entropy to measure the uniqueness but ignored whether different fingerprinting could connect the same user together
     
     
 * Information Security with Data Science
