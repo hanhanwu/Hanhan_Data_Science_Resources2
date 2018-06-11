@@ -71,10 +71,15 @@ News and Notes
       * font metrics API: https://github.com/w3c/css-houdini-drafts/tree/master/font-metrics-api
   * Fingerprinting through Canvas Rendering [2012]: https://github.com/hanhanwu/readings/blob/master/html5-fingerprint-canvas_2012.pdf
     * They mentioned multiple canvas rendering, although looks more like font rendering. I personally don't like the evaluation methods here, they simply used entropy to measure the uniqueness but ignored whether different fingerprinting could connect the same user together
-  * Dynamic Authentication: https://dl.acm.org/citation.cfm?id=2695908
+  * Dynamic Authentication [2015]: https://dl.acm.org/citation.cfm?id=2695908
     * It collects both server side and client side data, also asks for user consent. The consent could decide their initial weights
     * It uses Hoeffding trees to classify whether a testing fingerprint belong to a user appeared in the training set
     * It also checks other features, comparing them and came uo with a risk score to indicate how likely this can be the same user
+  * Dynamic Tracking [2017]: https://hal.inria.fr/hal-01652021/document
+    * It proposed 2 algorithms to track users even when their browser fingerprints changed
+      * Rule based algorithm, the order of the rules are important.
+      * First 3 rules + random forest. With random forest, they can tell feature importance, and predict the probility of which browser instance the new instance belongs to
+      * Rule based is fast, and their rule+random forest method is more accurate
     
     
 * Information Security with Data Science
