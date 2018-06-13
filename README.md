@@ -883,11 +883,11 @@ Data Visualization
   * Non-designer's design book: https://diegopiovesan.files.wordpress.com/2010/07/livro_-_the_non-designers_desi.pdf
   
 * Python LIME - make machine learning models more readable
-  * This was why I chose HCI in my last semester. Many people are working on visualization methods to make machine learning models more interpretable. This is good, especially when you are working in the industry, business leaders, customers or even techinical people all prefer an easy-to-understand way.
-  * This python library focuses on interpreting classification models now. Majorly about indicating which features contribute to which class
+  * The tool can be used for both classification and regression. The reason I put it here is because it can show feature importance even for blackbox models. In industry, the interpretability can always finally influence whether you can apply the more complex methods that can bring higher accuracy. Too many situations that finally the intustry went with the most simple models or even just intuitive math models. This tool may help better intrepretation for those better models.
   * Open source: https://github.com/marcotcr/lime
-  * Code examples: https://www.analyticsvidhya.com/blog/2017/06/building-trust-in-machine-learning-models/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
-  * I didn't try the code because it does not contain clustering. And in fact confusion matrix is easier for me to understand, compared with their visualization, and it cannot tell the feature rankings for their contributions to the prediction. But their ideas are still a good start, they have converted decision tree ideas into other classification interpretation.
+  * My code: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/Better4Industry/lime_interpretable_ML.ipynb
+It seems that GitHub cannot show those visualization I have created in IPython. But you can check LIME GitHub Examples
+LIME requires data input to be numpy array, it doesn't support pandas dataframe yet. So that's why you can see in my code, I was converting the dataframe, lists all to numpy arraies.
 
 * NLP Visualization
   * On Jan 20, 2017, SFU Linguistics Lab invited an UBC researcher to show NLP data visualization, which is very interesting. By doing topic modeling, graph base clustering, they are able to categorize large amount of comments and opinions into groups, by using interactive visualization, the tools they developed will help readers read online comments in a more efficient way.
