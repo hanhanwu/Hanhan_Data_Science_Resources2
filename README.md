@@ -1201,6 +1201,7 @@ Data Science Skillset Tests
 * Ensembling Skillset test: https://www.analyticsvidhya.com/blog/2017/02/40-questions-to-ask-a-data-scientist-on-ensemble-modeling-techniques-skilltest-solution/?
   * Creating an ensemble of diverse models is a very important factor to achieve better results. Generally, an ensemble method works better, if the individual base models have less correlation among predictions
   * If you have m base models in stacking, that will generate m features for second stage models
+    * Because when you have m base models, each model will make the prediction, each prediction result will become the column in the next stage. That's why in the next stage, you will have m more features
   * Dropout in a neural network can be considered as an ensemble technique, where multiple sub-networks are trained together by “dropping” out certain connections between neurons.
   * !! Bagging of unstable classifiers is a good idea. [Based on this paper][14], "If perturbing the learning set can cause signicant changes in the predictor constructed, then bagging can improve accuracy."
   * Better not to have same weights, it will make all the neurons to do the same thing and never converge
