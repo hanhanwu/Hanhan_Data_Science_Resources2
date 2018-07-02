@@ -153,6 +153,9 @@ DATA PREPROCESSING
     * Python practice code: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/t-SNE_Practice.ipynb
   * [For more Dimensional Reduction, check "DATA PREPROCESSING" section][9] 
   * [Some dimentional reduction methods][10]
+    * My code using T-SNE for 2D, 3D visualization: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/Outliers_and_Clustering/dimensional_reduction_visualization.ipynb
+      *  It projects multi-dimentional data into 2D or 3D, this is a type of dimensional reduction
+      * T-SNE works better for lower dimensional data
   * [A little more about Factor Analysis][11]
     * Fator Analysis is a variable reduction technique. It is used to determine <b>factor structure or model</b>. It also explains the maximum amount of variance in the model
     * EFA (Exploratory Factor Analysis) – Identifies and summarizes the <b>underlying correlation structure</b> in a data set
