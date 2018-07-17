@@ -460,6 +460,12 @@ Statistics in Data Science
      * If the times between random events follow exponential distribution with rate λ, then the total number of events in a time period of length t follows the Poisson distribution with parameter λt.
    * reference: https://www.analyticsvidhya.com/blog/2017/09/6-probability-distributions-data-science/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
    
+* <b>Maximum Likelihood Estimation</b>
+  * When you are not sure which distribution the data is, Maximum Likelihood could come as a rescue.
+  * <b>With Maximum Likelihood, you can estimate population parameters from sample data such that the probability (likelihood) of obtaining the observed data is maximized.</b>
+    * Sample data -> Population parameters
+    * Maximized probability
+   
 * <b>Odds</b>: Odds are defined as the ratio of the probability of success and the probability of failure. For example, a fair coin has probability of success is 1/2 and the probability of failure is 1/2 so odd would be 1
 
 * <b>Errors</b>
