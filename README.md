@@ -465,6 +465,18 @@ Statistics in Data Science
   * <b>With Maximum Likelihood, you can estimate population parameters from sample data such that the probability (likelihood) of obtaining the observed data is maximized.</b>
     * Sample data -> Population parameters
     * Maximized probability
+  * Distribution Parameters
+    * It is a quantity that indexes a family of probability distributions
+    * A numerical characteristic of a population or a statistical model
+  * Likelihood, Log Likelihood, Maximize Likelihood
+    * `L(θ;x) = f(x|θ)`
+      * Given a sample of observations (x values), we want to find `θ` (the distribution parameter vector) that can maximize the likelihood
+    * Now we assume the observations (x1, x2, ... xn) are <b>independent and identically distributed random variables</b> drawn from a Probability Distribution. Then we will have: 
+      * `L(θ;x) = f(x1, x2, ...xn|θ) = f(x1|θ)*f(x2|θ)*.....*f(xn|θ)`
+    * When we take deviation of a function w.r.t θ, making it equals to 0, we will get the maximum or the minimum. Here in order to get the maximum, we can:
+      * Take log of `L(θ;x)`: `LL(θ;x) = log(L(θ;x)) = log(f(x1|θ)) + log(f(x2|θ)) + .... + log(f(xn|θ))`. Because in this case, the log value is increasing, so when we take deviation of `LL(θ;x)` and make it equals to 0, we will get the maximum.
+      * Take the first deviation of LL(θ;x) w.r.t θ, making it equals to 0
+      * Take a second deviation of LL(θ;x) w.r.t θ and make sure it gets negative
    
 * <b>Odds</b>: Odds are defined as the ratio of the probability of success and the probability of failure. For example, a fair coin has probability of success is 1/2 and the probability of failure is 1/2 so odd would be 1
 
