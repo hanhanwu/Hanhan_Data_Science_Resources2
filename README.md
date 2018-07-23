@@ -482,7 +482,8 @@ Statistics in Data Science
       * From an arbitrary starting point, may end up in local maximum , but can be fast
       * When the model is assumed to be Gaussian, the MLE estimates are equivalent to the ordinary least squares method.
        * The paper: http://people.math.gatech.edu/~ecroot/3225/maximum_likelihood.pdf
-   * My Practice Code: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/try_maximum_likelihood_estimation.R
+   * My Practice Code: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/Applied_Statistics/try_maximum_likelihood_estimation.R
+     * Detailed description: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/Applied_Statistics/ReadMe.md#maximum-likelihood-estimation
    
 * <b>Odds</b>: Odds are defined as the ratio of the probability of success and the probability of failure. For example, a fair coin has probability of success is 1/2 and the probability of failure is 1/2 so odd would be 1
 
