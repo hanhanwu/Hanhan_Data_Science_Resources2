@@ -419,7 +419,7 @@ Statistics in Data Science
     * only 2 possible outcomes
     * The expected value for a random variable X in this distributioon is `p` (probability)
     * The variance for a random variable X in this distributioon is `p(1-p)`
-  * <b>Uniform Distributionz</b>
+  * <b>Uniform Distribution</b>
     * The probability of all the N number of outcomes are equally likely
     * `a is min of uniform distribution`, `b is max of uniform distribution`, the probability of a random variable in X is `1/(b-a)`; the probability of a range (x1,x2) is `(x2-x1)/(b-a)`
     * `mean = (a+b)/2`
