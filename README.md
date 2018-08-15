@@ -252,6 +252,8 @@ MODEL EVALUATION
     * Python has built-in methods to calculate AUC of precision-recall
       * http://scikit-learn.org/stable/modules/generated/sklearn.metrics.average_precision_score.html#sklearn.metrics.average_precision_score
       * http://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_recall_curve.html#sklearn.metrics.precision_recall_curve
+    * However, if you also want to calculate AUC, you can try
+      * http://scikit-learn.org/stable/modules/generated/sklearn.metrics.roc_auc_score.html
    
 * Data Validation
   * Hold Out - Your dataset is seperated into training and Testing
