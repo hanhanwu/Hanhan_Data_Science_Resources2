@@ -950,6 +950,8 @@ LIME requires data input to be numpy array, it doesn't support pandas dataframe 
     * Drag your clusters to Dimensions (categorical data in tableau).
     * In your second sheet, now you have that clusters as a piece of data, you know how to create distribution
     * To color your clusters, you can create group or create calculation field, then put this new variable in Color
+    * Add a clustering tutorial here: https://www.youtube.com/watch?v=um-puo3jeVU
+      * One thing I noticed about Tableau clustering is, even when you can use 2+ features to do the clustering, but the plot will just be 2D there, you cannot see how other features affact the clusters, however you may realize for some dots, they are affected by other features not shown in the plot.
   * Motion Chart: https://www.analyticsvidhya.com/blog/2018/03/tableau-for-advanced-users-easy-expertise-in-data-visualisation/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
  
 * Jigsaw - Data Visualization for text data
