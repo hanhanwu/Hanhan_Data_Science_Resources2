@@ -286,7 +286,10 @@ MODEL EVALUATION
   * We all know that we can predict classes with probability in classification. The return probability of the predicted classes can be overconfident or underconfident. <b>Well calibrated classifiers can return probabilities that also serve as the confidence level of the prediction.</b>
   * Also because of the biased probability some classifiers can return, calibration also serve as a postprocessing method after classification to reduce the prediction bias.
   * My code & description: https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/about_calibration.ipynb
-
+    * Part 1 - Compare the calibration of multiple classifiers
+      * We use Brier score as the evaluation, lower Brier, more accurate, better calibrated predictions. We can also see whether each classifier push the values towards to 0 or 1, or push away from them.
+    * Part 2 - Calibration as classification post-processing
+      * We use naive bayesian as the base model, comapred without calibration, with sigmoid calibration and with non-paramatric isotonic calibration.
 
 ************************************************************************
 
