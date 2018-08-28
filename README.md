@@ -174,9 +174,7 @@ DATA PREPROCESSING
     * Logistic Regression vs LDA: If the classes are well separated, the parameter estimates for logistic regression can be unstable. If the sample size is small and distribution of features are normal for each class. In such case, linear discriminant analysis (LDA) is more stable than logistic regression.
 
 
-************************************************************************
-
-MODEL EVALUATION
+### MODEL EVALUATION
 
 * For my past notes on evaluation methods, check: https://github.com/hanhanwu/Hanhan_Data_Science_Resources/blob/master/Experiences.md
 * 7 important model evaluation metrics and cross validation: https://www.analyticsvidhya.com/blog/2016/02/7-important-model-evaluation-error-metrics/
@@ -296,6 +294,31 @@ MODEL EVALUATION
 
 Applied Data Science in Python/R/Java
 
+* [Python] Feature Selection & Param Tuning & Model Selection
+  * sklearn tend to have many functions and can have overlaps with each other. I want to simplify these 3 steps and try to make them form a pipeline.
+  * Feature Selection
+    * Recursive Feature Elimination: http://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.RFECV.html#sklearn.feature_selection.RFECV
+      * Methods such as backward selection
+      * It also allows you to do cross validation in it
+    * Chi2 Feature Selection: http://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.chi2.html#sklearn.feature_selection.chi2
+      * chi-square test measures the dependence between stochastic variables (non-deterministic variables). So this method uses chi-square to remove features that are independent from the label and therefore does not contribute to the prediction
+    * Boruta All Relevant Feature Selection
+      * I think it has similar concept as chi-square feature selection. Instead of removing features that are independent from the class label, all relevant feature selection is trying to find features that contribute to the class prediction and which features contribute to which class value: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/classification_for_imbalanced_data/boruta_all_relevant_feature_selection.pdf
+      * https://github.com/scikit-learn-contrib/boruta_py
+    * Mutual Info Estimation
+      * Also similar to all relevant feature selection, this method measures the mutual info between each feature and the target. When the value is 0, the 2 are independent from each other; higher the value, higher the dependency.
+      * It relies on nonparametric methods based on entropy estimation from k-nearest neighbors distances.
+      * For discrete label: http://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.mutual_info_classif.html#sklearn.feature_selection.mutual_info_classif
+      * For continuous label: http://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.mutual_info_regression.html#sklearn.feature_selection.mutual_info_regression
+    * Variance Threshold Feature Selection
+      * This is the basic one that can be used in preprocessing step. It removes all low-variance features
+      * http://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.VarianceThreshold.html#sklearn.feature_selection.VarianceThreshold
+  * Param Tuning
+    * Random Search: https://github.com/hyperopt/hyperopt
+    * http://scikit-learn.org/stable/modules/grid_search.html#exhaustive-grid-search
+  * Model Selection
+    * http://scikit-learn.org/stable/model_selection.html
+      
 * [R] Caret package for data imputing, feature selection, model training (I will show my experience of using caret with detailed code in Hanhan_Data_Science_Practice): https://www.analyticsvidhya.com/blog/2016/12/practical-guide-to-implement-machine-learning-with-caret-package-in-r-with-practice-problem/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 * [Python & R] A brief classified summary of Python Scikit-Learn and R Caret: https://www.analyticsvidhya.com/blog/2016/12/cheatsheet-scikit-learn-caret-package-for-python-r-respectively/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 * [Python] What to pay attention to when you are using Naive Bayesian with Scikit-Learn: https://www.analyticsvidhya.com/blog/2015/09/naive-bayes-explained/?utm_content=bufferaa6aa&utm_medium=social&utm_source=linkedin.com&utm_campaign=buffer
