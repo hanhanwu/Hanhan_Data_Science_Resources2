@@ -173,6 +173,7 @@ DATA PREPROCESSING
     * A deterministic algorithm has no param to initialize, and it gives the same result if we run again.
     * Logistic Regression vs LDA: If the classes are well separated, the parameter estimates for logistic regression can be unstable. If the sample size is small and distribution of features are normal for each class. In such case, linear discriminant analysis (LDA) is more stable than logistic regression.
 
+************************************************************************
 
 ### MODEL EVALUATION
 
