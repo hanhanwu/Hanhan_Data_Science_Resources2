@@ -295,6 +295,13 @@ DATA PREPROCESSING
 
 Applied Data Science in Python/R/Java
 
+* [Python & R] Sklearn vs R Label Encoding
+  * Sklearn Label Encoding that converts categorical data into numerical data better not be used directly with scikit-learn estimators, as these expect continuous input, and would interpret the categories as being ordered, which is often not desired. Here are some solutions in python sklearn:
+    * One-hot encoding before feature selection, because one-hot encoding can deal with this issue but will also create too much features
+    * Just use that label encoding, with solid model evaluation methods
+  * Use R
+    * It has `as.numeric(as.factor())` which will avoid the problem
+
 * [Python] Feature Selection & Param Tuning & Model Selection
   * sklearn tend to have many functions and can have overlaps with each other. I want to simplify these 3 steps and try to make them form a pipeline.
   * Feature Selection
