@@ -505,10 +505,10 @@ Statistics in Data Science
    * reference: https://www.analyticsvidhya.com/blog/2017/09/6-probability-distributions-data-science/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
    
 * <b>Maximum Likelihood Estimation</b>
-  * When you are not sure which distribution the data is, Maximum Likelihood could come as a rescue.
   * <b>With Maximum Likelihood, you can estimate population parameters from sample data such that the probability (likelihood) of obtaining the observed data is maximized.</b>
     * Sample data -> Population parameters
     * Maximized probability
+    * In practice, some libraries will need you to define the posible distribution
   * Distribution Parameters
     * It is a quantity that indexes a family of probability distributions
     * A numerical characteristic of a population or a statistical model
