@@ -28,6 +28,7 @@ SUMMARIZED RESOURCES
     * Experiment Results: https://github.com/Microsoft/LightGBM/wiki/Experiments#comparison-experiment
     * GitHub: https://github.com/Microsoft/LightGBM/tree/d65f87b6f8c172ed441b1ad2a7bd83bd3268d447
     * Installation Guide: https://github.com/Microsoft/LightGBM/wiki/Installation-Guide
+    * Params: https://lightgbm.readthedocs.io/en/latest/Parameters.html
     * <b>NOTE</b>: after running above intallation commands successfully, type `cd LightGBM/python-package`, then type `python setup.py install` (for Python2.7), `python3.5 setup.py install` (for python3.5)
     * Parallel Learning Guide: https://github.com/Microsoft/LightGBM/wiki/Parallel-Learning-Guide
     
