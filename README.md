@@ -1025,9 +1025,16 @@ LIME requires data input to be numpy array, it doesn't support pandas dataframe 
 
 ### Big Data
 
-* Dask
-  * A Dask Guidance: https://www.analyticsvidhya.com/blog/2018/08/dask-big-datasets-machine_learning-python/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
-    * I really like this tutorial, it's almost solve my longtime pain. For a very long time, I became heisitate to use Spark because Spark dataframe has limited amount of functions I could use than python pandas, and during data exploring and data preprocessing processes, I do need a more complete library to help, therefore I chose Pandas. However, when you need parallel processing, you need to call other python libraries, adding paralleling code in multiple places among your code, which can be easy to make mistake. With Dask, you can do parallel processing with those python libraries you are familar with, they copied pandas dataframe, which is good. Below is the comparision between Spark and Dask provided by this tutorial, I do agree.
+* Dask - Machine Learning in Parallel
+  * It copies many functions from numpy, sklearn, pandas and even Spark, aiming at allow you to do parallel data science work.
+  * Dask Documentation; http://dask.pydata.org/en/latest/
+  * My code: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/try_dask.ipynb
+    * Cannot say I'm a big fan of Dask now.
+    * For data preprocessing, it's no better than using pandas and numpy, since they are much faster than dask and have more functions. I tried, it took me so much time and finally decided to change back to numpy & pandas.
+    * But you can convert the preprocessed data into dask dataframe
+    * The parallel processing for machine learning didn't make me feel it's much faster than sklearn.
+    * Although dask-ml mentioned it supports both sklearn grid search and dask-ml grid search, but when I was using sklearn grid search, it gave large amount of error and could not tell what caused the error.
+    * <b>I think for larger dataset, Spark must be faster if its machine learning supports the methods. We can also convert pandas dataframe to Saprk dataframe to overcome the shortage of data preprocessing functions.</b>
 <p align="center">
 <img width="577" height="410" src="https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/spark_vs_dask.png">
 </p>
