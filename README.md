@@ -608,7 +608,7 @@ Statistics in Data Science
   * [chi-square calculator][4]
   * Regression and ANOVA, it is important is knowing the degree to which your model is successful in explaining the trend (variance) in dependent variable. ANOVA helps finding the effectiveness of regression models.
   * <b>An example of hypothesis test with chi-square</b>:
-    *  chi-square tests the hypothesis that A and B are independent, that is, there is no correlation between them. <b>Chi-square is used to calculate the correlation between characteristical variables</b>
+    *  chi-square tests the hypothesis that A and B are independent, that is, there is no correlation between them. <b>Chi-square is used to calculate the correlation between categorical variables</b>
     * In this example, you have already calculated chi-square value as 507.93
     * B feature has 2 levels, "science-fiction", "history"; A feature has 2 levels, "female", "male". So we can form a 2x2 table. <b>The degree of freedom</b> = (2-1)*(2-1) = 1
     * Use the calculator [here][4] to calculate <b>significant level</b>, type degree of freedom as 1, probability as 0.001 (you can choose a probability you'd like). The calculated significant level is 10.82756617 
