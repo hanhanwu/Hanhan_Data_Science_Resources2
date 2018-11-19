@@ -65,6 +65,9 @@ TREE BASED MODELS & ENSEMBLING
   * The code in this tutorial is trying to test the results made by multiple models and choose the model combination that gets the best result (I'm thinking how do they deal with random seed issues)
 * When a categorical variable has very large number of category, <b>Gain Ratio</b> is preferred over <b>Information Gain</b>
 
+* Advantages of Tree Boosting Methods
+  * Won't be affected by the curse of dimentionality, because distance metric is not used in them.
+
 * Light GBM
   * Reference: https://www.analyticsvidhya.com/blog/2017/06/which-algorithm-takes-the-crown-light-gbm-vs-xgboost/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
   * <b>Leaf-wise</b> - Optimization in Accuracy: Other boosting algorithms use <b>depth-wise or level-wise</b>, while Light BGM is using leaf-wise. With this method, Light GBM becomes more complexity and has less info loss and therefore can be more accurate than other boosting methods.
