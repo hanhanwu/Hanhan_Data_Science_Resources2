@@ -655,6 +655,7 @@ Statistics in Data Science
     * When there is no parametric test solution, using non-parametric test is better, and it works even when the data sample is small
     * It also works for all data types, such as categorical, ordinal, interval or data with outliers
   * Cons for non-parametric tests:
+    * Because non-parametric methods won't reduce the problem of estimating f to a small number of params as parametric methods do, so in order to achieve higher accuracy, non-parametric methods need much larger number of observations
     * critical value tables for non-parametric tests are not inlcuded in many software packages...
   * <b>Steps to do Hypothesis Testing with non-parametric tests</b>
     * H0 (NULL Hypothesis): There is no significant difference between sample mean and population mean
