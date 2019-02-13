@@ -1034,7 +1034,7 @@ LIME requires data input to be numpy array, it doesn't support pandas dataframe 
   * Dask Documentation; http://dask.pydata.org/en/latest/
   * My code: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/try_dask.ipynb
     * Cannot say I'm a big fan of Dask now.
-    * For data preprocessing, it's no better than using pandas and numpy, since they are much faster than dask and have more functions. I tried, it took me so much time and finally decided to change back to numpy & pandas.
+    * For data preprocessing, it's no better than using pandas and numpy, since they are much faster than dask and have more functions. I tried, it took me so much time and finally decided to change back to numpy & pandas. <b>However, sometimes the data file can be too large for pandas to load, Dask will help you manage the memory into chunks, so you can use Dask to load the giant data file.</b>
     * But you can convert the preprocessed data into dask dataframe
     * The parallel processing for machine learning didn't make me feel it's much faster than sklearn.
     * Although dask-ml mentioned it supports both sklearn grid search and dask-ml grid search, but when I was using sklearn grid search, it gave large amount of error and could not tell what caused the error.
@@ -1105,7 +1105,11 @@ Build Machine Learning Platform
 Cloud
 
 * For Cloud Machine Learning in Spark, AWS and Azure Machine Learning, check my previous summary here: https://github.com/hanhanwu/Hanhan_Data_Science_Resources
-* My AWS practice: https://github.com/hanhanwu/Hanhan_AWS
+
+* AWS Machine Learning
+  * The white paper about overall infrastructure: https://d1.awsstatic.com/whitepapers/machine-learning-foundations.pdf
+  * AWS whitepapers: https://aws.amazon.com/whitepapers/
+  * My AWS practice and notes: https://github.com/hanhanwu/Hanhan_AWS
 
 * Compute Canada & West Grid
   * How to apply for an account: https://www.computecanada.ca/research-portal/account-management/apply-for-an-account/
