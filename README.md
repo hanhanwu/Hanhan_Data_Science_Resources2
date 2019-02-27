@@ -1110,6 +1110,9 @@ Cloud
   * The white paper about overall infrastructure: https://d1.awsstatic.com/whitepapers/machine-learning-foundations.pdf
   * AWS whitepapers: https://aws.amazon.com/whitepapers/
   * My AWS practice and notes: https://github.com/hanhanwu/Hanhan_AWS
+  * AWS Anomalies Detection Streaming: https://towardsdatascience.com/real-time-streaming-and-anomaly-detection-pipeline-on-aws-cbd0bef6f20e
+    * It uses Robust Random Cut Forest (RRCF), it's an unsupervised learning but works similar to bagging, by calculating anomaly score in each tree and finally aggregate the scores to detect anomaly.
+    * In this article, it also mentioned all the details about how this algorithm works
 
 * Compute Canada & West Grid
   * How to apply for an account: https://www.computecanada.ca/research-portal/account-management/apply-for-an-account/
