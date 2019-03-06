@@ -1113,6 +1113,8 @@ Cloud
   * AWS Anomalies Detection Streaming: https://towardsdatascience.com/real-time-streaming-and-anomaly-detection-pipeline-on-aws-cbd0bef6f20e
     * It uses Robust Random Cut Forest (RRCF), it's an unsupervised learning but works similar to bagging, by calculating anomaly score in each tree and finally aggregate the scores to detect anomaly.
     * In this article, it also mentioned all the details about how this algorithm works
+  * [Amazon Ground Truth][22]
+    * To sum up, it's the extended merchanic turk, besides mechanic turk functions, it also allows you to use private group or third party vendors to help data labeling. Also similar to mechanic turk, if you need to collect data with customized website or app, still need to build them yourself.
 
 * Compute Canada & West Grid
   * How to apply for an account: https://www.computecanada.ca/research-portal/account-management/apply-for-an-account/
@@ -1404,3 +1406,4 @@ OTHER
 [19]:https://math.stackexchange.com/questions/571068/what-is-the-difference-between-projected-gradient-descent-and-ordinary-gradient
 [20]:https://www.analyticsvidhya.com/blog/2018/04/5-years-building-analytics-vidhya-journey-learnings/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A%20AnalyticsVidhya%20%28Analytics%20Vidhya%29
 [21]:http://topepo.github.io/caret/train-models-by-tag.html
+[22]:https://www.youtube.com/watch?v=PiDa6E36jnQ&feature=youtu.be&mkt_tok=eyJpIjoiTmpOalpXRm1OVGd4TURZNSIsInQiOiJKZWlveVVcL25IVmVuNFgrSDRmZk1TT2Z2d2E2MW9Dd2M2Y2E5SUxxNHN4WXdtNWorY2o3UERJOFp0XC93d3BCYVlIT3N6QkNFNUlVOEpMQlV2eEZ1TDduaXhJS3FoTXRsYmhtSGxQOWNpamRzMDhrOHFHeHdVSFYwd3FSWGdKVytYIn0%3D
