@@ -240,8 +240,14 @@ DATA PREPROCESSING
     * Brier Score
       * It is calculated by Uncertainty, Resolution and Reliability scores
       * You just need ground truth and the probability prediction results to do the calculation. 
+      * Predictions that are further away from the expected probability are penalized, but less severely as in the case of log loss.
+      * <b>Like the average log loss, the average Brier score will present optimistic scores on an imbalanced dataset, rewarding small prediction values that reduce error on the majority class.</b>
       * This is the best tutorial I have found from description to implementation: https://timvangelder.com/2015/05/18/brier-score-composition-a-mini-tutorial/
   * Logloss vs MSE
+    * Logloss
+      * Each predicted probability is compared to the actual class output value (0 or 1) and a score is calculated that penalizes the probability based on the distance from the expected value. The penalty is logarithmic, offering a small score for small differences (0.1 or 0.2) and enormous score for a large difference (0.9 or 1.0).
+      * A model with perfect skill has a log loss score of 0.0. In order to summarize the skill of a model using log loss, the log loss is calculated for each predicted probability, and the average loss is reported.
+      * <b>It can be misleading for largely imbalanced data</b>, because when predicting 0 or smaller probabilities, the loss will be smaller.
     * Imagine the problem here we have are numerical classification (predict discrete numbers) and regression (predict continuous numbers).
     * MSE (Squared Error) works better for continuous output while Logloss works better for numerical classification
       * Similar to MSE, logloss will increase when the predicted probability diverges from the actual value. At the same time, Logloss takes into account the uncertainty of the predictions based on how much it varies from the ground truth.
@@ -257,6 +263,10 @@ DATA PREPROCESSING
       * http://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_recall_curve.html#sklearn.metrics.precision_recall_curve
     * However, if you also want to calculate AUC, you can try
       * http://scikit-learn.org/stable/modules/generated/sklearn.metrics.roc_auc_score.html
+  * Suggestions to improve scores
+    * Making the probabilities less sharp (less confident). This means adjusting the predicted probabilities away from the hard 0 and 1 bounds to limit the impact of penalties of being completely wrong.
+    * Shift the distribution to the naive prediction (base rate). This means shifting the mean of the predicted probabilities to the probability of the base rate, such as 0.5 for a balanced prediction problem.
+    * Reference: https://machinelearningmastery.com/how-to-score-probability-predictions-in-python/
    
 * Data Validation
   * Hold Out - Your dataset is seperated into training and Testing
