@@ -1104,6 +1104,7 @@ Build Machine Learning Platform
   * "Amazon SageMaker is a fully managed service that enables you to quickly and easily integrate machine learning-based models into your applications"
   ![AWS Sagemaker](https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/aws_sagemaker.png)
   * It also allows the code, data to be shared within the team. With Sagemaker, you can create an EC2 instance and run the code that can takes long time to execute on your local machine. It also helps to connect to many other AWS resources such as S3, Glue, AWS visualization, etc.
+  * Sagemaker and Step Functions: https://www.youtube.com/watch?v=dNb5jVffzPs&feature=youtu.be&mkt_tok=eyJpIjoiTW1RMFlqTXlZbUptTTJGayIsInQiOiJkM05NR054WGNodUZmWDE1N1FMZVJ6YmJjaDBNWlpwUGM1bUgzNHp5YkdtbkxMTnNMa3ZiaDN5VXpFTWRDNUlrSWU3QWdyaXRsSkFYbHdFVDFiWmxKOXZNMGtyUFlCQWpTNndHZEMrOGxCUEpmeWJ5WTJMQnFSSldCOGNjc2RZdSJ9
 
 * Uber Engineering - Machine Learning Platform they built
   * https://eng.uber.com/michelangelo/
