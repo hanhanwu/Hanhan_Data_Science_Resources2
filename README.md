@@ -1104,7 +1104,8 @@ Build Machine Learning Platform
   * "Amazon SageMaker is a fully managed service that enables you to quickly and easily integrate machine learning-based models into your applications"
   ![AWS Sagemaker](https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/aws_sagemaker.png)
   * It also allows the code, data to be shared within the team. With Sagemaker, you can create an EC2 instance and run the code that can takes long time to execute on your local machine. It also helps to connect to many other AWS resources such as S3, Glue, AWS visualization, etc.
-  * Sagemaker and Step Functions: https://www.youtube.com/watch?v=dNb5jVffzPs&feature=youtu.be&mkt_tok=eyJpIjoiTW1RMFlqTXlZbUptTTJGayIsInQiOiJkM05NR054WGNodUZmWDE1N1FMZVJ6YmJjaDBNWlpwUGM1bUgzNHp5YkdtbkxMTnNMa3ZiaDN5VXpFTWRDNUlrSWU3QWdyaXRsSkFYbHdFVDFiWmxKOXZNMGtyUFlCQWpTNndHZEMrOGxCUEpmeWJ5WTJMQnFSSldCOGNjc2RZdSJ9
+  * [Sagemaker and Step Functions][23]
+  * [Fuzzy Matching and Deduplicating Data with ML Transforms for AWS Lake Formation][24]
 
 * Uber Engineering - Machine Learning Platform they built
   * https://eng.uber.com/michelangelo/
@@ -1418,3 +1419,5 @@ OTHER
 [20]:https://www.analyticsvidhya.com/blog/2018/04/5-years-building-analytics-vidhya-journey-learnings/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A%20AnalyticsVidhya%20%28Analytics%20Vidhya%29
 [21]:http://topepo.github.io/caret/train-models-by-tag.html
 [22]:https://www.youtube.com/watch?v=PiDa6E36jnQ&feature=youtu.be&mkt_tok=eyJpIjoiTmpOalpXRm1OVGd4TURZNSIsInQiOiJKZWlveVVcL25IVmVuNFgrSDRmZk1TT2Z2d2E2MW9Dd2M2Y2E5SUxxNHN4WXdtNWorY2o3UERJOFp0XC93d3BCYVlIT3N6QkNFNUlVOEpMQlV2eEZ1TDduaXhJS3FoTXRsYmhtSGxQOWNpamRzMDhrOHFHeHdVSFYwd3FSWGdKVytYIn0%3D
+[23]:https://www.youtube.com/watch?v=dNb5jVffzPs&feature=youtu.be&mkt_tok=eyJpIjoiTW1RMFlqTXlZbUptTTJGayIsInQiOiJkM05NR054WGNodUZmWDE1N1FMZVJ6YmJjaDBNWlpwUGM1bUgzNHp5YkdtbkxMTnNMa3ZiaDN5VXpFTWRDNUlrSWU3QWdyaXRsSkFYbHdFVDFiWmxKOXZNMGtyUFlCQWpTNndHZEMrOGxCUEpmeWJ5WTJMQnFSSldCOGNjc2RZdSJ9
+[24]:https://www.youtube.com/watch?v=g34xUaJ4WI4&feature=youtu.be&mkt_tok=eyJpIjoiTVRKa1lUZzNZekppTnpZMyIsInQiOiIwakRcL0JQdFhWMXJzeW5ITVh2dDhyclh0eFZ6eHZFNFBpTDdwd0ZkaGdFbjhxZ1BDa2NsbHh2Y3Y5VUoyMGI4ejRzTE1hWmUralF3NHQ2ZXErZWw0YUJ0WWU1bUhUeHN4SjJXeGY5NWxBZmsrUDhLbGNuMWVhWWdFVG9IcjdUMnIifQ%3D%3D
