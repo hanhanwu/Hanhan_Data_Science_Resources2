@@ -1106,6 +1106,8 @@ Build Machine Learning Platform
   * It also allows the code, data to be shared within the team. With Sagemaker, you can create an EC2 instance and run the code that can takes long time to execute on your local machine. It also helps to connect to many other AWS resources such as S3, Glue, AWS visualization, etc.
   * [Sagemaker and Step Functions][23]
   * [Fuzzy Matching and Deduplicating Data with ML Transforms for AWS Lake Formation][24]
+* AWS Quicksight
+  * [10 mins demo of Quicksight][25], interactive, allows you to build dashboard with multiple charts, allows you to share, similar to tableau
 
 * Uber Engineering - Machine Learning Platform they built
   * https://eng.uber.com/michelangelo/
@@ -1421,3 +1423,4 @@ OTHER
 [22]:https://www.youtube.com/watch?v=PiDa6E36jnQ&feature=youtu.be&mkt_tok=eyJpIjoiTmpOalpXRm1OVGd4TURZNSIsInQiOiJKZWlveVVcL25IVmVuNFgrSDRmZk1TT2Z2d2E2MW9Dd2M2Y2E5SUxxNHN4WXdtNWorY2o3UERJOFp0XC93d3BCYVlIT3N6QkNFNUlVOEpMQlV2eEZ1TDduaXhJS3FoTXRsYmhtSGxQOWNpamRzMDhrOHFHeHdVSFYwd3FSWGdKVytYIn0%3D
 [23]:https://www.youtube.com/watch?v=dNb5jVffzPs&feature=youtu.be&mkt_tok=eyJpIjoiTW1RMFlqTXlZbUptTTJGayIsInQiOiJkM05NR054WGNodUZmWDE1N1FMZVJ6YmJjaDBNWlpwUGM1bUgzNHp5YkdtbkxMTnNMa3ZiaDN5VXpFTWRDNUlrSWU3QWdyaXRsSkFYbHdFVDFiWmxKOXZNMGtyUFlCQWpTNndHZEMrOGxCUEpmeWJ5WTJMQnFSSldCOGNjc2RZdSJ9
 [24]:https://www.youtube.com/watch?v=g34xUaJ4WI4&feature=youtu.be&mkt_tok=eyJpIjoiTVRKa1lUZzNZekppTnpZMyIsInQiOiIwakRcL0JQdFhWMXJzeW5ITVh2dDhyclh0eFZ6eHZFNFBpTDdwd0ZkaGdFbjhxZ1BDa2NsbHh2Y3Y5VUoyMGI4ejRzTE1hWmUralF3NHQ2ZXErZWw0YUJ0WWU1bUhUeHN4SjJXeGY5NWxBZmsrUDhLbGNuMWVhWWdFVG9IcjdUMnIifQ%3D%3D
+[25]:https://www.aws.training/learningobject/video?id=16370
