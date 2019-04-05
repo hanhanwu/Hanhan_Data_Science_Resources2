@@ -883,10 +883,11 @@ Machine Learning Algorithms
   * When to use Ridge or Lasso: In presence of few variables with medium / large sized effect, use lasso regression. In presence of many variables with small / medium sized effect, use ridge regression. Lasso regression does both variable selection and parameter shrinkage, whereas Ridge regression only does parameter shrinkage and end up including all the coefficients in the model. In presence of correlated variables, ridge regression might be the preferred choice. Also, ridge regression works best in situations where the least square estimates have higher variance. 
   * Logistic Regression: it is classification, predicting the probability of discrete values. It chooses parameters that maximize the likelihood of observing the sample values rather than that minimize the sum of squared errors (like in ordinary regression).
   * Decision Tree: serves for both categorical and numerical data. Split with the most significant variable each time to make as distinct groups as possible, using various techniques like Gini, Information Gain = (1- entropy), Chi-square. A decision tree algorithm is known to work best to detect non – linear interactions. The reason why decision tree failed to provide robust predictions because it couldn’t map the linear relationship as good as a regression model did.
-    * Gini Index vs Information Gain
+    * Gini Index vs Information Gain vs Gain Ratio
       * They are both attribute selection methods
       * Gini Index forces the resulting tree to be binary
-      * Information Gain allows multiway splits
+      * Information Gain allows multiway splits.
+      * Information Gain has bias towards the attributes that have larger amount of different values, since this will lead to higher number of branches and each branch is pure. This could make the algorithm useless. To overcome this problem, Gain Ratio has been used.
     * <b>About Entropy</b>
       * We all know that formula, `-sum(p(xi)*log(p(xi), 2))`, and this is calculated for each group/category/etc. in the whole dataset
       * Sometimes, we need to compare entropy for different datasets, and in each dataset, we have multiple groups, then here comes normalized entropy, for <b>each group</b>, `-sum(p(xi)*log(p(xi), 2)/log(n, 2))`, n means the total records in this group, NOT overall records of the dataset
