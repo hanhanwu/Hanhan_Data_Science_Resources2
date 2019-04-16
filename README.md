@@ -1117,7 +1117,9 @@ Build Machine Learning Platform
 * Uber Engineering - Machine Learning Platform they built
   * https://eng.uber.com/michelangelo/
   * I like the name, Michelangelo
-
+* Uber Machine Learning Blog
+  * https://eng.uber.com/tag/machine-learning/
+  * Uber is really doing lots of researches, maybe we can borrow some ideas
 
 ************************************************************************
 
