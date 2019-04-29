@@ -232,6 +232,7 @@ DATA PREPROCESSING
     * Adjusted R-square - used to reduce collineary problem (reduce correlated features) in regression. We can check both Adjusted R-Square and R-Square, if R-Square is much higher, it means we have unnecessary features that do not contribute much in the model
     * Expected Variance & Residual Variance
       * R-Square = Expected Variance/Total Variance, so higher expected variance can be better, although it can suffer simiar critics that R-Square got
+        * R-Square, RSS (residual sum of squares) = MSE*n, will decrease when there are more features, but the test error may not drop. Therefore, R-Square, RSS should not be used for selecting models that have difference number of features.
       * Residual Variance (Unexplained Variance) = Total Variance - Expected Variance, lower the better
     * RMSE, sensitive to large outliers, mean is not statistical robust
     * Since mean is not statistical robust, we can try:
