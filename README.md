@@ -640,10 +640,10 @@ Statistics in Data Science
     * For other distributions, use <b>Central Limit Theorem</b>:
       * <b>Mean of Sample Means</b> (X random samples) - is close to the population mean
       * <b>The distribution of sample means is normal regardless of the actual population distribution</b> - this is the core idea for Central Limit Theorem
-      * `standard deviation of sample means = population standard deviation/sqrt(N)`, N is the sample size. This is knows as <b>standard error of means</b>. You check this satdard error of means to tell how accurate your random samples that can determind population mean
-        * Greater the sample size, lower standard error of means, and more accuracy to use the sample mean to determine the population mean
-        * All the samples should be <b>fixed size</b>
-        * Sample size must be sufficient, >= 30
+      * `standard deviation of sample means = population standard deviation/sqrt(N)`, N is the sample size. This is knows as <b>standard error of means</b>. You check this satdard error of means to tell how accurate your random samples that can determind population mean.
+      * Greater the sample size, lower standard error of means, and more accuracy to use the sample mean to determine the population mean. <b>Sample size should be NOT more than 10% of the population when sampling is done without replacement.</b>
+      * All the samples should be <b>fixed size</b>
+      * Sample size must be sufficient, >= 30. When the population is skewed or asymmetric, the sample size should be large. If the population is symmetric, then we can draw small samples as well.
       * For other distributions, `z-score = (sample_mean - population mean)/sample_standard_deviation = (sample_mean - population mean)/population standard deviation/sqrt(N)`, therefore you can also get p-value to show the probability. But the precondition is, <b>you know the population standard deviation, population mean</b>
     * <b>Significant Level & Confidence</b> - no matter what distribution, finally you get a probability (p-value) of how much the sample mean is higher than population mean (because you use sample mean minus population mean). High probability shows the acceptance of randomness, while low probabilty shows the behaviour differences. With Significant Level, we can decide what is high probability and what is low probability
       * For example, with significant level 5%, also known as α level, if the probability you got is less than 5%, it means there is behaviour of difference between 2 population. Then we can say, we have 95% confidence that the sample mean is not driven by randomness, but driven by behaviour difference.
