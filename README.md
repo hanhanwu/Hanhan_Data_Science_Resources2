@@ -470,6 +470,7 @@ Statistics in Data Science
 
 * My Applied Statistics: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/Applied_Statistics/ReadMe.md
 * Some basic formulas: http://mtweb.mtsu.edu/stats/dictionary/formula.htm
+* Applied Linear Algebra: https://www.analyticsvidhya.com/blog/2019/07/10-applications-linear-algebra-data-science/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 
 * 6 distributions
   * Overall
