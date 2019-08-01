@@ -1005,7 +1005,11 @@ LIME requires data input to be numpy array, it doesn't support pandas dataframe 
   * Tableau detailed user guide on parameter: http://onlinehelp.tableau.com/current/pro/desktop/en-us/help.html#parameters_swap.html
   * Logincal function: http://onlinehelp.tableau.com/current/pro/desktop/en-us/functions_functions_logical.html
   * Tableau functions: http://onlinehelp.tableau.com/current/pro/desktop/en-us/functions.html
-  * Some GUidance: https://www.analyticsvidhya.com/blog/2018/01/tableau-for-intermediate-data-science/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+  * Combine lines in one axis
+    * Right click one of the values and choose "Dual Axis"
+    * Right click one of the axis, and choose "Synchronize Axis"
+      * If this one got disabled, convert the data format into the same format
+  * Some Guidance: https://www.analyticsvidhya.com/blog/2018/01/tableau-for-intermediate-data-science/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
     * Dual Axis
     * Create sets and combined sets
   * Aggregate + Group by + Clustering + Clustering Distribution + Coloring clusters
