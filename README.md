@@ -183,7 +183,9 @@ DATA PREPROCESSING
 
 * For my past notes on evaluation methods, check: https://github.com/hanhanwu/Hanhan_Data_Science_Resources/blob/master/Experiences.md
 * 7 important model evaluation metrics and cross validation: https://www.analyticsvidhya.com/blog/2016/02/7-important-model-evaluation-error-metrics/
+* 11 important model evaluation metrics and corss validation: https://www.analyticsvidhya.com/blog/2019/08/11-important-model-evaluation-error-metrics/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
   * Confusion Matrix
+  * F1 - the benefit of F1 score is to prevent all the records got predicted as positive or negative. Because `F1 = 2*precision*recall/(precision + recall)`, for example precision = 0, recall=1, F1 will only be 0.5.
   * <b>Lift / Gain charts</b> are widely used in campaign targeting problems. This tells us till which decile can we target customers for an specific campaign. Also, it tells you how much response do you expect from the new target base.
     * The diagonal shows random situation, and you should compare your model with this diagonal (similar to ROC logic). The graph tells you how well is your model segregating responders from non-responders
     * The first decile means, at 10% population (x-axis), if you got 14% responders, it means you have 140% lift at first decile
@@ -200,14 +202,22 @@ DATA PREPROCESSING
       * ROC is formed by FPR and TPR
       * `FPR = FP/N = FP/(FP+TN) = 1 - Specificity`
       * `TPR = TP/P = TP/(TP+FN) = Sensitivity = Recall`
-      * When data is imbalanced, I check specificity, sensitivity and balanced accuracy
+      * When data is imbalanced, I check average precision score balanced accuracy (the average of TPR, TNR), ROC-AUC
       * `Precision = TP/Predictted Positive = TP/(TP+FP)`. So with precision and recall, you will get an overview of positive class, how much positive class really got predicted as positive (Recall), and how much predicted potitive class are real positive class (precision)
+  * Logloss
+    * Comparing with ROC-AUC, logloss takes the probability of prediction into account. For example, record A got predicted as positive class 1 with 0.6 probability, record B got predicted as class 1 with probability 0.9, logloss will show higher value for record A prediction and lower value for record B prediction. ROC-AUC will show the same prediction results for both record A, B.
+    * Therefore, lower logloss value, the better.
+    * Logloss value is also indicating the certainty of the prediction.
+    * Based on the curve of logloss, it ramps up very rapidly as the predicted probability approaches 0, but gradually declines as the predicted probability improves and approach to 1. This also means logloss penalize more on false predicted results.
   * Gini Coefficient = 2*AUC – 1. It indicates how large the ROC area is above the diagnoal
   * <b>The concordant pair</b> is where the probability of responder was higher than non-responder. Whereas <b>discordant pair</b> is where the vice-versa holds true. It is <b>primarily used to access the model’s predictive power</b>. For decisions like how many to target are again taken by KS / Lift charts.
     * How to calculate the ratios: https://www.listendata.com/2014/08/modeling-tips-calculating-concordant.html
-  * RMSE: The power of ‘square root’  empowers this metric to show large number deviations. The ‘squared’ nature of this metric helps to deliver more robust results which prevents cancelling the positive and negative error values. When we have more samples, reconstructing the error distribution using RMSE is considered to be more reliable. RMSE is highly affected by outlier values. Hence, make sure you’ve removed outliers from your data set prior to using this metric. As compared to mean absolute error, RMSE gives higher weightage and punishes large errors.
+  * RMSE: The power of ‘square root’  empowers this metric to show large number deviations. The ‘squared’ nature of this metric helps to deliver more robust results which prevents cancelling the positive and negative error values. When we have more samples, reconstructing the error distribution using RMSE is considered to be more reliable. <b>RMSE is highly affected by outlier values.</b> Hence, make sure you’ve removed outliers from your data set prior to using this metric. As compared to mean absolute error, RMSE gives higher weightage and punishes large errors.
+  * (RMSLE) Root Mean Squared Logarithmic Error
+    * RMSLE is usually used when we don’t want to penalize huge differences in the predicted and the actual values when both predicted and true values are huge numbers.
+    * If both predicted and actual values are small, RMSE and RMSLE are the same
+    * If at least one of actual value & predicted value is large, RMSE will be larger than RMSLE
   * k-fold cross validation is widely used to check whether a model is an overfit or not. <b>If the performance metrics at each of the k times modelling are close to each other and the mean of metric is highest.</b> For a small k, we have a higher selection bias but low variance in the performances. For a large k, we have a small selection bias but high variance in the performances. <b>Generally a value of k = 10 is recommended for most purpose.</b>
- 
 * To measure linear regression, we could use Adjusted R² or F value.
 * In multiple regression, the variance inflation factor (VIF) is used as an indicator of multicollinearity
     * <b>Tolerance</b> (`1 / VIF = 1/(1-R²)`) is used as an indicator of multicollinearity. It is an indicator of percent of variance in a predictor which cannot be accounted by other predictors. Large values of tolerance is desirable.
@@ -230,9 +240,15 @@ DATA PREPROCESSING
   * Probability Measures
     * Logloss (often used by Kaggle) - it focuses on penalizing false classification. So the goal to improve your model is to minimize logloss
     * Adjusted R-square - used to reduce collineary problem (reduce correlated features) in regression. We can check both Adjusted R-Square and R-Square, if R-Square is much higher, it means we have unnecessary features that do not contribute much in the model
+      * `adjusted R-square = 1 - (1-R-square)*(n-1)/(n-k-1)`
+        * n - number of samples
+        * k - number of features
     * Expected Variance & Residual Variance
-      * R-Square = Expected Variance/Total Variance, so higher expected variance can be better, although it can suffer simiar critics that R-Square got
-        * R-Square, RSS (residual sum of squares) = MSE*n, will decrease when there are more features, but the test error may not drop. Therefore, R-Square, RSS should not be used for selecting models that have difference number of features.
+      * R-Square = Expected Variance/Total Variance, so higher expected variance can be better, although it can suffer simiar critics that RMSE got
+        * `R-Square = 1- MSE(model)/MSE(baseline)`
+          * MSE(model): Mean Squared Error of the predictions against the actual values
+          * Mean Squared Error of average prediction against the actual values
+        * R-Square, RSS (residual sum of squares) = MSE*n, will decrease when there are more features, but the test error may not drop. Therefore, R-Square, RSS should NOT be used for selecting models that have difference number of features.
       * Residual Variance (Unexplained Variance) = Total Variance - Expected Variance, lower the better
     * RMSE, sensitive to large outliers, mean is not statistical robust
     * Since mean is not statistical robust, we can try:
