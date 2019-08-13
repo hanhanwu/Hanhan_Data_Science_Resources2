@@ -204,6 +204,9 @@ DATA PREPROCESSING
       * `TPR = TP/P = TP/(TP+FN) = Sensitivity = Recall`
       * When data is imbalanced, I check average precision score balanced accuracy (the average of TPR, TNR), ROC-AUC
       * `Precision = TP/Predictted Positive = TP/(TP+FP)`. So with precision and recall, you will get an overview of positive class, how much positive class really got predicted as positive (Recall), and how much predicted potitive class are real positive class (precision)
+  * <b>ROC-AUC vs AVP vs F1 vs Balanced Accuracy</b>
+    * When data is imbalanced, AVP is more reliable than ROC and Balanced Accuracy. Because when data is imbalanced (much more negative than positive), TN can be high, and therefore balanced accuracy can be higher (TNR is higher) while ROC-AUC can be larger (FPR is smaller).
+    * Comparing with AVP, F1 sets precision and recall the same weight, while AVP is using increased revall (δ recall) from the previous threshold as the weight for current precision.
   * Logloss
     * Comparing with ROC-AUC, logloss takes the probability of prediction into account. For example, record A got predicted as positive class 1 with 0.6 probability, record B got predicted as class 1 with probability 0.9, logloss will show higher value for record A prediction and lower value for record B prediction. ROC-AUC will show the same prediction results for both record A, B.
     * Therefore, lower logloss value, the better.
