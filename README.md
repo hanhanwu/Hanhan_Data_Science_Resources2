@@ -115,6 +115,11 @@ TREE BASED MODELS & ENSEMBLING
   * There is also a comparison with LightGBM, XGBoost and H2O, using logloss: https://catboost.yandex
     * CatBoost does not require conversion of data set to any specific format like XGBoost and LightGBM.
     * It performs better for both tuned and default versions, when compare with other boosting methods on those datasets.
+    
+* The Comparison Between XGBoost, LightGBM and CatBoost
+  * The 2019 paper: https://arxiv.org/pdf/1809.04559.pdf
+  * When using GPU, XGBoost tend to appear to be the fastest in training (fixed set of params). It seems that at this moment, LightGBM GPU version still has some issue.
+  * When there are many features, XGBoost might run out of memory while CatBoost can converge into a good solution in the shortest time.
 
 
 ************************************************************************
