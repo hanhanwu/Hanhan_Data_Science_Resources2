@@ -1150,6 +1150,9 @@ Build Machine Learning Platform
 * Uber Machine Learning Blog
   * https://eng.uber.com/tag/machine-learning/
   * Uber is really doing lots of researches, maybe we can borrow some ideas
+  
+* [A Well Summarized Production Level Machine Learning Pipeline][26]
+  * I provided suggested tools/platform in each stag of production development, I think it can be used not only in deep learning, but also in other machine learning.
 
 ************************************************************************
 
@@ -1461,3 +1464,4 @@ OTHER
 [23]:https://www.youtube.com/watch?v=dNb5jVffzPs&feature=youtu.be&mkt_tok=eyJpIjoiTW1RMFlqTXlZbUptTTJGayIsInQiOiJkM05NR054WGNodUZmWDE1N1FMZVJ6YmJjaDBNWlpwUGM1bUgzNHp5YkdtbkxMTnNMa3ZiaDN5VXpFTWRDNUlrSWU3QWdyaXRsSkFYbHdFVDFiWmxKOXZNMGtyUFlCQWpTNndHZEMrOGxCUEpmeWJ5WTJMQnFSSldCOGNjc2RZdSJ9
 [24]:https://www.youtube.com/watch?v=g34xUaJ4WI4&feature=youtu.be&mkt_tok=eyJpIjoiTVRKa1lUZzNZekppTnpZMyIsInQiOiIwakRcL0JQdFhWMXJzeW5ITVh2dDhyclh0eFZ6eHZFNFBpTDdwd0ZkaGdFbjhxZ1BDa2NsbHh2Y3Y5VUoyMGI4ejRzTE1hWmUralF3NHQ2ZXErZWw0YUJ0WWU1bUhUeHN4SjJXeGY5NWxBZmsrUDhLbGNuMWVhWWdFVG9IcjdUMnIifQ%3D%3D
 [25]:https://www.aws.training/learningobject/video?id=16370
+[26]:https://github.com/alirezadir/Production-Level-Deep-Learning
