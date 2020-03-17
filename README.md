@@ -1022,6 +1022,7 @@ LIME requires data input to be numpy array, it doesn't support pandas dataframe 
 * Tableau Resources
   * Reference Guide: http://www.dataplusscience.com/TableauReferenceGuide/
   * Advanced Highlight: http://onlinehelp.tableau.com/current/pro/desktop/en-us/actions_highlight_advanced.html
+  * Top N within the Group: https://kb.tableau.com/articles/howto/finding-the-top-n-within-a-category
   * Having 1+ pills in Color: http://drawingwithnumbers.artisart.org/measure-names-on-the-color-shel/
   * Mark Labels: http://onlinehelp.tableau.com/current/pro/desktop/en-us/annotations_marklabels_showhideindividual.html
   * Show or hide labels: http://paintbynumbersblog.blogspot.ca/2013/08/a-quick-tableau-tip-showing-and-hiding.html
