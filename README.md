@@ -1021,10 +1021,10 @@ LIME requires data input to be numpy array, it doesn't support pandas dataframe 
 
 * Tableau Resources
   * Reference Guide: http://www.dataplusscience.com/TableauReferenceGuide/
-  * About Redshift Multiple Tables Connection
-    * It took me lots of time to figure it out... After multiple failures and multiple times re-work.
-    * If you have multiple tables link together for each sheet, and the tables they use are not exactly the same, a better practice will be, for each sheet, build a new DB connection, and in the Data Source page, link the tables will be used for this sheet together.
-    * From what I have found, even though a new sheet needs the same tables used by the previous sheet, the connection could be broken, for some weird reason.
+  * Having multiple data sources
+    * If current sheet needs only 1 table but you have multiple tables shown as the data source, then edit variables under the table you need for this sheet, tableau will recognize which table you need for current sheet
+  * How to create drill down from one sheet to another: https://community.tableau.com/ideas/4119
+    * Under "Dashboard", click "Actions"
   * Advanced Highlight: http://onlinehelp.tableau.com/current/pro/desktop/en-us/actions_highlight_advanced.html
   * Top N within the Group: https://kb.tableau.com/articles/howto/finding-the-top-n-within-a-category
   * Having 1+ pills in Color: http://drawingwithnumbers.artisart.org/measure-names-on-the-color-shel/
