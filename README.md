@@ -626,15 +626,18 @@ Statistics in Data Science
   * <b>Co-efficient of Determination = ESS/(ESS + RSS)</b>. It represents the strength of correlation between two variables. <b>Correlation Coefficient = sqrt(Co-efficient of Determination)</b>, also represents the strength of correlation between two variables, ranges between [-1,1]. 0 means no correlation, 1 means strong positive correlation, -1 means strong neagtive correlation.
   
 
-* About Data Sampling: http://psc.dss.ucdavis.edu/sommerb/sommerdemo/sampling/types.htm
+* About Data Sampling
   * Probability sampling can be representative, non-probability sampling may not
-  * probability Sampling
-    * Random sample. (I guess R `sample()` is random sampling by default, so that each feature has the same weight)
+  * Probability Sampling
+    * Random sample. (I guess R `sample()` is random sampling by default, so that each feature has the same weight)
     * Stratified sample
   * Nonprobability Sampling
     * Quota sample
     * Purposive sample
     * Convenience sample
+  * References
+    * http://psc.dss.ucdavis.edu/sommerb/sommerdemo/sampling/types.htm
+    * https://searchbusinessanalytics.techtarget.com/definition/data-sampling
  
  
 * [Comprehensive and Practical Statistics Guide for Data Science][1] - A real good one!
