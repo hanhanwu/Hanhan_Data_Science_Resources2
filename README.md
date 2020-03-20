@@ -252,7 +252,8 @@ DATA PREPROCESSING
         * n - number of samples
         * k - number of features
     * Expected Variance & Residual Variance
-      * R-Square = Expected Variance/Total Variance, so higher expected variance can be better, although it can suffer simiar critics that RMSE got
+      * R-Square = Expected Variance/Total Variance. It's the percentage of the response variable variation that is explained by the model.
+        * so higher expected variance can be better, although it can suffer simiar critics that RMSE got
         * `R-Square = 1- MSE(model)/MSE(baseline)`
           * MSE(model): Mean Squared Error of the predictions against the actual values
           * Mean Squared Error of average prediction against the actual values
