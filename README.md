@@ -608,7 +608,11 @@ Statistics in Data Science
   * Coefficient and p-value/t-statistics: coefficient measures the strength of the relationship of 2 variables, while p-value/t-statistics measures how strong the evidence that there is non-zero association
   * Anscombe's quartet comprises four datasets that have nearly identical simple statistical properties, yet appear very different when graphed: https://en.wikipedia.org/wiki/Anscombe's_quartet
   * Difference between gradient descent and stochastic gradient descent: https://www.quora.com/Whats-the-difference-between-gradient-descent-and-stochastic-gradient-descent
-  * Correlation & Covariance: In probability theory and statistics, correlation and covariance are two similar measures for assessing how much two attributes change together. The mean values of A and B, respectively, are also known as the <b>expected values on A and B</b>, E(A), E(B). <b>Covariance, Cov(A,B)=E(A·B) - E(A)*E(B)</b>
+  * Correlation & Covariance: In probability theory and statistics, correlation and covariance are two similar measures for assessing how much two attributes change together.
+    * Covariance indicates the direction of linear relationship between 2 variables. Correlation indicates both direction and strength of the linear relationship between 2 variables.
+    * `correlation(A, B) = covariance(A, B)/(std(A)*std(B))`
+      * `covariance(A, B) = sum((xi - avg(Y)) * (yi - avg(Y)))/N`
+      * Correlation is between [-1, 1], covariance is between (-infinity, +infinity)
   * Rate vs Proportion: A rate differs from a proportion in that the numerator and the denominator need not be of the same kind and that the numerator may exceed the denominator. For example, the rate of pressure ulcers may be expressed as the number of pressure ulcers per 1000 patient days.
  * <b>Bias</b> is useful to quantify how much on an average are the predicted values different from the actual value. A high bias error means we have a <b>under-performing</b> model which keeps on missing important trends. <b>Variance</b> on the other side quantifies how are the prediction made on same observation different from each other. A high variance model will <b>over-fit</b> on your training population and perform badly on any observation beyond training.
    * When the complexity of a model grows, the bias will increase while variance decreases. The total error is lower when both bias and variance are lower. So during parameter tuning, eed to find that sweet spot when bias, variance and the error are all lower.
