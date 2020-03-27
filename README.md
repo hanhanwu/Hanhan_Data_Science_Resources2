@@ -595,6 +595,12 @@ Statistics in Data Science
 * Statistics behind Boruta feature selection: https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/boruta_statistics.pdf
 * How the laws of group theory provide a useful codification of the practical lessons of building efficient distributed and real-time aggregation systems (from 22:00, he started to talk about HyperLogLog and other approximation data structures): https://www.infoq.com/presentations/abstract-algebra-analytics
 * Confusing Concepts
+  * Confounding Variable vs Interaction
+    * Confounding variable is the variable that will affect both dependent and independent variables. I will increase the variance and introduce bias in the model results. 
+      * For example, gaining weight is the dependent variable, lack of exercise is an independent variable, age is the confounding variable that will affect both of these variables.
+      * Better to control some the variable values used in data sample and experiments, such as limit the age within 1 group for the experiment.
+    * Interaction indicates how variable A affects the dependent variable differs when variable B changes among different levels. 
+      * In some model output, we will output the interaction between features to uderstand further about the data
   * Errors and Residuals: https://en.wikipedia.org/wiki/Errors_and_residuals
     * Statistical Error is the amount by which an observation differs from its expected value (mean of the population). Since the mean of the population is not observable in most of the cases, error is not an observable either.
     * Residual is observable, it is an observable estimate of the unobservable statistical error. Residual is the amount by which an observation differs from its sample mean (not population mean).
