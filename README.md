@@ -653,6 +653,10 @@ Statistics in Data Science
     * Quota sample
     * Purposive sample
     * Convenience sample
+  * Bias that can occur during sampling
+    * Selection Bias - sample not representative of the population
+    * Undercoverage Bias - Some groups of the population are inadquately represented in the sample
+    * Survivorship Bias - It's a logic error that only choose the sample that supports the conclusion and skip those didn't work. this tend to conclusion error.
   * References
     * http://psc.dss.ucdavis.edu/sommerb/sommerdemo/sampling/types.htm
     * https://searchbusinessanalytics.techtarget.com/definition/data-sampling
