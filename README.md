@@ -649,6 +649,9 @@ Statistics in Data Science
   * Probability Sampling
     * Random sample. (I guess R `sample()` is random sampling by default, so that each feature has the same weight)
     * Stratified sample
+    * Clustering Sampling - When it's difficult to study the target population spread across a wide area and random sampling won't work well, we divide the data into different clusters. Such as you sample the data in each grade/city/geneder/etc.
+    * Systematic Sampling - it starts from a random position but choose data sample in certain intervals and the selection is in circular manner, which means once reached to the end of the list, it will go back to the top to do further selection.
+      * Equal probability method - fixed interval when selecting the next data point.
   * Nonprobability Sampling
     * Quota sample
     * Purposive sample
