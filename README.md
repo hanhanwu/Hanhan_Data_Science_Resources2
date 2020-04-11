@@ -330,10 +330,10 @@ DATA PREPROCESSING
       * We use Brier score as the evaluation, lower Brier, more accurate, better calibrated predictions. We can also see whether each classifier push the values towards to 0 or 1, or push away from them.
     * Part 2 - Calibration as classification post-processing
       * We use naive bayesian as the base model, comapred without calibration, with sigmoid calibration and with non-paramatric isotonic calibration.
+  * To learn more about calibration: http://www.analyticsvidhya.com/blog/2016/07/platt-scaling-isotonic-regression-minimize-logloss-error/?utm_content=buffer2f3d5&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer
 
-************************************************************************
 
-Applied Data Science in Python/R/Java
+## Applied Data Science in Python/R/Java
 
 * [Python & R] Sklearn vs R Label Encoding
   * Sklearn Label Encoding that converts categorical data into numerical data better not be used directly with scikit-learn estimators, as these expect continuous input, and would interpret the categories as being ordered, which is often not desired. Here are some solutions in python sklearn:
