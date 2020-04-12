@@ -941,12 +941,14 @@ Machine Learning Algorithms
       * They are all attribute selection methods in decision tree
       * Gini Gain forces the resulting tree to be binary
         * `Gini Impurity = sum(P(i) * (1 - P(i)))`, i is class i
+          * Gini impurity is the probability of a random sample being classified correctly if you randomly pick a label according to the distribution in the branch.
         * `Gini Gain = Gini_Impurity_All - Gini_Impurity_Attribute`
           * `Gini_Impurity_All` calculates gini impurity at dependent variable level without checking any attribute
           * `Gini_Impurity_Attribute` calculates gini impurity for that attribute, so the dependent variable counts are counted under each value group of the attribute
         * When the split is pure, it's 0 Gini Impurity
       * Information Gain allows multiway splits.
         * `Entropy = -sum(P(i)*log(P(i), 2))`, i is class i
+          * Entropy calculates how lack of purity the labels are after the split. Information gain is the opposite, it represents the purity of labels after the split.
         * `Information Gain = Entropy_All - Entropy_Attribute`
           * `Entropy_All` calculates entropy at dependent variable level without checking any attribute
           * `Entropy_Atribute` calculates entropy for that attribute, so the dependent variable counts are counted under each value group of the attribute
