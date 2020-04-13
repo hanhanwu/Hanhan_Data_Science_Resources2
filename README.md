@@ -186,11 +186,16 @@ DATA PREPROCESSING
 
 ### MODEL EVALUATION
 
-* For my past notes on evaluation methods, check: https://github.com/hanhanwu/Hanhan_Data_Science_Resources/blob/master/Experiences.md
+* For my past notes on evaluation methods, check: https://github.com/hanhanwu/readings/blob/master/Evaluation_Metrics_Reading_Notes.pdf
 * 7 important model evaluation metrics and cross validation: https://www.analyticsvidhya.com/blog/2016/02/7-important-model-evaluation-error-metrics/
 * 11 important model evaluation metrics and corss validation: https://www.analyticsvidhya.com/blog/2019/08/11-important-model-evaluation-error-metrics/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
   * Confusion Matrix
-  * F1 - the benefit of F1 score is to prevent all the records got predicted as positive or negative. Because `F1 = 2*precision*recall/(precision + recall)`, for example precision = 0, recall=1, F1 will only be 0.5.
+  * F1 - the benefit of F1 score is to prevent all the records got predicted as positive or negative. 
+    * Because `F1 = 2*precision*recall/(precision + recall)`, for example precision = 0, recall=1, F1 will only be 0.5.
+  * Besides F Sccore, there is G measure (G mean)
+    * G mean1 - `GSP = sqrt(recall * precision)`
+      * While F score is the harmonic mean of precision and recall, GSP (G mean1) is the geometric mean.
+    * G mean2 - `GSS = sqrt(recall * sensitivity)`
   * <b>Lift / Gain charts</b> are widely used in campaign targeting problems. This tells us till which decile can we target customers for an specific campaign. Also, it tells you how much response do you expect from the new target base.
     * The diagonal shows random situation, and you should compare your model with this diagonal (similar to ROC logic). The graph tells you how well is your model segregating responders from non-responders
     * The first decile means, at 10% population (x-axis), if you got 14% responders, it means you have 140% lift at first decile
