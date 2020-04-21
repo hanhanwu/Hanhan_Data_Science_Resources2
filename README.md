@@ -1,10 +1,6 @@
 # Hanhan_Data_Science_Resources2
-More data science resources
-It seems that my Data Science Resources cannot be updated, create a new one here for more resources
 
-************************************************************************
-
-SUMMARIZED RESOURCES
+## SUMMARIZED RESOURCES
 
 * Hanhan_Data_Science_Resource 1: https://github.com/hanhanwu/Hanhan_Data_Science_Resources
 * <b>Check Awesome Big Data when looking for new ways to solve data science problems</b>: https://github.com/onurakpolat/awesome-bigdata
@@ -12,7 +8,7 @@ SUMMARIZED RESOURCES
 * Summarized Tableau Learning Resources: https://www.analyticsvidhya.com/learning-paths-data-science-business-analytics-business-intelligence-big-data/tableau-learning-path/
 * Summarized Big Data Learning Resources: https://www.analyticsvidhya.com/resources-big-data/
 * Data Science Media Resources: https://www.analyticsvidhya.com/data-science-blogs-communities-books-podcasts-newsletters-follow/
-* This is a new UC Berkeley data science cousre, it servers for undergraduate and therefore everything is introductory, however it covers relative statistics, math, data visualization, I think it will be helpful, since sometimes if we only study statistics may still have difficulty to apply the knowledge in data science. This program has slides and video for each class online, available to the public immeddiately: http://www.ds100.org/sp17/
+* This is a new UC Berkeley data science cousre, it serves for undergraduate and therefore everything is introductory, however it covers relative statistics, math, data visualization, I think it will be helpful, since sometimes if we only study statistics may still have difficulty to apply the knowledge in data science. This program has slides and video for each class online, available to the public immeddiately: http://www.ds100.org/sp17/
 
 * Microsoft DMTK (Distributed Machine Learning Toolkit)
   * Official Website: http://www.dmtk.io/
@@ -33,7 +29,7 @@ SUMMARIZED RESOURCES
     * Parallel Learning Guide: https://github.com/Microsoft/LightGBM/wiki/Parallel-Learning-Guide
     
 * Google Tensorflow
-  * It seems that, it is not somehting just for deep learning. You can do both deep learning and other machine learning here
+  * It seems that, it is not someting just for deep learning. You can do both deep learning and other machine learning here
   * Tensorflow Paper: http://download.tensorflow.org/paper/whitepaper2015.pdf
     * “TensorFlow is an open source software library for numerical computation using dataflow graphs. <b>Nodes</b> in the graph represents <b>mathematical operations</b>, while <b>graph edges</b> represent <b>multi-dimensional data arrays</b> (aka <b>tensors</b>) communicated between them. The flexible architecture allows you to deploy computation to one or more CPUs or GPUs in a desktop, server, or mobile device with a single API.”
     * TensorFlow follows a <b>lazy programming paradigm</b>. It first builds a graph of all the operation to be done, and then when a “session” is called, it “runs” the graph. Building a computational graph can be considered as the main ingredient of TensorFlow.
@@ -54,16 +50,14 @@ SUMMARIZED RESOURCES
   * 14 articles clustering: http://www.datasciencecentral.com/profiles/blogs/14-great-articles-and-tutorials-on-clustering
 
 
-************************************************************************
-
-TREE BASED MODELS & ENSEMBLING
+## TREE BASED MODELS & ENSEMBLING
 
 * For more ensembling, check `ENSEMBLE` sections and Experiences.md here: https://github.com/hanhanwu/Hanhan_Data_Science_Resources
 * Tree based models in detail with R & Python example: https://www.analyticsvidhya.com/blog/2016/04/complete-tutorial-tree-based-modeling-scratch-in-python/?utm_content=bufferade26&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer
-* [R Implementation] Choose models for emsemling: https://www.analyticsvidhya.com/blog/2015/10/trick-right-model-ensemble/?utm_content=buffer6b42d&utm_medium=social&utm_source=plus.google.com&utm_campaign=buffer
-  * The models are les correlated to each other
-  * The code in this tutorial is trying to test the results made by multiple models and choose the model combination that gets the best result (I'm thinking how do they deal with random seed issues)
-* When a categorical variable has very large number of category, <b>Gain Ratio</b> is preferred over <b>Information Gain</b>
+* [R Implementation] Choose models for ensemling: https://www.analyticsvidhya.com/blog/2015/10/trick-right-model-ensemble/?utm_content=buffer6b42d&utm_medium=social&utm_source=plus.google.com&utm_campaign=buffer
+  * The models are less correlated to each other.
+  * The code in this tutorial is trying to test the results made by multiple models and choose the model combination that gets the best result.
+* When a categorical variable has very large number of categories, <b>Gain Ratio</b> is preferred over <b>Information Gain</b>.
 
 * Advantages of Tree Boosting Methods
   * Won't be affected by the curse of dimentionality, because distance metric is not used in them.
@@ -71,34 +65,28 @@ TREE BASED MODELS & ENSEMBLING
 * Light GBM
   * Reference: https://www.analyticsvidhya.com/blog/2017/06/which-algorithm-takes-the-crown-light-gbm-vs-xgboost/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
   * <b>Leaf-wise</b> - Optimization in Accuracy: Other boosting algorithms use <b>depth-wise or level-wise</b>, while Light BGM is using leaf-wise. With this method, Light GBM becomes more complexity and has less info loss and therefore can be more accurate than other boosting methods.
-  * Sometimes, overfitting could happen, and therfore need to set `max-depth`
+  * Sometimes, overfitting could happen, check LightGBM Parameter tuning here: https://lightgbm.readthedocs.io/en/latest/Parameters-Tuning.html
+    * Suggestions for faster speed.
+    * Suggestions for better accuracy.
+    * Suggestions for dealing with overfitting.
   * <b>Using Histogram Based Algorithms</b>
-    * Many boosting tools as using pre-sorted based algorithms (default XGBoost algorithm) for decision tree learning, which makes the solution but less easier to optimize
-    * LightGBM uses the histogram based algorithms, which bucketing continuous features into discrete bins, <b>to speed up training procedure and reduce memory usage</b>
-    * Reduce Calculation Cost of Split Gain: pre-sorted based cost O(#data) to calculate; histogram based needs O(#data) to construcu histogram but O(#bins) to calculate Split Gain. #bins often smaller than #data, and this is why if you tune #bins to a smaller number, it will speed up the algorithm
-    * Use histogram subtraction for further speed-up: To get one leaf's histograms in a binary tree, can use the histogram subtraction of its parent and its neighbor, only needs to construct histograms for one leaf (with smaller #data than its neighbor), then can get histograms of its neighbor by histogram subtraction with small cost( O(#bins) )
-    * Reduce Memory usage: with small number of bins, can use smaller data type to store trainning data; no need to store extra info for pre-sorting features
-  * Sparse Optimization: Only need O(2 x #non_zero_data) to construct histogram for sparse features
+    * Many boosting tools as using pre-sorted based algorithms (default XGBoost algorithm) for decision tree learning, which makes optimization more difficult.
+    * LightGBM uses the histogram based algorithms, which bucketing continuous features into discrete bins, <b>to speed up training procedure and reduce memory usage</b>.
+      * Reduce Calculation Cost of Split Gain: pre-sorted based cost O(#data) to calculate; histogram based needs O(#data) to construcu histogram but O(#bins) to calculate Split Gain. #bins often smaller than #data, and this is why if you tune #bins to a smaller number, it will speed up the algorithm.
+      * Use histogram subtraction for further speed-up: To get one leaf's histograms in a binary tree, can use the histogram subtraction of its parent and its neighbor, only needs to construct histograms for one leaf (with smaller #data than its neighbor), then can get histograms of its neighbor by histogram subtraction with small cost( O(#bins) ).
+      * Reduce Memory usage: with small number of bins, can use smaller data type to store trainning data; no need to store extra info for pre-sorting features
+  * Sparse Optimization: Only need O(2 x #non_zero_data) to construct histogram for sparse features.
   * Optimization in network communication: it implements Collective Communication Algorithms which can provide much better performance than Point-to-Point Communication.
   * Oprimization in Parallel Learning
-    * Feature Parallel - Different from traditional feature parallel, which partitions data vertically for each worker. In LightGBM, every worker holds the full data. Therefore, no need to communicate for split result of data since every worker know how to split data. Then Workers find local best split point{feature, threshold} on local feature set -> Communicate local best splits with each other and get the best one -> Perform best split
-    * Data Parallel - However, when data is hugh, feature parallel will still be overhead. Use Data Parallel instead. Reduce communiation. Reduced communication cost from O(2 * #feature* #bin) to O(0.5 * #feature* #bin) for data parallel in LightGBM. Instead of "Merge global histograms from all local histograms", LightGBM use "Reduce Scatter" to merge histograms of different(non-overlapping) features for different workers. Then workers find local best split on local merged histograms and sync up global best split. LightGBM use histogram subtraction to speed up training. Based on this, it can communicate histograms only for one leaf, and get its neighbor's histograms by subtraction as well.
+    * Feature Parallel - Different from traditional feature parallel, which partitions data vertically for each worker. In LightGBM, <b>every worker holds the full data</b>. Therefore, no need to communicate for split result of data since every worker know how to split data. Then Workers find local best split point{feature, threshold} on local feature set -> Communicate local best splits with each other and get the best one -> Perform best split
+    * Data Parallel - However, when data is huge, feature parallel will still be overhead. Use Data Parallel instead. Reduce communiation. Reduced communication cost from O(2 * #feature* #bin) to O(0.5 * #feature* #bin) for data parallel in LightGBM. Instead of "Merge global histograms from all local histograms", LightGBM use "Reduce Scatter" to merge histograms of different(non-overlapping) features for different workers. Then workers find local best split on local merged histograms and sync up global best split. LightGBM use histogram subtraction to speed up training. Based on this, it can communicate histograms only for one leaf, and get its neighbor's histograms by subtraction as well.
     * Voting Parallel - Further reduce the communication cost in Data parallel to constant cost. It uses two stage voting to reduce the communication cost of feature Histograms.
   * Advantages
-    * Faster Training - histogram method to bucket continuous features into discrete bins
-    * Better Accuracy than other boosting methods, such as XGBoost
-    * Performe on large dataset
-    * Parallel Learning
-  * Param Highlight
-    * Hight Parameter - `device`: default= cpu ; options = gpu,cpu. Device on which we want to train our model. Choose GPU for faster training.
-    * Hight Parameter - `label`: type=string ; specify the label column
-    * Hight Parameter - `categorical_feature`: type=string ; specify the categorical features we want to use for training our model
-    * Hight Parameter - `num_class`: default=1 ; type=int ; used only for multi-class classification
-    * Hight Parameter - `num_iterations`: number of boosting iterations to be performed ; default=100; type=int
-    * Hight Parameter - `num_leaves`: number of leaves in <b>one tree</b>; default = 31 ; type =int
-    * Hight Parameter - `max_depth`: <b>deal with overfitting</b>
-    * Hight Parameter - `bagging_fraction`: default=1 ; specifies the fraction of data to be used for each iteration and is generally used to <b>speed up the training</b> and <b>avoid overfitting</b>.
-    * Hight Parameter - `num_threads`: default=OpenMP_default, type=int ;Number of threads for Light GBM.
+    * Faster Training - histogram method to bucket continuous features into discrete bins.
+    * Better Accuracy than other boosting methods, such as XGBoost.
+    * Performe on large dataset.
+    * Parallel Learning.
+  * More about LightGBM parameters: https://lightgbm.readthedocs.io/en/latest/Parameters.html
 
 * CatBoost
   * Wow, it looks like a well developed package, in includes Python, R libraries and also StackOverflow tag.
