@@ -59,10 +59,10 @@
   * The code in this tutorial is trying to test the results made by multiple models and choose the model combination that gets the best result.
 * When a categorical variable has very large number of categories, <b>Gain Ratio</b> is preferred over <b>Information Gain</b>.
 
-* Advantages of Tree Boosting Methods
+### Advantages of Tree Boosting Methods
   * Won't be affected by the curse of dimentionality, because distance metric is not used in them.
 
-* Light GBM
+### Light GBM
   * Reference: https://www.analyticsvidhya.com/blog/2017/06/which-algorithm-takes-the-crown-light-gbm-vs-xgboost/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
   * <b>Leaf-wise</b> - Optimization in Accuracy: Other boosting algorithms use <b>depth-wise or level-wise</b>, while Light BGM is using leaf-wise. With this method, Light GBM becomes more complexity and has less info loss and therefore can be more accurate than other boosting methods.
   * Sometimes, overfitting could happen, check LightGBM Parameter tuning here: https://lightgbm.readthedocs.io/en/latest/Parameters-Tuning.html
@@ -88,7 +88,7 @@
     * Parallel Learning.
   * More about LightGBM parameters: https://lightgbm.readthedocs.io/en/latest/Parameters.html
 
-* CatBoost
+### CatBoost
   * Wow, it looks like a well developed package, in includes Python, R libraries and also StackOverflow tag.
   * CatBoost GitHub: https://github.com/catboost
   * CatBoost tutorials in IPython: https://github.com/catboost/catboost/tree/master/catboost/tutorials
@@ -99,76 +99,65 @@
   * Param Tuning: https://tech.yandex.com/catboost/doc/dg/concepts/parameter-tuning-docpage/
   * Categorical to Numerical automatically
     * One of the advantage of CatBoost is, it converts categorical data into numerical data with statistical methods, automatically: https://tech.yandex.com/catboost/doc/dg/concepts/algorithm-main-stages_cat-to-numberic-docpage/
-    * My opinion is, you should try their methods, but approaches such as one-hot encoding should be tried at the same time when you are doing feature engineering
-  * There is also a comparison with LightGBM, XGBoost and H2O, using logloss: https://catboost.yandex
-    * CatBoost does not require conversion of data set to any specific format like XGBoost and LightGBM.
-    * It performs better for both tuned and default versions, when compare with other boosting methods on those datasets.
+      * Categorical feature values are transformed through this formula `avg_target = (countInClass + prior)/(totalCount + 1)`
     
-* The Comparison Between XGBoost, LightGBM and CatBoost
+### The Comparison Between XGBoost, LightGBM and CatBoost
   * The 2019 paper: https://arxiv.org/pdf/1809.04559.pdf
   * When using GPU, XGBoost tend to appear to be the fastest in training (fixed set of params). It seems that at this moment, LightGBM GPU version still has some issue.
   * When there are many features, XGBoost might run out of memory while CatBoost can converge into a good solution in the shortest time.
 
 
-************************************************************************
+## DATA PREPROCESSING
 
-DATA PREPROCESSING
+### For more data preprocessing, check `DATA PREPROCESSING` section
+  * https://github.com/hanhanwu/Hanhan_Data_Science_Resources
 
-* For more data preprocessing, check `DATA PREPROCESSING` section: https://github.com/hanhanwu/Hanhan_Data_Science_Resources
-
-* Check Dataset Shifting
+### Check Dataset Shifting
   * For me, I will majorly use it to check whether the new dataset still can use current methods created from the previous dataset.
     * For example, you are using online model (real time streaming), and you need to evaluate your model periodically to see whether it still can be applifed to the new data streaming. Or for time series, you want to check whether the model built for a certain time range applies to other time. And many other situations, that the current model may no longer apply to the new dataset
   * Types of Data Shift
-    * <b>Covariate Shift</b> - Shift in features. Then for the new model, you may need to modify feature selection, or find those features may lead to data shift and don't use them as selected features
-    * If the features in both the dataset belong to different distributions then, they should be able to separate the dataset into old and new sets significantly. These features are <b>drifting features</b>
-    * <b>Prior probability shift</b> - Shift in label. For example, when you use Byesian model to predict multiple categories, then all the classes appeared in testing data has to appear in training, if not then it is Prior probability shift
-    * <b>Concept Shift</b> - Shift in the relationship between features and the label. For example, in the old dataset, Feature1 could lead to Class 'Y', but in the new dataset, it could lead to Class 'N'
+    * <b>Covariate Shift</b> - Shift in features. Then for the new model, you may need to modify feature selection, or find those features may lead to data shift and don't use them as selected features.
+    * If the features in both the dataset belong to different distributions then, they should be able to separate the dataset into old and new sets significantly. These features are <b>drifting features</b>.
+    * <b>Prior probability shift</b> - Shift in label. For example, when you use Byesian model to predict multiple categories, then all the classes appeared in testing data has to appear in training, if not then it is Prior probability shift.
+    * <b>Concept Shift</b> - Shift in the relationship between features and the label. For example, in the old dataset, Feature1 could lead to Class 'Y', but in the new dataset, it could lead to Class 'N'.
   * My Code: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/deal_with_data_shifting.ipynb
   * Reference: https://www.analyticsvidhya.com/blog/2017/07/covariate-shift-the-hidden-problem-of-real-world-data-science/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
-    
-
-* Entity Resolution
-  * Basics of Entity Resolution with Python and Dedup: http://blog.districtdatalabs.com/basics-of-entity-resolution?imm_mid=0f0aec&cmp=em-data-na-na-newsltr_20170412
-  * Three primary tasks
-    * Deduplication: eliminating duplicate (exact) copies of repeated data.
-    * Record linkage: identifying records that reference the same entity across different sources.
-    * Canonicalization: converting data with more than one possible representation into a standard form.
-  * In the url above, they have done some experiments with Python and Dedup
   
-* Dimension Reduction
-  * t-SNE, non-linear dimensional reduction
-    * Reference (a pretty good one!): https://www.analyticsvidhya.com/blog/2017/01/t-sne-implementation-r-python/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
-    * (t-SNE) t-Distributed Stochastic Neighbor Embedding is a non-linear dimensionality reduction algorithm used for exploring high-dimensional data, it considers nearest neighbours when reduce the data. It is a non-parametric mapping.
-    * The problem with linear dimensional reduction, is that they concentrate on placing dissimilar data points far apart in a lower dimension representation. However, it is also important to put similar data close together, linear dimensional reduction does not do this
-    * In t-SNE, there are local approaches and global approaches. Local approaches seek to map nearby points on the manifold to nearby points in the low-dimensional representation. Global approaches on the other hand attempt to preserve geometry at all scales, i.e mapping nearby points to nearby points and far away points to far away points  
+### Dimension Reduction
+#### t-SNE, non-linear dimensional reduction
+* Reference (a pretty good one!): https://www.analyticsvidhya.com/blog/2017/01/t-sne-implementation-r-python/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+* (t-SNE) t-Distributed Stochastic Neighbor Embedding is a non-linear dimensionality reduction algorithm used for exploring high-dimensional data, it considers nearest neighbours when reduce the data. It is a non-parametric mapping.
+* The problem with linear dimensional reduction, is that they concentrate on placing dissimilar data points far apart in a lower dimension representation. However, it is also important to put similar data close together, linear dimensional reduction does not do this.
+  * In t-SNE, there are local approaches and global approaches. Local approaches seek to map nearby points on the manifold to nearby points in the low-dimensional representation. Global approaches on the other hand attempt to preserve geometry at all scales, i.e mapping nearby points to nearby points and far away points to far away points  
     * It is important to know that most of the nonlinear techniques other than t-SNE are not capable of retaining both the local and global structure of the data at the same time.
-    * The algorithm computes pairwise conditional probabilities and tries to minimize the sum of the difference of the probabilities in higher and lower dimensions. This involves a lot of calculations and computations. So the algorithm is quite heavy on the system resources. t-SNE has a quadratic O(n2) time and space complexity in the number of data points. This makes it particularly slow and resource draining while applying it to data sets comprising of more than 10,000 observations. Another drawback is, it doesn’t always provide a similar output on successive runs.
-    * How it works: it clusters similar data reocrds together, but it's not clustering because once the data has been mapped to lower dimensional, the original features are no longer recognizable. 
-    * NOTE: t-SNE could also help to make semanticly similar words close to each other, which could help create text summary, text comparison
-    * R practice code: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/t-SNE_practice.R
-    * Python practice code: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/t-SNE_Practice.ipynb
-  * [For more Dimensional Reduction, check "DATA PREPROCESSING" section][9] 
-  * [Some dimentional reduction methods][10]
-    * My code using T-SNE for 2D, 3D visualization: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/Outliers_and_Clustering/dimensional_reduction_visualization.ipynb
-      *  It projects multi-dimentional data into 2D or 3D, this is a type of dimensional reduction
-      * T-SNE works better for lower dimensional data
-  * [A little more about Factor Analysis][11]
-    * Fator Analysis is a variable reduction technique. It is used to determine <b>factor structure or model</b>. It also explains the maximum amount of variance in the model
-    * EFA (Exploratory Factor Analysis) – Identifies and summarizes the <b>underlying correlation structure</b> in a data set
-    * CFA (Confirmatory Factor Analysis) – Attempts to <b>confirm hypothesis</b> using the correlation structure and <b>rate ‘goodness of fit’</b>.
-  * Dimension Reduction Must Know
-    * Reference: https://www.analyticsvidhya.com/blog/2017/03/questions-dimensionality-reduction-data-scientist/?utm_content=bufferc792d&utm_medium=social&utm_source=linkedin.com&utm_campaign=buffer
-    * Besides different algorithms to help reduce number of features, we can also use existing features to form less features as a dimensional reduction method. For example, we have features A, B, C, D, then we form E = 2*A+B, F = 3*C-D, then only choose E, F as the features for analysis
-    * Cost function of SNE is asymmetric in nature. Which makes it difficult to converge using gradient decent. A symmetric cost function is one of the major differences between SNE and t-SNE.
-    * For the perfect representations of higher dimensions to lower dimensions, the conditional probabilities for similarity of two points must remain unchanged in both higher and lower dimension, which means the similarity is unchanged
-    * LDA aims to maximize the distance between class and minimize the within class distance. If the discriminatory information is not in the mean but in the variance of the data, LDA will fail.
-    * Both LDA and PCA are linear transformation techniques. LDA is supervised whereas PCA is unsupervised. PCA maximize the variance of the data, whereas LDA maximize the separation between different classes.
-    * When eigen values are roughly equal, PCA will perform badly, because when all eigen vectors are same in such case you won’t be able to select the principal components because in that case all principal components are equal. <b> When using PCA</b>, it is better to scale data in the same unit
-      * To make this concept simple, PCA is built on checking feature variance. So features with larger values and tend to have larger variance could misleading PCA results, and therefore we need to normalize the data before using PCA. I guess, maybe because some features have much larger variance, eigen tend to show roughly equal
-    * When using PCA, features will lose interpretability and they may not carry all the info of the data. <b>You don’t need to initialize parameters in PCA, and PCA can’t be trapped into local minima problem</b>. PCA is a <b>deterministic algorithm</b> which doesn’t have parameters to initialize. PCA can be used for lossy image compression, and it is not invariant to shadows.
-    * A deterministic algorithm has no param to initialize, and it gives the same result if we run again.
-    * Logistic Regression vs LDA: If the classes are well separated, the parameter estimates for logistic regression can be unstable. If the sample size is small and distribution of features are normal for each class. In such case, linear discriminant analysis (LDA) is more stable than logistic regression.
+* The algorithm computes pairwise conditional probabilities and tries to minimize the sum of the difference of the probabilities in higher and lower dimensions. This involves a lot of calculations and computations. So the algorithm is quite heavy on the system resources. t-SNE has a quadratic O(n^2) time and space complexity in the number of data points. This makes it particularly slow and resource draining while applying it to data sets comprising of more than 10,000 observations. Another drawback is, it doesn’t always provide a similar output on successive runs.
+* How it works: it clusters similar data reocrds together, but it's not clustering because once the data has been mapped to lower dimensional, the original features are no longer recognizable. 
+* NOTE: t-SNE could also help to make semanticly similar words close to each other, which could help create text summary, text comparison.
+* R practice code: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/t-SNE_practice.R
+* Python practice code: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/t-SNE_Practice.ipynb
+* [For more Dimensional Reduction, check "DATA PREPROCESSING" section][9] 
+* [Some dimentional reduction methods][10]
+  * My code using T-SNE for 2D, 3D visualization: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/Outliers_and_Clustering/dimensional_reduction_visualization.ipynb
+    *  It projects multi-dimentional data into 2D or 3D, this is a type of dimensional reduction
+    * T-SNE works better for lower dimensional data
+
+#### [A little more about Factor Analysis][11]
+* Fator Analysis is a variable reduction technique. It is used to determine <b>factor structure or model</b>. It also explains the maximum amount of variance in the model. Such as PCA.
+  * EFA (Exploratory Factor Analysis) – Identifies and summarizes the <b>underlying correlation structure</b> in a data set
+  * CFA (Confirmatory Factor Analysis) – Attempts to <b>confirm hypothesis</b> using the correlation structure and <b>rate ‘goodness of fit’</b>.
+   
+#### Dimension Reduction Must Know
+* Reference: https://www.analyticsvidhya.com/blog/2017/03/questions-dimensionality-reduction-data-scientist/?utm_content=bufferc792d&utm_medium=social&utm_source=linkedin.com&utm_campaign=buffer
+* Besides different algorithms to help reduce number of features, we can also use existing features to form less features as a dimensional reduction method. For example, we have features A, B, C, D, then we form E = 2*A+B, F = 3*C-D, then only choose E, F as the features for analysis
+* Cost function of SNE is asymmetric in nature. Which makes it difficult to converge using gradient decent. A symmetric cost function is one of the major differences between SNE and t-SNE.
+* For the perfect representations of higher dimensions to lower dimensions, the conditional probabilities for similarity of two points must remain unchanged in both higher and lower dimension, which means the similarity is unchanged.
+* LDA aims to maximize the distance between class and minimize the within class distance. If the discriminatory information is not in the mean but in the variance of the data, LDA will fail.
+* Both LDA and PCA are linear transformation techniques. LDA is supervised whereas PCA is unsupervised. PCA maximize the variance of the data, whereas LDA maximize the separation between different classes.
+* When eigen values are roughly equal, PCA will perform badly, because when all eigen vectors are same in such case you won’t be able to select the principal components because in that case all principal components are equal. <b> When using PCA</b>, it is better to scale data in the same unit.
+  * To make this concept simple, PCA is built on checking feature variance. So features with larger values and tend to have larger variance could misleading PCA results, and therefore we need to normalize the data before using PCA. I guess, maybe because some features have much larger variance, eigen tend to show roughly equal
+* When using PCA, features will lose interpretability and they may not carry all the info of the data. <b>You don’t need to initialize parameters in PCA, and PCA can’t be trapped into local minima problem</b>. PCA is a <b>deterministic algorithm</b> which doesn’t have parameters to initialize. PCA can be used for lossy image compression, and it is not invariant to shadows.
+  * A deterministic algorithm has no param to initialize, and it gives the same result if we run again.
+* Logistic Regression vs LDA: If the sample size is small and distribution of features are normal for each class. In such case, linear discriminant analysis (LDA) is more stable than logistic regression.
 
 ************************************************************************
 
