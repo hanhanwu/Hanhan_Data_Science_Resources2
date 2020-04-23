@@ -159,88 +159,82 @@
   * A deterministic algorithm has no param to initialize, and it gives the same result if we run again.
 * Logistic Regression vs LDA: If the sample size is small and distribution of features are normal for each class. In such case, linear discriminant analysis (LDA) is more stable than logistic regression.
 
-************************************************************************
 
-### MODEL EVALUATION
+## MODEL EVALUATION
 
 * For my past notes on evaluation methods, check: https://github.com/hanhanwu/readings/blob/master/Evaluation_Metrics_Reading_Notes.pdf
 * 7 important model evaluation metrics and cross validation: https://www.analyticsvidhya.com/blog/2016/02/7-important-model-evaluation-error-metrics/
 * 11 important model evaluation metrics and corss validation: https://www.analyticsvidhya.com/blog/2019/08/11-important-model-evaluation-error-metrics/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
-  * Confusion Matrix
-  * F1 - the benefit of F1 score is to prevent all the records got predicted as positive or negative. 
-    * Because `F1 = 2*precision*recall/(precision + recall)`, for example precision = 0, recall=1, F1 will only be 0.5.
-  * Besides F Sccore, there is G measure (G mean)
-    * G mean1 - `GSP = sqrt(recall * precision)`
-      * While F score is the harmonic mean of precision and recall, GSP (G mean1) is the geometric mean.
-    * G mean2 - `GSS = sqrt(recall * sensitivity)`
-  * <b>Lift / Gain charts</b> are widely used in campaign targeting problems. This tells us till which decile can we target customers for an specific campaign. Also, it tells you how much response do you expect from the new target base.
-    * The diagonal shows random situation, and you should compare your model with this diagonal (similar to ROC logic). The graph tells you how well is your model segregating responders from non-responders
-    * The first decile means, at 10% population (x-axis), if you got 14% responders, it means you have 140% lift at first decile
-    * The very first step is to create this gain/lift chart, so that you can plot other charts:
+* Confusion Matrix
+* F1 - the benefit of F1 score is to prevent all the records got predicted as positive or negative. 
+  * Because `F1 = 2*precision*recall/(precision + recall)`, for example precision = 0, recall=1, F1 will only be 0.5.
+* Besides F Sccore, there is G measure (G mean)
+  * G mean1 - `GSP = sqrt(recall * precision)`
+    * While F score is the harmonic mean of precision and recall, GSP (G mean1) is the geometric mean.
+  * G mean2 - `GSS = sqrt(recall * sensitivity)`
+* <b>Lift / Gain charts</b> are widely used in campaign targeting problems. This tells us till which decile can we target customers for an specific campaign. Also, it tells you how much response do you expect from the new target base.
+  * The diagonal shows random situation, and you should compare your model with this diagonal (similar to ROC logic). The graph tells you how well is your model segregating responders from non-responders
+  * The first decile means, at 10% population (x-axis), if you got 14% responders, it means you have 140% lift at first decile
+  * The very first step is to create this gain/lift chart, so that you can plot other charts:
     ![gain/lift chart](https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/gain:lift%20chart.png)
-    * With graph Lift@Decile, you can figure out till which decile, your model still works well, so that later you will know to which level you can adjust your model
-      * `lift@decile = number of respindents at that decile/total number of respondents`
-  * Kolmogorov-Smirnov (K-S) chart is a measure of the degree of separation between the positive and negative distributions. The K-S is 100, the higher the value the better the model is at separating the positive from negative cases.
-    * It seems that, using this method you still need to calculate gain/lift chart which records the positive/negative count in each decile, and finally calculate KS. For each decile `KS = Cumulative Positive% - Cumulative Negative%`
-    * If the K-S statistic is small or the p-value is high, then we cannot reject the hypothesis that the distributions of the two samples are the same.: https://stackoverflow.com/questions/10884668/two-sample-kolmogorov-smirnov-test-in-python-scipy?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
-  * The ROC curve is the plot between sensitivity and (1- specificity). (1- specificity) is also known as false positive rate and sensitivity is also known as True Positive rate. To bring ROC curve down to a single number, AUC, which is  the ratio under the curve and the total area. .90-1 = excellent (A) ; .80-.90 = good (B) ; .70-.80 = fair (C) ; .60-.70 = poor (D) ; .50-.60 = fail (F). But this might simply be overfitting. In such cases it becomes very important to do in-time and out-of-time validations. For a model which gives class as output, will be represented as a single point in ROC plot. In case of probabilistic model, we were fortunate enough to get a single number which was AUC-ROC. But still, we need to look at the entire curve to make conclusive decisions.
-    * Compared with Gain/Lift Chart, Lift is dependent on total response rate of the population. ROC curve on the other hand is almost independent of the response rate, because the numerator and denominator of both x and y axis will change on similar scale in case of response rate shift.
-    * There is a theory saying when there is data imbalance problem, ROC may not work well, especially <b>when positive class is very small and you are interested in positive class, try precision-recall curve (PR curve)</b>
-      * ROC is formed by FPR and TPR
-      * `FPR = FP/N = FP/(FP+TN) = 1 - Specificity`
-      * `TPR = TP/P = TP/(TP+FN) = Sensitivity = Recall`
-      * When data is imbalanced, I check average precision score balanced accuracy (the average of TPR, TNR), ROC-AUC
-      * `Precision = TP/Predictted Positive = TP/(TP+FP)`. So with precision and recall, you will get an overview of positive class, how much positive class really got predicted as positive (Recall), and how much predicted potitive class are real positive class (precision)
-  * <b>ROC-AUC vs AVP vs F1 vs Balanced Accuracy</b>
-    * When data is imbalanced, AVP is more reliable than ROC and Balanced Accuracy. Because when data is imbalanced (much more negative than positive), TN can be high, and therefore balanced accuracy can be higher (TNR is higher) while ROC-AUC can be larger (FPR is smaller).
-    * Comparing with AVP, F1 sets precision and recall the same weight, while AVP is using increased revall (δ recall) from the previous threshold as the weight for current precision.
-  * Logloss
-    * Comparing with ROC-AUC, logloss takes the probability of prediction into account. For example, record A got predicted as positive class 1 with 0.6 probability, record B got predicted as class 1 with probability 0.9, logloss will show higher value for record A prediction and lower value for record B prediction. ROC-AUC will show the same prediction results for both record A, B.
+  * With graph Lift@Decile, you can figure out till which decile, your model still works well, so that later you will know to which level you can adjust your model
+  * `lift@decile = number of respindents at that decile/total number of respondents`
+* Kolmogorov-Smirnov (K-S) chart is a measure of the degree of separation between the positive and negative distributions. The K-S is 100, the higher the value the better the model is at separating the positive from negative cases.
+  * It seems that, using this method you still need to calculate gain/lift chart which records the positive/negative count in each decile, and finally calculate KS. For each decile `KS = Cumulative Positive% - Cumulative Negative%`
+  * If the K-S statistic is small or the p-value is high, then we cannot reject the hypothesis that the distributions of the two samples are the same.: https://stackoverflow.com/questions/10884668/two-sample-kolmogorov-smirnov-test-in-python-scipy?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
+* The ROC curve is the plot between sensitivity and (1- specificity). (1- specificity) is also known as false positive rate and sensitivity is also known as True Positive rate. To bring ROC curve down to a single number, AUC, which is the ratio under the curve and the total area. .90-1 = excellent (A) ; .80-.90 = good (B) ; .70-.80 = fair (C) ; .60-.70 = poor (D) ; .50-.60 = fail (F). But this might simply be overfitting. In such cases it becomes very important to do in-time and out-of-time validations. For a model which gives class as output, will be represented as a single point in ROC plot. In case of probabilistic model, we were fortunate enough to get a single number which was AUC-ROC. But still, we need to look at the entire curve to make conclusive decisions.
+  * `Gini Coefficient = 2*AUC – 1`. It indicates how large the ROC area is above the diagnoal.
+  * Compared with Gain/Lift Chart, Lift is dependent on total response rate of the population. ROC curve on the other hand is almost independent of the response rate, because the numerator and denominator of both x and y axis will change on similar scale in case of response rate shift.
+  * When there is data imbalance problem, ROC may not work well, especially <b>when positive class is very small, in this case try precision-recall curve (PR curve) might be better.</b>
+* <b>ROC-AUC vs AVP vs F1 vs Balanced Accuracy</b>
+  * When data is imbalanced, AVP is more reliable than ROC and Balanced Accuracy. Because when data is imbalanced (much more negative than positive), TN can be high, and therefore balanced accuracy can be higher (TNR is higher) while ROC-AUC can be larger (FPR is smaller).
+  * Comparing with AVP, F1 sets precision and recall the same weight, while AVP is using increased recall (δ recall) from the previous threshold as the weight for current precision.
+* Logloss
+  * Comparing with ROC-AUC, logloss takes the probability of prediction into account. For example, record A got predicted as positive class 1 with 0.6 probability, record B got predicted as class 1 with probability 0.9, logloss will show higher value for record A prediction and lower value for record B prediction. ROC-AUC will show the same prediction results for both record A, B.
     * Therefore, lower logloss value, the better.
     * Logloss value is also indicating the certainty of the prediction.
-    * Based on the curve of logloss, it ramps up very rapidly as the predicted probability approaches 0, but gradually declines as the predicted probability improves and approach to 1. This also means logloss penalize more on false predicted results.
-  * Gini Coefficient = 2*AUC – 1. It indicates how large the ROC area is above the diagnoal
-  * <b>The concordant pair</b> is where the probability of responder was higher than non-responder. Whereas <b>discordant pair</b> is where the vice-versa holds true. It is <b>primarily used to access the model’s predictive power</b>. For decisions like how many to target are again taken by KS / Lift charts.
-    * How to calculate the ratios: https://www.listendata.com/2014/08/modeling-tips-calculating-concordant.html
-  * RMSE: The power of ‘square root’  empowers this metric to show large number deviations. The ‘squared’ nature of this metric helps to deliver more robust results which prevents cancelling the positive and negative error values. When we have more samples, reconstructing the error distribution using RMSE is considered to be more reliable. <b>RMSE is highly affected by outlier values.</b> Hence, make sure you’ve removed outliers from your data set prior to using this metric. As compared to mean absolute error, RMSE gives higher weightage and punishes large errors.
-  * (RMSLE) Root Mean Squared Logarithmic Error
-    * RMSLE is usually used when we don’t want to penalize huge differences in the predicted and the actual values when both predicted and true values are huge numbers.
-    * If both predicted and actual values are small, RMSE and RMSLE are the same
-    * If at least one of actual value & predicted value is large, RMSE will be larger than RMSLE
-  * k-fold cross validation is widely used to check whether a model is an overfit or not. <b>If the performance metrics at each of the k times modelling are close to each other and the mean of metric is highest.</b> For a small k, we have a higher selection bias but low variance in the performances. For a large k, we have a small selection bias but high variance in the performances. <b>Generally a value of k = 10 is recommended for most purpose.</b>
+      * Based on the curve of logloss, it ramps up very rapidly as the predicted probability approaches 0, but gradually declines as the predicted probability improves and approach to 1. This also means logloss penalize more on false predicted results.
+* RMSE: The power of ‘square root’  empowers this metric to show large number deviations. The ‘squared’ nature of this metric helps to deliver more robust results which prevents cancelling the positive and negative error values. When we have more samples, reconstructing the error distribution using RMSE is considered to be more reliable. <b>RMSE is highly affected by outlier values.</b> Hence, make sure you’ve removed outliers from your data set prior to using this metric. As compared to mean absolute error, RMSE gives higher weightage and punishes large errors.
+* (RMSLE) Root Mean Squared Logarithmic Error
+  * RMSLE is usually used when we don’t want to penalize huge differences in the predicted and the actual values when both predicted and true values are huge numbers.
+  * If both predicted and actual values are small, RMSE and RMSLE are the same
+  * <b>If actual value & predicted value are large values, RMSE will be larger than RMSLE</b>
+  * sklearn implementation of RMSLE: https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_squared_log_error.html
+* k-fold cross validation is widely used to check whether a model is an overfit or not. <b>If the performance metrics at each of the k times modelling are close to each other and the mean of metric is highest.</b> For a small k, we have a higher selection bias but low variance in the performances. For a large k, we have a small selection bias but high variance in the performances. <b>Generally a value of k = 10 is recommended for most purpose.</b>
 * To measure linear regression, we could use Adjusted R² or F value.
-* In multiple regression, the variance inflation factor (VIF) is used as an indicator of multicollinearity
-    * <b>Tolerance</b> (`1 / VIF = 1/(1-R²)`) is used as an indicator of multicollinearity. It is an indicator of percent of variance in a predictor which cannot be accounted by other predictors. Large values of tolerance is desirable.
+* Variance inflation factor (VIF) is used as an indicator of multicollinearity.
+  * Higher VIF, the feature is more likely to be highly correlated with other features.
+  * Normally VIF > 10 is very high correlation, VIF > 5 is risky.
 * To measure logistic regression:
   * AUC-ROC curve along with confusion matrix to determine its performance.
   * The analogous metric of adjusted R² in logistic regression is AIC. AIC is the measure of fit which penalizes model for the number of model coefficients. Therefore, we always prefer model with minimum AIC value.
   * AIC vs BIC: https://methodology.psu.edu/AIC-vs-BIC
-    * AIC is an estimate of a constant plus the relative distance between the unknown true likelihood function of the data and the fitted likelihood function of the model, so that a lower AIC means a model is considered to be closer to the truth.
+    * AIC is an estimate of a constant + the relative distance between the unknown true likelihood function of the data and the fitted likelihood function of the model, so that a lower AIC means a model is considered to be closer to the truth.
     * BIC is an estimate of a function of the posterior probability of a model being true, under a certain Bayesian setup, so that a lower BIC means that a model is considered to be more likely to be the true model.
-    * They both penalize model coefficients. They are similar, but BIC penalize cmoplex models more
+    * They both penalize model coefficients. They are similar, but BIC penalize complex models more. 
   * Null Deviance indicates the response predicted by a model with nothing but an intercept. Lower the value, better the model. 
   * Residual deviance indicates the response predicted by a model on adding independent variables. Lower the value, better the model.
-* Regularization becomes necessary when the model begins to ovefit / underfit. This technique introduces a cost term for bringing in more features with the objective function. Hence, <b>it tries to push the coefficients for many variables to zero and hence reduce cost term.</b> This helps to reduce model complexity so that the model can become better at predicting (generalizing).
+  * Regularization becomes necessary when the model begins to ovefit / underfit. This technique introduces a cost term for bringing in more features with the objective function. Hence, <b>it tries to push the coefficients for many variables to zero and hence reduce cost term.</b> This helps to reduce model complexity so that the model can become better at predicting (generalizing).
 
 * Probability vs Response
-  * Probability means predict continuous values (such as probability), Response means predict specific classes
+  * Probability means predict continuous values (such as probability), Response means predict specific classes.
   * Response Measures
     * Confused Matrix >> Precision-Recall, F Score, Specificity & Sensitivity, ROC-AUC/Banalced Accuracy/G-Mean, Gini Coefficient
     * Concordant & Discordant
   * Probability Measures
-    * Logloss (often used by Kaggle) - it focuses on penalizing false classification. So the goal to improve your model is to minimize logloss
-    * Adjusted R-square - used to reduce collineary problem (reduce correlated features) in regression. We can check both Adjusted R-Square and R-Square, if R-Square is much higher, it means we have unnecessary features that do not contribute much in the model
+    * Logloss (often used by Kaggle) - it focuses on penalizing false classification. So the goal to improve your model is to minimize logloss.
+    * Adjusted R-square - used to reduce collineary problem (reduce correlated features) in regression. We can check both Adjusted R-Square and R-Square, if R-Square is much higher, it means we have unnecessary features that do not contribute much in the model.
       * `adjusted R-square = 1 - (1-R-square)*(n-1)/(n-k-1)`
         * n - number of samples
         * k - number of features
     * Expected Variance & Residual Variance
       * R-Square = Expected Variance/Total Variance. It's the percentage of the response variable variation that is explained by the model.
-        * so higher expected variance can be better, although it can suffer simiar critics that RMSE got
+        * so higher expected variance can be better, although it can suffer simiar critics that RMSE got.
         * `R-Square = 1- MSE(model)/MSE(baseline)`
           * MSE(model): Mean Squared Error of the predictions against the actual values
           * Mean Squared Error of average prediction against the actual values
-        * R-Square, RSS (residual sum of squares) = MSE*n, will decrease when there are more features, but the test error may not drop. Therefore, R-Square, RSS should NOT be used for selecting models that have difference number of features.
-      * Residual Variance (Unexplained Variance) = Total Variance - Expected Variance, lower the better
+        * R-Square, RSS (residual sum of squares) = MSE*n, will increase when there are more features, but the test error may not drop. Therefore, <b>R-Square, RSS should NOT be used for selecting models that have differernt number of features</b>.
+      * Residual Variance (Unexplained Variance) = Total Variance - Expected Variance, lower the better.
     * RMSE, sensitive to large outliers, mean is not statistical robust
     * Since mean is not statistical robust, we can try:
       * Quantile of Errors
@@ -251,33 +245,21 @@
       * Predictions that are further away from the expected probability are penalized, but less severely as in the case of log loss.
       * <b>Like the average log loss, the average Brier score will present optimistic scores on an imbalanced dataset, rewarding small prediction values that reduce error on the majority class.</b>
       * This is the best tutorial I have found from description to implementation: https://timvangelder.com/2015/05/18/brier-score-composition-a-mini-tutorial/
-  * Logloss vs MSE
-    * Logloss
-      * Each predicted probability is compared to the actual class output value (0 or 1) and a score is calculated that penalizes the probability based on the distance from the expected value. The penalty is logarithmic, offering a small score for small differences (0.1 or 0.2) and enormous score for a large difference (0.9 or 1.0).
-      * A model with perfect skill has a log loss score of 0.0. In order to summarize the skill of a model using log loss, the log loss is calculated for each predicted probability, and the average loss is reported.
-      * <b>It can be misleading for largely imbalanced data</b>, because when predicting 0 or smaller probabilities, the loss will be smaller.
-    * Imagine the problem here we have are numerical classification (predict discrete numbers) and regression (predict continuous numbers).
-    * MSE (Squared Error) works better for continuous output while Logloss works better for numerical classification
+    * Logloss vs MSE
+      * Logloss
+        * Each predicted probability is compared to the actual class output value (0 or 1) and a score is calculated that penalizes the probability based on the distance from the expected value. The penalty is logarithmic, offering a small score for small differences (0.1 or 0.2) and enormous score for a large difference (0.9 or 1.0).
+        * A model with perfect skill has a log loss score of 0.0. In order to summarize the skill of a model using log loss, the log loss is calculated for each predicted probability, and the average loss is reported.
+        * <b>It can be misleading for largely imbalanced data</b>, because when predicting 0 or smaller probabilities, the loss will be smaller.
+      * <b>MSE (Squared Error) works better for continuous output while Logloss works better for numerical classification.</b>
       * Similar to MSE, logloss will increase when the predicted probability diverges from the actual value. At the same time, Logloss takes into account the uncertainty of the predictions based on how much it varies from the ground truth.
       * MSE would be bad if we're aiming to have our model output discrete values (such as 0, 1), because the model would end up trying to keep values close to 0 or 1 (basically estimating the mean of the distribution) and wouldn't learn to do anything very sophisticated around distribution estimation. However when your targets are continuous, RMSE/MSE works fairly well - in other words, squared error is a good measure for regression but not for numerical classification. 
       * Logloss does maximum likelihood estimation of a multinomial distribution, it also punishes bad class labelling, but only when those labels have high confidence. So Logloss is better for numerical classification.
-  * ROC vs Precision-Recall
-    * References
-      * https://github.com/hanhanwu/readings/blob/master/ROC_vs_precisionrecall.pdf
-      * https://classeval.wordpress.com/introduction/introduction-to-the-precision-recall-plot/
-    * In a word, AUC of Precision-Recall can be more reliable than AUC for ROC, especially when the label distribution is highly skewed. 
-    * Python has built-in methods to calculate AUC of precision-recall
-      * http://scikit-learn.org/stable/modules/generated/sklearn.metrics.average_precision_score.html#sklearn.metrics.average_precision_score
-      * http://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_recall_curve.html#sklearn.metrics.precision_recall_curve
-    * However, if you also want to calculate AUC, you can try
-      * http://scikit-learn.org/stable/modules/generated/sklearn.metrics.roc_auc_score.html
-  * Suggestions to improve scores
-    * Making the probabilities less sharp (less confident). This means adjusting the predicted probabilities away from the hard 0 and 1 bounds to limit the impact of penalties of being completely wrong.
-    * Shift the distribution to the naive prediction (base rate). This means shifting the mean of the predicted probabilities to the probability of the base rate, such as 0.5 for a balanced prediction problem.
-    * Reference: https://machinelearningmastery.com/how-to-score-probability-predictions-in-python/
    
 * Data Validation
-  * Hold Out - Your dataset is seperated into training and Testing
+  * Hold Out - Your dataset is seperated into Training, Validation and Holdout
+    * Training, Validation is used to train and tune the model. Results are used to select among different models.
+    * Holdout is to check how's the trained model work on another dataset. 
+    * <b>Holdout data should NEVER be used to select model or tune the model</b>.
   * When your dataset is small
     * Cross Validation
       * Leave One Out/JackKnife
@@ -287,7 +269,7 @@
       * Adversarial Validation
         * This method is special. It checks the similarity between training data and testing data by generating the probability of 'is_train' for all the training & testing data. With the generated probability, you sort training data in probability descending order, and chose the top x% as the validation set, the rest training data as training set.
       * Time Series Cross Validation
-        * In each split, it adds one more new data as teting data, and all the previous data as training data
+        * In each split, it adds one more new data as teting data, and all the previous data as training data.
       * My code [Python]: https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/validation_methods_sumamry.ipynb
       * reference: https://www.analyticsvidhya.com/blog/2018/05/improve-model-performance-cross-validation-in-python-r/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
         * My code is better, the reference code is missing a few code
@@ -311,6 +293,7 @@
       * If the plot is closer to the diagonal, the higher accuracy the model has. Sometimes you cannot tell which model is better through plot so added Brier score in the code.
       * We use Brier score as the evaluation, lower Brier, more accurate, better calibrated predictions. We can also see whether each classifier push the values towards to 0 or 1, or push away from them.
     * Part 2 - Calibration as classification post-processing
+      * The purpose of post-processing is to improve the calibration results of the classification models.
       * We use naive bayesian as the base model, comapred without calibration, with sigmoid calibration and with non-paramatric isotonic calibration.
   * To learn more about calibration: http://www.analyticsvidhya.com/blog/2016/07/platt-scaling-isotonic-regression-minimize-logloss-error/?utm_content=buffer2f3d5&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer
 
