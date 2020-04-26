@@ -299,11 +299,10 @@
 
 
 ## Applied Data Science in Python/R/Java
-
 * [Python & R] Sklearn vs R Label Encoding
-  * Sklearn Label Encoding that converts categorical data into numerical data better not be used directly with scikit-learn estimators, as these expect continuous input, and would interpret the categories as being ordered, which is often not desired. Here are some solutions in python sklearn:
+  * Sklearn Label Encoding that converts categorical data into numerical data, can be risky, as most models will treat these values as continuous input, and would interpret the categories as being ordered, which is often not desired. Here are some solutions in python sklearn:
     * One-hot encoding before feature selection, because one-hot encoding can deal with this issue but will also create too much features
-    * Just use that label encoding, with solid model evaluation methods
+    * Just use that label encoding, with solid model evaluation methods.
   * Use R
     * It has `as.numeric(as.factor())` which will avoid the problem
 
@@ -324,28 +323,27 @@
       * For discrete label: http://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.mutual_info_classif.html#sklearn.feature_selection.mutual_info_classif
       * For continuous label: http://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.mutual_info_regression.html#sklearn.feature_selection.mutual_info_regression
     * Variance Threshold Feature Selection
-      * This is the basic one that can be used in preprocessing step. It removes all low-variance features
+      * This is the basic one that can be used in preprocessing step. It removes all low-variance features. Sounds quite like PCA.
       * http://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.VarianceThreshold.html#sklearn.feature_selection.VarianceThreshold
     * Drop Highly Correlated Features
       * An example: https://chrisalbon.com/machine_learning/feature_selection/drop_highly_correlated_features/
   * Param Tuning
     * Random Search: https://github.com/hyperopt/hyperopt
-    * http://scikit-learn.org/stable/modules/grid_search.html#exhaustive-grid-search
+    * Grid Search: http://scikit-learn.org/stable/modules/grid_search.html#exhaustive-grid-search
   * Model Selection
     * http://scikit-learn.org/stable/model_selection.html
+    * Calibration should also be considered in model selection method, it's based on prediction confidence: https://scikit-learn.org/stable/modules/calibration.html
       
 * [R] Caret package for data imputing, feature selection, model training (I will show my experience of using caret with detailed code in Hanhan_Data_Science_Practice): https://www.analyticsvidhya.com/blog/2016/12/practical-guide-to-implement-machine-learning-with-caret-package-in-r-with-practice-problem/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 * [Python & R] A brief classified summary of Python Scikit-Learn and R Caret: https://www.analyticsvidhya.com/blog/2016/12/cheatsheet-scikit-learn-caret-package-for-python-r-respectively/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 * [Python] What to pay attention to when you are using Naive Bayesian with Scikit-Learn: https://www.analyticsvidhya.com/blog/2015/09/naive-bayes-explained/?utm_content=bufferaa6aa&utm_medium=social&utm_source=linkedin.com&utm_campaign=buffer
-  * 3 types of Naive Bayesian: Gaussian (if you assume that features follow a normal distribution); Multinomial (used for discrete counts, you can think of it as “number of times outcome number x_i is observed over the n trials”.); Bernoulli(useful if your <b>feature vectors are binary</b>); 
-  * Tips to improve the power of Naive Bayes Model: If test data set has zero frequency issue, apply <b>smoothing techniques</b> “Laplace Correction” to predict the class of test data set. Focus on your  pre-processing of data and the feature selection, because of thelimited paramter choices. “ensembling, boosting, bagging” won’t help since their purpose is to reduce variance. <b>Naive Bayes has no variance to minimize</b>
 * [R] Cluster Analysis: https://rstudio-pubs-static.s3.amazonaws.com/33876_1d7794d9a86647ca90c4f182df93f0e8.html
-* [Java] SPMF, it contains many algorithms that cannot be found in R/Scikit-Learn/Spark, especailly algorithms about Pattern Mining: http://www.philippe-fournier-viger.com/spmf/index.php?link=algorithms.php
+* [Java] SPMF, it contains many Pattern Mining algorithms that cannot be found in R/Scikit-Learn/Spark, especailly algorithms about Pattern Mining: http://www.philippe-fournier-viger.com/spmf/index.php?link=algorithms.php
   * SPMF examples: http://www.philippe-fournier-viger.com/spmf/index.php?link=documentation.php
   * Algorithm mapping: http://www.philippe-fournier-viger.com/spmf/map_algorithms_spmf_data_mining097.png
   * Download: http://www.philippe-fournier-viger.com/spmf/index.php?link=download.php
 * [Python] Scikit-Learn algorithms map and Estimators
-  * map: http://scikit-learn.org/stable/tutorial/machine_learning_map/
+  * sklearn Estimator map: http://scikit-learn.org/stable/tutorial/machine_learning_map/
   * I'm sure that I have copied this before, but today I have learned something new about this map! Those green squares are clickable, and they are the estimators
   * An estimator is used to help tune parameters and estimate the model
   * This map also helps you find some algorithms in Scikit-Learn based on data size, data type
@@ -357,8 +355,8 @@
   * <b>TPOT is built upon Scikit-Learn</b>, so those models, methods you can find in TPOT can be found in scikit-learn too. This is what I really like. For example, in Scikit-Learn, classification will use stratfied cross validation while regression will use k-fold. TPOT does the same, and it helps you find the best model with optimized params in its pipeline
 * [Python] MLBox - Automated Model Selection with Param Optimization
   * MLBox GitHub: https://github.com/AxeldeRomblay/MLBox
-  * It does some data cleanning and preprocessing for you, but better to do things on your own before using it
-  * It also does model selction and param optimization like TPOT, what makes MLBox looks good is, each step of work, it ourputs some info to give you more insights of its performance
+  * It does some data cleanning and preprocessing for you, but better to do things on your own before using it.
+  * It also does model selction and param optimization like TPOT, what makes MLBox looks good is, each step of work, it ourputs some info to give you more insights of its performance.
   * MLBox Data Cleaning, in `train_test_split()`
     * Delete unnamed cols
     * Remove duplicates
@@ -367,7 +365,7 @@
     * But it may be differ from manually removing shifting data, check my code here: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/deal_with_data_shifting.ipynb
     * Only deals with covariate shifting (shifting in fetures)
     * Details for how data shifting checking in MLBox works: https://www.analyticsvidhya.com/blog/2017/07/mlbox-library-automated-machine-learning/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
-  * It uses Entity Embeding to enclode categorical data
+  * It uses Entity Embeding to encode categorical data
     * It seems that, with `Entity Encoding`, you can link similar/relavant categorical values together
   * Model Selection and Param Optimization
     * It uses hyperopt library which is fast, below are the param categories you can set:
@@ -379,13 +377,11 @@
 * [Python]Deploy Machine Learning Model as an API, using Flask: https://www.analyticsvidhya.com/blog/2017/09/machine-learning-models-as-apis-using-flask/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 
 * Python MapReduce
-  * With this tool, you can run your python code in map reduce way, so that it's much faster, and when you are not using this map resuce, the same python code can be running as single thread
+  * With this tool, you can run your python code in map reduce way, so that it's much faster, and when you are not using this map reduce, the same python code can be running as single thread
   * Install `mrjob`: https://pythonhosted.org/mrjob/guides/quickstart.html
-  * Write a pyhton file that contains map reduce job: https://pythonhosted.org/mrjob/guides/quickstart.html, let's call this file mr_job.py
-  * Your real python logic is in abother file, let's call it my_python_main.py
-  * Create a python virtual environment, in case some module cannot be found and you have to modify PYTHONPATH.
-    * I don't want to change pythonpath prmanently, so this is the command I use when there is error showing module not found: `export PYTHONPATH="your_module_folder:$PYTHONPATH"`
-      * You need to type this command each time when you activated your environment
+  * Write a python file that contains map reduce job: https://pythonhosted.org/mrjob/guides/quickstart.html, let's call this file mr_job.py
+  * Your real python logic is in another file, let's call it my_python_main.py
+  * Create a python virtual environment
   * run your map reduce job with your logic, read input and create output: `python my_python_main.py < test_data/test_file.test > outfile.new`
     * The input, output can be whatever format readable, in your mapper, you can do some data preprocessing to format the data
     * In your code, you can write `print` to help debug, the printed output will be in your output file, won't be shown through terminal
@@ -403,9 +399,10 @@
     * Here I used hyperopt implemented in sklearn, it is random search. I also used sklearn grid search, random search
   
 * Learn Rough Sets (RST) & Fuzzy Rough Sets (FRST)
+  * They are pattern mining methods. What is Rough Set: https://www.geeksforgeeks.org/rough-set-theory-an-introduction/
   * Learning Code about basic data analysis with RST & FRST: https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/RoughSets_FuzzyRoughSets.R
     * With Rough Sets and Fuzzy Rough Sets in this library, you do use rule induction for classification
-    * The libraru also allows you to do instance selection, which removes noisy, unnecessary or inconsistent instances
+    * The library also allows you to do instance selection, which removes noisy, unnecessary or inconsistent instances
   * reference: https://cran.r-project.org/web/packages/RoughSets/RoughSets.pdf
   
 * Learn Markov Chain
@@ -425,8 +422,8 @@
     * maximum likelihood estimation (ME): it produces distributional parameters that maximize the probability of observing the data at hand
   * Problems it deals with
     * Given a sequence of observed values, provide a probability that this sequence was generated by the specified HMM
-      * Forward algorithm - it stores the summed probabilities, so that thy can be re-use
-      * Backward algorithm - it expresses a probability of being in state i at time t and moving to state j at time t+1
+      * Forward algorithm - it stores the summed probabilities, so that they can be re-use
+      * Backward algorithm - it expresses a probability of being in state `i` at time `t` and moving to state `j` at time `t+1`
     * Given a sequence of observed values, provide the sequence of states the HMM most likely has been in to generate such values sequence
       * Viterbi Algorithm - find the path that maximizes each state probability, and the path is valid
     * Given a sequence of observed values we should be able to adjust/correct our model parameters
@@ -435,7 +432,7 @@
         * Or the converged solution provides model parameters that are more likely for a given sequence of observations 
   * References
     * The author provided her detailed mathematical description: https://codefying.com/2016/09/15/a-tutorial-on-hidden-markov-model-with-a-stock-price-example/
-      * Her code: https://github.com/elena-sharova/HiddenMarkovModel
+      * The code: https://github.com/elena-sharova/HiddenMarkovModel
         * I just tried `yahoo-finance`, it had 2 major class for Currency and Share. But at least Share no longer works, the YQL has been disabled. Although this is not the first time I saw yql discontinued services, when you are seeing a past giant company is reducing its services more and more, while in fact many of the services were great, the feeling is complex
         * But we can download some sample data here: https://github.com/matplotlib/mpl_finance/tree/master/examples/data
     * The author's evaluation results: https://codefying.com/2016/09/19/a-tutorial-on-hidden-markov-model-with-a-stock-price-example-part-2/
@@ -454,9 +451,8 @@
     * Here's the description about how to use Bayesian Method to compare models: https://stats.stackexchange.com/questions/342605/how-to-use-bayesian-evidence-to-compare-models
     * Here's more description from PyMC3 on Bayes Factors and Marginal Likelihood: http://docs.pymc.io/notebooks/Bayes_factor.html
 
-************************************************************************
 
-Statistics in Data Science
+## Statistics in Data Science
 
 * My Applied Statistics: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/Applied_Statistics/ReadMe.md
 * Some basic formulas: http://mtweb.mtsu.edu/stats/dictionary/formula.htm
