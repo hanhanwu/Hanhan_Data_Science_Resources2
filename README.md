@@ -327,9 +327,6 @@
       * http://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.VarianceThreshold.html#sklearn.feature_selection.VarianceThreshold
     * Drop Highly Correlated Features
       * An example: https://chrisalbon.com/machine_learning/feature_selection/drop_highly_correlated_features/
-  * Param Tuning
-    * Random Search: https://github.com/hyperopt/hyperopt
-    * Grid Search: http://scikit-learn.org/stable/modules/grid_search.html#exhaustive-grid-search
   * Model Selection
     * http://scikit-learn.org/stable/model_selection.html
     * Calibration should also be considered in model selection method, it's based on prediction confidence: https://scikit-learn.org/stable/modules/calibration.html
@@ -392,11 +389,13 @@
     * tutorial: http://steventhornton.ca/hyperparameter-tuning-with-hyperopt-in-python/
     * code: https://github.com/steventhornton/Hyperparameter-Tuning-with-hyperopt-in-Python
   * Scikit-Learn param turning methods: http://scikit-learn.org/stable/modules/classes.html#hyper-parameter-optimizers
-  * Optunity: https://pypi.python.org/pypi/Optunity
-  * Spearmint: https://github.com/JasperSnoek/spearmint
-    * Improved version: https://github.com/HIPS/Spearmint
-  * My code: https://github.com/hanhanwu/Basic_But_Useful/blob/master/RandomSearch_vs_GridSearch_cv.ipynb
+  * My code - Random Search vs Grid Search: https://github.com/hanhanwu/Basic_But_Useful/blob/master/RandomSearch_vs_GridSearch_cv.ipynb
     * Here I used hyperopt implemented in sklearn, it is random search. I also used sklearn grid search, random search
+  * TPOT is using Genetic Algorithm for param tuning: https://medium.com/cindicator/genetic-algorithms-and-hyperparameters-weekend-of-a-data-scientist-8f069669015e
+  * `scipy.optimize` has many optimization functions
+    * Find them all, seach for "optimize": https://docs.scipy.org/doc/scipy-0.15.1/reference/generated/
+    * More math about these functions: https://docs.scipy.org/doc/scipy/reference/optimize.html
+      * It seems that this list does include all
   
 * Learn Rough Sets (RST) & Fuzzy Rough Sets (FRST)
   * They are pattern mining methods. What is Rough Set: https://www.geeksforgeeks.org/rough-set-theory-an-introduction/
