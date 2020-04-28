@@ -452,44 +452,42 @@
 
 
 ## Statistics in Data Science
-
 * My Applied Statistics: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/Applied_Statistics/ReadMe.md
-* Some basic formulas: http://mtweb.mtsu.edu/stats/dictionary/formula.htm
+* Stats dictionary - Some basic formulas: http://mtweb.mtsu.edu/stats/dictionary/formula.htm
 * Applied Linear Algebra: https://www.analyticsvidhya.com/blog/2019/07/10-applications-linear-algebra-data-science/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 
 * 6 distributions
   * Overall
     * <b>The expected value</b> of any distribution is the mean of the distribution
   * <b>Bernoulli Distribution</b>
-    * only 2 possible outcomes
+    * only 2 possible outcomes.
     * The expected value for a random variable X in this distributioon is `p` (probability)
     * The variance for a random variable X in this distributioon is `p(1-p)`
   * <b>Uniform Distribution</b>
-    * The probability of all the N number of outcomes are equally likely
+    * The probability of all the N number of outcomes are equally likely.
     * `a is min of uniform distribution`, `b is max of uniform distribution`, the probability of a random variable in X is `1/(b-a)`; the probability of a range (x1,x2) is `(x2-x1)/(b-a)`
     * `mean = (a+b)/2`
     * `variance = (b-a)^2/12`
     * Standard Uniform Distribution has `a=0, b=1`, if x in [0,1] range, probability is 1, otherwise 0
   * <b>Binomial Distribution</b>
-    * The probabilities x, y for 2 outcomes are the same in each trail （but these 2 probability can be different）
-    * Each trail is independent
+    * 2 outcomes, the probability for each is p, 1-p. In each trail, the probability of each outcome is the same.
+    * Each trail is independent.
     * `n` is the number of trails, `p` is the probability of success in each trail => `mean=n*p`, `variance=n*p*(1-p)`
-    * If the probability of 2 outcomes x, y are the same, then the distribution is normal distribution
+    * If the probability of 2 outcomes p, 1-p are the same, then the distribution is normal distribution.
   * <b>Normal Distribution</b>
     * The mean, median and mode of the distribution coincide.
     * The curve of the distribution is bell-shaped and symmetrical about the line x=μ.
     * The total area under the curve is 1.
-    * Exactly half of the values are to the left of the center and the other half to the right.
     * Standard normal distribution has mean 0 and standard deviation 1
   * <b>Poisson Distribution</b>
     * It is applicable in situations where events occur at random points of time and space where in our interest lies <b>only in the number of occurrences of the event</b>.
       * e.g number of times of have ice-cream in a year; number of flowers in a garden. etc
-     * Any successful event should not influence the outcome of another successful event.
-     * The probability of success over a short interval must equal the probability of success over a longer interval.
-     * The probability of success in an interval approaches zero as the interval becomes smaller.
-     * `λ` is the rate at which an event occurs, `t` is the length of a time interval, and `X` is the number of events in that time interval. `mean = λ*t`
+    * Events are independent from each other.
+    * The probability of success over a short interval must equal to the probability of success over a longer interval.
+    * The probability of success in an interval approaches zero as the interval becomes smaller.
+    * `λ` is the rate at which an event occurs, `t` is the length of a time interval, and `X` is the number of events in that time interval. `mean = λ*t`.
    * <b>Exponential Distribution</b>
-     * Compared with poisson distribution, exponential distribution means the <b>time interval</b> between 2 events
+     * Compared with poisson distribution, exponential distribution means the <b>time interval</b> between 2 events.
        * e.g the time interval between eating 2 ice-creams
      * It is widely used in survival analysis. `λ` is called the failure rate of a device at any time `t`, given that it has survived up to t. For a random variable X, `mean=1/λ`, `variance=(1/λ)^2`. The greater the rate, the faster the curve drops and the lower the rate, flatter the curve.
    * Relationship between distributions
