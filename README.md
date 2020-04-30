@@ -479,6 +479,13 @@
     * The curve of the distribution is bell-shaped and symmetrical about the line x=μ.
     * The total area under the curve is 1.
     * Standard normal distribution has mean 0 and standard deviation 1
+    * More about normal distribution: https://www.analyticsvidhya.com/blog/2020/04/statistics-data-science-normal-distribution/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+      * Skewness
+      * Q-Q Plot (quantile-quantile plot) - it's the quantiles of observed data comparing with normal distribution quantiles.
+      * Kurtosis - Majorly indicates the distribution along the tails.
+        * Mesokurtic distribution
+        * Leptokurtic Distribution
+        * Platykurtic Distribution
   * <b>Poisson Distribution</b>
     * It is applicable in situations where events occur at random points of time and space where in our interest lies <b>only in the number of occurrences of the event</b>.
       * e.g number of times of have ice-cream in a year; number of flowers in a garden. etc
