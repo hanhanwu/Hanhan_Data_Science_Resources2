@@ -456,7 +456,7 @@
 * Stats dictionary - Some basic formulas: http://mtweb.mtsu.edu/stats/dictionary/formula.htm
 * Applied Linear Algebra: https://www.analyticsvidhya.com/blog/2019/07/10-applications-linear-algebra-data-science/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 
-* 6 distributions
+### 6 distributions
   * Overall
     * <b>The expected value</b> of any distribution is the mean of the distribution
   * <b>Bernoulli Distribution</b>
@@ -503,30 +503,16 @@
      * If the times between random events follow exponential distribution with rate λ, then the total number of events in a time period of length t follows the Poisson distribution with parameter λt.
    * reference: https://www.analyticsvidhya.com/blog/2017/09/6-probability-distributions-data-science/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
    
-* <b>Maximum Likelihood Estimation</b>
-  * <b>With Maximum Likelihood, you can estimate population parameters from sample data such that the probability (likelihood) of obtaining the observed data is maximized.</b>
-    * Sample data -> Population parameters
-    * Maximized probability
-    * In practice, some libraries will need you to define the posible distribution
-  * Distribution Parameters
-    * It is a quantity that indexes a family of probability distributions
-    * A numerical characteristic of a population or a statistical model
-  * Likelihood, Log Likelihood, Maximize Likelihood
-    * `L(θ;x) = f(x|θ)`
-      * Given a sample of observations (x values), we want to find `θ` (the distribution parameter vector) that can maximize the likelihood
-    * Now we assume the observations (x1, x2, ... xn) are <b>independent and identically distributed random variables</b> drawn from a Probability Distribution. Then we will have: 
-      * `L(θ;x) = f(x1, x2, ...xn|θ) = f(x1|θ)*f(x2|θ)*.....*f(xn|θ)`
-    * When we take deviation of a function w.r.t θ, making it equals to 0, we will get the maximum or the minimum. Here in order to get the maximum, we can:
-      * Take log of `L(θ;x)`: `LL(θ;x) = log(L(θ;x)) = log(f(x1|θ)) + log(f(x2|θ)) + .... + log(f(xn|θ))`. Because in this case, the log value is increasing, so when we take deviation of `LL(θ;x)` and make it equals to 0, we will get the maximum.
-      * Take the first deviation of LL(θ;x) w.r.t θ, making it equals to 0
-      * Take a second deviation of LL(θ;x) w.r.t θ and make sure it gets negative. Because the above deviation should get something like `y=a`, a is a constant
-      * `0` is the vector of model coefficients. Based on a vector of explanatory variables xi and 0, we can get distribution parameter, such as mean(µ)
-    * However, sometimes deviations won't give direct help and people can still use other ways to find the maximum - Optimization Algorithms
-      * From an arbitrary starting point, may end up in local maximum , but can be fast
-      * When the model is assumed to be Gaussian, the MLE estimates are equivalent to the ordinary least squares method.
-       * The paper: http://people.math.gatech.edu/~ecroot/3225/maximum_likelihood.pdf
-   * My Practice Code: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/Applied_Statistics/try_maximum_likelihood_estimation.R
-     * Detailed description: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/Applied_Statistics/ReadMe.md#maximum-likelihood-estimation
+### Maximum Likelihood Estimation
+* <b>With Maximum Likelihood, you can estimate population parameters from sample data such that the probability (likelihood) of obtaining the observed data is maximized.</b>
+* How to calculate maximum likelihood: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/Applied_Statistics/Learning_Notes/point_estimation.md#maximum-likelihood-estimation
+  * It's a type of point estimation, meaning just to estimate a single value. By comparison, confidence interval is a method to estimate a value range.
+* However, sometimes deviations won't give direct help and people can still use other ways to find the maximum - Optimization Algorithms
+  * From an arbitrary starting point, may end up in local maximum , but can be fast
+  * When the model is assumed to be Gaussian, the MLE estimates are equivalent to the ordinary least squares method.
+    * The paper: http://people.math.gatech.edu/~ecroot/3225/maximum_likelihood.pdf
+* My Practice Code: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/Applied_Statistics/try_maximum_likelihood_estimation.R
+* Detailed description: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/Applied_Statistics/ReadMe.md#maximum-likelihood-estimation
    
 * <b>Odds</b>: Odds are defined as the ratio of the probability of success and the probability of failure. For example, a fair coin has probability of success is 1/2 and the probability of failure is 1/2 so odd would be 1
 
