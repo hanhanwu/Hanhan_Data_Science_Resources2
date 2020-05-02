@@ -474,6 +474,7 @@
     * Each trail is independent.
     * `n` is the number of trails, `p` is the probability of success in each trail => `mean=n*p`, `variance=n*p*(1-p)`
     * If the probability of 2 outcomes p, 1-p are the same, then the distribution is normal distribution.
+    * <b>Odds</b>: Odds are defined as the ratio of the probability of success and the probability of failure. For example, a fair coin has probability of success is 1/2 and the probability of failure is 1/2 so odd would be 1.
   * <b>Normal Distribution</b>
     * The mean, median and mode of the distribution coincide.
     * The curve of the distribution is bell-shaped and symmetrical about the line x=μ.
@@ -521,31 +522,26 @@
 * My Practice Code: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/Applied_Statistics/try_maximum_likelihood_estimation.R
 * Detailed description: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/Applied_Statistics/ReadMe.md#maximum-likelihood-estimation
    
-* <b>Odds</b>: Odds are defined as the ratio of the probability of success and the probability of failure. For example, a fair coin has probability of success is 1/2 and the probability of failure is 1/2 so odd would be 1
 
-* <b>Errors</b>
-  * Generalisation Error (out of sample error) - It tells how accurate the model can predict the previsely <b>unseen</b> data
-
-* Bayesian Statistics
+### Bayesian Statistics
   * Reference: https://www.analyticsvidhya.com/blog/2016/06/bayesian-statistics-beginners-simple-english/
   * Frequentist Statistics
     * Frequentist Statistics tests whether an event (hypothesis) occurs or not. It calculates the probability of an event in the long run of the experiment (i.e the experiment is repeated under the same conditions to obtain the outcome).
     * Drawback 1 - p-value changes when sample size and stop intention change
     * Drawback 2 - confidence level (C.L) also heavily depends on sample size like p-value
     * Drawback 3 - confidence level (C.L) are not probability distributions therefore they do not provide the most probable value for a parameter and the most probable values
-  * Because of the drawbacks of Frequentist Statistics, here comes Bayesian Statistics
-    * <b>"Bayesian statistics is a mathematical procedure that applies probabilities to statistical problems. It provides people the tools to update their beliefs in the evidence of new data."</b>
-    * <b>Bayes theorem</b> is built on top of conditional probability and lies in the heart of Bayesian Inference. 
-    * Bayes Theorem Wiki is better: https://en.wikipedia.org/wiki/Bayes%27_theorem
-    * Bayes Inference part here is good, especially in explaining `prior, likelyhood of observing prior, evidence and posterior`. The probability of observing prior depends upon the fairness
-    * <b>The reason that we chose prior belief is to obtain a beta distribution</b>. This is because when we multiply it with a likelihood function, posterior distribution yields a form similar to the prior distribution which is much easier to relate to and understand
-    * Bayes factor is the equivalent of p-value in the bayesian framework. The null hypothesis in bayesian framework assumes ∞ probability distribution only at a particular value of a parameter (say θ=0.5) and a zero probability else where. (M1); The alternative hypothesis is that all values of θ are possible, hence a flat curve representing the distribution. (M2). `Bayes factor is defined as the ratio of the posterior odds to the prior odds`. `To reject a null hypothesis, a BF <1/10 is preferred.`
+  * Frequentist Statistics vs Bayesian Hypothesis: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/Applied_Statistics/Learning_Notes/bayesian_analysis/NHST_vs_Bayesian.md
     
-* <b>Find All Calculators</b> [here][15], this one is easier to understand and better to use
-* Termology glossary for statistics in machine learning: https://www.analyticsvidhya.com/glossary-of-common-statistics-and-machine-learning-terms/
+    
+### Find All Calculators [here][15]
+
+### Terminology
+* Terminology glossary for statistics in machine learning: https://www.analyticsvidhya.com/glossary-of-common-statistics-and-machine-learning-terms/
 * Statistics behind Boruta feature selection: https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/boruta_statistics.pdf
 * How the laws of group theory provide a useful codification of the practical lessons of building efficient distributed and real-time aggregation systems (from 22:00, he started to talk about HyperLogLog and other approximation data structures): https://www.infoq.com/presentations/abstract-algebra-analytics
-* Confusing Concepts
+
+
+### Confusing Concepts
   * Confounding Variable vs Interaction
     * Confounding variable is the variable that will affect both dependent and independent variables. I will increase the variance and introduce bias in the model results. 
       * For example, gaining weight is the dependent variable, lack of exercise is an independent variable, age is the confounding variable that will affect both of these variables.
