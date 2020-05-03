@@ -536,7 +536,10 @@
 ### Find All Calculators [here][15]
 
 ### Terminology
-* Terminology glossary for statistics in machine learning: https://www.analyticsvidhya.com/glossary-of-common-statistics-and-machine-learning-terms/
+* 🌟 Terminology glossary for statistics in machine learning: https://www.analyticsvidhya.com/glossary-of-common-statistics-and-machine-learning-terms/
+  * It's a great summary!
+  * Something to correct
+    * "Multivariate Regression": is the regression has multiple INDEPENDENT variables, NOT multiple dependent variable.
 * Statistics behind Boruta feature selection: https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/boruta_statistics.pdf
 * How the laws of group theory provide a useful codification of the practical lessons of building efficient distributed and real-time aggregation systems (from 22:00, he started to talk about HyperLogLog and other approximation data structures): https://www.infoq.com/presentations/abstract-algebra-analytics
 
@@ -573,8 +576,6 @@
    <p align="center">
   <img width="350" height="300" src="https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/images/bias_vs_variance.png">
 </p>
-   
-   
    
   * <b>OLS</b> and <b>Maximum likelihood</b> are the methods used by the respective regression methods to approximate the unknown parameter (coefficient) value. OLS is to linear regression. Maximum likelihood is to logistic regression. Ordinary least square(OLS) is a method used in linear regression which approximates the parameters resulting in <b>minimum distance between actual and predicted values.</b> Maximum Likelihood helps in choosing the the values of parameters which <b>maximizes the likelihood that the parameters are most likely to produce observed data.</b>
     * The plot here to compare how OLS and PCA work is also very good: https://stats.stackexchange.com/questions/2691/making-sense-of-principal-component-analysis-eigenvectors-eigenvalues/2700#2700
