@@ -541,7 +541,9 @@
   * Something to correct
     * "Multivariate Regression": is the regression has multiple INDEPENDENT variables, NOT multiple dependent variable.
 * Statistics behind Boruta feature selection: https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/boruta_statistics.pdf
-* How the laws of group theory provide a useful codification of the practical lessons of building efficient distributed and real-time aggregation systems (from 22:00, he started to talk about HyperLogLog and other approximation data structures): https://www.infoq.com/presentations/abstract-algebra-analytics
+  * It finds all relevant variables, and removes features proved by a statistical test to be less relevant than random probes.
+  * The importance of anattribute is obtained as the loss of accuracy of classification caused by randomly permutation of attribute values between objects.
+* How the laws of group theory provide a practical lessons of building efficient distributed and real-time aggregation systems (from 22:00, he started to talk about HyperLog and other approximation data structures): https://www.infoq.com/presentations/abstract-algebra-analytics
 
 
 ### Confusing Concepts
@@ -550,9 +552,9 @@
       * For example, gaining weight is the dependent variable, lack of exercise is an independent variable, age is the confounding variable that will affect both of these variables.
       * Better to control some the variable values used in data sample and experiments, such as limit the age within 1 group for the experiment.
     * Interaction indicates how variable A affects the dependent variable differs when variable B changes among different levels. 
-      * In some model output, we will output the interaction between features to uderstand further about the data
+      * In some model output, we will output the interaction between features to uderstand further about the data.
   * Errors and Residuals: https://en.wikipedia.org/wiki/Errors_and_residuals
-    * Statistical Error is the amount by which an observation differs from its expected value (mean of the population). Since the mean of the population is not observable in most of the cases, error is not an observable either.
+    * Statistical Error is the amount by which an observation differs from its expected value (population mean). Since the mean of the population is not observable in most of the cases, error is not an observable either.
     * Residual is observable, it is an observable estimate of the unobservable statistical error. Residual is the amount by which an observation differs from its sample mean (not population mean).
   * Explained Variation vs Residual Variation
     * Residual Variation is unobservable.... It indicates the variance around the regression line.
@@ -560,18 +562,18 @@
     ![Explained Variation vs Residual Variation](https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/ExplainedVariance_ResudualVariance.png)
     * `Residual Variance = Total Variance - Explained Variance`
     * `R-Squared = Explained Variance/Total Variance`, so explained variance higher, the better, although it will get similar criticism as R-Square for not be able to handle multicolineary
-  * Heteroskedasticity: led by non-constant variance in error terms. Usually, non-constant variance is caused by outliers or extreme values
+  * Heteroskedasticity: led by non-constant variance in error terms. Usually, non-constant variance is caused by outliers or extreme values.
   * Coefficient and p-value/t-statistics: coefficient measures the strength of the relationship of 2 variables, while p-value/t-statistics measures how strong the evidence that there is non-zero association
   * Anscombe's quartet comprises four datasets that have nearly identical simple statistical properties, yet appear very different when graphed: https://en.wikipedia.org/wiki/Anscombe's_quartet
-  * Difference between gradient descent and stochastic gradient descent: https://www.quora.com/Whats-the-difference-between-gradient-descent-and-stochastic-gradient-descent
+    * Same mean, variance, different distributions.
   * Correlation & Covariance: In probability theory and statistics, correlation and covariance are two similar measures for assessing how much two attributes change together.
     * Covariance indicates the direction of linear relationship between 2 variables. Correlation indicates both direction and strength of the linear relationship between 2 variables.
     * `correlation(A, B) = covariance(A, B)/(std(A)*std(B))`
       * `covariance(A, B) = sum((xi - avg(Y)) * (yi - avg(Y)))/N`
       * Correlation is between [-1, 1], covariance is between (-infinity, +infinity)
   * Rate vs Proportion: A rate differs from a proportion in that the numerator and the denominator need not be of the same kind and that the numerator may exceed the denominator. For example, the rate of pressure ulcers may be expressed as the number of pressure ulcers per 1000 patient days.
- * <b>Bias</b> is useful to quantify how much on an average are the predicted values different from the actual value. A high bias error means we have a <b>under-performing</b> model which keeps on missing important trends. <b>Variance</b> on the other side quantifies how are the prediction made on same observation different from each other. A high variance model will <b>over-fit</b> on your training population and perform badly on any observation beyond training.
-   * When the complexity of a model grows, the bias will increase while variance decreases. The total error is lower when both bias and variance are lower. So during parameter tuning, eed to find that sweet spot when bias, variance and the error are all lower.
+ * <b>Bias</b> is useful to quantify how much on an average are the predicted values different from the actual value. A high bias error means we have a <b>under-performing</b> model which keeps on missing important trends. <b>Variance</b> on the other side quantifies how are the prediction made on same observation different from each other. A high variance model will <b>overfit</b> on your training population and perform badly on any observation beyond training.
+   * The total error is lower when both bias and variance are lower. So during parameter tuning, better to find that sweet spot when bias, variance and the error are all lower.
    * About <b>variance</b> here, according to above description, if we check multiple models on the same set of data, the difference is called variance. Meanwhile there is <b>model variance</b>, which means the same model showing different results because of the randomness in different data input. These 2 variance can be differentiated by, whether it's same model or multiple model, whether it's multiple dataset or same dataset.
    <p align="center">
   <img width="350" height="300" src="https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/images/bias_vs_variance.png">
