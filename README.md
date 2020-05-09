@@ -578,7 +578,7 @@
    <p align="center">
   <img width="350" height="300" src="https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/images/bias_vs_variance.png">
 </p>
-   
+
   * <b>OLS</b> and <b>Maximum likelihood</b> are the methods used by the respective regression methods to approximate the unknown parameter (coefficient) value. OLS is to linear regression. Maximum likelihood is to logistic regression. Ordinary least square(OLS) is a method used in linear regression which approximates the parameters resulting in <b>minimum distance between actual and predicted values.</b> Maximum Likelihood helps in choosing the the values of parameters which <b>maximizes the likelihood that the parameters are most likely to produce observed data.</b>
     * The plot here to compare how OLS and PCA work is also very good: https://stats.stackexchange.com/questions/2691/making-sense-of-principal-component-analysis-eigenvectors-eigenvalues/2700#2700
       * OLS minimizes the error between the predicted value and the observations
@@ -586,6 +586,8 @@
       * Here's more details from the blog post: http://www.cerebralmastication.com/2010/09/principal-component-analysis-pca-vs-ordinary-least-squares-ols-a-visual-explination/
   * <b>Standard Deviation</b> – It is the amount of variation in the <b>population data</b>. It is given by σ. <b>Standard Error</b> – It is the amount of variation in the <b>sample data</b>. It is related to Standard Deviation as σ/√n, where, n is the sample size, σ is the standandard deviation of the <b>population</b>. A low standard deviation indicates that the data points tend to be close to the mean (also called the expected value) of the set, while a high standard deviation indicates that the data points are spread out over a wider range of values. <b>The standard deviation is the square root of the variance.</b>
   * 95% <b> confidence interval does not mean</b> the probability of a population mean to lie in an interval is 95%. Instead, 95% C.I <b>means that 95% of the Interval estimates will contain the population statistic</b>.
+    * "Margin of Error" is the half width of confidence interval.
+    * Larger the dataset, narrower the confidence interval is.
     * If a sample mean lies in the margin of error range then, it might be possible that its actual value is equal to the population mean and the difference is occurring by chance.
   * <b>Difference between z-scores and t-values</b> are that t-values are dependent on Degree of Freedom of a sample, and t-values use sample standard deviation while z-scores use population standard deviation.
   * <b>The Degree of Freedom</b> – It is the number of variables that have the choice of having more than one arbitrary value. For example, in a sample of size 10 with mean 10, 9 values can be arbitrary but the 10th value is forced by the sample mean.
@@ -594,7 +596,7 @@
   * <b>Co-efficient of Determination = ESS/(ESS + RSS)</b>. It represents the strength of correlation between two variables. <b>Correlation Coefficient = sqrt(Co-efficient of Determination)</b>, also represents the strength of correlation between two variables, ranges between [-1,1]. 0 means no correlation, 1 means strong positive correlation, -1 means strong neagtive correlation.
   
 
-* About Data Sampling
+### About Data Sampling
   * Probability sampling can be representative, non-probability sampling may not
   * Probability Sampling
     * Random sample. (I guess R `sample()` is random sampling by default, so that each feature has the same weight)
@@ -618,12 +620,12 @@
 * [Comprehensive and Practical Statistics Guide for Data Science][1] - A real good one!
   * Sample Distribution and Population Distribution, Central Limit Theorem, Confidence Interval
   * Hypothesis Testing
-  * [t-test calculator][2]
+    * [t-test calculator][2]
   * ANOVA (Analysis of Variance), continuous and categorical variables, ANOVA also requires data from approximately normally distributed populations with equal variances between factor levels.
-  * [F-ratio calculator][3]
+    * [F-ratio calculator][3]
   * Chi-square test, categorical variables
-  * [chi-square calculator][4]
-  * Regression and ANOVA, it is important is knowing the degree to which your model is successful in explaining the trend (variance) in dependent variable. ANOVA helps finding the effectiveness of regression models.
+    * [chi-square calculator][4]
+  * Regression and ANOVA, it is important to know the degree to which your model is successful in explaining the trend (variance) in dependent variable. ANOVA helps finding the effectiveness of regression models.
   * <b>An example of hypothesis test with chi-square</b>:
     *  chi-square tests the hypothesis that A and B are independent, that is, there is no correlation between them. <b>Chi-square is used to calculate the correlation between categorical variables</b>
     * In this example, you have already calculated chi-square value as 507.93
