@@ -49,6 +49,10 @@
   * 10 articles about outliers: http://www.datasciencecentral.com/profiles/blogs/11-articles-and-tutorials-about-outliers
   * 14 articles clustering: http://www.datasciencecentral.com/profiles/blogs/14-great-articles-and-tutorials-on-clustering
 
+## Data Science Hacks
+* [Hacks, tips for image, data manipulation][27]
+  * Also include image manipulation
+  * There is a parallel method for pandas `apply`. Although I think using list maybe still faster than using pandas apply.
 
 ## TREE BASED MODELS & ENSEMBLING
 
@@ -1467,3 +1471,4 @@ OTHER
 [24]:https://www.youtube.com/watch?v=g34xUaJ4WI4&feature=youtu.be&mkt_tok=eyJpIjoiTVRKa1lUZzNZekppTnpZMyIsInQiOiIwakRcL0JQdFhWMXJzeW5ITVh2dDhyclh0eFZ6eHZFNFBpTDdwd0ZkaGdFbjhxZ1BDa2NsbHh2Y3Y5VUoyMGI4ejRzTE1hWmUralF3NHQ2ZXErZWw0YUJ0WWU1bUhUeHN4SjJXeGY5NWxBZmsrUDhLbGNuMWVhWWdFVG9IcjdUMnIifQ%3D%3D
 [25]:https://www.aws.training/learningobject/video?id=16370
 [26]:https://github.com/alirezadir/Production-Level-Deep-Learning
+[27]:https://www.analyticsvidhya.com/blog/2020/03/10-awesome-data-manipulation-and-wrangling-hacks-tips-and-tricks/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
