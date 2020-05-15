@@ -509,6 +509,11 @@
        * Both p and q are NOT indefinitely small, and p=q
      * Normal distribution is also a limiting case of Poisson distribution with the parameter λ →∞
      * If the times between random events follow exponential distribution with rate λ, then the total number of events in a time period of length t follows the Poisson distribution with parameter λt.
+   * Skewness List for Distributions: https://mathworld.wolfram.com/Skewness.html
+     * With this method, it can check whether a distribution is skewed
+     * Positive value means right skewed (positively skewed)
+     * Negative value means left skewed (negatively skewed)
+     * 0 means not skewed
    * reference: https://www.analyticsvidhya.com/blog/2017/09/6-probability-distributions-data-science/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
    
 ### Maximum Likelihood Estimation
