@@ -643,13 +643,10 @@
   * When we want to get more accuracy results from data samples, we often try to:
     * Increase sample size
     * Test more other random samples
-  * But what if you don't have time/money/computer meory to do above methods, we can try to <b>calculate random chance probability</b>
+  * But what if you don't have time/money/computer memory to do above methods, we can try to <b>calculate random chance probability</b>
   * Relevant Basics First
     * <b>z-value/z-score</b>: It tells how many standard deviation the observed value is away from mean. For example, z-score = 1.7 indicates that the observed value is 1.7 standard deviation away from mean. <b>Associated with the standard normal distribution only</b>. `z-score = (observed_value - mean)/standard_deviation`
     * <b>p-value</b>: it tells the probability that observed value is away from mean. Therefore, in order to get p-value, you check z-table with the z-score you got. <b>Associated with the standard normal distribution only</b>.
-    * For other distributions, use <b>Central Limit Theorem</b>:
-      * <b>Mean of Sample Means</b> (X random samples) - is close to the population mean
-      * <b>The distribution of sample means is normal regardless of the actual population distribution</b> - this is the core idea for Central Limit Theorem
       * `standard deviation of sample means = population standard deviation/sqrt(N)`, N is the sample size. This is knows as <b>standard error of means</b>. You check this satdard error of means to tell how accurate your random samples that can determind population mean.
       * Greater the sample size, lower standard error of means, and more accuracy to use the sample mean to determine the population mean. <b>Sample size should be NOT more than 10% of the population when sampling is done without replacement.</b>
       * All the samples should be <b>fixed size</b>
@@ -667,7 +664,6 @@
     * If you are not sure, it's <b>Two Tail Test/Non Directional Hypothesis</b>. In two tail test, `real significant level for each direction = significant level/2`
     * In one tail test, we reject the Null hypothesis if the sample mean is either positive or negative extreme any one of them. But, in case of two tail test we can reject the Null hypothesis in any direction (positive or negative).
   * reference: https://www.analyticsvidhya.com/blog/2015/09/hypothesis-testing-explained/
-    * In its second example, the result should be accept null hypothesis  
    
 * Non-Parametric Tests
   * Parametric tests are used when the information about the <b>population parameters</b> is completely known whereas non-parametric tests are used when there is no or few information available about the population parameters. That is to say, <b>non-parametric tests make no assumption about the data</b>.
@@ -677,10 +673,10 @@
     * It also works for all data types, such as categorical, ordinal, interval or data with outliers
   * Cons for non-parametric tests:
     * Because non-parametric methods won't reduce the problem of estimating f to a small number of params as parametric methods do, so in order to achieve higher accuracy, non-parametric methods need much larger number of observations
-    * critical value tables for non-parametric tests are not inlcuded in many software packages...
+    * Critical value tables for non-parametric tests are not inlcuded in many software packages...
   * <b>Steps to do Hypothesis Testing with non-parametric tests</b>
     * H0 (NULL Hypothesis): There is no significant difference between sample mean and population mean
-    * H1 (ALTERNATIVE Hypothesis): There is significant significant difference between sample mean and population mean
+    * H1 (ALTERNATIVE Hypothesis): There is a significant difference between sample mean and population mean
     * Set significant level, decide it's one-tail or two-tail problem. Decide decision rule (when t reject null hypothsis)
     * Test Statistics - In non-parametric tests, the sample is converted into ranks and then ranks are treated as a test statistic
     * Compare test statistics and decision rule, to decide reject/accept null hypothesis
@@ -688,7 +684,8 @@
     * <b>Mann Whitney U test/Mann Whitney Wilcoxon test/Wilcoxon rank sum test</b>
       * It is an alternative to independent sample t-test
       * You have 2 samples, sample one has size n1, sample two has size n2. R1, R2 are the sum of ranks for each sample respectively.
-        * In order to calculate R1, R2, you arrange the values of both samples together, in ascending order (from left to right), and you give them 1,2,3...,(n1+n2) index. For those values such as X that appeared multiple times, say p times, you use the sum of idex of X values devided by p (`sum(index_of_this_same_value)/p`) as the new index for each X, in this way, you can make sure the sum of all the final idex equals to `n*(n+1)/2`, it also equals to (1+2+3+...+n)
+        * In order to calculate R1, R2, you arrange the values of both samples together, in ascending order (from left to right), and you give them 1,2,3...,(n1+n2) index. 
+          * For those values such as X that appeared multiple times, say p times, you use the sum of index of X values devided by p (`sum(index_of_this_same_value)/p`) as the new index for each X, in this way, you can make sure the sum of all the final idex equals to `n*(n+1)/2`, it also equals to (1+2+3+...+n)
       * `U1 = n1*n2 + n1*(n1+1)/2 - R1`, `U2 = n1*n2 + n2*(n2+1)/2 - R2`
       * `U = min(U1, U2)`, U1+U2 = n1*n2. U lies in range (0, n1*n2). 0 means the 2 samples are totally different from each other, while n1*n2 indicates some relationship between the 2 groups. 
       * Find critical value here: http://ocw.umb.edu/psychology/psych-270/other-materials/RelativeResourceManager.pdf
