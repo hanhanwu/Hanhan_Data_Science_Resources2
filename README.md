@@ -907,7 +907,7 @@ Machine Learning Algorithms
       * Information Gain allows multiway splits.
         * `Entropy = -sum(P(i)*log(P(i), 2))`, i is class i
           * Entropy calculates how lack of purity the labels are after the split. Information gain is the opposite, it represents the purity of labels after the split.
-        * `Information Gain = Entropy_All - Entropy_Attribute`
+        * `Information Gain = Entropy_All - Entropy_Attribute = 1 - Entropy`
           * `Entropy_All` calculates entropy at dependent variable level without checking any attribute
           * `Entropy_Atribute` calculates entropy for that attribute, so the dependent variable counts are counted under each value group of the attribute
       * Information Gain has bias towards the attributes that have larger amount of different values, since this will lead to higher number of branches and each branch is pure. This could make the algorithm useless. To overcome this problem, Gain Ratio has been used.
@@ -918,6 +918,7 @@ Machine Learning Algorithms
     * <b>About Entropy</b>
       * We all know that formula, `-sum(p(i)*log(p(i), 2))`, and this is calculated for each group/category/etc. in the whole dataset
       * Sometimes, we need to compare entropy for different datasets, and in each dataset, we have multiple groups, then here comes normalized entropy, for <b>each group</b>, `-sum(p(xi)*log(p(xi), 2)/log(n, 2))`, n means the total records in this group, NOT overall records of the dataset
+    * Besides entropy and gini can be used to split decision trees, <b>chi square</b> can be used for the split of the categorical variables in the decision tree. Higher chi square, higher the different between partent and child node and higher homogeneity.
   * SVM: seperate groups with a line and maximize the margin distance. Good for small dataset, especially those with large number of features
     * The effectiveness of SVM depends on Selection of Kernel, Kernel Parameters and Soft Margin Parameter C, they can also help reduce errors and overfitting
     * The larger C parameter, the heavier penality for misclassification. So when C param is set to infinite, no room for error, optimal hyperplane (if exists) should seperate the data completely
