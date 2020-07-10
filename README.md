@@ -1024,6 +1024,7 @@ LIME requires data input to be numpy array, it doesn't support pandas dataframe 
 * Tableau Resources
   * Reference Guide: http://www.dataplusscience.com/TableauReferenceGuide/
   * How to use Tablea "Pages" to create animation: https://www.analyticsvidhya.com/blog/2020/06/animated-data-visualization-tableau-5-minutes/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+  * How to show a single value in the value range: https://www.analyticsvidhya.com/blog/2020/07/visualize-a-single-value-against-others-in-tableau/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
   * Having multiple data sources
     * If current sheet needs only 1 table but you have multiple tables shown as the data source, then edit variables under the table you need for this sheet, tableau will recognize which table you need for current sheet
   * How to create drill down from one sheet to another: https://community.tableau.com/ideas/4119
