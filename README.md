@@ -1357,6 +1357,9 @@ Data Science Skillset Tests
   * Some answers may have problems. For example, I think if question 33 has the right answer then question 28 has the wrong answer
   * Majorly uses the Byesian Theorem taught in conditional probability theorem: https://www.analyticsvidhya.com/blog/2017/03/conditional-probability-bayes-theorem/
   * An interesting take-away is about Monty Hall’s problem (I don't fullt understand, especially after seeing the debat after the post), the problem looks interesting: https://www.analyticsvidhya.com/blog/2014/04/probability-action-monty-halls-money-show/
+    * In this post 6 years later, now I understand the probability behind Monty Hall problem: https://www.analyticsvidhya.com/blog/2020/08/probability-conditional-probability-monty-hall-problem/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+      * The decision tree made it easy to understand
+      * The conditional probability was trying to tell you, if you chose door 1, switch to door 2 or 3 after the host revealed door 3 or door 2 has higher chance to win than sticking to door 1. Same, if we have N doors and you chose door 1, `P(prize door 1 | host door x) = (1/N) * (1/(N-1)) / P(host door x)`, `P(prize another door | host door x) = (1/N) * (1/(N-2)) / P(host door x)`, so still if you stick to door 1 choice, the chance to win is lower.
   * When applying Onehot Encoding, make sure the frequency distribution is the same in training and testing data
   * Output value range:
     * tanh function: [-1, 1]
