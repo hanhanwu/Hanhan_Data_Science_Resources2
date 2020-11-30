@@ -193,12 +193,16 @@
 * <b>ROC-AUC vs AVP vs F1 vs Balanced Accuracy</b>
   * When data is imbalanced, AVP is more reliable than ROC and Balanced Accuracy. Because when data is imbalanced (much more negative than positive), TN can be high, and therefore balanced accuracy can be higher (TNR is higher) while ROC-AUC can be larger (FPR is smaller).
   * Comparing with AVP, F1 sets precision and recall the same weight, while AVP is using increased recall (δ recall) from the previous threshold as the weight for current precision.
-* Logloss
-  * Comparing with ROC-AUC, logloss takes the probability of prediction into account. For example, record A got predicted as positive class 1 with 0.6 probability, record B got predicted as class 1 with probability 0.9, logloss will show higher value for record A prediction and lower value for record B prediction. ROC-AUC will show the same prediction results for both record A, B.
-    * Therefore, lower logloss value, the better.
-    * Logloss value is also indicating the certainty of the prediction.
-      * Based on the curve of logloss, it ramps up very rapidly as the predicted probability approaches 0, but gradually declines as the predicted probability improves and approach to 1. This also means logloss penalize more on false predicted results.
-* RMSE: The power of ‘square root’  empowers this metric to show large number deviations. The ‘squared’ nature of this metric helps to deliver more robust results which prevents cancelling the positive and negative error values. When we have more samples, reconstructing the error distribution using RMSE is considered to be more reliable. <b>RMSE is highly affected by outlier values.</b> Hence, make sure you’ve removed outliers from your data set prior to using this metric. As compared to mean absolute error, RMSE gives higher weightage and punishes large errors.
+* Logloss (binary cross-entropy)
+  * It takes the probability (certainty) of prediction into account.
+    * `log-loss = negative average of the log of corrected predicted probability`, [check details here][28]
+      * Check the curves of logloss, it penalizes more on false predicted results.
+    * Lower logloss value, the better.
+ 
+* RMSE: The power of ‘square root’  empowers this metric to show large number deviations. Often used as a metric for linear regression (convex function).
+  * <b>RMSE is highly affected by outlier values.</b> Hence, make sure you’ve removed outliers from your data set prior to using this metric. As compared to mean absolute error, RMSE gives higher weightage and punishes large errors.
+  * Tend to stuck at local minimum for non-convex function, such a logistic regression.
+    * Logloss is a better choice in this situation.
 * (RMSLE) Root Mean Squared Logarithmic Error
   * RMSLE is usually used when we don’t want to penalize huge differences in the predicted and the actual values when both predicted and true values are huge numbers.
   * If both predicted and actual values are small, RMSE and RMSLE are the same
@@ -1478,3 +1482,4 @@ OTHER
 [25]:https://www.aws.training/learningobject/video?id=16370
 [26]:https://github.com/alirezadir/Production-Level-Deep-Learning
 [27]:https://www.analyticsvidhya.com/blog/2020/03/10-awesome-data-manipulation-and-wrangling-hacks-tips-and-tricks/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+[28]:https://www.analyticsvidhya.com/blog/2020/11/binary-cross-entropy-aka-log-loss-the-cost-function-used-in-logistic-regression/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
