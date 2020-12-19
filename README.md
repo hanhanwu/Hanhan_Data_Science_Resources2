@@ -242,6 +242,7 @@
           * MSE(model): Mean Squared Error of the predictions against the actual values
           * Mean Squared Error of average prediction against the actual values
         * R-Square, RSS (residual sum of squares) = MSE*n, will increase when there are more features, but the test error may not drop. Therefore, <b>R-Square, RSS should NOT be used for selecting models that have differernt number of features</b>.
+      * Better to check residual plot with R square, if there is a pattern in the residual plot instead of the randomness, then even if R square is high, there is still unexplained pattern in the data
       * Residual Variance (Unexplained Variance) = Total Variance - Expected Variance, lower the better.
     * RMSE, sensitive to large outliers, mean is not statistical robust
     * Since mean is not statistical robust, we can try:
