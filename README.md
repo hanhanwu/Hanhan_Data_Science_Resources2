@@ -588,6 +588,7 @@
   * Rate vs Proportion: A rate differs from a proportion in that the numerator and the denominator need not be of the same kind and that the numerator may exceed the denominator. For example, the rate of pressure ulcers may be expressed as the number of pressure ulcers per 1000 patient days.
  * <b>Bias</b> is the error due to the over-simplicity of the model, tends to lead to underfitting and hard to get high predictive accuracy. <b>Variance</b> is the error due to the over-complex of the model, tends to be highly sensitive to high degrees of variation in the training data and leads to overfitting, could also bring in more noise.
    * The total error is lower when both bias and variance are lower. So during parameter tuning, better to find that sweet spot when bias, variance and the error are all lower.
+     * There is a function called `bias_variance_decomp()` to output the bias and variance of the model. [Example 1][29], [Example 2][30]
    * About <b>variance</b> here, according to above description, if we check multiple models on the same set of data, the difference is called variance. Meanwhile there is <b>model variance</b>, which means the same model showing different results because of the randomness in different data input. These 2 variance can be differentiated by, whether it's same model or multiple model, whether it's multiple dataset or same dataset.
    <p align="center">
   <img width="350" height="300" src="https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/images/bias_vs_variance.png">
@@ -1484,3 +1485,5 @@ OTHER
 [26]:https://github.com/alirezadir/Production-Level-Deep-Learning
 [27]:https://www.analyticsvidhya.com/blog/2020/03/10-awesome-data-manipulation-and-wrangling-hacks-tips-and-tricks/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [28]:https://www.analyticsvidhya.com/blog/2020/11/binary-cross-entropy-aka-log-loss-the-cost-function-used-in-logistic-regression/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+[29]:https://rasbt.github.io/mlxtend/user_guide/evaluate/bias_variance_decomp/
+[30]:https://www.analyticsvidhya.com/blog/2021/06/how-to-get-the-most-out-of-bias-variance-tradeoff/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
