@@ -484,6 +484,9 @@
     * `n` is the number of trails, `p` is the probability of success in each trail => `mean=n*p`, `variance=n*p*(1-p)`
     * If the probability of 2 outcomes p, 1-p are the same, then the distribution is normal distribution.
     * <b>Odds</b>: Odds are defined as the ratio of the probability of success and the probability of failure. For example, a fair coin has probability of success is 1/2 and the probability of failure is 1/2 so odd would be 1.
+      * `odds = # of event happen / # of event not happen`
+      * `odds ratio = odds of event happend / odds of event not happen`, usually used to compare the outcome of 2 events
+      * `log odds = log(odds)`, `log odds ratio = log(odds ratio)`, applying log is to normalze the values, since the value range of odds is between 0 and infinite, the gaps between the odds of event happen and the odds of event not happen can be huge. Log can reduce the gap, and also make the distribution of the odds symmetric
   * <b>Normal Distribution</b>
     * The mean, median and mode of the distribution coincide.
     * The curve of the distribution is bell-shaped and symmetrical about the line x=μ.
@@ -1487,3 +1490,4 @@ OTHER
 [28]:https://www.analyticsvidhya.com/blog/2020/11/binary-cross-entropy-aka-log-loss-the-cost-function-used-in-logistic-regression/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [29]:https://rasbt.github.io/mlxtend/user_guide/evaluate/bias_variance_decomp/
 [30]:https://www.analyticsvidhya.com/blog/2021/06/how-to-get-the-most-out-of-bias-variance-tradeoff/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+[31]:https://www.analyticsvidhya.com/blog/2021/07/what-are-the-odds-and-odd-ratios-that-you-know-about-the-odds/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
