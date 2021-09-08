@@ -121,7 +121,7 @@
     * For example, you are using online model (real time streaming), and you need to evaluate your model periodically to see whether it still can be applifed to the new data streaming. Or for time series, you want to check whether the model built for a certain time range applies to other time. And many other situations, that the current model may no longer apply to the new dataset
   * Types of Data Shift
     * <b>Covariate Shift</b> - Shift in features. Then for the new model, you may need to modify feature selection, or find those features may lead to data shift and don't use them as selected features.
-    * If the features in both the dataset belong to different distributions then, they should be able to separate the dataset into old and new sets significantly. These features are <b>drifting features</b>.
+      * If the features in both the dataset belong to different distributions then, they should be able to separate the dataset into old and new sets significantly. These features are <b>drifting features</b>.
     * <b>Prior probability shift</b> - Shift in label. For example, when you use Byesian model to predict multiple categories, then all the classes appeared in testing data has to appear in training, if not then it is Prior probability shift.
     * <b>Concept Shift</b> - Shift in the relationship between features and the label. For example, in the old dataset, Feature1 could lead to Class 'Y', but in the new dataset, it could lead to Class 'N'.
   * My Code: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/deal_with_data_shifting.ipynb
