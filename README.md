@@ -220,7 +220,9 @@
 * To measure logistic regression:
   * AUC-ROC curve along with confusion matrix to determine its performance.
   * The analogous metric of adjusted R² in logistic regression is AIC. AIC is the measure of fit which penalizes model for the number of model coefficients. Therefore, we always prefer model with minimum AIC value.
-  * AIC vs BIC: https://methodology.psu.edu/AIC-vs-BIC
+  * AIC vs BIC: 
+    * https://methodology.psu.edu/AIC-vs-BIC
+    * http://www.differencebetween.net/miscellaneous/difference-between-aic-and-bic/
     * AIC is an estimate of a constant + the relative distance between the unknown true likelihood function of the data and the fitted likelihood function of the model, so that a lower AIC means a model is considered to be closer to the truth.
     * BIC is an estimate of a function of the posterior probability of a model being true, under a certain Bayesian setup, so that a lower BIC means that a model is considered to be more likely to be the true model.
     * They both penalize model coefficients. They are similar, but BIC penalize complex models more. 
