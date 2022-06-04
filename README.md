@@ -506,6 +506,8 @@
         * Leptokurtic Distribution
         * Platykurtic Distribution
   * <b>Poisson Distribution</b>
+    * Example of how to apply poisson: https://www.analyticsvidhya.com/blog/2022/06/predicting-the-scoreline-of-a-football-match-using-poisson-distribution/?utm_source=feedburner&utm_medium=email
+      * Estimate the probability of something could happen in an event  
     * It is applicable in situations where events occur at random points of time and space where in our interest lies <b>only in the number of occurrences of the event</b>.
       * e.g number of times of have ice-cream in a year; number of flowers in a garden. etc
     * Events are independent from each other.
